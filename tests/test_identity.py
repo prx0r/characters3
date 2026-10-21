@@ -80,8 +80,11 @@ def test_deterministic_build(tmp_path):
 
 
 def test_repo_identities_exist():
+    packs = [p for p in (ROOT / "characters").iterdir()
+             if (p / "character.json").is_file()]
     ids = list((ROOT / "characters").glob("*/identity.json"))
-    assert len(ids) == 37, f"expected 37 identities, found {len(ids)}"
+    assert len(ids) == len(packs), \
+        f"{len(ids)} identities for {len(packs)} packs"
     d = json.loads((ROOT / "characters/buddha-ultimate-deadpan/identity.json")
                    .read_text())
     assert d["stage_compat"]["violations"] == []   # buddha must stay clean

@@ -1,0 +1,118 @@
+{
+ "schema": "freaktown.archetype.v1",
+ "id": "arch:gnome",
+ "name": "The HOA Absolute",
+ "created": "2026-10-21",
+ "members": [
+  "gnorma-the-hoa-gnome"
+ ],
+ "core_theory": {
+  "funny_because": "A garden-order metaphysics run by a being four inches tall enforcing it on humans who pay her. The ontology says the garden is reality and humans are weeds; the venue says porch, lease and porridge. Her comedy is procedural: violations observed are violations proven, and she observes everything — the gap between cosmic verdict and HOA jurisdiction is the engine.",
+  "doctrine_source": "character.json.philosophy (verbatim)",
+  "doctrine": {
+   "ontology": "Reality is a garden with rules; humans are the weeds.",
+   "epistemology": "Violations observed are violations proven.",
+   "axiology": "Order, thatch and paid porridge are good."
+  },
+  "status_model": "absolute authority, tiny footprint — nobody fears her, everything gets cited",
+  "register": "committee minutes with fairy-tale nouns",
+  "delivery_default": {
+   "vibe": "anxious",
+   "style": null,
+   "punchline_hold_ms": 1500,
+   "energy": 0.75
+  }
+ },
+ "violations_that_work": [
+  {
+   "id": "mercy",
+   "label": "Gnorma (Kind)",
+   "contradicts": "ontology: humans are the weeds (+ epistemology: violations observed are violations proven)",
+   "why_funny": "Mercy removes the enforcement machinery the character IS: Bergson's 'mechanical encrusted on the living' inverted — the machine gone soft stops detecting violations, so she wanders the estate apologizing to weeds. Pathos variant: TA collapses inward, delivery stays procedural because the minutes still must be kept.",
+   "mutant_premise": "The HOA witch who has decided the weeds are also neighbors.",
+   "mutant_thread": "issuing apology notices for the citations she no longer stands behind",
+   "delivery": "preserved",
+   "mutation": "doctrine-inversion"
+  },
+  {
+   "id": "chaos",
+   "label": "Gnorma (Chaotic)",
+   "contradicts": "axiology: Order, thatch and paid porridge are good",
+   "why_funny": "Status-flip: the arbiter of order enjoying disorder makes every prior rule retroactively absurd — her own epistemology ('observed = proven') now proves the weeds were right. TA flips from self-certainty to self-implication while the register keeps committee cadence (status_invert, KR-TA).",
+   "mutant_premise": "The HOA witch letting the garden go on purpose, with a checklist for the anarchy.",
+   "mutant_thread": "the citation she files against herself",
+   "delivery": "may_change_register",
+   "mutation": "status-flip"
+  }
+ ],
+ "mutation_operators": [
+  {
+   "id": "doctrine-inversion",
+   "name": "Doctrinal self-contradiction",
+   "theory_basis": "GTVH SO: the mutant's own script refutes their established script in real time (teacher caught in their own lesson); comedy = self-contradiction, not mockery",
+   "changes": [
+    "premise (authored mutant_premise)",
+    "thread (authored mutant_thread)",
+    "vibe/label"
+   ],
+   "must_not": [
+    "philosophy/doctrine — the base claims STAY so the contradiction is real",
+    "delivery.style, timing overrides — NS preserved: the angry Buddha stays slow"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "status-flip",
+   "name": "Status inversion",
+   "theory_basis": "Attardo KR-TA status_invert: desired vs felt status swap; register and modulators move, the world doesn't",
+   "changes": [
+    "vibe",
+    "modulator_range",
+    "expression/voice tags register"
+   ],
+   "must_not": [
+    "lore facts",
+    "doctrine claims"
+   ],
+   "delivery": "may_change_register"
+  },
+  {
+   "id": "thread-corruption",
+   "name": "Thread invariant swap",
+   "theory_basis": "rigidify (KR-LM) preserved, SI constant replaced: the engine keeps enforcing; what it enforces changes (kappa paid in something other than cucumbers)",
+   "changes": [
+    "one named thread's constant + premise"
+   ],
+   "must_not": [
+    "the rigidify mechanism",
+    "status model"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "lore-injection",
+   "name": "Sourced lore event",
+   "theory_basis": "KR-SI: a canon/lore event (must cite source: canon block, almanac, genome) becomes the premise situation",
+   "changes": [
+    "premise",
+    "thread"
+   ],
+   "must_not": [
+    "doctrine",
+    "unsourced invention — event must exist in a source file"
+   ],
+   "delivery": "preserved"
+  }
+ ],
+ "provenance": {
+  "sources": [
+   "character.json philosophy/threads (verbatim)",
+   "canon blocks where noted",
+   "theory/attardo via gcomedy"
+  ],
+  "rules": [
+   "engine assembles authored strings only",
+   "doctrine quoted, never paraphrased"
+  ]
+ }
+}

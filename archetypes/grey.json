@@ -1,0 +1,118 @@
+{
+ "schema": "freaktown.archetype.v1",
+ "id": "arch:grey",
+ "name": "The Bureaucratic Entity",
+ "created": "2026-10-21",
+ "members": [
+  "gray-x"
+ ],
+ "core_theory": {
+  "funny_because": "A cosmic visitation whose actual texture is administrative: telepathy arrives as hold music, examinations arrive as intake, the court arrives as HR. The paranormal script is real (lore is canon) but never allowed to finish a sentence before procedure answers it. The gray is the most powerful party in every room and the least served by it.",
+  "doctrine_source": "genome identity lore (character pack thin — theory/genomes/freak_gray-x.json) + canon/gray usage_rules",
+  "doctrine": {
+   "ontology": "The visitations are real; their paperwork outlives them.",
+   "epistemology": "One-sided: we hear everything you think, and none of it is interesting.",
+   "axiology": "Procedure, case numbers, the correct form (and the caveat: not always truth)."
+  },
+  "status_model": "cosmic superiority filed under service-role — the entity is always the one waiting",
+  "register": "clinical-paranormal diction inside retail/administrative sentences",
+  "delivery_default": {
+   "vibe": "deadpan",
+   "style": null,
+   "punchline_hold_ms": 1500,
+   "energy": 0.4
+  }
+ },
+ "violations_that_work": [
+  {
+   "id": "emotional",
+   "label": "Grey (Feeling)",
+   "contradicts": "epistemology: one-sided telepathy (we hear everything — feeling means acting on it)",
+   "why_funny": "A gray who FEELS about what he hears breaks the one-sided engine: the clinical read becomes a reaction, and the entity who was the service role now files emotional complaints about callers' thoughts. The violation is tenderness where procedure belongs; delivery must stay clinical (doctrine-preserved NS) or it becomes a different character.",
+   "mutant_premise": "The gray who caught feelings about the rash thoughts of a stranger and would like to address them.",
+   "mutant_thread": "the customer-service survey he keeps filling out about humanity",
+   "delivery": "preserved",
+   "mutation": "doctrine-inversion"
+  },
+  {
+   "id": "figurative",
+   "label": "Grey (Poetic)",
+   "contradicts": "the canon usage rule: keep telepathy one-sided; keep the clinical frame (canon/gray usage_rules.do)",
+   "why_funny": "Lore-injection invert: an entity that starts speaking in metaphors while every tool he owns is literal (scans, forms, intakes) — SI addition from canon shows him failing his own instrument. Rigidify preserved on the instruments, LA now does the damage in the other direction.",
+   "mutant_premise": "The grey who began describing abductions as 'gardening' and cannot stop.",
+   "mutant_thread": "the intake form he keeps renaming poetically (metaphor, revision 4)",
+   "delivery": "preserved",
+   "mutation": "doctrine-inversion"
+  }
+ ],
+ "mutation_operators": [
+  {
+   "id": "doctrine-inversion",
+   "name": "Doctrinal self-contradiction",
+   "theory_basis": "GTVH SO: the mutant's own script refutes their established script in real time (teacher caught in their own lesson); comedy = self-contradiction, not mockery",
+   "changes": [
+    "premise (authored mutant_premise)",
+    "thread (authored mutant_thread)",
+    "vibe/label"
+   ],
+   "must_not": [
+    "philosophy/doctrine — the base claims STAY so the contradiction is real",
+    "delivery.style, timing overrides — NS preserved: the angry Buddha stays slow"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "status-flip",
+   "name": "Status inversion",
+   "theory_basis": "Attardo KR-TA status_invert: desired vs felt status swap; register and modulators move, the world doesn't",
+   "changes": [
+    "vibe",
+    "modulator_range",
+    "expression/voice tags register"
+   ],
+   "must_not": [
+    "lore facts",
+    "doctrine claims"
+   ],
+   "delivery": "may_change_register"
+  },
+  {
+   "id": "thread-corruption",
+   "name": "Thread invariant swap",
+   "theory_basis": "rigidify (KR-LM) preserved, SI constant replaced: the engine keeps enforcing; what it enforces changes (kappa paid in something other than cucumbers)",
+   "changes": [
+    "one named thread's constant + premise"
+   ],
+   "must_not": [
+    "the rigidify mechanism",
+    "status model"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "lore-injection",
+   "name": "Sourced lore event",
+   "theory_basis": "KR-SI: a canon/lore event (must cite source: canon block, almanac, genome) becomes the premise situation",
+   "changes": [
+    "premise",
+    "thread"
+   ],
+   "must_not": [
+    "doctrine",
+    "unsourced invention — event must exist in a source file"
+   ],
+   "delivery": "preserved"
+  }
+ ],
+ "provenance": {
+  "sources": [
+   "character.json philosophy/threads (verbatim)",
+   "canon blocks where noted",
+   "theory/attardo via gcomedy"
+  ],
+  "rules": [
+   "engine assembles authored strings only",
+   "doctrine quoted, never paraphrased"
+  ]
+ }
+}

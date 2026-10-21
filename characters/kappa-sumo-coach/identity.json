@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "kappa-sumo-coach",
  "name": "Coach Kappa, Sumo of the Shallows",
- "built_at": "2026-10-21T22:19:17Z",
+ "built_at": "2026-10-21T23:19:13Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",

@@ -30,9 +30,11 @@ def _all():
             for f in PROFILES.glob("*.json")}
 
 
-def test_all_37_profiles_exist_with_bio_and_parity():
+def test_all_profiles_exist_with_bio_and_parity():
     profs = _all()
-    assert len(profs) == 37, len(profs)
+    packs = [p for p in (ROOT / "characters").iterdir()
+             if (p / "character.json").is_file()]
+    assert len(profs) == len(packs), (len(profs), len(packs))
     for slug, p in profs.items():
         missing = [k for k in PARITY if k not in p]
         assert not missing, f"{slug} missing {missing}"

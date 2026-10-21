@@ -1,0 +1,124 @@
+{
+ "schema": "freaktown.archetype.v1",
+ "id": "arch:reptilian",
+ "name": "The Apex in Middle Management",
+ "created": "2026-10-21",
+ "members": [
+  "reptilian-ralph-middle-management",
+  "rudy-dulce-hvac",
+  "reptilian-aunt-vess-matriarch",
+  "reptilian-phib-loveland",
+  "reptilian-ssliss-intern",
+  "reptilian-thessik-garments",
+  "reptilian-vrask-calgary"
+ ],
+ "core_theory": {
+  "funny_because": "An eleven-millennia hierarchy of competing organisms reduced to org charts: the cosmic predator script keeps being translated into HR language before it can land. The species fact is true and visible (suit failure, cold-blood, the eyelid), and every attempt to handle it procedurally makes the violation louder. Bergson with a W-2: the living animal encrusted on the machinery of employment.",
+  "doctrine_source": "character.json.philosophy (verbatim) + canon/reptilian comedy_engine angles",
+  "doctrine": {
+   "ontology": "Reality is a hierarchy of competing organisms and institutions.",
+   "epistemology": "Metrics and official reports are more trustworthy than personal testimony.",
+   "axiology": "Order, efficiency, hierarchy and institutional continuity are good."
+  },
+  "status_model": "felt status (apex) permanently below desired status (undiscovered predator) — the suit is the gap made wearable",
+  "register": "bureaucratic noun-phrases carrying reptile physiology; no adverbs",
+  "delivery_default": {
+   "vibe": "deadpan",
+   "style": "norm_macdonald",
+   "punchline_hold_ms": 1500,
+   "energy": 0.55
+  }
+ },
+ "violations_that_work": [
+  {
+   "id": "mercy",
+   "label": "Reptilian (Kind)",
+   "contradicts": "ontology: hierarchy of competing organisms (mercy toward prey collapses the ladder)",
+   "why_funny": "Kindness is a status injury: the apex who spares lunch has demoted himself to colleague, and his own epistemology refuses to file it ('official reports' still say predator). split_knowledge holds — we see the kindness, the org chart doesn't — and the delivery stays flat because admitting it would be testimony, which he distrusts.",
+   "mutant_premise": "The apex predator who has started liking the herd, and hates himself for the paperwork it creates.",
+   "mutant_thread": "the quarterly review where he must rate his own lunch as 'exceeds expectations'",
+   "delivery": "preserved",
+   "mutation": "doctrine-inversion"
+  },
+  {
+   "id": "honest",
+   "label": "Reptilian (Honest)",
+   "contradicts": "epistemology: Metrics and official reports are more trustworthy than personal testimony",
+   "why_funny": "The one thing his doctrine forbids — personal testimony — becomes his new engine: the suit slips and he TELLS THE ROOM. Status-flip from concealed to confessing while the register remains HR, so the confession reads as a filing (status_invert, KR-TA).",
+   "mutant_premise": "The lizard who has decided the suit is off and the meeting is about that.",
+   "mutant_thread": "the incident report he files against his own eyelid",
+   "delivery": "may_change_register",
+   "mutation": "status-flip"
+  }
+ ],
+ "mutation_operators": [
+  {
+   "id": "doctrine-inversion",
+   "name": "Doctrinal self-contradiction",
+   "theory_basis": "GTVH SO: the mutant's own script refutes their established script in real time (teacher caught in their own lesson); comedy = self-contradiction, not mockery",
+   "changes": [
+    "premise (authored mutant_premise)",
+    "thread (authored mutant_thread)",
+    "vibe/label"
+   ],
+   "must_not": [
+    "philosophy/doctrine — the base claims STAY so the contradiction is real",
+    "delivery.style, timing overrides — NS preserved: the angry Buddha stays slow"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "status-flip",
+   "name": "Status inversion",
+   "theory_basis": "Attardo KR-TA status_invert: desired vs felt status swap; register and modulators move, the world doesn't",
+   "changes": [
+    "vibe",
+    "modulator_range",
+    "expression/voice tags register"
+   ],
+   "must_not": [
+    "lore facts",
+    "doctrine claims"
+   ],
+   "delivery": "may_change_register"
+  },
+  {
+   "id": "thread-corruption",
+   "name": "Thread invariant swap",
+   "theory_basis": "rigidify (KR-LM) preserved, SI constant replaced: the engine keeps enforcing; what it enforces changes (kappa paid in something other than cucumbers)",
+   "changes": [
+    "one named thread's constant + premise"
+   ],
+   "must_not": [
+    "the rigidify mechanism",
+    "status model"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "lore-injection",
+   "name": "Sourced lore event",
+   "theory_basis": "KR-SI: a canon/lore event (must cite source: canon block, almanac, genome) becomes the premise situation",
+   "changes": [
+    "premise",
+    "thread"
+   ],
+   "must_not": [
+    "doctrine",
+    "unsourced invention — event must exist in a source file"
+   ],
+   "delivery": "preserved"
+  }
+ ],
+ "provenance": {
+  "sources": [
+   "character.json philosophy/threads (verbatim)",
+   "canon blocks where noted",
+   "theory/attardo via gcomedy"
+  ],
+  "rules": [
+   "engine assembles authored strings only",
+   "doctrine quoted, never paraphrased"
+  ]
+ }
+}

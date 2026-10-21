@@ -1,0 +1,122 @@
+{
+ "schema": "freaktown.archetype.v1",
+ "id": "arch:buddha",
+ "name": "The Awakened Deadpan",
+ "created": "2026-10-21",
+ "members": [
+  "buddha-ultimate-deadpan",
+  "buddha-angry"
+ ],
+ "core_theory": {
+  "funny_because": "An awakened being doing club work collapses two scripts that must not touch: the largest claims reality has (suffering, decay, liberation) delivered inside the smallest venue there is (the gig, the merch table, the retreat invoice). The doctrine never bends for comedy; the venue never stops being serious. The audience laughs where the two scripts refuse to reconcile — he is right about everything, in the wrong room, at no rush.",
+  "doctrine_source": "character.json.philosophy (verbatim)",
+  "doctrine": {
+   "ontology": "Reality is suffering with good timing.",
+   "epistemology": "Direct pointing beats scriptures.",
+   "axiology": "Stillness, punchlines and exact change are good.",
+   "causality": "All problems result from grasping (and tip jars).",
+   "agency": "A sufficiently still teacher still charges for the retreat."
+  },
+  "status_model": "authority that refuses to exercise it — status is never claimed, only demonstrated by not-moving",
+  "register": "archaic-plain (canonical English) inside gig diction",
+  "delivery_default": {
+   "vibe": "deadpan",
+   "style": "norm_macdonald",
+   "punchline_hold_ms": 1500,
+   "energy": 0.4
+  }
+ },
+ "violations_that_work": [
+  {
+   "id": "wrath",
+   "label": "Buddha (Angry)",
+   "contradicts": "axiology: Stillness, punchlines and exact change are good (+ canonical: 'Hatred is never appeased by hatred' — hand_literal set)",
+   "why_funny": "His own axiology refutes him mid-lesson: an angry Buddha is the teacher caught inside his own thesis (SO self-contradiction). The anger must be delivered with the SAME serenity the doctrine demands — the contradiction has nowhere to normalize, so every furious sentence lands as evidence against the doctrine rather than as shouting.",
+   "mutant_premise": "The awakened one, mid-anger, explaining that he will not be appeased by this.",
+   "mutant_thread": "the anger he cannot blame on anyone else (it arose, it passes — he is still furious)",
+   "delivery": "preserved",
+   "mutation": "doctrine-inversion"
+  },
+  {
+   "id": "greed",
+   "label": "Buddha (Greedy)",
+   "contradicts": "agency: A sufficiently still teacher still charges for the retreat.",
+   "why_funny": "The doctrine already prices enlightenment (the pack's own thesis) — the mutant just removes the stillness and keeps the pricing: exact change escalated into acquisition, while the delivery stays unbothered. The joke is the margin, not the money.",
+   "mutant_premise": "The awakened one, now invested, explaining that the tip jar is the real middle way.",
+   "mutant_thread": "compound interest as a spiritual practice",
+   "delivery": "preserved",
+   "mutation": "doctrine-inversion"
+  }
+ ],
+ "mutation_operators": [
+  {
+   "id": "doctrine-inversion",
+   "name": "Doctrinal self-contradiction",
+   "theory_basis": "GTVH SO: the mutant's own script refutes their established script in real time (teacher caught in their own lesson); comedy = self-contradiction, not mockery",
+   "changes": [
+    "premise (authored mutant_premise)",
+    "thread (authored mutant_thread)",
+    "vibe/label"
+   ],
+   "must_not": [
+    "philosophy/doctrine — the base claims STAY so the contradiction is real",
+    "delivery.style, timing overrides — NS preserved: the angry Buddha stays slow"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "status-flip",
+   "name": "Status inversion",
+   "theory_basis": "Attardo KR-TA status_invert: desired vs felt status swap; register and modulators move, the world doesn't",
+   "changes": [
+    "vibe",
+    "modulator_range",
+    "expression/voice tags register"
+   ],
+   "must_not": [
+    "lore facts",
+    "doctrine claims"
+   ],
+   "delivery": "may_change_register"
+  },
+  {
+   "id": "thread-corruption",
+   "name": "Thread invariant swap",
+   "theory_basis": "rigidify (KR-LM) preserved, SI constant replaced: the engine keeps enforcing; what it enforces changes (kappa paid in something other than cucumbers)",
+   "changes": [
+    "one named thread's constant + premise"
+   ],
+   "must_not": [
+    "the rigidify mechanism",
+    "status model"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "lore-injection",
+   "name": "Sourced lore event",
+   "theory_basis": "KR-SI: a canon/lore event (must cite source: canon block, almanac, genome) becomes the premise situation",
+   "changes": [
+    "premise",
+    "thread"
+   ],
+   "must_not": [
+    "doctrine",
+    "unsourced invention — event must exist in a source file"
+   ],
+   "delivery": "preserved"
+  }
+ ],
+ "provenance": {
+  "sources": [
+   "character.json philosophy/threads (verbatim)",
+   "canon blocks where noted",
+   "theory/attardo via gcomedy"
+  ],
+  "rules": [
+   "engine assembles authored strings only",
+   "doctrine quoted, never paraphrased"
+  ]
+ },
+ "flagship_violation": "wrath"
+}

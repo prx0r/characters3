@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "mothman-crossing-guard",
  "name": "Mothman, Crossing Guard",
- "built_at": "2026-10-21T22:19:17Z",
+ "built_at": "2026-10-21T23:19:13Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",
