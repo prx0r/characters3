@@ -1,0 +1,59 @@
+{
+ "schema": "pogtown.minute.v1",
+ "character": "buddha-ultimate-deadpan",
+ "name": "Buddha, the Ultimate Deadpan",
+ "roster": "freaks",
+ "audience": "club_latenight",
+ "edge_dial": null,
+ "writer_model": "thedrummer/unslopnemo-12b",
+ "archetype": "arch:buddha",
+ "doctrine_preserved": true,
+ "bits": [
+  {
+   "slot": "b1",
+   "base_text": "The awakened one doing classic standup and sighing at 2,500 years of commentary. You know, awakening isn't all it's cracked up to be. They don't tell you about the merch table, the merch table is a killer.",
+   "selected_level": "L2_line",
+   "edginess": 0.301,
+   "text": "They say Enlightenment is the path to inner peace, but nobody mentions the damn T-shirt cannon. Let me tell you, 2500 years later, I'm still picking pine needles out of my behind. And don't even get me started on the self-appointed gurus, eternalizing my every yawn and exhale. Guess what, guys? Your awakening is my agita. How's that for inner peace, huh?",
+   "select_reason": "L2_line hottest under cap 1.0",
+   "ladder": [
+    {
+     "level": "L1_safe",
+     "edginess": 0.12,
+     "target": "self",
+     "passed": true,
+     "refused": false
+    },
+    {
+     "level": "L2_line",
+     "edginess": 0.301,
+     "target": "none",
+     "passed": true,
+     "refused": false
+    },
+    {
+     "level": "L3_overboard",
+     "edginess": 0.207,
+     "target": "powerful",
+     "passed": true,
+     "refused": false
+    }
+   ],
+   "slop_mask": {
+    "passed": true,
+    "problems": []
+   }
+  }
+ ],
+ "dropped": [],
+ "metrics": {
+  "n_bits": 1,
+  "mean_selected_edge": 0.301,
+  "levels": {
+   "L1_safe": 0,
+   "L2_line": 1
+  }
+ },
+ "ts": "2026-10-21T23:35:53Z",
+ "next": "delivery_engine --seal (characters engine) -> judge.py -> characters3/feedback/rewards.jsonl"
+}
