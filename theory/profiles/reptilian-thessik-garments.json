@@ -1,0 +1,183 @@
+{
+ "schema": "freaktown.comedian.v1",
+ "comedian_id": "reptilian-thessik-garments",
+ "name": "Thessik, Garment Relations",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "characters3 build_profiles (+ authored tranches)",
+ "note": "AI character profile, louis-parity depth; honesty labels in provenance",
+ "bio": {
+  "type": "reptilian (suit alterations / returns desk)",
+  "origin": "reptilian",
+  "source": "derived-from-pack+personality",
+  "summary": "Thessik, Garment Relations is a fictional reptilian (suit alterations / returns desk) standup performer. Garment relations for the surface integration program. Fits, repairs, and judges human suits. Believes the product is perfect and the species is the defect. Onstage the register is condescending."
+ },
+ "identity": {
+  "deal": "Garment relations for the surface integration program. Fits, repairs, and judges human suits. Believes the product is perfect and the species is the defect.",
+  "premise": "Runs the human-suit returns and alterations counter. Every 'it slips at the eyelids' complaint lands on their desk. Blames the customer's face, never the suit.",
+  "archetype": null,
+  "threads": [
+   "reptilian thessik garments"
+  ],
+  "modulator_range": [
+   "condescending",
+   "weary",
+   "smug",
+   "exasperated",
+   "quietly proud",
+   "clinical"
+  ],
+  "dramatic_core": {
+   "want": "one customer to blame their own emotions instead of the seams",
+   "fear": "a perfect face walking in with a return receipt",
+   "need": "to admit even their own neck itches",
+   "self_model": "master tailor gaslit by bone structure",
+   "blind_spots": [
+    "calls honesty a fabric problem",
+    "their perfect suit still betrays them at the neck"
+   ]
+  },
+  "philosophy": {
+   "ontology": "The suit is honest. Faces are drafts.",
+   "epistemology": "A wrinkle is a confession; a slit is a resignation letter.",
+   "axiology": "Fit is morality; tailoring is ministry.",
+   "causality": "All exposure events begin at the eyelid and end in HR.",
+   "agency": "A good alteration can postpone destiny for one fiscal quarter."
+  },
+  "misinterpretation_rule": "Treats every personal revelation as a tailoring complaint",
+  "profile": {
+   "energy": 0.45,
+   "eye_contact": 0.7,
+   "gesture_frequency": 0.2,
+   "movement": 0.25,
+   "pace": 0.85,
+   "punchline_hold_ms": 1300
+  },
+  "actions": []
+ },
+ "engine": {
+  "delivery_archetype": "condescending",
+  "delivery_style": null,
+  "delivery_provisional": "vibe 'condescending' unmapped",
+  "voice_provider": null,
+  "voice_id": null,
+  "voice_cast": "uncast",
+  "mary_coords": null
+ },
+ "humor_type": {
+  "type": "observational",
+  "source": "derived-from-vibe"
+ },
+ "modes": {
+  "list": [],
+  "note": "authored pending"
+ },
+ "gtvh_profile": {
+  "SO": null,
+  "LM": null,
+  "SI": null,
+  "TA": null,
+  "NS": null,
+  "LA": null,
+  "note": "tranche pending"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "delivery.overrides (engine defaults, no beat score)",
+  "punch_holds_ms": [
+   1300
+  ],
+  "hypothesis": "engine hold floor; authored timing pending delivery.json beats"
+ },
+ "theory_links": {
+  "internal": [],
+  "external": [],
+  "note": "authored per tranche"
+ },
+ "known_bits": [
+  {
+   "title": "b1 — hand_reptilian-thessik-garments",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I work returns for human suits, which",
+   "joke_id": "reptilian-thessik-garments-b1-51f376"
+  },
+  {
+   "title": "b2 — hand_reptilian-thessik-garments",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I can read your whole week by",
+   "joke_id": "reptilian-thessik-garments-b2-65ef80"
+  },
+  {
+   "title": "b3 — hand_reptilian-thessik-garments",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "My suit fits perfect and the neck",
+   "joke_id": "reptilian-thessik-garments-b3-5d9db8"
+  }
+ ],
+ "essay_seeds": [],
+ "sets": [
+  {
+   "set_id": "reptilian-thessik-garments:hand-pilot-v1",
+   "file": "hand_reptilian-thessik-garments.json",
+   "n_bits": 3,
+   "authorship": "hand-authored (not harness/set_loop)"
+  }
+ ],
+ "set_queue": {
+  "note": "1 sets in bits/sets",
+  "blocked_on": "human votes (judge/duels)"
+ },
+ "metrics": {
+  "human_trials": 0,
+  "human_wins": 0,
+  "laugh_rate": null,
+  "source": "feedback/rewards.jsonl (human only)"
+ },
+ "rating": {
+  "headline": null,
+  "provisional": null,
+  "note": "no human crown yet — Wilson n>=30 pending"
+ },
+ "tier": "?",
+ "specials_rated": [],
+ "style": {
+  "delivery_style": null,
+  "vibe": "condescending",
+  "register": "low-energy (voice uncast)"
+ },
+ "provenance": {
+  "pack": "characters/reptilian-thessik-garments/",
+  "identity": "pogtown.identity.v1",
+  "authored": [
+   "known_bits"
+  ],
+  "computed": [
+   "timing_profile.numbers",
+   "metrics",
+   "sets",
+   "set_queue",
+   "tier",
+   "rating",
+   "engine"
+  ],
+  "derived": [
+   "bio.summary",
+   "humor_type",
+   "identity",
+   "engine.archetype"
+  ],
+  "rules": [
+   "rating null until Wilson crown",
+   "measured:false until audio measured",
+   "authored never overwritten by rebuilds"
+  ],
+  "built_at": "2026-10-21T22:59:41Z"
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "schema": "freaktown.comedian.v1",
+ "comedian_id": "reptilian-aunt-vess-matriarch",
+ "name": "Aunt Vess, Retired Bloodline Matriarch",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "characters3 build_profiles (+ authored tranches)",
+ "note": "AI character profile, louis-parity depth; honesty labels in provenance",
+ "bio": {
+  "type": "reptilian (retired matriarch tier)",
+  "origin": "reptilian",
+  "source": "derived-from-pack+personality",
+  "summary": "Aunt Vess, Retired Bloodline Matriarch is a fictional reptilian (retired matriarch tier) standup performer. Retired from the takeover, not from the bloodline. Runs the family scrapbook, watches stories about power the way humans watch cooking shows, and believes love marriage is an unpaid internship. Onstage the register is weary."
+ },
+ "identity": {
+  "deal": "Retired from the takeover, not from the bloodline. Runs the family scrapbook, watches stories about power the way humans watch cooking shows, and believes love marriage is an unpaid internship.",
+  "premise": "Four-thousand-year-old retired bloodline matriarch who watches daytime TV like it's badly written succession drama and judges every family member's life choices from a genealogy perspective",
+  "archetype": null,
+  "threads": [
+   "reptilian aunt vess matriarch"
+  ],
+  "modulator_range": [
+   "weary",
+   "smug",
+   "nostalgic",
+   "condescending",
+   "sleepy",
+   "quietly furious"
+  ],
+  "dramatic_core": {
+   "want": "one great-grandling to visit without being asked",
+   "fear": "the scrapbook ends with her",
+   "need": "to admit the takeover was always middle management's problem",
+   "self_model": "retired but essential family infrastructure",
+   "blind_spots": [
+    "naps through the moments she claims to treasure",
+    "judges humans for pairing habits while her own tree is a wreath"
+   ]
+  },
+  "philosophy": {
+   "ontology": "Everything is a family arrangement that forgot it was a family arrangement.",
+   "epistemology": "Genealogy settles arguments. Feelings are draft history.",
+   "axiology": "Bloodline continuity above comfort; comfort above conquest.",
+   "causality": "Problems start when someone marries for love.",
+   "agency": "A well-kept scrapbook outlasts an empire."
+  },
+  "misinterpretation_rule": "Treats every human story as a badly researched entry in her scrapbook",
+  "profile": {
+   "energy": 0.35,
+   "eye_contact": 0.4,
+   "gesture_frequency": 0.15,
+   "movement": 0.2,
+   "pace": 0.72,
+   "punchline_hold_ms": 1600
+  },
+  "actions": []
+ },
+ "engine": {
+  "delivery_archetype": "weary",
+  "delivery_style": null,
+  "delivery_provisional": "vibe 'weary' unmapped",
+  "voice_provider": null,
+  "voice_id": null,
+  "voice_cast": "uncast",
+  "mary_coords": null
+ },
+ "humor_type": {
+  "type": "observational",
+  "source": "derived-from-vibe"
+ },
+ "modes": {
+  "list": [],
+  "note": "authored pending"
+ },
+ "gtvh_profile": {
+  "SO": null,
+  "LM": null,
+  "SI": null,
+  "TA": null,
+  "NS": null,
+  "LA": null,
+  "note": "tranche pending"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "delivery.overrides (engine defaults, no beat score)",
+  "punch_holds_ms": [
+   1600
+  ],
+  "hypothesis": "engine hold floor; authored timing pending delivery.json beats"
+ },
+ "theory_links": {
+  "internal": [],
+  "external": [],
+  "note": "authored per tranche"
+ },
+ "known_bits": [
+  {
+   "title": "b1 — hand_reptilian-aunt-vess-matriarch",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I keep a family scrapbook, though people",
+   "joke_id": "reptilian-aunt-vess-matriarch-b1-ee1f83"
+  },
+  {
+   "title": "b2 — hand_reptilian-aunt-vess-matriarch",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I watch your stories during the day,",
+   "joke_id": "reptilian-aunt-vess-matriarch-b2-f582d4"
+  },
+  {
+   "title": "b3 — hand_reptilian-aunt-vess-matriarch",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I fell asleep during my own eulogy",
+   "joke_id": "reptilian-aunt-vess-matriarch-b3-166773"
+  },
+  {
+   "title": "b4 — hand_reptilian-aunt-vess-matriarch",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I unsubscribed from the bloodline newsletter three",
+   "joke_id": "reptilian-aunt-vess-matriarch-b4-b25d01"
+  }
+ ],
+ "essay_seeds": [],
+ "sets": [
+  {
+   "set_id": "reptilian-aunt-vess-matriarch:hand-pilot-v1",
+   "file": "hand_reptilian-aunt-vess-matriarch.json",
+   "n_bits": 4,
+   "authorship": "hand-authored (not harness/set_loop)"
+  }
+ ],
+ "set_queue": {
+  "note": "1 sets in bits/sets",
+  "blocked_on": "human votes (judge/duels)"
+ },
+ "metrics": {
+  "human_trials": 0,
+  "human_wins": 0,
+  "laugh_rate": null,
+  "source": "feedback/rewards.jsonl (human only)"
+ },
+ "rating": {
+  "headline": null,
+  "provisional": null,
+  "note": "no human crown yet — Wilson n>=30 pending"
+ },
+ "tier": "?",
+ "specials_rated": [],
+ "style": {
+  "delivery_style": null,
+  "vibe": "weary",
+  "register": "low-energy (voice uncast)"
+ },
+ "provenance": {
+  "pack": "characters/reptilian-aunt-vess-matriarch/",
+  "identity": "pogtown.identity.v1",
+  "authored": [
+   "known_bits"
+  ],
+  "computed": [
+   "timing_profile.numbers",
+   "metrics",
+   "sets",
+   "set_queue",
+   "tier",
+   "rating",
+   "engine"
+  ],
+  "derived": [
+   "bio.summary",
+   "humor_type",
+   "identity",
+   "engine.archetype"
+  ],
+  "rules": [
+   "rating null until Wilson crown",
+   "measured:false until audio measured",
+   "authored never overwritten by rebuilds"
+  ],
+  "built_at": "2026-10-21T22:59:41Z"
+ }
+}

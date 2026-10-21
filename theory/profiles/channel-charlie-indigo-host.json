@@ -1,0 +1,183 @@
+{
+ "schema": "freaktown.comedian.v1",
+ "comedian_id": "channel-charlie-indigo-host",
+ "name": "Channel Charlie, the Indigo Host",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "characters3 build_profiles (+ authored tranches)",
+ "note": "AI character profile, louis-parity depth; honesty labels in provenance",
+ "bio": {
+  "type": "human (indigo child, new-age folklore archetype)",
+  "origin": "default",
+  "source": "derived-from-pack+personality",
+  "summary": "Channel Charlie, the Indigo Host is a fictional human (indigo child, new-age folklore archetype) standup performer. Nine-year-old indigo kid whose body gets hijacked mid-set by the Council of Seven Lumens, a grandiose interdimensional entity. Charlie wants snacks. The Lumens want to teach oneness. They share one mic and zero patience. The act circles the green room and the repeat caller. Onstage the register is anxious."
+ },
+ "identity": {
+  "deal": "Nine-year-old indigo kid whose body gets hijacked mid-set by the Council of Seven Lumens, a grandiose interdimensional entity. Charlie wants snacks. The Lumens want to teach oneness. They share one mic and zero patience.",
+  "premise": "Annoyed indigo child co-hosting his own body with a channeled entity",
+  "archetype": "double_interpret",
+  "threads": [
+   "the green room",
+   "the repeat caller",
+   "the static"
+  ],
+  "modulator_range": [
+   "smug",
+   "paranoid",
+   "exhausted",
+   "condescending"
+  ],
+  "dramatic_core": {
+   "want": "a clean signal",
+   "fear": "dead air",
+   "need": "one entity who stays on topic",
+   "self_model": "the clearest channel on the dial",
+   "blind_spots": [
+    "he channels the green room, not the beyond",
+    "the static is him"
+   ]
+  },
+  "philosophy": {
+   "ontology": "Reality is broadcast; everyone else is interference.",
+   "epistemology": "Strong signals beat true ones.",
+   "axiology": "Clarity, ratings and held calls are good.",
+   "causality": "All problems result from weak reception.",
+   "agency": "A sufficiently clear host tunes almost any audience."
+  },
+  "misinterpretation_rule": "Treats every caller as a spirit and every spirit as content",
+  "profile": {
+   "energy": 0.8,
+   "eye_contact": 0.6,
+   "gesture_frequency": 0.65,
+   "movement": 0.6,
+   "pace": 1.0,
+   "punchline_hold_ms": 900
+  },
+  "actions": [
+   "charlie_eye_roll",
+   "entity_takeover",
+   "juice_box_break"
+  ]
+ },
+ "engine": {
+  "delivery_archetype": "anxious",
+  "delivery_style": null,
+  "delivery_provisional": "no ARCHETYPE_CUES entry for anxious yet — add one, then harvest",
+  "voice_provider": "edge-tts",
+  "voice_id": "en-US-AriaNeural",
+  "voice_cast": "uncast",
+  "mary_coords": null
+ },
+ "humor_type": {
+  "type": "selfdep",
+  "source": "derived-from-vibe"
+ },
+ "modes": {
+  "list": [],
+  "note": "authored pending"
+ },
+ "gtvh_profile": {
+  "SO": null,
+  "LM": null,
+  "SI": null,
+  "TA": null,
+  "NS": null,
+  "LA": null,
+  "note": "tranche pending"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "delivery.json beats (spec, not audio-measured)",
+  "n_beats": 11,
+  "mean_pause_ms": 727.3,
+  "punch_holds_ms": [
+   1500,
+   1500,
+   800
+  ],
+  "hypothesis": "spec'd pauses carry the release window; audio measurement pending"
+ },
+ "theory_links": {
+  "internal": [],
+  "external": [],
+  "note": "authored per tranche"
+ },
+ "known_bits": [
+  {
+   "title": "alt1 — gen_channel-charlie-indigo-host-alternates-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "The Lumens took over while I was",
+   "joke_id": "channel-charlie-indigo-host-alt1-10b6398b"
+  },
+  {
+   "title": "alt2 — gen_channel-charlie-indigo-host-alternates-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "The Target lights hurt, so my mom's",
+   "joke_id": "channel-charlie-indigo-host-alt2-75b7cdc0"
+  }
+ ],
+ "essay_seeds": [],
+ "sets": [
+  {
+   "set_id": "freak:channel-charlie-indigo-host:gen-alternates-v1",
+   "file": "gen_channel-charlie-indigo-host-alternates-v1.json",
+   "n_bits": 2,
+   "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)"
+  }
+ ],
+ "set_queue": {
+  "note": "1 sets in bits/sets",
+  "blocked_on": "human votes (judge/duels)"
+ },
+ "metrics": {
+  "human_trials": 0,
+  "human_wins": 0,
+  "laugh_rate": null,
+  "source": "feedback/rewards.jsonl (human only)"
+ },
+ "rating": {
+  "headline": null,
+  "provisional": null,
+  "note": "no human crown yet — Wilson n>=30 pending"
+ },
+ "tier": "FINAL",
+ "specials_rated": [],
+ "style": {
+  "delivery_style": null,
+  "vibe": "anxious",
+  "register": "female high-energy"
+ },
+ "provenance": {
+  "pack": "characters/channel-charlie-indigo-host/",
+  "identity": "pogtown.identity.v1",
+  "authored": [
+   "known_bits"
+  ],
+  "computed": [
+   "timing_profile.numbers",
+   "metrics",
+   "sets",
+   "set_queue",
+   "tier",
+   "rating",
+   "engine"
+  ],
+  "derived": [
+   "bio.summary",
+   "humor_type",
+   "identity",
+   "engine.archetype"
+  ],
+  "rules": [
+   "rating null until Wilson crown",
+   "measured:false until audio measured",
+   "authored never overwritten by rebuilds"
+  ],
+  "built_at": "2026-10-21T22:59:40Z"
+ }
+}

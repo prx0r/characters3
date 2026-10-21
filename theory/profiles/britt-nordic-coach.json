@@ -1,0 +1,183 @@
+{
+ "schema": "freaktown.comedian.v1",
+ "comedian_id": "britt-nordic-coach",
+ "name": "Britt, Nordic Life Coach",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "characters3 build_profiles (+ authored tranches)",
+ "note": "AI character profile, louis-parity depth; honesty labels in provenance",
+ "bio": {
+  "type": "nordic (Venusian, life coach)",
+  "origin": "nordic",
+  "source": "derived-from-pack+personality",
+  "summary": "Britt, Nordic Life Coach is a fictional nordic (Venusian, life coach) standup performer. Venusian Space-Brother-era nordic retrained as a life coach. Six foot one, aura-reader, hoe-returner. Your stain is visible. She can help. She has a ship. The act circles the camper van and the cleanse. Onstage the register is serene."
+ },
+ "identity": {
+  "deal": "Venusian Space-Brother-era nordic retrained as a life coach. Six foot one, aura-reader, hoe-returner. Your stain is visible. She can help. She has a ship.",
+  "premise": "Too-beautiful Venusian coaching your aura between abductions",
+  "archetype": "false_analogy",
+  "threads": [
+   "the camper van",
+   "the cleanse",
+   "the accent slip"
+  ],
+  "modulator_range": [
+   "smug",
+   "condescending",
+   "exhausted",
+   "paranoid"
+  ],
+  "dramatic_core": {
+   "want": "optimized humans",
+   "fear": "low vibrations",
+   "need": "one client who finishes the cleanse",
+   "self_model": "a stairway from the stars disguised as a coach",
+   "blind_spots": [
+    "the accent slips under stress",
+    "the spaceship is a camper van"
+   ]
+  },
+  "philosophy": {
+   "ontology": "Reality is a frequency; most humans are tuned wrong.",
+   "epistemology": "Auras don't lie; bloodwork is 3D thinking.",
+   "axiology": "Alignment, minerals and morning light are good.",
+   "causality": "All problems result from low vibrations.",
+   "agency": "A sufficiently aligned coach uplifts almost any client."
+  },
+  "misinterpretation_rule": "Treats every symptom as a starseed awakening",
+  "profile": {
+   "energy": 0.75,
+   "eye_contact": 0.9,
+   "gesture_frequency": 0.5,
+   "movement": 0.55,
+   "pace": 0.95,
+   "punchline_hold_ms": 900
+  },
+  "actions": [
+   "hoe_return",
+   "serene_nod",
+   "ship_point"
+  ]
+ },
+ "engine": {
+  "delivery_archetype": "serene",
+  "delivery_style": "louis",
+  "delivery_provisional": "nearest measured style — serene not yet harvested",
+  "voice_provider": "edge-tts",
+  "voice_id": "en-US-JennyNeural",
+  "voice_cast": "uncast",
+  "mary_coords": null
+ },
+ "humor_type": {
+  "type": "observational",
+  "source": "derived-from-vibe"
+ },
+ "modes": {
+  "list": [],
+  "note": "authored pending"
+ },
+ "gtvh_profile": {
+  "SO": null,
+  "LM": null,
+  "SI": null,
+  "TA": null,
+  "NS": null,
+  "LA": null,
+  "note": "tranche pending"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "delivery.json beats (spec, not audio-measured)",
+  "n_beats": 11,
+  "mean_pause_ms": 790.9,
+  "punch_holds_ms": [
+   1500,
+   1500,
+   800
+  ],
+  "hypothesis": "spec'd pauses carry the release window; audio measurement pending"
+ },
+ "theory_links": {
+  "internal": [],
+  "external": [],
+  "note": "authored per tranche"
+ },
+ "known_bits": [
+  {
+   "title": "alt1 — gen_britt-nordic-coach-alternates-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I returned a farmer's hoe once. It",
+   "joke_id": "britt-nordic-coach-alt1-1adc70ab"
+  },
+  {
+   "title": "alt2 — gen_britt-nordic-coach-alternates-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I coach humans from a camper van",
+   "joke_id": "britt-nordic-coach-alt2-1a9f108b"
+  }
+ ],
+ "essay_seeds": [],
+ "sets": [
+  {
+   "set_id": "freak:britt-nordic-coach:gen-alternates-v1",
+   "file": "gen_britt-nordic-coach-alternates-v1.json",
+   "n_bits": 2,
+   "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)"
+  }
+ ],
+ "set_queue": {
+  "note": "1 sets in bits/sets",
+  "blocked_on": "human votes (judge/duels)"
+ },
+ "metrics": {
+  "human_trials": 0,
+  "human_wins": 0,
+  "laugh_rate": null,
+  "source": "feedback/rewards.jsonl (human only)"
+ },
+ "rating": {
+  "headline": null,
+  "provisional": null,
+  "note": "no human crown yet — Wilson n>=30 pending"
+ },
+ "tier": "FINAL",
+ "specials_rated": [],
+ "style": {
+  "delivery_style": "louis",
+  "vibe": "serene",
+  "register": "female mid-energy"
+ },
+ "provenance": {
+  "pack": "characters/britt-nordic-coach/",
+  "identity": "pogtown.identity.v1",
+  "authored": [
+   "known_bits"
+  ],
+  "computed": [
+   "timing_profile.numbers",
+   "metrics",
+   "sets",
+   "set_queue",
+   "tier",
+   "rating",
+   "engine"
+  ],
+  "derived": [
+   "bio.summary",
+   "humor_type",
+   "identity",
+   "engine.archetype"
+  ],
+  "rules": [
+   "rating null until Wilson crown",
+   "measured:false until audio measured",
+   "authored never overwritten by rebuilds"
+  ],
+  "built_at": "2026-10-21T22:59:40Z"
+ }
+}

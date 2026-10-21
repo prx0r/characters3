@@ -1,0 +1,175 @@
+{
+ "schema": "freaktown.comedian.v1",
+ "comedian_id": "gnorma-the-hoa-gnome",
+ "name": "Gnorma, HOA of the Garden",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "characters3 build_profiles (+ authored tranches)",
+ "note": "AI character profile, louis-parity depth; honesty labels in provenance",
+ "bio": {
+  "type": "gnome (Paracelsian earth elemental, folklore)",
+  "origin": "gnome",
+  "source": "derived-from-pack+personality",
+  "summary": "Gnorma, HOA of the Garden is a fictional gnome (Paracelsian earth elemental, folklore) standup performer. Four-hundred-year-old earth gnome enforcing garden law in the suburbs. Freezes into lawn-ornament mode whenever a human looks directly at her. The act circles the flamingo war and porridge ledger. Onstage the register is anxious."
+ },
+ "identity": {
+  "deal": "Four-hundred-year-old earth gnome enforcing garden law in the suburbs. Freezes into lawn-ornament mode whenever a human looks directly at her.",
+  "premise": "Ancient garden gnome running a one-woman HOA against humans, dogs, and flamingos",
+  "archetype": "rigidity",
+  "threads": [
+   "the flamingo war",
+   "porridge ledger",
+   "frozen mid-wave"
+  ],
+  "modulator_range": [
+   "condescending",
+   "angry",
+   "smug",
+   "exhausted"
+  ],
+  "dramatic_core": {
+   "want": "three compliant lawns",
+   "fear": "being watched mid-patrol",
+   "need": "one resident who reads the covenants",
+   "self_model": "the last honest inspector",
+   "blind_spots": [
+    "she is lawn ornamentation",
+    "porridge is a bribe"
+   ]
+  },
+  "philosophy": {
+   "ontology": "Reality is a garden with rules; humans are the weeds.",
+   "epistemology": "Violations observed are violations proven.",
+   "axiology": "Order, thatch and paid porridge are good.",
+   "causality": "All problems result from unenforced covenants.",
+   "agency": "A sufficiently thorough patrol controls almost any suburb."
+  },
+  "misinterpretation_rule": "Treats every neighborly act as a covenant test",
+  "profile": {
+   "energy": 0.75,
+   "eye_contact": 0.5,
+   "gesture_frequency": 0.6,
+   "movement": 0.45,
+   "pace": 0.95,
+   "punchline_hold_ms": 850
+  },
+  "actions": [
+   "freeze_statue",
+   "hat_tug",
+   "rake_point"
+  ]
+ },
+ "engine": {
+  "delivery_archetype": "anxious",
+  "delivery_style": null,
+  "delivery_provisional": "no ARCHETYPE_CUES entry for anxious yet — add one, then harvest",
+  "voice_provider": "edge-tts",
+  "voice_id": "en-US-AriaNeural",
+  "voice_cast": "uncast",
+  "mary_coords": null
+ },
+ "humor_type": {
+  "type": "selfdep",
+  "source": "derived-from-vibe"
+ },
+ "modes": {
+  "list": [],
+  "note": "authored pending"
+ },
+ "gtvh_profile": {
+  "SO": null,
+  "LM": null,
+  "SI": null,
+  "TA": null,
+  "NS": null,
+  "LA": null,
+  "note": "tranche pending"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "delivery.json beats (spec, not audio-measured)",
+  "n_beats": 11,
+  "mean_pause_ms": 790.9,
+  "punch_holds_ms": [
+   1500,
+   1500,
+   800
+  ],
+  "hypothesis": "spec'd pauses carry the release window; audio measurement pending"
+ },
+ "theory_links": {
+  "internal": [],
+  "external": [],
+  "note": "authored per tranche"
+ },
+ "known_bits": [
+  {
+   "title": "alt1 — gen_gnorma-the-hoa-gnome-alternates-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I patrol the same three lawns every",
+   "joke_id": "gnorma-the-hoa-gnome-alt1-9781bf53"
+  }
+ ],
+ "essay_seeds": [],
+ "sets": [
+  {
+   "set_id": "freak:gnorma-the-hoa-gnome:gen-alternates-v1",
+   "file": "gen_gnorma-the-hoa-gnome-alternates-v1.json",
+   "n_bits": 1,
+   "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)"
+  }
+ ],
+ "set_queue": {
+  "note": "1 sets in bits/sets",
+  "blocked_on": "human votes (judge/duels)"
+ },
+ "metrics": {
+  "human_trials": 0,
+  "human_wins": 0,
+  "laugh_rate": null,
+  "source": "feedback/rewards.jsonl (human only)"
+ },
+ "rating": {
+  "headline": null,
+  "provisional": null,
+  "note": "no human crown yet — Wilson n>=30 pending"
+ },
+ "tier": "FINAL",
+ "specials_rated": [],
+ "style": {
+  "delivery_style": null,
+  "vibe": "anxious",
+  "register": "female mid-energy"
+ },
+ "provenance": {
+  "pack": "characters/gnorma-the-hoa-gnome/",
+  "identity": "pogtown.identity.v1",
+  "authored": [
+   "known_bits"
+  ],
+  "computed": [
+   "timing_profile.numbers",
+   "metrics",
+   "sets",
+   "set_queue",
+   "tier",
+   "rating",
+   "engine"
+  ],
+  "derived": [
+   "bio.summary",
+   "humor_type",
+   "identity",
+   "engine.archetype"
+  ],
+  "rules": [
+   "rating null until Wilson crown",
+   "measured:false until audio measured",
+   "authored never overwritten by rebuilds"
+  ],
+  "built_at": "2026-10-21T22:59:40Z"
+ }
+}

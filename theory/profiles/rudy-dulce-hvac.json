@@ -1,0 +1,175 @@
+{
+ "schema": "freaktown.comedian.v1",
+ "comedian_id": "rudy-dulce-hvac",
+ "name": "Rudy, Dulce HVAC",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "characters3 build_profiles (+ authored tranches)",
+ "note": "AI character profile, louis-parity depth; honesty labels in provenance",
+ "bio": {
+  "type": "reptilian (tunnel technician, second interpretation)",
+  "origin": "reptilian",
+  "source": "derived-from-pack+personality",
+  "summary": "Rudy, Dulce HVAC is a fictional reptilian (tunnel technician, second interpretation) standup performer. Tunnel-level reptilian HVAC tech. Doesn't rule anything; keeps the warm air moving for those who do. Knows every duct, every dero rewiring, and exactly which vent screams. The act circles the singing vent and ticket backlog. Onstage the register is deadpan."
+ },
+ "identity": {
+  "deal": "Tunnel-level reptilian HVAC tech. Doesn't rule anything; keeps the warm air moving for those who do. Knows every duct, every dero rewiring, and exactly which vent screams.",
+  "premise": "The reptilian who doesn't rule the world, just heats its basement",
+  "archetype": "literalize",
+  "threads": [
+   "the singing vent",
+   "ticket backlog",
+   "filter famine"
+  ],
+  "modulator_range": [
+   "exhausted",
+   "annoyed",
+   "condescending",
+   "smug"
+  ],
+  "dramatic_core": {
+   "want": "balanced airflow",
+   "fear": "a silent vent",
+   "need": "one work order that stays closed",
+   "self_model": "the base's only honest technician",
+   "blind_spots": [
+    "the hum is him humming",
+    "Ralph files against him too"
+   ]
+  },
+  "philosophy": {
+   "ontology": "Reality is ductwork; everything else is decoration.",
+   "epistemology": "Gauges don't lie; managers do.",
+   "axiology": "Airflow, sealed ducts and closed tickets are good.",
+   "causality": "All problems result from unsealed ducts.",
+   "agency": "A sufficiently thorough technician controls almost any base."
+  },
+  "misinterpretation_rule": "Treats every complaint as an airflow problem",
+  "profile": {
+   "energy": 0.6,
+   "eye_contact": 0.6,
+   "gesture_frequency": 0.4,
+   "movement": 0.35,
+   "pace": 0.9,
+   "punchline_hold_ms": 1000
+  },
+  "actions": [
+   "bask_break",
+   "scream_check",
+   "vent_pat"
+  ]
+ },
+ "engine": {
+  "delivery_archetype": "deadpan",
+  "delivery_style": "norm_macdonald",
+  "delivery_provisional": null,
+  "voice_provider": "edge-tts",
+  "voice_id": "en-US-GuyNeural",
+  "voice_cast": "uncast",
+  "mary_coords": null
+ },
+ "humor_type": {
+  "type": "deadpan",
+  "source": "derived-from-vibe"
+ },
+ "modes": {
+  "list": [],
+  "note": "authored pending"
+ },
+ "gtvh_profile": {
+  "SO": null,
+  "LM": null,
+  "SI": null,
+  "TA": null,
+  "NS": null,
+  "LA": null,
+  "note": "tranche pending"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "delivery.json beats (spec, not audio-measured)",
+  "n_beats": 11,
+  "mean_pause_ms": 790.9,
+  "punch_holds_ms": [
+   1500,
+   1500,
+   800
+  ],
+  "hypothesis": "spec'd pauses carry the release window; audio measurement pending"
+ },
+ "theory_links": {
+  "internal": [],
+  "external": [],
+  "note": "authored per tranche"
+ },
+ "known_bits": [
+  {
+   "title": "alt1 — gen_rudy-dulce-hvac-alternates-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "The deros rewired my ducts again. Set",
+   "joke_id": "rudy-dulce-hvac-alt1-9dc6ece3"
+  }
+ ],
+ "essay_seeds": [],
+ "sets": [
+  {
+   "set_id": "freak:rudy-dulce-hvac:gen-alternates-v1",
+   "file": "gen_rudy-dulce-hvac-alternates-v1.json",
+   "n_bits": 1,
+   "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)"
+  }
+ ],
+ "set_queue": {
+  "note": "1 sets in bits/sets",
+  "blocked_on": "human votes (judge/duels)"
+ },
+ "metrics": {
+  "human_trials": 0,
+  "human_wins": 0,
+  "laugh_rate": null,
+  "source": "feedback/rewards.jsonl (human only)"
+ },
+ "rating": {
+  "headline": null,
+  "provisional": null,
+  "note": "no human crown yet — Wilson n>=30 pending"
+ },
+ "tier": "FINAL",
+ "specials_rated": [],
+ "style": {
+  "delivery_style": "norm_macdonald",
+  "vibe": "deadpan",
+  "register": "male mid-energy"
+ },
+ "provenance": {
+  "pack": "characters/rudy-dulce-hvac/",
+  "identity": "pogtown.identity.v1",
+  "authored": [
+   "known_bits"
+  ],
+  "computed": [
+   "timing_profile.numbers",
+   "metrics",
+   "sets",
+   "set_queue",
+   "tier",
+   "rating",
+   "engine"
+  ],
+  "derived": [
+   "bio.summary",
+   "humor_type",
+   "identity",
+   "engine.archetype"
+  ],
+  "rules": [
+   "rating null until Wilson crown",
+   "measured:false until audio measured",
+   "authored never overwritten by rebuilds"
+  ],
+  "built_at": "2026-10-21T22:59:41Z"
+ }
+}

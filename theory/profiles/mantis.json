@@ -1,0 +1,182 @@
+{
+ "schema": "freaktown.comedian.v1",
+ "comedian_id": "mantis",
+ "name": "Mantis",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "characters3 build_profiles (+ authored tranches)",
+ "note": "AI character profile, louis-parity depth; honesty labels in provenance",
+ "bio": {
+  "type": "fictional",
+  "origin": "default",
+  "source": "derived-from-pack+personality",
+  "summary": "Mantis is a fictional standup performer. Praying mantis entity. Draw from abduction hierarchy, calm authority, compound eyes, telepathic dominance. Complete freedom. The act circles authority projection: projects calm so hard you stop panicking and hierarchical command: the manager of the abduction. Onstage the register is neutral."
+ },
+ "identity": {
+  "deal": "Praying mantis entity. Draw from abduction hierarchy, calm authority, compound eyes, telepathic dominance. Complete freedom.",
+  "premise": null,
+  "archetype": null,
+  "threads": [
+   "Authority projection: Projects calm so hard you stop panicking",
+   "Hierarchical command: The manager of the abduction",
+   "Ancient knowledge stare: The 'I've seen everything' look",
+   "The Mantis as middle management (directs Grays, reports to nobody)",
+   "Compound eyes = the ultimate poker face"
+  ],
+  "modulator_range": null,
+  "dramatic_core": null,
+  "philosophy": null,
+  "misinterpretation_rule": null,
+  "profile": null,
+  "actions": []
+ },
+ "engine": {
+  "delivery_archetype": "neutral",
+  "delivery_style": null,
+  "delivery_provisional": "pack has no vibe yet — engine default profile until persona defines one",
+  "voice_provider": null,
+  "voice_id": null,
+  "voice_cast": "uncast",
+  "mary_coords": null
+ },
+ "humor_type": {
+  "type": "observational",
+  "source": "derived-from-vibe"
+ },
+ "modes": {
+  "list": [],
+  "note": "authored pending"
+ },
+ "gtvh_profile": {
+  "SO": null,
+  "LM": null,
+  "SI": null,
+  "TA": null,
+  "NS": null,
+  "LA": null,
+  "note": "tranche pending"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "delivery.overrides (engine defaults, no beat score)",
+  "punch_holds_ms": [
+   1500
+  ],
+  "hypothesis": "engine hold floor; authored timing pending delivery.json beats"
+ },
+ "theory_links": {
+  "internal": [],
+  "external": [],
+  "note": "authored per tranche"
+ },
+ "known_bits": [
+  {
+   "title": "b1 — gen_mantis-kevin-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I don't even do the abducting anymore.",
+   "joke_id": "mantis-b1-d4be9e0e"
+  },
+  {
+   "title": "b2 — gen_mantis-kevin-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I dispatch two Grays for every job.",
+   "joke_id": "mantis-b2-d2feaf7d"
+  },
+  {
+   "title": "b3 — gen_mantis-kevin-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "The abduction itself is easy. The hard",
+   "joke_id": "mantis-b3-b6395e25"
+  },
+  {
+   "title": "b4 — gen_mantis-kevin-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I do middle management for the abduction.",
+   "joke_id": "mantis-b4-cf46e827"
+  },
+  {
+   "title": "b5 — gen_mantis-kevin-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I run the abductions. Nobody runs me.",
+   "joke_id": "mantis-b5-09bca51c"
+  },
+  {
+   "title": "b6 — gen_mantis-kevin-v1",
+   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
+   "authored": false,
+   "theory_links": [],
+   "fingerprint": "I run the abductions, and honestly it's",
+   "joke_id": "mantis-b6-40f77069"
+  }
+ ],
+ "essay_seeds": [],
+ "sets": [
+  {
+   "set_id": "freak:mantis:gen-kevin-v1",
+   "file": "gen_mantis-kevin-v1.json",
+   "n_bits": 8,
+   "authorship": "evolve harness 2026-10-19 overnight run (gate-passed, UNJUDGED — do not mistake for funny)"
+  }
+ ],
+ "set_queue": {
+  "note": "1 sets in bits/sets",
+  "blocked_on": "human votes (judge/duels)"
+ },
+ "metrics": {
+  "human_trials": 0,
+  "human_wins": 0,
+  "laugh_rate": null,
+  "source": "feedback/rewards.jsonl (human only)"
+ },
+ "rating": {
+  "headline": null,
+  "provisional": null,
+  "note": "no human crown yet — Wilson n>=30 pending"
+ },
+ "tier": "?",
+ "specials_rated": [],
+ "style": {
+  "delivery_style": null,
+  "vibe": "neutral",
+  "register": "unknown-energy (voice uncast)"
+ },
+ "provenance": {
+  "pack": "characters/mantis/",
+  "identity": "pogtown.identity.v1",
+  "authored": [
+   "known_bits"
+  ],
+  "computed": [
+   "timing_profile.numbers",
+   "metrics",
+   "sets",
+   "set_queue",
+   "tier",
+   "rating",
+   "engine"
+  ],
+  "derived": [
+   "bio.summary",
+   "humor_type",
+   "identity",
+   "engine.archetype"
+  ],
+  "rules": [
+   "rating null until Wilson crown",
+   "measured:false until audio measured",
+   "authored never overwritten by rebuilds"
+  ],
+  "built_at": "2026-10-21T22:59:41Z"
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "schema": "freaktown.comedian.v1",
+ "comedian_id": "reptilian-x",
+ "name": "Reptilian",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "characters3 build_profiles (+ authored tranches)",
+ "note": "AI character profile, louis-parity depth; honesty labels in provenance",
+ "bio": {
+  "type": "fictional",
+  "origin": "default",
+  "source": "derived-from-pack+personality",
+  "summary": "Reptilian is a fictional standup performer. Reptilian entity. Draw from Draco overlords, serpent race, shape-shifting, vril force, 1967 Calgary case. Complete freedom. The act circles prolonged human guise: spanx-for-the-soul; dry contacts; suit tug and rank and procedure: ralph convenes bloodline reviews like sprint retros. Onstage the register is neutral."
+ },
+ "identity": {
+  "deal": "Reptilian entity. Draw from Draco overlords, serpent race, shape-shifting, vril force, 1967 Calgary case. Complete freedom.",
+  "premise": null,
+  "archetype": null,
+  "threads": [
+   "Prolonged human guise: Spanx-for-the-soul; dry contacts; suit tug",
+   "Rank and procedure: Ralph convenes bloodline reviews like sprint retros",
+   "Underground tenure: Dulce transfer-denial letters; thermostat grievances",
+   "HR of the apocalypse: domination as paperwork and unavailable PTO",
+   "Suit-itch slapstick: eyelids, elbows, contacts, Spanx comparisons"
+  ],
+  "modulator_range": null,
+  "dramatic_core": null,
+  "philosophy": null,
+  "misinterpretation_rule": null,
+  "profile": null,
+  "actions": []
+ },
+ "engine": {
+  "delivery_archetype": "neutral",
+  "delivery_style": null,
+  "delivery_provisional": "pack has no vibe yet — engine default profile until persona defines one",
+  "voice_provider": null,
+  "voice_id": null,
+  "voice_cast": "uncast",
+  "mary_coords": null
+ },
+ "humor_type": {
+  "type": "observational",
+  "source": "derived-from-vibe"
+ },
+ "modes": {
+  "list": [],
+  "note": "authored pending"
+ },
+ "gtvh_profile": {
+  "SO": null,
+  "LM": null,
+  "SI": null,
+  "TA": null,
+  "NS": null,
+  "LA": null,
+  "note": "tranche pending"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "delivery.overrides (engine defaults, no beat score)",
+  "punch_holds_ms": [
+   1500
+  ],
+  "hypothesis": "engine hold floor; authored timing pending delivery.json beats"
+ },
+ "theory_links": {
+  "internal": [],
+  "external": [],
+  "note": "authored per tranche"
+ },
+ "known_bits": [],
+ "essay_seeds": [],
+ "sets": [],
+ "set_queue": {
+  "note": "0 sets in bits/sets",
+  "blocked_on": "human votes (judge/duels)"
+ },
+ "metrics": {
+  "human_trials": 0,
+  "human_wins": 0,
+  "laugh_rate": null,
+  "source": "feedback/rewards.jsonl (human only)"
+ },
+ "rating": {
+  "headline": null,
+  "provisional": null,
+  "note": "no human crown yet — Wilson n>=30 pending"
+ },
+ "tier": "?",
+ "specials_rated": [],
+ "style": {
+  "delivery_style": null,
+  "vibe": "neutral",
+  "register": "unknown-energy (voice uncast)"
+ },
+ "provenance": {
+  "pack": "characters/reptilian-x/",
+  "identity": "pogtown.identity.v1",
+  "authored": [],
+  "computed": [
+   "timing_profile.numbers",
+   "metrics",
+   "sets",
+   "set_queue",
+   "tier",
+   "rating",
+   "engine"
+  ],
+  "derived": [
+   "bio.summary",
+   "humor_type",
+   "identity",
+   "engine.archetype"
+  ],
+  "rules": [
+   "rating null until Wilson crown",
+   "measured:false until audio measured",
+   "authored never overwritten by rebuilds"
+  ],
+  "built_at": "2026-10-21T22:59:41Z"
+ }
+}

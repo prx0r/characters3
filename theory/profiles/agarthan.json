@@ -1,0 +1,124 @@
+{
+ "schema": "freaktown.comedian.v1",
+ "comedian_id": "agarthan",
+ "name": "Agarthan",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "characters3 build_profiles (+ authored tranches)",
+ "note": "AI character profile, louis-parity depth; honesty labels in provenance",
+ "bio": {
+  "type": "fictional",
+  "origin": "default",
+  "source": "derived-from-pack+personality",
+  "summary": "Agarthan is a fictional standup performer. Agarthan entity from the inner Earth. Tunnel network, Shambhala rivalry, Admiral Byrd, King of the World. Complete freedom. The act circles tunnel network: underground subway to the inner world and advanced technology: they have better stuff than us. Onstage the register is neutral."
+ },
+ "identity": {
+  "deal": "Agarthan entity from the inner Earth. Tunnel network, Shambhala rivalry, Admiral Byrd, King of the World. Complete freedom.",
+  "premise": null,
+  "archetype": null,
+  "threads": [
+   "Tunnel network: Underground subway to the inner world",
+   "Advanced technology: They have better stuff than us",
+   "Astral access: Reachable by astral projection",
+   "Agartha as the ultimate HOA (100+ cities, one government)",
+   "Admiral Byrd: 'I found the inner world and they're mad about bombs'"
+  ],
+  "modulator_range": null,
+  "dramatic_core": null,
+  "philosophy": null,
+  "misinterpretation_rule": null,
+  "profile": null,
+  "actions": []
+ },
+ "engine": {
+  "delivery_archetype": "neutral",
+  "delivery_style": null,
+  "delivery_provisional": "pack has no vibe yet — engine default profile until persona defines one",
+  "voice_provider": null,
+  "voice_id": null,
+  "voice_cast": "uncast",
+  "mary_coords": null
+ },
+ "humor_type": {
+  "type": "observational",
+  "source": "derived-from-vibe"
+ },
+ "modes": {
+  "list": [],
+  "note": "authored pending"
+ },
+ "gtvh_profile": {
+  "SO": null,
+  "LM": null,
+  "SI": null,
+  "TA": null,
+  "NS": null,
+  "LA": null,
+  "note": "tranche pending"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "delivery.overrides (engine defaults, no beat score)",
+  "punch_holds_ms": [
+   1500
+  ],
+  "hypothesis": "engine hold floor; authored timing pending delivery.json beats"
+ },
+ "theory_links": {
+  "internal": [],
+  "external": [],
+  "note": "authored per tranche"
+ },
+ "known_bits": [],
+ "essay_seeds": [],
+ "sets": [],
+ "set_queue": {
+  "note": "0 sets in bits/sets",
+  "blocked_on": "human votes (judge/duels)"
+ },
+ "metrics": {
+  "human_trials": 0,
+  "human_wins": 0,
+  "laugh_rate": null,
+  "source": "feedback/rewards.jsonl (human only)"
+ },
+ "rating": {
+  "headline": null,
+  "provisional": null,
+  "note": "no human crown yet — Wilson n>=30 pending"
+ },
+ "tier": "?",
+ "specials_rated": [],
+ "style": {
+  "delivery_style": null,
+  "vibe": "neutral",
+  "register": "unknown-energy (voice uncast)"
+ },
+ "provenance": {
+  "pack": "characters/agarthan/",
+  "identity": "pogtown.identity.v1",
+  "authored": [],
+  "computed": [
+   "timing_profile.numbers",
+   "metrics",
+   "sets",
+   "set_queue",
+   "tier",
+   "rating",
+   "engine"
+  ],
+  "derived": [
+   "bio.summary",
+   "humor_type",
+   "identity",
+   "engine.archetype"
+  ],
+  "rules": [
+   "rating null until Wilson crown",
+   "measured:false until audio measured",
+   "authored never overwritten by rebuilds"
+  ],
+  "built_at": "2026-10-21T22:59:40Z"
+ }
+}

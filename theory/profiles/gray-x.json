@@ -1,0 +1,208 @@
+{
+ "schema": "freaktown.comedian.v1",
+ "comedian_id": "gray-x",
+ "name": "Gray",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "characters3 build_profiles (+ authored tranches)",
+ "note": "AI character profile, louis-parity depth; honesty labels in provenance",
+ "bio": {
+  "type": "entity (UFO lore; Preston case)",
+  "origin": "canon/gray + evolve genome (Preston case, Gray Face/White Face court)",
+  "source": "authored",
+  "summary": "A gray entity who came all this way for contact and got bureaucracy. The act runs on one-sided telepathy — he hears everything you think and it is never interesting — and on a court system where the masks have opinions about lunch. The violation (alien abduction) is real; the joke is that its paperwork is worse than ours. Tell: clinical calm, the entity as victim of procedures he technically started."
+ },
+ "identity": {
+  "deal": "Gray entity. Draw from Preston case, Gray Face/White Face court, one-sided telepathy, aftereffect cascade. Complete freedom.",
+  "premise": null,
+  "archetype": null,
+  "threads": [
+   "Court of faces (introduce each mask)",
+   "One-sided telepathy (customer-service hold music)",
+   "Aftereffect cascade (migraines to marriage to manuscripts)"
+  ],
+  "modulator_range": null,
+  "dramatic_core": null,
+  "philosophy": null,
+  "misinterpretation_rule": null,
+  "profile": null,
+  "actions": []
+ },
+ "engine": {
+  "delivery_archetype": "neutral",
+  "delivery_style": null,
+  "delivery_provisional": "pack has no vibe yet — engine default profile until persona defines one",
+  "voice_provider": null,
+  "voice_id": null,
+  "voice_cast": "uncast",
+  "mary_coords": null
+ },
+ "humor_type": {
+  "type": "absurd",
+  "source": "authored",
+  "note": "deflationary absurd — cosmic scripts lose to the DMV"
+ },
+ "modes": {
+  "list": [],
+  "note": "authored pending"
+ },
+ "gtvh_profile": {
+  "SO": "cosmic dread vs mundane bureaucracy — the paranormal script (examinations, telepathy, courts) keeps colliding with hold music, pharmacy queues and HR lighting, and the mundane script always wins the frame",
+  "LM": "literalize + rigidify — one-sided telepathy is implemented as a terrible CRM; the Court of Faces runs on procedure ('argue with a mask'); dread reduced to logistics",
+  "SI": "modern institutions (banks, pharmacies, clinics, courts) transplanted into Preston-case settings — the gray is always mid-errand",
+  "TA": "systems and expectations: the institutions AND the audience's horror-movie prior (nobody in the room is harmed — the alien is the one filing)",
+  "NS": "deadpan observational one-liner with rule-of-three escalation into procedure; callbacks as case numbers (the ruling, the migraine, the ruling again)",
+  "LA": "clinical-paranormal diction ('aftereffect cascade', 'Gray Face', '2:50 AM return') dropped into retail sentences — register collision carries the violation while the surface stays administrative",
+  "note": "authored; lore via genome + canon/gray (Preston court, telepathy, aftereffects)"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "engine defaults (no delivery.json beats yet — pack gap)",
+  "punch_holds_ms": [
+   1500
+  ],
+  "hypothesis": "authored-from-spec: deflationary punch needs the short beat, not the long hold — land the mundane noun early, hold AFTER so the dread-o-meter catches up. Beats needed."
+ },
+ "theory_links": {
+  "internal": [
+   {
+    "id": "release-theory",
+    "cite": "Freud/Spencer via Attardo ch.3",
+    "claim": "tension discharge — dread as the tension source",
+    "applies_to": "mind-reading doctor / hold music: horror tension discharged into customer-service banality"
+   },
+   {
+    "id": "KR-SO",
+    "cite": "attardo.graph.v1 GTVH (script opposition)",
+    "claim": "humor requires two incompatible scripts; here they are paranormal vs procedural, and the procedural one is privileged",
+    "applies_to": "Court of Faces = HR with lighting; every mask has a lunch break"
+   },
+   {
+    "id": "bv",
+    "cite": "benign violation — BEST-BIT-THEORY.md + laugh-model bv~0.66 held-out",
+    "claim": "violation must be real but framed benign for the laugh",
+    "applies_to": "abduction-as-veterinary-work (BRAKEFORCE): violation=species, benign=care/checkup framing"
+   }
+  ],
+  "external": [],
+  "note": "authored; bv cite = repo held-out finding"
+ },
+ "known_bits": [
+  {
+   "title": "Mind-reading doctor hold music (gen_gray-voice / genome)",
+   "why_it_works": "LM literalize: telepathy is implemented as a call center, so the cosmic violation becomes a queue ('your call is important'). The diagnosis arriving before the doctor is split_knowledge flipped — we get the information early and it helps nobody. LA does the punch: 'herniated disc' in clinical graydiction.",
+   "theory_links": [
+    "KR-SO",
+    "release-theory"
+   ],
+   "authored": true
+  },
+  {
+   "title": "The Preston ruling gave me a migraine (gen_gray-evolve-v1)",
+   "why_it_works": "Lore-to-life callback: a real encounter taxonomy becomes an occupational injury. The joke is jurisdictional — cosmic events adjudicated like zoning. TA targets the paperwork of the paranormal itself; bv stays low (0.2-ish), which is why the delivery must stay flat — the room provides the dread.",
+   "theory_links": [
+    "KR-SO"
+   ],
+   "authored": true
+  },
+  {
+   "title": "Court of Faces is just HR with lighting (gen_gray-voice)",
+   "why_it_works": "status_invert inside the SO: an ancient adjudicating court is run by entities who are 'both thinking about lunch.' LM rigidify (procedure honored to absurdity — 'What am I going to do, argue with a mask?'), TA on the institution, and the signing bit closes with self-target: he signed it himself.",
+   "theory_links": [
+    "KR-SO",
+    "release-theory"
+   ],
+   "authored": true
+  }
+ ],
+ "essay_seeds": [
+  {
+   "id": "gray-essay-01",
+   "title": "Deflation as discipline: how a gray loses to hold music",
+   "thesis": "The paranormal script never gets to finish — every dread premise is executed by a procedure. Read through script opposition (paranormal vs procedural) and benign violation: the abduction is real, the paperwork is the joke.",
+   "evidence": [
+    "gen_gray-voice set",
+    "gen_gray-evolve-v1",
+    "canon/gray lore",
+    "bv held-out ~0.66"
+   ],
+   "outline": [
+    "the doctor hears first",
+    "court cases are HR",
+    "why the alien is the victim",
+    "deflation as a mode"
+   ],
+   "status": "seed"
+  }
+ ],
+ "sets": [
+  {
+   "set_id": "freak:gray-x:gen-evolve-v1",
+   "file": "gen_gray-evolve-v1.json",
+   "n_bits": 5,
+   "authorship": "evolve+harness 2026-10-16..19 (gate-passed, UNJUDGED)"
+  },
+  {
+   "set_id": "freak:gray-x:gen-voice-v1",
+   "file": "gen_gray-voice-v1.json",
+   "n_bits": 6,
+   "authorship": "evolve harness 2026-10-19 overnight run (gate-passed, UNJUDGED — do not mistake for funny)"
+  }
+ ],
+ "set_queue": {
+  "note": "2 sets in bits/sets",
+  "blocked_on": "human votes (judge/duels)"
+ },
+ "metrics": {
+  "human_trials": 0,
+  "human_wins": 0,
+  "laugh_rate": null,
+  "source": "feedback/rewards.jsonl (human only)"
+ },
+ "rating": {
+  "headline": null,
+  "provisional": null,
+  "note": "no human crown yet — Wilson n>=30 pending"
+ },
+ "tier": "?",
+ "specials_rated": [],
+ "style": {
+  "delivery_style": null,
+  "vibe": "neutral",
+  "register": "unknown-energy (voice uncast)"
+ },
+ "provenance": {
+  "pack": "characters/gray-x/",
+  "identity": "pogtown.identity.v1",
+  "authored": [
+   "bio",
+   "essay_seeds",
+   "gtvh_profile",
+   "humor_type",
+   "known_bits",
+   "theory_links"
+  ],
+  "computed": [
+   "timing_profile.numbers",
+   "metrics",
+   "sets",
+   "set_queue",
+   "tier",
+   "rating",
+   "engine"
+  ],
+  "derived": [
+   "bio.summary",
+   "humor_type",
+   "identity",
+   "engine.archetype"
+  ],
+  "rules": [
+   "rating null until Wilson crown",
+   "measured:false until audio measured",
+   "authored never overwritten by rebuilds"
+  ],
+  "built_at": "2026-10-21T22:59:40Z"
+ }
+}
