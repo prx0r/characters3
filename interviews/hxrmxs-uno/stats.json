@@ -1,0 +1,14 @@
+{
+ "episodes": 274,
+ "lineages": {
+  "Therapeutic": 58,
+  "Buddhist": 6,
+  "Realist": 54,
+  "Gurdjieffian": 56,
+  "Advaita": 40,
+  "Socratic": 60
+ },
+ "user_lines": 763,
+ "source": "prx0r/geometricengine (gh name: hxrmxs-uno-engine), uno.txt",
+ "imported": "2026-10-21"
+}
