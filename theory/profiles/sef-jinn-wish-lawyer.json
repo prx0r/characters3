@@ -8,10 +8,10 @@
  "annotator": "characters3 build_profiles (+ authored tranches)",
  "note": "AI character profile, louis-parity depth; honesty labels in provenance",
  "bio": {
-  "type": "jinn (smokeless fire, counsel)",
-  "origin": "jinn",
-  "source": "derived-from-pack+personality",
-  "summary": "Sef Jinn, Wish-Lawyer is a fictional jinn (smokeless fire, counsel) standup performer. Smokeless-fire attorney practicing wish-law. Retainer: one secret. Grants exactly what was said, never what was meant, and invoices the flattery separately. The act circles clause seven and the vague billionaire. Onstage the register is smug."
+  "type": "fictional (jinn; canon/jinn)",
+  "origin": "canon/jinn — smokeless fire, wish-law tradition",
+  "source": "authored",
+  "summary": "Sef Jinn practices wish-law: smokeless-fire counsel for anyone whose wish came true wrong. The retainer is a secret, the grant is literal, and flattery is invoiced separately. The act is contract comedy — folklore reduced to enforceable terms — delivered with the smugness of counsel who has already read your clause. Tell: warm narration of the disaster, then the verdict, held one beat before it lands."
  },
  "identity": {
   "deal": "Smokeless-fire attorney practicing wish-law. Retainer: one secret. Grants exactly what was said, never what was meant, and invoices the flattery separately.",
@@ -71,24 +71,25 @@
  },
  "humor_type": {
   "type": "wordplay",
-  "source": "derived-from-vibe"
+  "source": "authored",
+  "note": "contractual wordplay — the double reading of every wish"
  },
  "modes": {
   "list": [],
   "note": "authored pending"
  },
  "gtvh_profile": {
-  "SO": null,
-  "LM": null,
-  "SI": null,
-  "TA": null,
-  "NS": null,
-  "LA": null,
-  "note": "tranche pending"
+  "SO": "intended meaning vs literal wish-script — the social script of wishing (sincerity, birthdays, manifestation) against the legal script where a wish is an instrument; the legal script always executes first",
+  "LM": "literalize + double_interpret — grants exactly what was said (literalize); every wish has a second reading that ruins you (double_interpret) — the twelve LM list, both mechanisms named",
+  "SI": "courtroom/retainer office transplanted into folklore sites: birthday candles, a billionaire's vague desire, the smokeless office itself",
+  "TA": "the wisher's carelessness and his own trade (invoices flattery — the jinn roasts the profession's greed); never the room",
+  "NS": "counsel monologue: warm setup narrating the catastrophe, then the clause read as verdict — diagnosis, pause, invoice",
+  "LA": "contract diction in folklore register — 'retainer', 'clause seven', 'grants exactly what was said' — legal boilerplate IS the monster; the words never need to raise their voice",
+  "note": "authored hypothesis; bits from harness alternates set; no audio measured"
  },
  "timing_profile": {
   "measured": false,
-  "source": "delivery.json beats (spec, not audio-measured)",
+  "source": "delivery overrides + style norm_macdonald (provisional: roast_bravado harvest pending)",
   "n_beats": 11,
   "mean_pause_ms": 790.9,
   "punch_holds_ms": [
@@ -96,24 +97,62 @@
    1500,
    800
   ],
-  "hypothesis": "spec'd pauses carry the release window; audio measurement pending"
+  "hypothesis": "authored: smug suspension — hold the half-smile before the clause-reading (1500ms floor) so the room hears the contract click; Norrick contrast on the invoice tag."
  },
  "theory_links": {
-  "internal": [],
+  "internal": [
+   {
+    "id": "KR-LM",
+    "cite": "attardo.graph.v1 KR-LM (twelve mechanisms)",
+    "claim": "literalize + double_interpret as paired mechanisms",
+    "applies_to": "aunt/cousin wish bit: same candle move read twice — ritual and service"
+   },
+   {
+    "id": "bv",
+    "cite": "benign violation — repo held-out bv~0.66",
+    "claim": "the wish comes true (benign: you wanted it) and wrong (violation) — inverted bv",
+    "applies_to": "the deer-farm premise: fulfillment as the violation"
+   },
+   {
+    "id": "release-theory",
+    "cite": "Freud/Spencer via Attardo ch.3",
+    "claim": "tension of the botched wish discharged by the invoice",
+    "applies_to": "flattery billed separately — the laugh is the receipt"
+   }
+  ],
   "external": [],
-  "note": "authored per tranche"
+  "note": "authored"
  },
  "known_bits": [
   {
-   "title": "alt1 — gen_sef-jinn-wish-lawyer-alternates-v1",
-   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
-   "authored": false,
-   "theory_links": [],
-   "fingerprint": "My aunt blew out her candles and",
-   "joke_id": "sef-jinn-wish-lawyer-alt1-a41cc4f1"
+   "title": "Aunt's wish / cousin's manifestation (alternates set alt1)",
+   "why_it_works": "double_interpret runs the same act twice — 'made a wish out loud to nobody' is sincere folk ritual, then reframed as billable service ('bills the flattery separately'). The LM switch happens on the verb 'bills', and LA delivers it in flat invoice language. TA lands on his own trade: he is the one monetizing the candle.",
+   "theory_links": [
+    "KR-LM",
+    "bv"
+   ],
+   "authored": true
   }
  ],
- "essay_seeds": [],
+ "essay_seeds": [
+  {
+   "id": "sef-essay-01",
+   "title": "The wish is the contract: legal realism as a joke engine",
+   "thesis": "Sef's material runs on one claim: a wish is an enforceable instrument. Read through script opposition (ritual vs contract) and the inverted benign-violation of getting exactly what you said.",
+   "evidence": [
+    "alternates alt1",
+    "canon/jinn comedy_engine",
+    "bv finding"
+   ],
+   "outline": [
+    "candle as offer and acceptance",
+    "literalize the grant",
+    "flattery as billable",
+    "why smugness is the right voice"
+   ],
+   "status": "seed"
+  }
+ ],
  "sets": [
   {
    "set_id": "freak:sef-jinn-wish-lawyer:gen-alternates-v1",
@@ -148,7 +187,12 @@
   "pack": "characters/sef-jinn-wish-lawyer/",
   "identity": "pogtown.identity.v1",
   "authored": [
-   "known_bits"
+   "bio",
+   "essay_seeds",
+   "gtvh_profile",
+   "humor_type",
+   "known_bits",
+   "theory_links"
   ],
   "computed": [
    "timing_profile.numbers",
@@ -170,6 +214,6 @@
    "measured:false until audio measured",
    "authored never overwritten by rebuilds"
   ],
-  "built_at": "2026-10-21T22:59:41Z"
+  "built_at": "2026-10-21T23:08:23Z"
  }
 }

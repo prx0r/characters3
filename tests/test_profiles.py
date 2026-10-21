@@ -15,6 +15,8 @@ import build_profiles as B
 PROFILES = ROOT / "theory" / "profiles"
 TRANCHE1 = ["buddha-ultimate-deadpan", "gray-x",
             "reptilian-ralph-middle-management"]
+TRANCHE2 = ["sef-jinn-wish-lawyer", "britt-nordic-coach",
+            "kappa-kyle-cucumber-debt", "agent-black-field-visit"]
 
 # louis-ck parity: keys every profile must carry
 PARITY = ["schema", "comedian_id", "name", "bio", "identity", "engine",
@@ -91,3 +93,18 @@ def test_no_cjk_or_mojibake_in_authored():
     for slug in TRANCHE1:
         t = (PROFILES / f"{slug}.json").read_text()
         assert not any('一' <= c <= '鿿' for c in t), slug
+
+
+def test_tranche2_full_depth():
+    """Same depth bar as tranche 1; bit floor is 1+ (harness-only sets)."""
+    for slug in TRANCHE2:
+        p = json.loads((PROFILES / f"{slug}.json").read_text())
+        g = p["gtvh_profile"]
+        assert all(g.get(k) for k in ("SO", "LM", "SI", "TA", "NS", "LA")), slug
+        assert len(p["theory_links"]["internal"]) >= 3, slug
+        assert any(s.get("thesis") for s in p["essay_seeds"]), slug
+        authored = [b for b in p["known_bits"] if b.get("authored")]
+        assert authored, f"{slug} no authored known bits"
+        for b in authored:
+            assert len(b["why_it_works"]) > 120 and b.get("theory_links")
+        assert "bio" in p["provenance"]["authored"], slug

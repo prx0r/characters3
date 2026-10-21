@@ -8,10 +8,10 @@
  "annotator": "characters3 build_profiles (+ authored tranches)",
  "note": "AI character profile, louis-parity depth; honesty labels in provenance",
  "bio": {
-  "type": "MIB (field trio, employer blurred)",
-  "origin": "mib",
-  "source": "derived-from-pack+personality",
-  "summary": "Agent Black, Field Visit is a fictional MIB (field trio, employer blurred) standup performer. One third of a field trio. Visits witnesses, replays their sightings better than they tell them, and converts investigations into gardening by dessert. The act circles the dashcam and the podcast. Onstage the register is deadpan."
+  "type": "fictional (MIB; canon/mib)",
+  "origin": "canon/mib — field-intimidation lore, Clark's Extraordinary Encounters (mib entry)",
+  "source": "authored",
+  "summary": "One third of a field trio: midnight suits, shades, witnesses who open the door, see the weather, and start talking. He replays your sighting better than you told it and converts the investigation into gardening by dessert. The act is euphemism machinery — the violation is in what the language refuses to say. Tell: field-report deadpan, protocol justified at midnight, confession filed as cover story."
  },
  "identity": {
   "deal": "One third of a field trio. Visits witnesses, replays their sightings better than they tell them, and converts investigations into gardening by dessert.",
@@ -70,25 +70,26 @@
   "mary_coords": null
  },
  "humor_type": {
-  "type": "deadpan",
-  "source": "derived-from-vibe"
+  "type": "dark",
+  "source": "authored",
+  "note": "bureaucratic dark — intimidation laundered through procedure"
  },
  "modes": {
   "list": [],
   "note": "authored pending"
  },
  "gtvh_profile": {
-  "SO": null,
-  "LM": null,
-  "SI": null,
-  "TA": null,
-  "NS": null,
-  "LA": null,
-  "note": "tranche pending"
+  "SO": "cover-story script vs reality script — 'reality is airspace, the rest is a cover story about gardening': the official denial and the actual event both run, and the denial is narrated with loving procedural detail",
+  "LM": "double_interpret + rigidify — badge yes / employer NDA / Euphorbia: three institutions speak and only one word lands (double reading of every answer); protocol honored across time-of-day logic (midday would 'just look like two guys')",
+  "SI": "Ohio doorsteps at midnight, podcasts, daylight ops and gardens — suburban contact sites where the suit performs normalcy",
+  "TA": "the witnesses' credulity and his own agency's paperwork ('my badge says yes… the only word I understood') — self-target on the bureaucracy; never the room",
+  "NS": "field-report deadpan — ops narrated as justification, the punch filed as documentation (Euphorbia; gardening by dessert); callbacks as case notes (the dashcam, the podcast, the daylight op)",
+  "LA": "intelligence euphemism weaponized — 'field visit', 'daylight op', 'cover story about gardening' — the Language KR IS the violation: what the sentence refuses to say is the joke",
+  "note": "authored; canon/mib lore + threads (dashcam, podcast, daylight op)"
  },
  "timing_profile": {
   "measured": false,
-  "source": "delivery.json beats (spec, not audio-measured)",
+  "source": "delivery overrides + style norm_macdonald (provisional)",
   "n_beats": 11,
   "mean_pause_ms": 818.2,
   "punch_holds_ms": [
@@ -96,32 +97,71 @@
    1500,
    800
   ],
-  "hypothesis": "spec'd pauses carry the release window; audio measurement pending"
+  "hypothesis": "authored: report timing — facts delivered at even pace, euphemism stack accelerates, dead stop before the gardening line (1500ms hold); room laughter absorbed without breaking register."
  },
  "theory_links": {
-  "internal": [],
+  "internal": [
+   {
+    "id": "split_knowledge",
+    "cite": "attardo.graph.v1 KR-SO / dramatic irony",
+    "claim": "audience holds both scripts; witness holds one",
+    "applies_to": "midnight suits vs 'two guys in shades' — we see the protocol, Ohio sees weather"
+   },
+   {
+    "id": "KR-LM",
+    "cite": "attardo.graph.v1 KR-LM (double_interpret)",
+    "claim": "one utterance, two institutional readings",
+    "applies_to": "badge/NDA/Euphorbia — the only word he understood"
+   },
+   {
+    "id": "bv",
+    "cite": "benign violation — repo finding",
+    "claim": "intimidation is the violation; gardening is the benign frame",
+    "applies_to": "converting investigations into gardening by dessert"
+   }
+  ],
   "external": [],
-  "note": "authored per tranche"
+  "note": "authored"
  },
  "known_bits": [
   {
-   "title": "alt1 — gen_agent-black-field-visit-alternates-v1",
-   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
-   "authored": false,
-   "theory_links": [],
-   "fingerprint": "We do the suits and shades at",
-   "joke_id": "agent-black-field-visit-alt1-6a0ea937"
+   "title": "Suits at midnight vs midday (alternates alt1)",
+   "why_it_works": "rigidify applied to intimidation protocol: the mythic rule (appear at night) gets a mundane engineering justification (midday you'd just look like two guys), which inverts the scary into the professional — the darkness was for customer experience. The 'see the weather, and start talking' close is release: dread discharged into meteorology as social lubricant.",
+   "theory_links": [
+    "split_knowledge",
+    "bv"
+   ],
+   "authored": true
   },
   {
-   "title": "alt2 — gen_agent-black-field-visit-alternates-v1",
-   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
-   "authored": false,
-   "theory_links": [],
-   "fingerprint": "Mrs. My badge says yes, my employer",
-   "joke_id": "agent-black-field-visit-alt2-61ceb6c8"
+   "title": "Badge / NDA / Euphorbia (alternates alt2)",
+   "why_it_works": "double_interpret at institutional scale: three authorities answer and the intersection of their euphemisms is a plant name — 'reality is airspace, the rest is a cover story about gardening' states the SO outright while LA keeps every word official. TA self-lands ('the only word I understood'), which makes the agency as confused as the witness — split knowledge finally shared.",
+   "theory_links": [
+    "KR-LM",
+    "bv"
+   ],
+   "authored": true
   }
  ],
- "essay_seeds": [],
+ "essay_seeds": [
+  {
+   "id": "black-essay-01",
+   "title": "Cover story about gardening: euphemism as the MIB weapon",
+   "thesis": "Agent Black never says the scary thing — the joke is the language refusing it. Read through the Language KR (Attardo: the least similarity-determining resource, weaponized until it carries the whole violation).",
+   "evidence": [
+    "alternates alt1/alt2",
+    "canon/mib",
+    "KR-LM double_interpret"
+   ],
+   "outline": [
+    "midnight is a customer-experience decision",
+    "three institutions, one plant",
+    "euphemism as stage business",
+    "why the field report never breaks"
+   ],
+   "status": "seed"
+  }
+ ],
  "sets": [
   {
    "set_id": "freak:agent-black-field-visit:gen-alternates-v1",
@@ -156,7 +196,12 @@
   "pack": "characters/agent-black-field-visit/",
   "identity": "pogtown.identity.v1",
   "authored": [
-   "known_bits"
+   "bio",
+   "essay_seeds",
+   "gtvh_profile",
+   "humor_type",
+   "known_bits",
+   "theory_links"
   ],
   "computed": [
    "timing_profile.numbers",
@@ -178,6 +223,6 @@
    "measured:false until audio measured",
    "authored never overwritten by rebuilds"
   ],
-  "built_at": "2026-10-21T22:59:40Z"
+  "built_at": "2026-10-21T23:08:22Z"
  }
 }

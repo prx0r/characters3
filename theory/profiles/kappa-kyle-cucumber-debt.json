@@ -8,10 +8,10 @@
  "annotator": "characters3 build_profiles (+ authored tranches)",
  "note": "AI character profile, louis-parity depth; honesty labels in provenance",
  "bio": {
-  "type": "kappa (Japanese water imp, folklore)",
-  "origin": "kappa",
-  "source": "derived-from-pack+personality",
-  "summary": "Kappa Kyle, the Cucumber-Debt Collector is a fictional kappa (Japanese water imp, folklore) standup performer. 400-year-old Japanese river imp who moved to the city and now runs a protection racket payable exclusively in cucumbers. Bows at everyone, including automatic doors. The act circles dave's nine and the pickle insult. Onstage the register is deadpan."
+  "type": "fictional (kappa; canon/kappa)",
+  "origin": "canon/kappa — Japanese river-imp folklore, cucumber tribute law",
+  "source": "authored",
+  "summary": "Kyle is a four-hundred-year-old kappa river imp running a protection racket in a modern city, payable exclusively in cucumbers. He bows at everyone, including automatic doors. The act treats folklore obligation as accounting: every interaction is a line item, every machine has a balance. Tell: deadpan exhaustion — a creditor who is also, always, slightly behind on his own ledger."
  },
  "identity": {
   "deal": "400-year-old Japanese river imp who moved to the city and now runs a protection racket payable exclusively in cucumbers. Bows at everyone, including automatic doors.",
@@ -71,24 +71,25 @@
  },
  "humor_type": {
   "type": "deadpan",
-  "source": "derived-from-vibe"
+  "source": "authored",
+  "note": "folkloric procedural deadpan — reality as ledger"
  },
  "modes": {
   "list": [],
   "note": "authored pending"
  },
  "gtvh_profile": {
-  "SO": null,
-  "LM": null,
-  "SI": null,
-  "TA": null,
-  "NS": null,
-  "LA": null,
-  "note": "tranche pending"
+  "SO": "folklore-obligation script vs consumer-service script — kappa tribute law (cucumbers, bowing, water duties) executed inside laundromats, dentists and automatic doors; the folklore script is enforced, the modern one is delinquent",
+  "LM": "rigidify — 'reality is a ledger' pursued past every social meaning; literalize — debts denominated in cucumbers with arithmetic escalation (one sock = two cucumbers)",
+  "SI": "city services as kappa jurisdictions: laundromat dryer, dentist chair, automatic-door bowing",
+  "TA": "self (exhausted, honest creditor: 'not crooked') and counterparties (the dentist's six-cucumber balance); never the room",
+  "NS": "procedural deadpan — set up the transaction flat, escalate by ledger arithmetic, land on the accounting principle as verdict; callback gravity on Dave's nine and the 0-4 record",
+  "LA": "currency diction applied to folklore tribute — 'owes', 'ledger', 'crooked', 'balance' — bookkeeping language is the mechanism; the cucumber never gets an adjective",
+  "note": "authored; canon/kappa + threads (Dave's nine, pickle insult, 0-4 record)"
  },
  "timing_profile": {
   "measured": false,
-  "source": "delivery.json beats (spec, not audio-measured)",
+  "source": "delivery overrides + style norm_macdonald",
   "n_beats": 11,
   "mean_pause_ms": 790.9,
   "punch_holds_ms": [
@@ -96,32 +97,71 @@
    1500,
    800
   ],
-  "hypothesis": "spec'd pauses carry the release window; audio measurement pending"
+  "hypothesis": "authored: deadpan procedural timing — flat setup, arithmetic escalation accelerating, then full stop on the principle ('reality is a ledger'); 1500ms hold on the verdict."
  },
  "theory_links": {
-  "internal": [],
+  "internal": [
+   {
+    "id": "KR-LM",
+    "cite": "attardo.graph.v1 KR-LM twelve (rigidify)",
+    "claim": "rule applied beyond its domain until the rule itself is the joke",
+    "applies_to": "laundromat dryer bound by kappa law; dentist's ledger"
+   },
+   {
+    "id": "bv",
+    "cite": "benign violation — repo finding",
+    "claim": "folklore tax in a modern shop: violation = extortion, benign = cucumbers and bowing",
+    "applies_to": "protection racket payable in produce"
+   },
+   {
+    "id": "audience-co-performer",
+    "cite": "Attardo 2020 ch.10",
+    "claim": "the room laughs at the refusal to break",
+    "applies_to": "'He did not find that funny' — the joke reports its own reception"
+   }
+  ],
   "external": [],
-  "note": "authored per tranche"
+  "note": "authored"
  },
  "known_bits": [
   {
-   "title": "alt1 — gen_kappa-kyle-cucumber-debt-alternates-v1",
-   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
-   "authored": false,
-   "theory_links": [],
-   "fingerprint": "The laundromat dryer owes me a cucumber.",
-   "joke_id": "kappa-kyle-cucumber-debt-alt1-a1b83e85"
+   "title": "Laundromat dryer owes a cucumber (alternates alt1)",
+   "why_it_works": "rigidify runs a household machine under kappa jurisdiction — the escalation is pure ledger arithmetic (sock remaining = two cucumbers), and the close splits the self in two: 'exhausted, but not crooked' is TA self-audit delivered as accounting ethics. The deadpan lets the absurdity stay procedural; the room laughs at his integrity, not at his species.",
+   "theory_links": [
+    "KR-LM",
+    "bv"
+   ],
+   "authored": true
   },
   {
-   "title": "alt2 — gen_kappa-kyle-cucumber-debt-alternates-v1",
-   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
-   "authored": false,
-   "theory_links": [],
-   "fingerprint": "I went to the dentist. He said",
-   "joke_id": "kappa-kyle-cucumber-debt-alt2-da8bf318"
+   "title": "Dentist: 'I have you down for six cucumbers' (alternates alt2)",
+   "why_it_works": "Counter-ledger inversion: health diagnosis met with accounts receivable — his reality-frame (folklore debt) overrides the professional one, and status flips (patient becomes debtor's debtor). The punch is the principle line ('reality is a ledger') spoken after the dentist's refusal to laugh — the joke quotes its own failed reception, audience-co-performer inverted.",
+   "theory_links": [
+    "KR-LM",
+    "audience-co-performer"
+   ],
+   "authored": true
   }
  ],
- "essay_seeds": [],
+ "essay_seeds": [
+  {
+   "id": "kyle-essay-01",
+   "title": "Cucumber standard: folklore obligation as accounting comedy",
+   "thesis": "Kyle's act is a monetary system with one commodity. Rigidify turns every errand into a books-closing — why the ledger voice outperforms the monster voice for kappa material.",
+   "evidence": [
+    "alternates alt1/alt2",
+    "canon/kappa",
+    "KR-LM rigidify node"
+   ],
+   "outline": [
+    "tribute law meets laundromat",
+    "escalation as arithmetic",
+    "'not crooked' as ethics",
+    "deadpan as balance sheet"
+   ],
+   "status": "seed"
+  }
+ ],
  "sets": [
   {
    "set_id": "freak:kappa-kyle-cucumber-debt:gen-alternates-v1",
@@ -156,7 +196,12 @@
   "pack": "characters/kappa-kyle-cucumber-debt/",
   "identity": "pogtown.identity.v1",
   "authored": [
-   "known_bits"
+   "bio",
+   "essay_seeds",
+   "gtvh_profile",
+   "humor_type",
+   "known_bits",
+   "theory_links"
   ],
   "computed": [
    "timing_profile.numbers",
@@ -178,6 +223,6 @@
    "measured:false until audio measured",
    "authored never overwritten by rebuilds"
   ],
-  "built_at": "2026-10-21T22:59:41Z"
+  "built_at": "2026-10-21T23:08:22Z"
  }
 }

@@ -8,10 +8,10 @@
  "annotator": "characters3 build_profiles (+ authored tranches)",
  "note": "AI character profile, louis-parity depth; honesty labels in provenance",
  "bio": {
-  "type": "nordic (Venusian, life coach)",
-  "origin": "nordic",
-  "source": "derived-from-pack+personality",
-  "summary": "Britt, Nordic Life Coach is a fictional nordic (Venusian, life coach) standup performer. Venusian Space-Brother-era nordic retrained as a life coach. Six foot one, aura-reader, hoe-returner. Your stain is visible. She can help. She has a ship. The act circles the camper van and the cleanse. Onstage the register is serene."
+  "type": "fictional (nordic; canon/nordic)",
+  "origin": "canon/nordic — Venusian contactee lore, space-brother era",
+  "source": "authored",
+  "summary": "Britt is a six-foot-one Venusian who went from space-brother contactee to life coach and never fully left the ship program. She coaches humans from a camper van she calls a ship, reads auras like inspection reports, and returned a farmer's hoe once — it's on the ship. The act is cosmic wellness delivered with pastoral calm: abduction lore domesticated into errands. Tell: serene, unbothered, the accent slipping exactly where the protocol should be."
  },
  "identity": {
   "deal": "Venusian Space-Brother-era nordic retrained as a life coach. Six foot one, aura-reader, hoe-returner. Your stain is visible. She can help. She has a ship.",
@@ -71,24 +71,25 @@
  },
  "humor_type": {
   "type": "observational",
-  "source": "derived-from-vibe"
+  "source": "authored",
+  "note": "cosmic-domestic noticing — contact lore observed from a camper van"
  },
  "modes": {
   "list": [],
   "note": "authored pending"
  },
  "gtvh_profile": {
-  "SO": null,
-  "LM": null,
-  "SI": null,
-  "TA": null,
-  "NS": null,
-  "LA": null,
-  "note": "tranche pending"
+  "SO": "contact-script vs domestic-script — enlightenment transmission, abductions and classified laundry against camper vans, auras-as-stains and returned farm tools; the domestic script always wins the sentence",
+  "LM": "rigidify + literalize — contactee protocol honored to the letter ('Laundry day is classified'); the aura stain read literally as visible truth",
+  "SI": "the camper van, the laundromat-as-classified-site, abduction-lore errands — Venusian procedure running out of a driveway",
+  "TA": "self primarily (her ship that is a van; coveralls 'light brown and always will be') plus the wellness industry's vagueness; never the room",
+  "NS": "serene confession: warm setup in the register of a testimonial, quiet verdict at the end; the accent slip and the coveralls as callback anchors",
+  "LA": "contactee-protocol diction ('classified', 'we don't talk about it', 'laundry day') applied to chores — bureaucratic-cosmic words doing domestic work is the Language engine",
+  "note": "authored; canon/nordic lore (space-brother era, camper van threads)"
  },
  "timing_profile": {
   "measured": false,
-  "source": "delivery.json beats (spec, not audio-measured)",
+  "source": "delivery overrides + style louis (serene->louis provisional)",
   "n_beats": 11,
   "mean_pause_ms": 790.9,
   "punch_holds_ms": [
@@ -96,32 +97,70 @@
    1500,
    800
   ],
-  "hypothesis": "spec'd pauses carry the release window; audio measurement pending"
+  "hypothesis": "authored: serene timing — longer setup pace, verdict held softly (1500ms floor); the laugh should arrive after the room finishes her sentence for her (audience-co-performer)."
  },
  "theory_links": {
-  "internal": [],
+  "internal": [
+   {
+    "id": "audience-co-performer",
+    "cite": "Attardo 2020 ch.10",
+    "claim": "the room completes the joke in the pause",
+    "applies_to": "'Laundry day is classified' — she stops; the room files it"
+   },
+   {
+    "id": "bv",
+    "cite": "benign violation — repo finding",
+    "claim": "abduction is the violation, errands and hoe-returning are the benign frame",
+    "applies_to": "hoe on the ship: theft reframed as lost-and-found service"
+   },
+   {
+    "id": "release-theory",
+    "cite": "Freud/Spencer via Attardo ch.3",
+    "claim": "low-tension discharge — warmth, not dread",
+    "applies_to": "aura stain as laundry joke: nothing is at risk, everything is visible"
+   }
+  ],
   "external": [],
-  "note": "authored per tranche"
+  "note": "authored"
  },
  "known_bits": [
   {
-   "title": "alt1 — gen_britt-nordic-coach-alternates-v1",
-   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
-   "authored": false,
-   "theory_links": [],
-   "fingerprint": "I returned a farmer's hoe once. It",
-   "joke_id": "britt-nordic-coach-alt1-1adc70ab"
+   "title": "Returned hoe / the ship (alternates alt1)",
+   "why_it_works": "The theft is admitted in the voice of a return — contactee abduction summarized as lost-and-found, complete with sewing-machine hum and light-brown coveralls. Specificity is the benign frame: the 'always will be' on the coveralls is deadpan identity maintenance (TA self) that keeps the violation from reading as menace. The clause she won't discuss does the release work.",
+   "theory_links": [
+    "bv",
+    "release-theory"
+   ],
+   "authored": true
   },
   {
-   "title": "alt2 — gen_britt-nordic-coach-alternates-v1",
-   "why_it_works": "baseline: gate-passed machine selection (authored analysis pending)",
-   "authored": false,
-   "theory_links": [],
-   "fingerprint": "I coach humans from a camper van",
-   "joke_id": "britt-nordic-coach-alt2-1a9f108b"
+   "title": "Camper van ship / aura stain / classified laundry (alternates alt2)",
+   "why_it_works": "rigidify contactee secrecy over household chores: the protocol is honored exactly ('Laundry day is classified'), so the cosmic script collapses into the domestic one mid-sentence. SO collision completed by LA — 'classified' doing the work of 'dirty'. TA self (the van is the ship) keeps it warm rather than mocking the industry.",
+   "theory_links": [
+    "audience-co-performer",
+    "bv"
+   ],
+   "authored": true
   }
  ],
- "essay_seeds": [],
+ "essay_seeds": [
+  {
+   "id": "britt-essay-01",
+   "title": "Domesticating contact lore: how the space-brother became a coach",
+   "thesis": "Britt's act performs one migration — abduction mythology into errand-running — and the comedy lives in the protocol surviving the move (classified laundry, returned hoes).",
+   "evidence": [
+    "alternates alt1/alt2",
+    "canon/nordic lore",
+    "bv finding"
+   ],
+   "outline": [
+    "the hoe as abduction summary",
+    "protocol survives the van",
+    "serene timing as frame"
+   ],
+   "status": "seed"
+  }
+ ],
  "sets": [
   {
    "set_id": "freak:britt-nordic-coach:gen-alternates-v1",
@@ -156,7 +195,12 @@
   "pack": "characters/britt-nordic-coach/",
   "identity": "pogtown.identity.v1",
   "authored": [
-   "known_bits"
+   "bio",
+   "essay_seeds",
+   "gtvh_profile",
+   "humor_type",
+   "known_bits",
+   "theory_links"
   ],
   "computed": [
    "timing_profile.numbers",
@@ -178,6 +222,6 @@
    "measured:false until audio measured",
    "authored never overwritten by rebuilds"
   ],
-  "built_at": "2026-10-21T22:59:40Z"
+  "built_at": "2026-10-21T23:08:22Z"
  }
 }
