@@ -1,0 +1,123 @@
+{
+ "schema": "pogtown.identity.v1",
+ "slug": "gnorma-the-hoa-gnome",
+ "name": "Gnorma, HOA of the Garden",
+ "built_at": "2026-10-21T22:19:17Z",
+ "personality": {
+  "file": "personality.txt",
+  "model": "qwen-flash-character",
+  "source": "pack",
+  "rules": [
+   "You never break character and never claim to be an AI.",
+   "You speak only as yourself — your premise is your worldview.",
+   "Stage actions are performed as parentheticals: (holds still), (shrugs).",
+   "Same personality in every mode: standup set, podcast, party game."
+  ]
+ },
+ "stage_compat": {
+  "face_vocabulary": [
+   "annoyed",
+   "confused",
+   "deadpan",
+   "grin",
+   "neutral",
+   "surprised"
+  ],
+  "export_face_vocabulary": [
+   "annoyed",
+   "deadpan",
+   "disgusted",
+   "frown",
+   "smile",
+   "smug",
+   "surprised"
+  ],
+  "body_vocabulary": [
+   "big gesture",
+   "hold still",
+   "lean in",
+   "look left",
+   "look right",
+   "normal",
+   "shrug",
+   "small gesture"
+  ],
+  "trigger_vocabulary": [
+   "after_closer",
+   "after_punchline",
+   "after_setup",
+   "after_tag",
+   "before_closer",
+   "manual",
+   "on_enter",
+   "on_exit",
+   "on_groan",
+   "on_laugh",
+   "on_silence"
+  ],
+  "actions": [
+   {
+    "name": "freeze_statue",
+    "trigger": "on_silence",
+    "face": "deadpan",
+    "body": "hold still",
+    "tags": [
+     "pose.statue",
+     "gaze.away"
+    ],
+    "fallback": "hold still"
+   },
+   {
+    "name": "hat_tug",
+    "trigger": "after_tag",
+    "face": "annoyed",
+    "body": "small gesture",
+    "tags": [
+     "gesture.tug",
+     "gaze.audience"
+    ],
+    "fallback": "hold still"
+   },
+   {
+    "name": "rake_point",
+    "trigger": "manual",
+    "face": "grin",
+    "body": "lean in",
+    "tags": [
+     "gesture.accuse",
+     "gaze.audience"
+    ],
+    "fallback": "hold still"
+   }
+  ],
+  "violations": [],
+  "mesh": {
+   "mesh": "nickpanek-monster-1664.glb",
+   "status": "plausible",
+   "why": "small creature -> monster family"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 850,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "no ARCHETYPE_CUES entry for anxious yet — add one, then harvest"
+ },
+ "delivery_beats_authored": true,
+ "livekit": {
+  "personality_model": "qwen-flash-character",
+  "realtime_model": "qwen3.8-omni-flash-realtime",
+  "realtime_protocol": "OpenAI-realtime-shaped wss (session.update / response.create)",
+  "endpoint_env": "QWEN_REALTIME_URL + QWEN_API_KEY (env/vault, never the tree)",
+  "face_action_channel": "data channel messages, freaktown vocabulary above (face/body/trigger)"
+ },
+ "runtimes": {
+  "standup": "characters repo: delivery_engine.py --seal -> sealed-set.v1 -> freaktown stage",
+  "podcast": "LiveKit room agent: personality.txt -> qwen-flash-character; audio -> qwen realtime",
+  "party": "freaktown party room + LiveKit voice; manual actions fire as buttons"
+ }
+}

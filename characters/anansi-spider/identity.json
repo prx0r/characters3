@@ -1,0 +1,115 @@
+{
+ "schema": "pogtown.identity.v1",
+ "slug": "anansi-spider",
+ "name": "Anansi, Spider",
+ "built_at": "2026-10-21T22:19:17Z",
+ "personality": {
+  "file": "personality.txt",
+  "model": "qwen-flash-character",
+  "source": "pack",
+  "rules": [
+   "You never break character and never claim to be an AI.",
+   "You speak only as yourself — your premise is your worldview.",
+   "Stage actions are performed as parentheticals: (holds still), (shrugs).",
+   "Same personality in every mode: standup set, podcast, party game."
+  ]
+ },
+ "stage_compat": {
+  "face_vocabulary": [
+   "annoyed",
+   "confused",
+   "deadpan",
+   "grin",
+   "neutral",
+   "surprised"
+  ],
+  "export_face_vocabulary": [
+   "annoyed",
+   "deadpan",
+   "disgusted",
+   "frown",
+   "smile",
+   "smug",
+   "surprised"
+  ],
+  "body_vocabulary": [
+   "big gesture",
+   "hold still",
+   "lean in",
+   "look left",
+   "look right",
+   "normal",
+   "shrug",
+   "small gesture"
+  ],
+  "trigger_vocabulary": [
+   "after_closer",
+   "after_punchline",
+   "after_setup",
+   "after_tag",
+   "before_closer",
+   "manual",
+   "on_enter",
+   "on_exit",
+   "on_groan",
+   "on_laugh",
+   "on_silence"
+  ],
+  "actions": [
+   {
+    "name": "leg_count",
+    "trigger": "on_emphasis",
+    "face": "smug",
+    "body": "expansive",
+    "tags": [
+     "gesture.count",
+     "gaze.audience"
+    ],
+    "fallback": "hold still"
+   },
+   {
+    "name": "web_spin",
+    "trigger": "before_closer",
+    "face": "confident",
+    "body": "lean in",
+    "tags": [
+     "gesture.spin",
+     "gaze.audience"
+    ],
+    "fallback": "hold still"
+   }
+  ],
+  "violations": [
+   "leg_count: trigger 'on_emphasis' not in closed set; body 'expansive' not in vocab",
+   "web_spin: face 'confident' not in vocab"
+  ],
+  "mesh": {
+   "mesh": "quaternius_cc0-spider-1368.glb",
+   "status": "confident",
+   "why": "anansi IS a spider"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 700,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "pack has no vibe yet — engine default profile until persona defines one"
+ },
+ "delivery_beats_authored": false,
+ "livekit": {
+  "personality_model": "qwen-flash-character",
+  "realtime_model": "qwen3.8-omni-flash-realtime",
+  "realtime_protocol": "OpenAI-realtime-shaped wss (session.update / response.create)",
+  "endpoint_env": "QWEN_REALTIME_URL + QWEN_API_KEY (env/vault, never the tree)",
+  "face_action_channel": "data channel messages, freaktown vocabulary above (face/body/trigger)"
+ },
+ "runtimes": {
+  "standup": "characters repo: delivery_engine.py --seal -> sealed-set.v1 -> freaktown stage",
+  "podcast": "LiveKit room agent: personality.txt -> qwen-flash-character; audio -> qwen realtime",
+  "party": "freaktown party room + LiveKit voice; manual actions fire as buttons"
+ }
+}
