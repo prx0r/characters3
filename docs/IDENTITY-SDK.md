@@ -63,9 +63,20 @@ Agent shape (when `pip install livekit-agents` lands in the runtime box):
    `{"face":"deadpan","body":"hold still","trigger":"after_punchline","action":"koan_hold"}`
    — always within the closed vocab, else the stage would degrade anyway.
 
-**Status:** identity bundles are built and committed; the LiveKit agent
-runtime itself is NOT yet installed or run on this box (no livekit
-package). Config is spec-complete, execution pending.
+**Status:** identity bundles built + committed. LiveKit runtime
+**installed on the box** in a dedicated venv (PEP 668 — not system pip):
+
+```
+/root/venvs/livekit/   livekit-agents 1.8.8 + livekit-plugins-openai 1.8.8
+```
+
+Verified: `RealtimeModel(model="qwen3.8-omni-flash-realtime",
+base_url="https://ws-…maas.aliyuncs.com/api-ws/v1", api_key=QWEN_API_KEY
+from env)` constructs cleanly — the Qwen OpenAI-shaped wiring the config
+describes is real. Pending for a live session: LiveKit server
+(`LIVEKIT_URL` + `LIVEKIT_TOKEN`), the agent entrypoint itself, and a
+room test. Run the agent from the venv:
+`/root/venvs/livekit/bin/python <agent>.py`.
 
 ## Known issues (open, honest)
 
