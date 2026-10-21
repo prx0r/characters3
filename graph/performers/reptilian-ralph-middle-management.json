@@ -1,0 +1,338 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "reptilian-ralph-middle-management",
+ "name": "Reptilian Ralph, Middle Management",
+ "note": "AI character graph — same schema as stage comics, author_type ai. Derived fields labeled; gaps named.",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "build_ai_graphs (derived from pack + ledger)",
+ "identity": {
+  "deal": "Seven-foot shape-shifting reptilian stuck in middle management of the global takeover. Runs bloodline meetings, hates his human suit, misses the warm underground base.",
+  "premise": "Burnt-out reptilian elite doing a compliance tour among the humans he supposedly rules",
+  "archetype": "identity_contradiction",
+  "philosophy": {
+   "ontology": "Reality is a hierarchy of competing organisms and institutions.",
+   "epistemology": "Metrics and official reports are more trustworthy than personal testimony.",
+   "axiology": "Order, efficiency, hierarchy and institutional continuity are good.",
+   "causality": "All problems result from insufficient management.",
+   "agency": "A sufficiently organised institution can control almost anything."
+  },
+  "dramatic_core": {
+   "want": "the annual employee wellness award",
+   "fear": "exposure on camera (suit drops, eyes slit)",
+   "need": "one transfer approval to Dulce",
+   "self_model": "compassionate leader running a caring organization",
+   "blind_spots": [
+    "own monstrousness",
+    "suit slips when lying"
+   ]
+  },
+  "misinterpretation_rule": "Treats moral criticism as a workflow improvement request",
+  "expression": {
+   "default_register": "corporate optimism",
+   "emotional_restraint": "high"
+  },
+  "modulator_range": [
+   "angry",
+   "relaxed",
+   "condescending",
+   "exhausted",
+   "smug",
+   "paranoid",
+   "drunk_on_power"
+  ],
+  "threads": [
+   "Dulce transfer denial",
+   "compliance quiz failure",
+   "thermostat war"
+  ],
+  "profile": {
+   "energy": 0.55,
+   "eye_contact": 0.9,
+   "gesture_frequency": 0.25,
+   "movement": 0.3,
+   "pace": 0.88,
+   "punchline_hold_ms": 1200
+  }
+ },
+ "engine": {
+  "delivery_archetype": "deadpan",
+  "archetype_def": "corporate-calm, condescending, breaks into cold-blooded honesty when flustered",
+  "archetype_delivery": null,
+  "mary_coords": null,
+  "voice_provider": "edge-tts",
+  "voice_clone_id": null,
+  "measured_acoustics": null
+ },
+ "bio": {
+  "type": "fictional",
+  "origin": "canon/reptilian"
+ },
+ "sets": [
+  {
+   "set_id": "freak:reptilian-ralph-middle-management:20261017-083234",
+   "file": "20261017-083322_freak_reptilian-ralph-middle-management.json",
+   "n_bits": 3,
+   "words": 205,
+   "authorship": ""
+  },
+  {
+   "set_id": "freak:reptilian-ralph-middle-management:20261017-083528",
+   "file": "20261017-083556_freak_reptilian-ralph-middle-management.json",
+   "n_bits": 3,
+   "words": 147,
+   "authorship": ""
+  },
+  {
+   "set_id": "freak:reptilian-ralph-middle-management:gen-alternates-v1",
+   "file": "gen_reptilian-ralph-middle-management-alternates-v1.json",
+   "n_bits": 1,
+   "words": 28,
+   "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)"
+  },
+  {
+   "set_id": "freak:reptilian-ralph-middle-management:20261017-083528",
+   "file": "latest_freak_reptilian-ralph-middle-management.json",
+   "n_bits": 3,
+   "words": 147,
+   "authorship": ""
+  }
+ ],
+ "set_queue": {
+  "note": "22 ledger bits; 3 human trials so far",
+  "blocked_on": "human votes (judge.py / duels)"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "freaks/reptilian-ralph-middle-management/delivery.json (delivery SPEC, not audio-measured)",
+  "n_beats": 11,
+  "mean_pause_ms": 790.9,
+  "punch_holds_ms": [
+   1500,
+   1500,
+   800
+  ],
+  "word_count": 145,
+  "hypothesis": "spec'd pauses: punch holds carry the release window; audio measurement pending (STATUS: render + align)"
+ },
+ "gtvh_profile": {
+  "SO": "Burnt-out reptilian elite doing a compliance tour among the humans he supposedly rules",
+  "LM": "rigidity, displacement, identity_contradiction",
+  "TA": null,
+  "NS": null,
+  "derived_from": "character.json premise + preferred_theories + canon angles",
+  "note": "derived from spec fields, not authored; TA/NS gap flagged"
+ },
+ "lore_sources": {
+  "canon": "canon/reptilian",
+  "behind": [
+   "lore:clark:reptoids",
+   "lore:almanac:66-draconians",
+   "lore:almanac:70-e-all-reptoids",
+   "lore:almanac:73-repterrians",
+   "lore:almanac:74-reptile-imposter-humans",
+   "lore:almanac:78-serpent-beings",
+   "lore:almanac:79-small-reptoids",
+   "world:galactic"
+  ],
+  "evidence": "graph.EXTRA_LORE (genome draw-lines + canon summaries)"
+ },
+ "theory_links": {
+  "internal": [],
+  "note": "character-specific links after first measured set"
+ },
+ "known_bits": [
+  {
+   "title": "human-positive bit (52w)",
+   "why_it_works": "LB 0.21 n=1",
+   "fingerprint": "I run bloodline meetings every quarter. My",
+   "tier": "human-positive",
+   "wins": 1,
+   "trials": 1
+  },
+  {
+   "title": "human-positive bit (42w)",
+   "why_it_works": "LB 0.21 n=1",
+   "fingerprint": "They gave me the wellness award. Then",
+   "tier": "human-positive",
+   "wins": 1,
+   "trials": 1
+  },
+  {
+   "title": "gate-passed bit (45w)",
+   "why_it_works": "passed, band-dist 0.015",
+   "fingerprint": "I had to do the annual ethics",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (61w)",
+   "why_it_works": "passed, band-dist 0.023",
+   "fingerprint": "I'm a lizard in middle management. Nobody's",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (67w)",
+   "why_it_works": "passed, band-dist 0.024",
+   "fingerprint": "My manager scheduled a meeting to discuss",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (68w)",
+   "why_it_works": "passed, band-dist 0.027",
+   "fingerprint": "I'm Ralph. I run bloodline meetings. My",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (53w)",
+   "why_it_works": "passed, band-dist 0.029",
+   "fingerprint": "They nominated annual employee wellness award. Me.",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (56w)",
+   "why_it_works": "passed, band-dist 0.049",
+   "fingerprint": "My manager asked me to circle back",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (73w)",
+   "why_it_works": "passed, band-dist 0.060",
+   "fingerprint": "I asked my assistant for a report",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (84w)",
+   "why_it_works": "passed, band-dist 0.095",
+   "fingerprint": "They gave me the wellness award for",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (56w)",
+   "why_it_works": "passed, band-dist 0.282",
+   "fingerprint": "Middle management is just being the person",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (67w)",
+   "why_it_works": "passed, band-dist 0.615",
+   "fingerprint": "My boss asked me to circle back",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (28w)",
+   "why_it_works": "passed",
+   "fingerprint": "My human suit slipped at the eyelid",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (50w)",
+   "why_it_works": "passed",
+   "fingerprint": "Every year HR makes us fill out",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (17w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "Stronger reversal: the reveal flips the power",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (56w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "My bloodline has ruled this planet for",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (14w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "The nap/succession idea is good but the",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (18w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "Escalation: the premise gets worse / bigger",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (53w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "My bloodline has ruled this planet for",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (28w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "Delivery-only: keep the SAME core joke and",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (47w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "My bloodline has run this planet for",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "human-rejected bit (53w)",
+   "why_it_works": "0/1 landed",
+   "fingerprint": "My bloodline has run this planet for",
+   "tier": "human-rejected",
+   "wins": 0,
+   "trials": 1
+  }
+ ],
+ "essay_seeds": [],
+ "provenance": {
+  "character_pack": "freaks/reptilian-ralph-middle-management/character.json",
+  "delivery": "freaks/reptilian-ralph-middle-management/delivery.json",
+  "canon": "canon/reptilian/",
+  "ledger": "theory/ledger.py rank join (content hash)",
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines (fingerprints ≤7 words)",
+   "missing = null, never assumed",
+   "derived fields labeled derived; authored prose only where quoted from character spec",
+   "human verdicts dispose; gate scores propose"
+  ],
+  "missing": []
+ }
+}

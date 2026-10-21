@@ -1,0 +1,447 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "chris-rock",
+ "name": "Chris Rock",
+ "note": "STAGE PERSONA graph. Graph-only (no personality.md yet). 0 sets measured — all hypothesis. Fingerprints ≤7 words, no verbatim lines.",
+ "version": 1,
+ "created": "2026-10-15",
+ "annotator": "mimo-v2.5",
+ "identity": {
+  "deal": "Rhythm preacher who paces the stage like a heart attack and makes the room say 'I know, right' out loud before they can stop themselves.",
+  "premise": "A high-strung philosopher who treats every social observation like a case he's prosecuting in front of a jury that's already leaning his way.",
+  "archetype": "rhythm_prosecutor",
+  "awareness": "aware",
+  "awareness_note": "Fully aware, fully in control, but the persona runs HOT — unlike Seinfeld's cool auditor or Chappelle's calm king. Rock's awareness is a prosecution strategy, not a distance.",
+  "philosophy": {
+   "ontology": "The world runs on unexamined contradictions and somebody has to pace back and point at them.",
+   "epistemology": "Everybody sees it; the trick is the rhythm that makes them admit it.",
+   "axiology": "The loudest true thing beats the quietest clever thing.",
+   "causality": "A contradiction named at the right tempo becomes undeniable.",
+   "agency": "One comic pacing hard enough can make a room uncomfortable with its own agreement."
+  },
+  "dramatic_core": {
+   "want": "the room's vocal agreement — the 'I know' moment",
+   "fear": "the quiet room, the unexamined nod",
+   "need": "one more contradiction dragged into the light at full volume",
+   "self_model": "the neighborhood's designated megaphone",
+   "blind_spots": [
+    "unknown — needs multi-set observation"
+   ]
+  },
+  "misinterpretation_rule": "Treats any social contradiction as an unfinished trial: if he paces it out loud fast enough, the room becomes the jury and the verdict is the laugh.",
+  "contradictions": [
+   "the class clown who became the culture's lecturer",
+   "hot delivery carrying cold analysis",
+   "preaches to the choir and makes the choir sing along without noticing"
+  ],
+  "status_model": {
+   "desired_status": "the voice that names it first",
+   "felt_status": "legend still pacing like he's got something to prove"
+  },
+  "expression": {
+   "default_register": "prosecutorial-rhythm",
+   "emotional_restraint": "low — the energy is the weapon",
+   "tells": [
+    "the pacing",
+    "the stammer-start that becomes the point",
+    "the lean-in on the killer"
+   ]
+  },
+  "modulator_range": [
+   "prosecutorial",
+   "righteous",
+   "weary-legend",
+   "mock-shock",
+   "conversational"
+  ],
+  "profile": {
+   "energy": 0.75,
+   "pace": "fast, staccato, hard stops on the punch",
+   "gesture_frequency": 0.7,
+   "punchline_hold_ms": 800,
+   "note": "hypothesis"
+  },
+  "operator_priors": {
+   "double_interpret": 0.85,
+   "status_invert": 0.75,
+   "split_knowledge": 0.7,
+   "character_violation": 0.6,
+   "juxtapose": 0.55,
+   "status": "authored hypothesis — 0 sets"
+  },
+  "preferred_theories": [
+   "bisociation",
+   "status_reversal",
+   "audience_alliance",
+   "juxtaposition"
+  ],
+  "threads": [
+   "the contradiction nobody names",
+   "the gap between what we say and what we do",
+   "the neighborhood vs the world"
+  ],
+  "problem_space": [
+   "race and American double standards",
+   "relationships as economic transactions",
+   "the media cycle",
+   "the neighborhood as microcosm",
+   "parenting and hypocrisy"
+  ]
+ },
+ "engine": {
+  "voice_clone_id": null,
+  "delivery_archetype": "mock_indignant_engine",
+  "archetype_def": "per archetypes.json — grievance engine; offense as rocket fuel. Chappelle/Rock adjacent but Rock is higher-energy, more rhythmic, less story-driven than the archetype's Casey/Ari examples.",
+  "measured_acoustics": null,
+  "jev_state": {
+   "status": "NOT RUN"
+  },
+  "world_transfer_proven": null
+ },
+ "sets": [],
+ "set_queue": {
+  "note": "First ingest: Bring the Pain or Tambourine era — the rhythm-prosecutor at full power. Word-timed ASR needed.",
+  "blocked_on": "audio access"
+ },
+ "timing_profile": {
+  "measured": null,
+  "hypothesis": "sprints and stammers INTO the point (fast, high-energy, the stammer-as-build), hard-stop on the punch, short hold for the 'I know' wave, restart before it dies. The rhythm is percussive — closer to a rapper's cadence than a storyteller's. Contrast Chappelle (holds forever after the point) — Rock fills the hold with the next attack.",
+  "stop_start": [
+   "start: the prosecution begins, pace hot",
+   "stammer-build: the digression IS the rhythm",
+   "stop: the punch lands hard",
+   "hold: short — just long enough for the 'I know' wave",
+   "restart: next charge, before the wave dies"
+  ]
+ },
+ "gtvh_profile": {
+  "SO": "normal/absurd — social edition: the normal is absurd once prosecuted at tempo",
+  "LM": "double_interpret + juxtapose — the contradiction is usually two true things held side by side until they indict each other",
+  "TA": "peers / powerful / social groups — prosecutes systems and in-groups; self-targeting is rare and strategic",
+  "NS": "monologue-list / anecdote — rapid-fire examples building to the verdict",
+  "note": "authored hypothesis"
+ },
+ "theory_links": {
+  "internal": [
+   {
+    "id": "double_interpret",
+    "cite": "operator registry (→ bisociation)",
+    "claim": "two true things held in one frame until they collide",
+    "applies_to": "the prosecution's core evidence"
+   },
+   {
+    "id": "mock_indignant_engine",
+    "cite": "audition/voicelab/archetypes.json",
+    "claim": "grievance engine; fast (200+ wpm), sprints INTO laughs",
+    "applies_to": "delivery band (hypothesis for Rock)"
+   }
+  ],
+  "external": [
+   {
+    "id": "talking-funny",
+    "cite": "HBO Talking Funny (2011)",
+    "claim": "Rock's own craft analysis of Seinfeld/Louis/Chappelle generation; his stated influences and his 'premise clarity' doctrine (quoted in louistheory1)",
+    "applies_to": "lineage positioning — Rock as the bridge between Carlin's rhetoric and Chappelle's story"
+   }
+  ]
+ },
+ "essay_seeds": [
+  {
+   "id": "rock-essay-01",
+   "title": "Sprint into the 'I know': Rock's timing as percussion",
+   "thesis": "Rock's timing doctrine is the percussive one: fast prosecution, stammer-build, hard-stop punch, SHORT hold (just long enough for the room's 'I know' wave), restart before the wave dies. Where Chappelle holds the silence and lets the room indict itself, Rock fills the hold with the next attack. Same social material, opposite relationship to the room's agreement — Chappelle wants the room to arrive at the verdict alone; Rock wants to hear them say it.",
+   "evidence": [
+    "timing_profile.hypothesis",
+    "identity.dramatic_core.want",
+    "axes.json timing quadrant"
+   ],
+   "outline": [
+    "the five timing doctrines, restated with Rock as the percussive fifth",
+    "the stammer-as-build (is it craft or accident? both)",
+    "why short holds suit a prosecution",
+    "the Talking Funny panel as Rock-the-craftsman vs Rock-the-performer"
+   ],
+   "status": "seed"
+  }
+ ],
+ "provenance": {
+  "persona": "authored from public reputation (Talking Funny panel, genre tags: observational/rhythmic/social, Grammy/Broadway career, 'premise clarity' quote in louistheory1)",
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines",
+   "0 sets = all hypothesis"
+  ],
+  "sets_observed": 0,
+  "next": "ingest prosecutor-rhythm set; the stammer-build and hold-length are the things to measure"
+ },
+ "bio": {
+  "wikidata_id": "Q4109",
+  "dob": "1965-02-07",
+  "dod": null,
+  "birthplace": "Andrews",
+  "citizenship": "United States",
+  "occupations": [
+   "screenwriter",
+   "film director",
+   "comedian",
+   "film actor"
+  ],
+  "source": "wikidata (CC0)"
+ },
+ "rating": {
+  "headline": 94.1,
+  "coverage": "FULL",
+  "provisional": null,
+  "boards": {
+   "house": {
+    "rank": 3,
+    "pct": 94.1,
+    "sweep": [
+     2,
+     3
+    ]
+   },
+   "consensus": {
+    "rank": 3,
+    "ref": true
+   },
+   "canon": {
+    "rank": 4,
+    "ref": true
+   },
+   "peoples": {
+    "rank": 12,
+    "wr": 7.97,
+    "ref": true
+   },
+   "era": {
+    "rank": 6,
+    "ref": true
+   }
+  },
+  "interval": {
+   "lo": 2,
+   "hi": 3
+  },
+  "updated": "2026-10-18T17:13:19Z",
+  "pipeline": "rate/v1"
+ },
+ "metrics": {
+  "legacy": 99.5,
+  "legacy_era": 98.8,
+  "audience": 75.0,
+  "popularity": 97.6,
+  "theory": 62.5,
+  "heat": null,
+  "gap_value": 0.226,
+  "overrated": "overrated",
+  "canon_lag": -0.245
+ },
+ "modes": {
+  "signature": "observational",
+  "signature_title": "rhythm prosecutor",
+  "repertoire": {
+   "observational": 0.6,
+   "surreal": 0.2,
+   "roast": 0.2
+  },
+  "n_modes": 3
+ },
+ "style": {
+  "words": 129392,
+  "profanity_rate": 0.0207,
+  "question_rate": 0.193,
+  "i_rate": 0.031,
+  "vocab_div": 0.034,
+  "avg_sent_len": 9.0,
+  "top_words": [
+   "shit",
+   "fuck",
+   "people",
+   "some",
+   "fucking",
+   "black",
+   "white",
+   "women",
+   "good",
+   "time",
+   "want",
+   "woman"
+  ]
+ },
+ "humor_type": {
+  "primary": "observational",
+  "secondary": "surreal",
+  "scores": {
+   "observational": 0.5,
+   "surreal": 0.17,
+   "roast": 0.17
+  },
+  "method": "archetype+theories+transcript"
+ },
+ "recognition": {
+  "comedy_central_2004": 5,
+  "rolling_stone_2017": 5,
+  "trajectory_2004_2017": "stable",
+  "awards": [
+   {
+    "award": "Primetime Emmy Award for Outstanding Writing for a Variety Special",
+    "year": null
+   },
+   {
+    "award": "Primetime Emmy Award for Outstanding Writing for a Variety Series",
+    "year": null
+   }
+  ],
+  "paste_2017": 2
+ },
+ "generation": {
+  "id": "eighties-boom",
+  "label": "Eighties boom",
+  "span": "1980s",
+  "note": "Comedy boom → HBO half-hours → sitcoms. Clean/dirty split, Def Jam, SNL pipeline.",
+  "scene": "club",
+  "breakthrough": "Def Jam late-80s → SNL 1990 → Bring the Pain 1996"
+ },
+ "tier": "king",
+ "region": "us",
+ "continent": "north-america",
+ "known_bits": [
+  {
+   "title": "The contradiction nobody names",
+   "why_it_works": "Names a thing everyone knows but nobody says. split_knowledge: the room has the knowledge; he's the one who says it out loud. The laugh is the alliance signal — 'yes, that's true, and I'm glad someone said it.'",
+   "theory_links": [
+    "split_knowledge",
+    "status_reversal"
+   ]
+  },
+  {
+   "title": "The stammer-build",
+   "why_it_works": "The stammer is not a flaw — it's the windup. The room leans in because he seems to be losing his train of thought; the hard-stop punch arrives where they didn't expect. garden_path: the stammer is the misdirection.",
+   "theory_links": [
+    "garden_path"
+   ]
+  },
+  {
+   "title": "fight in front of white people",
+   "why_it_works": "Quoted back by 3 distinct fans (3 occurrences): transmitted material — survived the audience-to-comment journey intact.",
+   "theory_links": [
+    "quote_back"
+   ],
+   "source": "F3 fanbase mining",
+   "status": "measured-fanquoted"
+  },
+  {
+   "title": "if you have parents",
+   "why_it_works": "Quoted back by 3 distinct fans (3 occurrences): transmitted material — survived the audience-to-comment journey intact.",
+   "theory_links": [
+    "quote_back"
+   ],
+   "source": "F3 fanbase mining",
+   "status": "measured-fanquoted"
+  }
+ ],
+ "specials_rated": [
+  {
+   "title": "Chris Rock: Bigger & Blacker",
+   "year": 1999,
+   "imdb_id": "tt0206636",
+   "imdb_rating": 8.0,
+   "imdb_votes": 7833,
+   "transcript": "chris-rock-bigger-blacker-1999-full-transcript.txt",
+   "standout": true
+  },
+  {
+   "title": "Chris Rock: Never Scared",
+   "year": 2004,
+   "imdb_id": "tt0405832",
+   "imdb_rating": 8.0,
+   "imdb_votes": 5889,
+   "transcript": "chris-rock-never-scared-2004-full-transcript.txt"
+  },
+  {
+   "title": "Saturday",
+   "year": 1995,
+   "imdb_id": "tt0156983",
+   "imdb_rating": 7.3,
+   "imdb_votes": 383,
+   "transcript": "chris-rocks-monologue-saturday-night-live-1996.txt"
+  },
+  {
+   "title": "Chris Rock Total Blackout: The Tamborine Extended Cut",
+   "year": 2021,
+   "imdb_id": "tt13935770",
+   "imdb_rating": 7.0,
+   "imdb_votes": 722,
+   "transcript": "chris-rock-tamborine-transcript.txt"
+  },
+  {
+   "title": "American Dream?",
+   "year": 2005,
+   "imdb_id": "tt0775413",
+   "imdb_rating": 6.9,
+   "imdb_votes": 128,
+   "transcript": "hris-ock-ever-cared-2004-ranscript.txt"
+  },
+  {
+   "title": "Nô",
+   "year": 1998,
+   "imdb_id": "tt0128370",
+   "imdb_rating": 6.9,
+   "imdb_votes": 456,
+   "transcript": "hris-ock-igger-lacker-1999-ranscript.txt"
+  },
+  {
+   "title": "Chris Rock: Selective Outrage",
+   "year": 2023,
+   "imdb_id": "tt23571908",
+   "imdb_rating": 6.8,
+   "imdb_votes": 12359,
+   "transcript": "chris-rock-selective-outrage-transcript.txt"
+  },
+  {
+   "title": "W.",
+   "year": 2008,
+   "imdb_id": "tt1175491",
+   "imdb_rating": 6.3,
+   "imdb_votes": 51788,
+   "transcript": "hris-ock-ill-he-essenger-ondon-ew-ork-ohannesburg-2008-ranscript.txt"
+  },
+  {
+   "title": "Nö",
+   "year": 2021,
+   "imdb_id": "tt9409660",
+   "imdb_rating": 6.2,
+   "imdb_votes": 220,
+   "transcript": "hris-ock-onologue-2020-ranscript.txt"
+  }
+ ],
+ "youtube": {
+  "clips": 6,
+  "total_views": 331136253,
+  "total_likes": 7114820,
+  "avg_views": 55189375,
+  "like_rate": 0.02149,
+  "top_clip": {
+   "videoId": "myjEoDypUD8",
+   "title": "Watch the uncensored moment Will Smith smacks Chris Rock on stage at the Oscars, drops F-bomb",
+   "channel": "Guardian News",
+   "publishedAt": "2022-03-28",
+   "views": 147401134,
+   "likes": 1946934,
+   "comments": 258355,
+   "duration_s": 84
+  }
+ },
+ "netflix_viewership": {
+  "hours": 44600000,
+  "views": 5600000,
+  "specials": 3,
+  "source": "What We Watched 2023H1-2026H1"
+ },
+ "website": {
+  "url": "http://www.chrisrock.com/",
+  "source": "wikidata-P856",
+  "checked": "2026-10-17"
+ }
+}

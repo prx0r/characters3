@@ -1,0 +1,36 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "stage:chris-rock:gen-alternates-v1",
+ "agent_id": "stage:chris-rock",
+ "name": "stage:chris-rock",
+ "roster": "stage",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "We pay the restaurant, the restaurant won't pay the waiter, so I pay the waiter, but the waiter can't ask me for it, so we all just guess. You ever explain tipping to somebody visiting from another country? Out loud? You sound insane. 'No, no, you just... hand them cash and hope it was the right amount.' That's not a system, that's a séance. We're all just holding hands around a plate of fries going 'I hope the spirit of adequate compensation is present.'",
+   "joke_id": "chris-rock-alt1-00e029c6",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Gift cards. You give somebody money, but you take the money "
+  },
+  {
+   "slot": "alt2",
+   "text": "We need to talk about the handshake. Grown adults, full IQ, meeting a stranger and immediately grabbing their hand and shaking it up and down. That's not a greeting. That's two people checking each other for weapons in the most polite way possible. \"You armed?\" \"No, you?\" \"Cool, let's do business.\" We've been doing this for centuries and nobody's ever said out loud that it's weird.",
+   "joke_id": "chris-rock-alt2-4eee0084",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Gift cards. You give somebody money, but you take the money "
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

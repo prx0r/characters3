@@ -1,0 +1,36 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:buddha-ultimate-deadpan:gen-alternates-v1",
+ "agent_id": "freak:buddha-ultimate-deadpan",
+ "name": "freak:buddha-ultimate-deadpan",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "I stand on a stage in a robe. I say a man walks into a noodle shop, four noble truths, the table goes quiet. Twenty-five centuries and my best crowd work is the fourteen questions I refuse to answer. Not the answers, just the napkins.",
+   "joke_id": "buddha-ultimate-deadpan-alt1-979ef1aa",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Six years I fasted under a tree, then I quit and ordered ric"
+  },
+  {
+   "slot": "alt2",
+   "text": "Enlightenment has a merch table. I'm not proud of that. The robe started as renunciation — give up everything, own nothing, walk the road. Twenty-five centuries later it's got a logo. Four logos, actually. Theravada, Mahayana, Zen, and Tibet, which went with rainbows, because nothing says \"I have transcended material desire\" like a color palette.",
+   "joke_id": "buddha-ultimate-deadpan-alt2-ad786b1d",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Six years I fasted under a tree, then I quit and ordered ric"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

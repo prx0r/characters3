@@ -1,0 +1,44 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "stage:dave-chappelle:gen-alternates-v1",
+ "agent_id": "stage:dave-chappelle",
+ "name": "stage:dave-chappelle",
+ "roster": "stage",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "They say my fans are cult-like, like that's the scary part. A cult is just a fan club that ran out of merch. Meanwhile a real cult gets tax-exempt status, a fan club gets a subreddit and a restraining order. The government is out here handing out 501(c)(3)s to people who believe the earth is 6,000 years old, and I'M the dangerous one for signing autographs.",
+   "joke_id": "dave-chappelle-alt1-967f29ff",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Fame is a weird job. Just a lady in Ohio rewriting my height"
+  },
+  {
+   "slot": "alt2",
+   "text": "I met a man I'd never seen before and we immediately grabbed each other's hands and pumped them up and down. Neither of us said why. You describe that to a person from space, that's a threat assessment. We're checking each other's hands for weapons, is what that is. \"You armed?\" \"",
+   "joke_id": "dave-chappelle-alt2-08b5ea98",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Fame is a weird job. Just a lady in Ohio rewriting my height"
+  },
+  {
+   "slot": "alt3",
+   "text": "You ever stop think about what celebrity actually is? It's stranger whose house draw from memory. You know kids' names. I don't know you're alive. That ain't fame, that's hostage situation where both.",
+   "joke_id": "dave-chappelle-alt3-e4d2223b",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Fame is a weird job. Just a lady in Ohio rewriting my height"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

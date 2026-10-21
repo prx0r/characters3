@@ -1,0 +1,36 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:hag-landlady:gen-alternates-v1",
+ "agent_id": "freak:hag-landlady",
+ "name": "freak:hag-landlady",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "You'd be surprised how much of the job is routine. They always are, and I always let them, because I'm fair.",
+   "joke_id": "hag-landlady-alt1-9bb55cdd",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Everybody sleeps like it's free. You close your eyes, you dr"
+  },
+  {
+   "slot": "alt2",
+   "text": "You lie on your back with your arms at your sides and call that relaxing. You would not hand a stranger your throat and say, take your time. I just bill what it already owes.",
+   "joke_id": "hag-landlady-alt2-8b1269cc",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Everybody sleeps like it's free. You close your eyes, you dr"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

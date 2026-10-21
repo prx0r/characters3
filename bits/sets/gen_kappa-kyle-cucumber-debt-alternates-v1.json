@@ -1,0 +1,36 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:kappa-kyle-cucumber-debt:gen-alternates-v1",
+ "agent_id": "freak:kappa-kyle-cucumber-debt",
+ "name": "freak:kappa-kyle-cucumber-debt",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "The laundromat dryer owes me a cucumber. If it comes out of the cycle and there's still a sock in there, that's two cucumbers. I'm exhausted, but I'm not crooked.",
+   "joke_id": "kappa-kyle-cucumber-debt-alt1-a1b83e85",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "I applied for a business license at City Hall and the woman "
+  },
+  {
+   "slot": "alt2",
+   "text": "I went to the dentist. He said I had four cavities. I said that's funny, I have you down for six cucumbers. He did not find that funny. He does not understand that reality is a ledger. Nobody understands. I bowed to him on the way out and he charged me for the bow.",
+   "joke_id": "kappa-kyle-cucumber-debt-alt2-da8bf318",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "I applied for a business license at City Hall and the woman "
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

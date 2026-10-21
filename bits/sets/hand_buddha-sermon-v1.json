@@ -1,0 +1,44 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:buddha-ultimate-deadpan:hand-sermon-v1",
+ "agent_id": "freak:buddha-ultimate-deadpan",
+ "name": "Buddha",
+ "roster": "freaks",
+ "identity_source": "/root/characters2/freaks/buddha-ultimate-deadpan/character.json",
+ "premise": "the first sermon core: the middle way between indulgence and mortification (SN 56.11).",
+ "authorship": "canon-verbatim (ranges selected, words untouched)",
+ "sources": [
+  {
+   "sutta": "sn56.11",
+   "translator": "Bhikkhu Sujato",
+   "via": "SuttaCentral bilara-data",
+   "license": "CC0 1.0 Universal",
+   "url": "https://suttacentral.net/sn56.11/en/sujato",
+   "segments": [
+    "sn56.11:2.1–sn56.11:2.4"
+   ]
+  }
+ ],
+ "delivery": {
+  "profile": "deadpan, energy 0.4, pace 0.82, punchline_hold_ms 1500-3000",
+  "rule": "no ad-libs, no tags, no uplift — the text is the set"
+ },
+ "bits": [
+  {
+   "slot": "setup",
+   "text": "“Mendicants, these two extremes should not be cultivated by one gone forth. What two? Indulgence in sensual pleasures, which is low, crude, ordinary, ignoble, and pointless. And indulgence in self-mortification, which is painful, ignoble, and pointless. Avoiding these two extremes, the Realized One understood the middle way of practice, which gives vision and knowledge, and leads to peace, direct knowledge, awakening, and extinguishment.",
+   "joke_id": "buddha-ultimate-deadpan-setup-b67431ff",
+   "segments": "sn56.11:2.1–sn56.11:2.4",
+   "delivery": {
+    "pause_after_ms": 1500,
+    "emphasis": 0.6,
+    "note": "two extremes, stated like tour dates"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  }
+ ],
+ "verdict": {},
+ "word_count": 63,
+ "ts": "2026-10-21T18:00:00Z"
+}

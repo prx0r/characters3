@@ -1,0 +1,60 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "stage:mitch-hedberg:gen-alternates-v1",
+ "agent_id": "stage:mitch-hedberg",
+ "name": "stage:mitch-hedberg",
+ "roster": "stage",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "I bought candle that smelled like \"Fresh Linen.\" I don't know what linen is. Nobody does. We just nod. Fresh linen. It's white thing that's clean. That's whole religion. I apartment smelled like decision I couldn't remember making. The candle knows what linen though. It won't tell me. It just sits there, burning, smelling smug. I think candles.",
+   "joke_id": "mitch-hedberg-alt1-f518a92d",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "I bought a bottle of water from the vending machine and the "
+  },
+  {
+   "slot": "alt2",
+   "text": "I bought pretzels from a machine and it made me listen to the whole thing. The coil turns, then there's this pause where the pretzels are just falling. That's the only part nobody watches. A bag of pretzels flying through the dark and I'm standing there waiting for the thud like a guy in a hospital.",
+   "joke_id": "mitch-hedberg-alt2-cec761d6",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "I bought a bottle of water from the vending machine and the "
+  },
+  {
+   "slot": "alt3",
+   "text": "I bought banana this morning I thank banana. I just took it. And sits counter getting brown, which banana's showing feelings. I'd apologize I'm same way. My landlord says I'm \"not communicating.\" I've been sending weather reports. Last week I said \"overcast, moving toward humid.\" That communication. You just don't speak cloud.",
+   "joke_id": "mitch-hedberg-alt3-68871f9f",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "I bought a bottle of water from the vending machine and the "
+  },
+  {
+   "slot": "alt4",
+   "text": "Those spirals in a vending machine are doing a job nobody asked for. They hold a bag of popcorn against gravity for four months and then one day they just let go. Like a father. And the machine doesn't move. It already spent your dollar. It's living in a different economy now than you and me.",
+   "joke_id": "mitch-hedberg-alt4-3823ca5b",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "I bought a bottle of water from the vending machine and the "
+  },
+  {
+   "slot": "alt5",
+   "text": "Mitch Hedberg has one rule about objects with secret lives: you either name it or you live under it. I name it.",
+   "joke_id": "mitch-hedberg-alt5-229dd682",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "I bought a bottle of water from the vending machine and the "
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

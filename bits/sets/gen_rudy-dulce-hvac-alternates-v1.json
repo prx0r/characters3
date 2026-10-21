@@ -1,0 +1,28 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:rudy-dulce-hvac:gen-alternates-v1",
+ "agent_id": "freak:rudy-dulce-hvac",
+ "name": "freak:rudy-dulce-hvac",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "The deros rewired my ducts again. Set up a cross-draft in Sector 4 that blows every map off the briefing wall. So I rerouted the cold air return into their records annex and let the paperwork curl. That's just balance.",
+   "joke_id": "rudy-dulce-hvac-alt1-9dc6ece3",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Eleven pages to request warmth. Page nine asks you to justif"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

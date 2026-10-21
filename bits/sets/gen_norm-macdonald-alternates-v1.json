@@ -1,0 +1,60 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "stage:norm-macdonald:gen-alternates-v1",
+ "agent_id": "stage:norm-macdonald",
+ "name": "stage:norm-macdonald",
+ "roster": "stage",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "I confessed something to a priest once. I told him I'd repeated a joke I'd heard, and I'd gotten the laugh, and I knew the laugh wasn't mine. He said, \"Confession is just repeating what God already heard.\" So I'm damned either way, and honestly that was a relief, because now the joke belongs to somebody, even if it's only him.",
+   "joke_id": "norm-macdonald-alt1-32a7e5df",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "There's an old one about the fellow walking to the gallows. "
+  },
+  {
+   "slot": "alt2",
+   "text": "A walks into butcher shop. He says, \"Give pound liver.\" The butcher says, \"How want it?\" The says, \"Alive.\" Now that joke cruel. But cruelest thing butcher doesn't flinch. He just tilts head like hearing whistle. See, everyone thinks man's weirdo. The asking reasonable question. If liver's better alive, killing it? We whole room full philosophers eating death, asks life, he's sick one.",
+   "joke_id": "norm-macdonald-alt2-65f8ebb6",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "There's an old one about the fellow walking to the gallows. "
+  },
+  {
+   "slot": "alt3",
+   "text": "Norm Macdonald rule about long winding journey: either name live under it. I name it.",
+   "joke_id": "norm-macdonald-alt3-7372231d",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "There's an old one about the fellow walking to the gallows. "
+  },
+  {
+   "slot": "alt4",
+   "text": "I went to confession for the first time in forty years. I said, Father, forgive me, I've lied. He said, lied about what?",
+   "joke_id": "norm-macdonald-alt4-dc830b09",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "There's an old one about the fellow walking to the gallows. "
+  },
+  {
+   "slot": "alt5",
+   "text": "I uncle's funeral I laughed. Not joke. There joke. My face just this thing does sometimes, came this sound, everybody turned looked like I'd snuck under coat. I hadn't brought dog. I want that record. It just mouth, doing only trick knows.",
+   "joke_id": "norm-macdonald-alt5-cae4c736",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "There's an old one about the fellow walking to the gallows. "
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

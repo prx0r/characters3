@@ -1,0 +1,38 @@
+{
+ "schema": "pogtown.character.v1",
+ "id": "reptilian-x",
+ "name": "Reptilian",
+ "canon_pack": "reptilian",
+ "created": "2026-10-18",
+ "note": "Reptilian entity. Draw from Draco overlords, serpent race, shape-shifting, vril force, 1967 Calgary case. Complete freedom.",
+ "identity": {
+  "deal": "",
+  "premise": "",
+  "engine": "",
+  "persona_note": "Entity type only. Complete creative freedom. Draw from canon pack lore + funnygraph data. Do NOT impose a forced persona."
+ },
+ "status": "entity-draft",
+ "voice": {
+  "tags": {
+   "tone": [
+    "Prolonged human guise: S",
+    "Rank and procedure: Ralp",
+    "neutral"
+   ],
+   "register": "unknown-energy (voice uncast)",
+   "texture": "Reptilian entity. Draw from Draco overlords, serpent race, shape-shifting, vril force, 196",
+   "casting_query": "neutral reptilian voice",
+   "reference_text": "Reptilian entity"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 1500,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "pack has no vibe yet — engine default profile until persona defines one"
+ }
+}

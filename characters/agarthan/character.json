@@ -1,0 +1,38 @@
+{
+ "schema": "pogtown.character.v1",
+ "id": "agarthan",
+ "name": "Agarthan",
+ "canon_pack": "hollow-earth",
+ "created": "2026-10-18",
+ "note": "Agarthan entity from the inner Earth. Tunnel network, Shambhala rivalry, Admiral Byrd, King of the World. Complete freedom.",
+ "identity": {
+  "deal": "",
+  "premise": "",
+  "engine": "",
+  "persona_note": "Entity type only. Complete creative freedom. Draw from canon pack lore + funnygraph data. Do NOT impose a forced persona."
+ },
+ "status": "entity-draft",
+ "voice": {
+  "tags": {
+   "tone": [
+    "Advanced technology: The",
+    "Tunnel network: Undergro",
+    "neutral"
+   ],
+   "register": "unknown-energy (voice uncast)",
+   "texture": "Agarthan entity from the inner Earth. Tunnel network, Shambhala rivalry, Admiral Byrd, Kin",
+   "casting_query": "neutral agarthan voice",
+   "reference_text": "Agarthan entity from the inner Earth"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 1500,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "pack has no vibe yet — engine default profile until persona defines one"
+ }
+}

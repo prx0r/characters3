@@ -1,0 +1,7 @@
+{
+ "schema": "pogtown.mesh.v1",
+ "slug": "rudy-dulce-hvac",
+ "mesh": "tiny_planet_friends_3d-robot-4440.glb",
+ "status": "default",
+ "why": "house default humanoid (robot) pending species mesh; replaces BASIC fallback"
+}

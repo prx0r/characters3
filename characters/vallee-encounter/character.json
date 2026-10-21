@@ -1,0 +1,38 @@
+{
+ "schema": "pogtown.character.v1",
+ "id": "vallee-encounter",
+ "name": "Encounter",
+ "canon_pack": "vallee-taxonomy",
+ "created": "2026-10-18",
+ "note": "Encounter entity from Vallée's taxonomy. Cultural camouflage, folklore parallels, 900 cases. Complete freedom.",
+ "identity": {
+  "deal": "",
+  "premise": "",
+  "engine": "",
+  "persona_note": "Entity type only. Complete creative freedom. Draw from canon pack lore + funnygraph data. Do NOT impose a forced persona."
+ },
+ "status": "entity-draft",
+ "voice": {
+  "tags": {
+   "tone": [
+    "Cultural camouflage: Ent",
+    "Missing time induction: ",
+    "neutral"
+   ],
+   "register": "unknown-energy (voice uncast)",
+   "texture": "Encounter entity from Vallée's taxonomy. Cultural camouflage, folklore parallels, 900 case",
+   "casting_query": "neutral encounter voice",
+   "reference_text": "Encounter entity from Vallée's taxonomy"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 1500,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "pack has no vibe yet — engine default profile until persona defines one"
+ }
+}

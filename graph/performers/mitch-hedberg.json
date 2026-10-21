@@ -1,0 +1,315 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "mitch-hedberg",
+ "name": "Mitch Hedberg",
+ "note": "STAGE PERSONA graph. Graph-only (no personality.md yet). 0 sets measured — all hypothesis. Fingerprints ≤7 words, no verbatim lines.",
+ "version": 1,
+ "created": "2026-10-15",
+ "annotator": "mimo-v2.5",
+ "identity": {
+  "deal": "Shy alchemist who turns everyday sentences into surreal objects, then stares at his feet while the room catches up.",
+  "premise": "A nervous tourist in his own one-liners, delivering impossible observations with the cadence of a man reading his own grocery list.",
+  "archetype": "whimsical_float",
+  "awareness": "fluctuating",
+  "awareness_note": "Plays the oblivious dreamer (sunglasses, floor-stare) while every line is engineered — the Prestige-trick gap, Louis/Norm family. But his version is warmth, not defense.",
+  "philosophy": {
+   "ontology": "Objects have secret lives and the narrator has just returned from investigating them.",
+   "epistemology": "If the sentence surprises you, the world surprised you; trust the surprise.",
+   "axiology": "The clean twist is holier than the point.",
+   "causality": "Language misbehaves first; reality follows.",
+   "agency": "A joke is a small machine you can hold; wind it, let it run, don't explain it."
+  },
+  "dramatic_core": {
+   "want": "one more perfect twist on the mundane",
+   "fear": "explaining the joke (breaking the machine)",
+   "need": "the room to gasp-laugh before he can retreat",
+   "self_model": "a shy person who found a job where staring at the floor is allowed",
+   "blind_spots": [
+    "unknown — needs multi-set observation"
+   ]
+  },
+  "misinterpretation_rule": "Treats ordinary objects and routines as if they were slightly haunted, and reports the haunting with the seriousness of a weather forecast.",
+  "contradictions": [
+   "the least present performer delivering the most constructed lines",
+   "surreal content in a folksy drawl",
+   "claims nervousness while controlling every syllable"
+  ],
+  "status_model": {
+   "desired_status": "the punchline's custodian, not its star",
+   "felt_status": "cult favorite who Time called the next Seinfeld and he probably wished they wouldn't"
+  },
+  "expression": {
+   "default_register": "sleepy-surreal",
+   "emotional_restraint": "high",
+   "tells": [
+    "sunglasses",
+    "floor-stare",
+    "the almost-smile after the twist"
+   ]
+  },
+  "modulator_range": [
+   "sleepy",
+   "deadpan",
+   "gentle-mocking",
+   "confessional-shy"
+  ],
+  "profile": {
+   "energy": 0.25,
+   "pace": "moderate drawl, rapid between jokes",
+   "gesture_frequency": 0.05,
+   "punchline_hold_ms": 500,
+   "note": "hypothesis"
+  },
+  "operator_priors": {
+   "literalize": 0.9,
+   "double_interpret": 0.85,
+   "rigidify": 0.6,
+   "juxtapose": 0.55,
+   "status": "authored hypothesis — 0 sets"
+  },
+  "preferred_theories": [
+   "bisociation",
+   "literalise",
+   "rigidity",
+   "false_analogy"
+  ],
+  "threads": [
+   "objects with secret lives",
+   "the vending machine as metaphysics",
+   "self-deprecation as weather, not indictment"
+  ],
+  "problem_space": [
+   "everyday objects",
+   "the English language",
+   "stage fright as material",
+   "food and vending machines",
+   "signage and instructions"
+  ]
+ },
+ "engine": {
+  "voice_clone_id": null,
+  "delivery_archetype": "whimsical_float",
+  "archetype_def": "level highness; airy certainty over nonsense; the float IS the character. Delivery: high pitch (250), narrow var (3.1), soft dynamics, brisk.",
+  "measured_acoustics": null,
+  "jev_state": {
+   "status": "NOT RUN"
+  },
+  "world_transfer_proven": null
+ },
+ "sets": [],
+ "set_queue": {
+  "note": "First ingest: Strategic Grill Locations or Mitch All Together era — one-liner-chain form. Word-timed ASR needed.",
+  "blocked_on": "audio access"
+ },
+ "timing_profile": {
+  "measured": null,
+  "hypothesis": "one-liner-chain: setup-punch-restart, short holds (300-500ms), no long story stretches. The chain IS the rhythm — machine-gun surrealism at drawl speed. Contrast everyone: Louis stops, Norm never stops, Seinfeld audits, Chappelle sermons, Hedberg RELOADS.",
+  "stop_start": [
+   "stop: punch lands",
+   "start: next one-liner before the room resets",
+   "no story mode ever entered"
+  ]
+ },
+ "gtvh_profile": {
+  "SO": "normal/absurd — mundane object vs secret life",
+  "LM": "literalize + double_interpret — the twist is usually one word doing two jobs",
+  "TA": "none / objects — never punches at a person",
+  "NS": "one-liner-chain — the purest form on the roster",
+  "note": "authored hypothesis"
+ },
+ "theory_links": {
+  "internal": [
+   {
+    "id": "whimsical_float",
+    "cite": "audition/voicelab/archetypes.json",
+    "claim": "high pitch (250), narrow var (3.1), soft dynamics, brisk — mitch_hedberg listed as comedian",
+    "applies_to": "engine band"
+   },
+   {
+    "id": "literalize",
+    "cite": "operator registry",
+    "claim": "take the metaphor literally until it becomes surreal",
+    "applies_to": "home mechanism"
+   }
+  ]
+ },
+ "essay_seeds": [
+  {
+   "id": "hedberg-essay-01",
+   "title": "Reload, don't reflect: Hedberg as the chain engine",
+   "thesis": "The one-liner-chain is the fifth timing doctrine on our roster. Louis stops, Norm never stops, Seinfeld audits in short holds, Chappelle sermons in long holds — Hedberg reloads. The next joke starts before the room has finished the last one. The sunglasses and floor-stare are the perfect delivery for this: no face to read, no reset cue, just the next object with a secret life.",
+   "evidence": [
+    "timing_profile.hypothesis",
+    "gtvh_profile.NS",
+    "axes.json timing quadrant"
+   ],
+   "outline": [
+    "the five timing doctrines",
+    "why chain-form needs an oblivious persona",
+    "the machine metaphor: wind it, don't explain it",
+    "what this predicts for one-liner comics generally"
+   ],
+   "status": "seed"
+  }
+ ],
+ "provenance": {
+  "persona": "authored from public reputation (Time 'next Seinfeld', Guardian 'shy alchemist', Wikipedia genre tags: one-liner/surreal/deadpan/wordplay)",
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines",
+   "0 sets = all hypothesis"
+  ],
+  "sets_observed": 0,
+  "next": "ingest one-liner-chain set; the chain rhythm is the thing to measure"
+ },
+ "bio": {
+  "wikidata_id": "Q2314865",
+  "dob": "1968-02-24",
+  "dod": "2005-03-29",
+  "birthplace": "Saint Paul",
+  "citizenship": "United States",
+  "occupations": [
+   "comedian",
+   "screenwriter",
+   "actor",
+   "film director"
+  ],
+  "source": "wikidata (CC0)"
+ },
+ "rating": {
+  "headline": 11.8,
+  "coverage": "FULL",
+  "provisional": null,
+  "boards": {
+   "house": {
+    "rank": 31,
+    "pct": 11.8,
+    "sweep": [
+     31,
+     31
+    ]
+   },
+   "consensus": {
+    "rank": 27,
+    "ref": true
+   },
+   "canon": {
+    "rank": 25,
+    "ref": true
+   },
+   "peoples": {
+    "rank": 90,
+    "wr": 3.043,
+    "ref": true
+   },
+   "era": {
+    "rank": 77,
+    "ref": true
+   }
+  },
+  "interval": {
+   "lo": 31,
+   "hi": 31
+  },
+  "updated": "2026-10-18T17:13:19Z",
+  "pipeline": "rate/v1"
+ },
+ "metrics": {
+  "legacy": 93.7,
+  "legacy_era": 81.6,
+  "audience": 0,
+  "popularity": 90.3,
+  "theory": 50.0,
+  "heat": null,
+  "gap_value": 0.903,
+  "overrated": "massively overrated",
+  "canon_lag": -0.937
+ },
+ "modes": {
+  "signature": "absurdist",
+  "signature_title": "one-liner mystic",
+  "repertoire": {
+   "absurdist": 0.58,
+   "dark-confessional": 0.25,
+   "surreal": 0.08,
+   "meta": 0.08
+  },
+  "n_modes": 2
+ },
+ "style": {
+  "words": 9110,
+  "profanity_rate": 0.0037,
+  "question_rate": 0.075,
+  "i_rate": 0.06,
+  "vocab_div": 0.11,
+  "avg_sent_len": 7.7,
+  "top_words": [
+   "because",
+   "special",
+   "people",
+   "said",
+   "show",
+   "want",
+   "frog",
+   "mitch",
+   "comedy",
+   "good",
+   "think",
+   "used"
+  ]
+ },
+ "humor_type": {
+  "primary": "absurdist",
+  "secondary": "surreal",
+  "scores": {
+   "absurdist": 0.67,
+   "surreal": 0.17,
+   "meta": 0.17
+  },
+  "method": "archetype+theories+transcript"
+ },
+ "recognition": {
+  "rolling_stone_2017": 20,
+  "awards": [],
+  "paste_2017": 22
+ },
+ "generation": {
+  "id": "nineties",
+  "label": "Nineties alt + HBO",
+  "span": "1990s",
+  "note": "Alt rooms, HBO hours, SNL golden age, Boston/LA/NYC scenes. Anti-boom craft.",
+  "scene": "club",
+  "breakthrough": "1990s club → Letterman 1996"
+ },
+ "tier": "king",
+ "region": "us",
+ "continent": "north-america",
+ "known_bits": [
+  {
+   "title": "The object with a secret life",
+   "why_it_works": "Treats a normal object as having hidden properties and reports them with total sincerity. literalize: the object literally has the property he describes. The deadpan delivery is the benign frame — the room believes him for half a second, and the half-second is the joke.",
+   "theory_links": [
+    "literalise",
+    "incongruity"
+   ]
+  },
+  {
+   "title": "The one-liner as a haiku with a trapdoor",
+   "why_it_works": "Short setup, short punch, no fat. The economy is the craft — every word pays rent. The restart is the timing device: the room is still laughing when the next one arrives, and the overlap is the form.",
+   "theory_links": [
+    "two_stories"
+   ]
+  }
+ ],
+ "specials_rated": [
+  {
+   "title": "Ed",
+   "year": 1996,
+   "imdb_id": "tt0116165",
+   "imdb_rating": 2.8,
+   "imdb_votes": 9164,
+   "transcript": "mitch-hedberg-comedy-central-special1999-full-transcript.txt",
+   "standout": true
+  }
+ ]
+}

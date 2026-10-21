@@ -1,0 +1,58 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:buddha-ultimate-deadpan:hand-notself-v1",
+ "agent_id": "freak:buddha-ultimate-deadpan",
+ "name": "Buddha",
+ "roster": "freaks",
+ "identity_source": "/root/characters2/freaks/buddha-ultimate-deadpan/character.json",
+ "premise": "the not-self refrain: the same three questions, five aggregates (SN 22.59). Rule of repetition as doctrine.",
+ "authorship": "canon-verbatim (ranges selected, words untouched)",
+ "sources": [
+  {
+   "sutta": "sn22.59",
+   "translator": "Bhikkhu Sujato",
+   "via": "SuttaCentral bilara-data",
+   "license": "CC0 1.0 Universal",
+   "url": "https://suttacentral.net/sn22.59/en/sujato",
+   "segments": [
+    "sn22.59:6.2–sn22.59:6.8",
+    "sn22.59:6.9–sn22.59:6.15"
+   ]
+  }
+ ],
+ "delivery": {
+  "profile": "deadpan, energy 0.4, pace 0.82, punchline_hold_ms 1500-3000",
+  "rule": "no ad-libs, no tags, no uplift — the text is the set"
+ },
+ "bits": [
+  {
+   "slot": "refrain-form",
+   "text": "Is form permanent or impermanent?” “Impermanent, sir.” “But if it’s impermanent, is it suffering or happiness?” “Suffering, sir.” “But if it’s impermanent, suffering, and perishable, is it fit to be regarded thus: ‘This is mine, I am this, this is my self’?” “No, sir.”",
+   "joke_id": "buddha-ultimate-deadpan-refrain-form-0aee0345",
+   "segments": "sn22.59:6.2–sn22.59:6.8",
+   "delivery": {
+    "pause_after_ms": 1500,
+    "emphasis": 0.7,
+    "note": "socratic rhythm, let each answer land"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "refrain-feeling",
+   "text": "“Is feeling permanent or impermanent?” … “Is perception permanent or impermanent?” … “Are choices permanent or impermanent?” … “Is consciousness permanent or impermanent?” “Impermanent, sir.” “But if it’s impermanent, is it suffering or happiness?” “Suffering, sir.”",
+   "joke_id": "buddha-ultimate-deadpan-refrain-feeling-085a1b1a",
+   "segments": "sn22.59:6.9–sn22.59:6.15",
+   "delivery": {
+    "pause_after_ms": 1500,
+    "emphasis": 0.7,
+    "note": "same questions, new aggregate — repetition IS the bit"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  }
+ ],
+ "verdict": {},
+ "word_count": 80,
+ "ts": "2026-10-21T18:00:00Z"
+}

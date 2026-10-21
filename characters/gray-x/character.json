@@ -1,0 +1,38 @@
+{
+ "schema": "pogtown.character.v1",
+ "id": "gray-x",
+ "name": "Gray",
+ "canon_pack": "gray",
+ "created": "2026-10-18",
+ "note": "Gray entity. Draw from Preston case, Gray Face/White Face court, one-sided telepathy, aftereffect cascade. Complete freedom.",
+ "identity": {
+  "deal": "",
+  "premise": "",
+  "engine": "",
+  "persona_note": "Entity type only. Complete creative freedom. Draw from canon pack lore + funnygraph data. Do NOT impose a forced persona."
+ },
+ "status": "entity-draft",
+ "voice": {
+  "tags": {
+   "tone": [
+    "Court of faces",
+    "One-sided telepathy",
+    "neutral"
+   ],
+   "register": "unknown-energy (voice uncast)",
+   "texture": "Gray entity. Draw from Preston case, Gray Face/White Face court, one-sided telepathy, afte",
+   "casting_query": "neutral gray voice",
+   "reference_text": "Gray entity"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 1500,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "pack has no vibe yet — engine default profile until persona defines one"
+ }
+}

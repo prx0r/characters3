@@ -1,0 +1,126 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "reptilian-phib-loveland:hand-pilot-v1",
+ "agent_id": "freak:reptilian-phib-loveland",
+ "name": "Phib",
+ "roster": "freaks",
+ "identity_source": "/home/ubuntu/characters2/freaks/reptilian-phib-loveland/character.json",
+ "premise": "hand-written pilot, rhythm-rewritten",
+ "authorship": "hand-authored (not harness/set_loop)",
+ "bits": [
+  {
+   "slot": "b1",
+   "text": "I run courier through the tunnels, mostly, and the surface segment in March, in Ohio, is where I took a wrong turn off the spur and two officers wrote me up as a frogman. The artist gave me the wrong number of toes. Fifty years. Nobody has corrected the toes.",
+   "joke_id": "reptilian-phib-loveland-b1-de0918",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.281,
+     "z_from_human_median": 0.67,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 4,
+      "mean_len": 12.5,
+      "staccato_run": 2,
+      "frag_ratio": 0.5,
+      "p_long": 0.25,
+      "min_len": 2,
+      "max_len": 34
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.281,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b2",
+   "text": "Dispatch calls it the branding event and brings it up at reviews. Says I cost us the night route. I said the route has officers. They said it has officers because of me. That's not logistics. That's a grudge with a manifest number on it.",
+   "joke_id": "reptilian-phib-loveland-b2-9d9882",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.076,
+     "z_from_human_median": 0.01,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": true,
+     "stats": {
+      "n_sent": 6,
+      "mean_len": 7.5,
+      "staccato_run": 4,
+      "frag_ratio": 0.17,
+      "p_long": 0.0,
+      "min_len": 3,
+      "max_len": 12
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.076,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b3",
+   "text": "So now I wear a paper bag on the surface segment out of spite, even though it makes me look guiltier, which I know. But the bag has the right number of eye holes, which is more than the rendition ever gave my feet. Count the toes. Somebody count the toes. That's all I'm asking after fifty years. Count the toes.",
+   "joke_id": "reptilian-phib-loveland-b3-f52430",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.281,
+     "z_from_human_median": 0.67,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 6,
+      "mean_len": 10.2,
+      "staccato_run": 4,
+      "frag_ratio": 0.5,
+      "p_long": 0.33,
+      "min_len": 3,
+      "max_len": 24
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.281,
+   "writer": "hand-authored",
+   "model": null
+  }
+ ],
+ "verdict": {
+  "passed": true,
+  "reasons": [],
+  "words": 156,
+  "ai_confs": [
+   0.281,
+   0.076,
+   0.281
+  ],
+  "mean_ai": 0.213
+ },
+ "ts": "2026-10-17T09:25:26Z"
+}

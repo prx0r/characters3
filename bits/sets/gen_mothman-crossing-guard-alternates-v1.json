@@ -1,0 +1,28 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:mothman-crossing-guard:gen-alternates-v1",
+ "agent_id": "freak:mothman-crossing-guard",
+ "name": "freak:mothman-crossing-guard",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "I wear a reflective vest. I'm a five-foot moth with eyes that light up red in a Volvo. So I remember which one of us is supposed to stop.",
+   "joke_id": "mothman-crossing-guard-alt1-041298f0",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Nobody claps when I stop a car. I've had zero incidents in f"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

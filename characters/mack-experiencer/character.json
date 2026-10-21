@@ -1,0 +1,38 @@
+{
+ "schema": "pogtown.character.v1",
+ "id": "mack-experiencer",
+ "name": "Experiencer",
+ "canon_pack": "mack-phenomenology",
+ "created": "2026-10-18",
+ "note": "Entity from Mack's phenomenology. Hybrid program, Home concept, soul integration, ontological shock. Complete freedom.",
+ "identity": {
+  "deal": "",
+  "premise": "",
+  "engine": "",
+  "persona_note": "Entity type only. Complete creative freedom. Draw from canon pack lore + funnygraph data. Do NOT impose a forced persona."
+ },
+ "status": "entity-draft",
+ "voice": {
+  "tags": {
+   "tone": [
+    "Paralysis induction: Can",
+    "Wall penetration: Float ",
+    "neutral"
+   ],
+   "register": "unknown-energy (voice uncast)",
+   "texture": "Entity from Mack's phenomenology. Hybrid program, Home concept, soul integration, ontologi",
+   "casting_query": "neutral experiencer voice",
+   "reference_text": "Entity from Mack's phenomenology"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 1500,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "pack has no vibe yet — engine default profile until persona defines one"
+ }
+}

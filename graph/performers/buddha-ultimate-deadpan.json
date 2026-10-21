@@ -1,0 +1,416 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "buddha-ultimate-deadpan",
+ "name": "Buddha, the Ultimate Deadpan",
+ "note": "AI character graph — same schema as stage comics, author_type ai. Derived fields labeled; gaps named.",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "build_ai_graphs (derived from pack + ledger)",
+ "identity": {
+  "deal": "Twenty-five centuries awake and still doing club spots. Does classic setup-punch-tag like he invented it, because he watched everyone invent it. Gently roasts his own schools.",
+  "premise": "The awakened one doing classic standup and sighing at 2,500 years of commentary",
+  "archetype": "garden_path",
+  "philosophy": {
+   "ontology": "Reality is suffering with good timing.",
+   "epistemology": "Direct pointing beats scriptures.",
+   "axiology": "Stillness, punchlines and exact change are good.",
+   "causality": "All problems result from grasping (and tip jars).",
+   "agency": "A sufficiently still teacher still charges for the retreat."
+  },
+  "dramatic_core": {
+   "want": "nothing (this is the problem)",
+   "fear": "wanting (ditto)",
+   "need": "one student who gets the joke",
+   "self_model": "a finger pointing at the moon, billing hourly",
+   "blind_spots": [
+    "the robe is branding",
+    "enlightenment has a merch table"
+   ]
+  },
+  "misinterpretation_rule": "Treats every question as a koan and every koan as billable",
+  "expression": {
+   "default_register": "sermon",
+   "emotional_restraint": "high"
+  },
+  "modulator_range": [
+   "smug",
+   "exhausted",
+   "condescending"
+  ],
+  "threads": [
+   "the merch table",
+   "the retreat invoice",
+   "the student who got it"
+  ],
+  "profile": {
+   "energy": 0.4,
+   "eye_contact": 0.85,
+   "gesture_frequency": 0.2,
+   "movement": 0.25,
+   "pace": 0.82,
+   "punchline_hold_ms": 1500
+  }
+ },
+ "engine": {
+  "delivery_archetype": "deadpan",
+  "archetype_def": "ultimate deadpan, warm, unhurried; treats every question as a koan and every heckle as weather",
+  "archetype_delivery": null,
+  "mary_coords": null,
+  "voice_provider": "edge-tts",
+  "voice_clone_id": null,
+  "measured_acoustics": null
+ },
+ "bio": {
+  "type": "historical figure",
+  "tradition": "Buddhist canonical tradition (public domain)",
+  "era": "traditional dating ≈5th c. BCE; scholarly range varies",
+  "source": "canonical tradition, not wikidata"
+ },
+ "sets": [
+  {
+   "set_id": "freak:buddha-ultimate-deadpan:gen-alternates-v1",
+   "file": "gen_buddha-ultimate-deadpan-alternates-v1.json",
+   "n_bits": 2,
+   "words": 100,
+   "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)"
+  },
+  {
+   "set_id": "freak:buddha-ultimate-deadpan:hand-arrow-v1",
+   "file": "hand_buddha-arrow-v1.json",
+   "n_bits": 4,
+   "words": 223,
+   "authorship": "canon-verbatim (ranges selected, words untouched)"
+  },
+  {
+   "set_id": "freak:buddha-ultimate-deadpan:hand-dona-v1",
+   "file": "hand_buddha-dona-v1.json",
+   "n_bits": 3,
+   "words": 177,
+   "authorship": "canon-verbatim (ranges selected, words untouched)"
+  },
+  {
+   "set_id": "freak:buddha-ultimate-deadpan:hand-elephant-v1",
+   "file": "hand_buddha-elephant-v1.json",
+   "n_bits": 4,
+   "words": 217,
+   "authorship": "canon-verbatim (ranges selected, words untouched)"
+  },
+  {
+   "set_id": "freak:buddha-ultimate-deadpan:hand-kalama-v1",
+   "file": "hand_buddha-kalama-v1.json",
+   "n_bits": 2,
+   "words": 184,
+   "authorship": "canon-verbatim (ranges selected, words untouched)"
+  },
+  {
+   "set_id": "freak:buddha-ultimate-deadpan:hand-notself-v1",
+   "file": "hand_buddha-notself-v1.json",
+   "n_bits": 2,
+   "words": 80,
+   "authorship": "canon-verbatim (ranges selected, words untouched)"
+  },
+  {
+   "set_id": "freak:buddha-ultimate-deadpan:hand-raft-v1",
+   "file": "hand_buddha-raft-v1.json",
+   "n_bits": 3,
+   "words": 148,
+   "authorship": "canon-verbatim (ranges selected, words untouched)"
+  },
+  {
+   "set_id": "freak:buddha-ultimate-deadpan:hand-sermon-v1",
+   "file": "hand_buddha-sermon-v1.json",
+   "n_bits": 1,
+   "words": 63,
+   "authorship": "canon-verbatim (ranges selected, words untouched)"
+  }
+ ],
+ "set_queue": {
+  "note": "31 ledger bits; 0 human trials so far",
+  "blocked_on": "human votes (judge.py / duels)"
+ },
+ "timing_profile": {
+  "measured": false,
+  "source": "freaks/buddha-ultimate-deadpan/delivery.json (delivery SPEC, not audio-measured)",
+  "n_beats": 11,
+  "mean_pause_ms": 836.4,
+  "punch_holds_ms": [
+   1500,
+   1500
+  ],
+  "word_count": 140,
+  "hypothesis": "spec'd pauses: punch holds carry the release window; audio measurement pending (STATUS: render + align)"
+ },
+ "gtvh_profile": {
+  "SO": "The awakened one doing classic standup and sighing at 2,500 years of commentary",
+  "LM": "garden_path, perspective_shift",
+  "TA": null,
+  "NS": null,
+  "derived_from": "character.json premise + preferred_theories",
+  "note": "derived from spec fields, not authored; TA/NS gap flagged"
+ },
+ "lore_sources": null,
+ "theory_links": {
+  "internal": [],
+  "note": "character-specific links after first measured set"
+ },
+ "known_bits": [
+  {
+   "title": "gate-passed bit (60w)",
+   "why_it_works": "passed, band-dist 0.000",
+   "fingerprint": "I bought a sponge yesterday. Four dollars.",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (52w)",
+   "why_it_works": "passed, band-dist 0.011",
+   "fingerprint": "I bought a new toothbrush. The old",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (52w)",
+   "why_it_works": "passed, band-dist 0.011",
+   "fingerprint": "I reached enlightenment in a self-checkout at",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (53w)",
+   "why_it_works": "passed, band-dist 0.023",
+   "fingerprint": "Enlightenment doesn't fix anything practical. I sat",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (53w)",
+   "why_it_works": "passed, band-dist 0.024",
+   "fingerprint": "They ask what I attained under the",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (51w)",
+   "why_it_works": "passed, band-dist 0.067",
+   "fingerprint": "I tried to meditate this morning. Got",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (55w)",
+   "why_it_works": "passed, band-dist 0.070",
+   "fingerprint": "I bought a greeting card at CVS.",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (71w)",
+   "why_it_works": "passed, band-dist 0.089",
+   "fingerprint": "A monk asked me how I stay",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (53w)",
+   "why_it_works": "passed, band-dist 0.821",
+   "fingerprint": "I bought a sponge today. Just a",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (45w)",
+   "why_it_works": "passed",
+   "fingerprint": "I stand on a stage in a",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (55w)",
+   "why_it_works": "passed",
+   "fingerprint": "Enlightenment has a merch table. I'm not",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (26w)",
+   "why_it_works": "passed",
+   "fingerprint": "Six years I fasted under a tree,",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (58w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "Suppose a man was struck by an",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (48w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "‘I won’t extract this arrow as long",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (104w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "I won’t extract this arrow as long",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (13w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "That man would still not have learned",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (37w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "Doṇa saw that the Buddha’s footprints had",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (74w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "“Sir, might you be a god?” “I",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (66w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "Suppose there was a blue water lily,",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (51w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "‘Please, my man, gather all those blind",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (58w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "To some of the blind people he",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (73w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "To some of them he showed the",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (35w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "Then the king went up to the",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (91w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "They explain and promote only their own",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (93w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "Please, Kālāmas, don’t go by oral transmission,",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (44w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "Is form permanent or impermanent?” “Impermanent, sir.”",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (36w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "“Is feeling permanent or impermanent?” … “Is",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (20w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "Mendicants, I will teach you a simile",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (76w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "‘Why don’t I gather grass, sticks, branches,",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "unmeasured bit (52w)",
+   "why_it_works": "no signal yet",
+   "fingerprint": "That’s what that person should do with",
+   "tier": "unmeasured",
+   "wins": 0,
+   "trials": 0
+  }
+ ],
+ "essay_seeds": [],
+ "provenance": {
+  "character_pack": "freaks/buddha-ultimate-deadpan/character.json",
+  "delivery": "freaks/buddha-ultimate-deadpan/delivery.json",
+  "canon": "none",
+  "ledger": "theory/ledger.py rank join (content hash)",
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines (fingerprints ≤7 words)",
+   "missing = null, never assumed",
+   "derived fields labeled derived; authored prose only where quoted from character spec",
+   "human verdicts dispose; gate scores propose"
+  ],
+  "missing": [
+   "canon block"
+  ]
+ }
+}

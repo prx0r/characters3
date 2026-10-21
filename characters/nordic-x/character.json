@@ -1,0 +1,38 @@
+{
+ "schema": "pogtown.character.v1",
+ "id": "nordic-x",
+ "name": "Nordic",
+ "canon_pack": "nordic",
+ "created": "2026-10-18",
+ "note": "Nordic/Space Brother entity. Draw from contactee era, farmer assistance, utopian messaging, human-passing appearance. Complete freedom.",
+ "identity": {
+  "deal": "",
+  "premise": "",
+  "engine": "",
+  "persona_note": "Entity type only. Complete creative freedom. Draw from canon pack lore + funnygraph data. Do NOT impose a forced persona."
+ },
+ "status": "entity-draft",
+ "voice": {
+  "tags": {
+   "tone": [
+    "Reassuring arrival: retu",
+    "Ship-hailing: tropical-h",
+    "neutral"
+   ],
+   "register": "unknown-energy (voice uncast)",
+   "texture": "Nordic/Space Brother entity. Draw from contactee era, farmer assistance, utopian messaging",
+   "casting_query": "neutral nordic voice",
+   "reference_text": "Nordic/Space Brother entity"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 1500,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "pack has no vibe yet — engine default profile until persona defines one"
+ }
+}

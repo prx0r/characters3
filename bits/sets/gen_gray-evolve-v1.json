@@ -1,0 +1,60 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:gray-x:gen-evolve-v1",
+ "agent_id": "freak:gray-x",
+ "name": "Gray",
+ "roster": "freaks",
+ "identity_source": "theory/generated/evolve_final.json + agents/run-*.json",
+ "premise": "gray-x's own wins not yet rescued (evolve + harness), verbatim",
+ "authorship": "evolve+harness 2026-10-16..19 (gate-passed, UNJUDGED)",
+ "sources": [
+  {
+   "run": "evolve_final + harness runs",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "g1",
+   "text": "My doctor's office reads my mind, but only while I'm on hold. I'm thinking about my rash and the voice says your call is important to us. I think about switching to the ob-gyn next door and the hold music skips a beat. One-sided telepathy. They know what I'm about to say before I say it, which is more than my wife manages.",
+   "joke_id": "gray-x-g1-a6457bc8",
+   "writer": "evolve-harness",
+   "model": null,
+   "ai": 0.012
+  },
+  {
+   "slot": "g2",
+   "text": "Your doctor reads your chart and starts thinking at you. I caught the whole diagnosis before he said it out loud. Herniated disc, he's thinking. I'm thinking, yes, that's what WebMD said three weeks ago, Doug. One-sided telepathy is just a guy thinking while you nod. My wife does it in Target. I'm standing there holding a candle that smells like a fireplace and she's already divorcing me in her head.",
+   "joke_id": "gray-x-g2-f28a2e26",
+   "writer": "evolve-harness",
+   "model": null,
+   "ai": 0.002
+  },
+  {
+   "slot": "g3",
+   "text": "The Preston ruling gave me a migraine that lasted nine days. My wife said it was stress. It was not stress, it was a legal precedent settling behind my eyes. Now every time I get a headache I check the docket. Last week it was just dehydration, but I filed it anyway.",
+   "joke_id": "gray-x-g3-9f2e172b",
+   "writer": "evolve-harness",
+   "model": null,
+   "ai": 0.503
+  },
+  {
+   "slot": "g4",
+   "text": "You ever really look at a handshake? We do it at funerals, we do it at deals, we do it to say hello, and every single time it's the motion of begging a ketchup bottle for the last drop.",
+   "joke_id": "gray-x-g4-4bf81b87",
+   "writer": "evolve-harness",
+   "model": null,
+   "ai": null
+  },
+  {
+   "slot": "g5",
+   "text": "Every morning I brush my teeth with a stick that makes my mouth foam, then I spit the foam into a bowl attached to my face, and if I skip this ritual people say I look sick. I just want to make my mouth foam, and society built a whole personality test around it.",
+   "joke_id": "gray-x-g5-ab28e204",
+   "writer": "evolve-harness",
+   "model": null,
+   "ai": null
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

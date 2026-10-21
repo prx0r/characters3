@@ -1,0 +1,36 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:channel-charlie-indigo-host:gen-alternates-v1",
+ "agent_id": "freak:channel-charlie-indigo-host",
+ "name": "freak:channel-charlie-indigo-host",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "The Lumens took over while I was opening a juice box. They said we are all one liquid, so I handed them the straw and told them to pay me for half.",
+   "joke_id": "channel-charlie-indigo-host-alt1-10b6398b",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Last week my body got borrowed again mid-sandwich. The Lumen"
+  },
+  {
+   "slot": "alt2",
+   "text": "The Target lights hurt, so my mom's Facebook group diagnosed me indigo. I went in for Goldfish and came out with a condition. I'm the interference and I've been blaming the store.",
+   "joke_id": "channel-charlie-indigo-host-alt2-75b7cdc0",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Last week my body got borrowed again mid-sandwich. The Lumen"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

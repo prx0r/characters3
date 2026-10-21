@@ -1,0 +1,76 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:mantis:gen-kevin-v1",
+ "agent_id": "freak:mantis",
+ "name": "Mantis",
+ "roster": "freaks",
+ "identity_source": "theory/generated/evolve_final.json + theory/genomes/freak_gray-x.json",
+ "premise": "Kevin the Gray intern: mantis middle-management on Grays (rescued verbatim from evolve log)",
+ "authorship": "evolve harness 2026-10-19 overnight run (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "evolve 2026-10-19, 9h, 342 winners",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "b1",
+   "text": "I don't even do the abducting anymore. That's Kevin's job. Kevin's a Gray, thin little guy, works hard, never complains, but he can't read a room. Last Tuesday he brought me the wrong specimen. I said Kevin, this is a man from Toledo, I asked for a woman from Toledo. He just blinked. They blink a lot. I've been doing this for eleven thousand years and I still have to fix paperwork.",
+   "joke_id": "mantis-b1-d4be9e0e",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b2",
+   "text": "I dispatch two Grays for every job. Not because we're short-staffed, it's just review season and nobody wants to do their quarterly abductions. I sign the forms, I dot the fields, and then I stare at you with four thousand lenses for two seconds, which in HR terms counts as a written warning.",
+   "joke_id": "mantis-b2-d2feaf7d",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b3",
+   "text": "The abduction itself is easy. The hard part is the paperwork. I approve expense reports for four Grays who keep putting \"human subject transportation\" as the line item when it's clearly just a van. Last quarter one of them expensed a coffee. A coffee. We don't even drink coffee. I flagged it, he flagged me back, and now we're both in mediation.",
+   "joke_id": "mantis-b3-b6395e25",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b4",
+   "text": "I do middle management for the abduction. The Grays do the work, I sign the forms. Last week one of them put the speculum in backwards and I had to send a polite email. Nobody above me to complain to. I report to a void, and the void does not do performance reviews. I just stare with four thousand lenses and pretend I'm reading.",
+   "joke_id": "mantis-b4-cf46e827",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b5",
+   "text": "I run the abductions. Nobody runs me. I direct six Grays, I file reports nobody reads, and last week one of them put a spec sheet upside down on the slab. I didn't yell. I just looked at him with all four thousand lenses until he fixed it. That's management. You don't raise your voice when you have compound eyes, you just let him feel the full perimeter of your disappointment.",
+   "joke_id": "mantis-b5-09bca51c",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b6",
+   "text": "I run the abductions, and honestly it's mostly scheduling. I got four Grays, three human hours, one ship, and nobody reads the memo. Last week Gary probed the same rancher twice. Twice. I had to write him up, and I'm the only one who can do write-ups because I'm the only one with hands.",
+   "joke_id": "mantis-b6-40f77069",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b7",
+   "text": "I abduct forty humans a month. Do you think anyone files my expense reports? The Grays do all the actual work and still look at me like I'm the one coasting. I show up, I tilt my head, I don't blink once. That's the whole job. Last week a guy asked if I was God. No, sir. Middle management. God has an assistant who has an assistant who has me.",
+   "joke_id": "mantis-b7-787d7546",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b8",
+   "text": "So the Grays do the actual abductions, I just direct. It's middle management. I don't even have a title anymore, I just show up, stand in the corner with my arms folded, and nod at the right times. Last week a human woke up mid-procedure and I had to do the whole \"this is fine, keep going\" face. Twenty years of abduction experience and I'm still a glorified shift supervisor with compound eyes and no 401k. Nobody even knows my name at the home office.",
+   "joke_id": "mantis-b8-2c5d74eb",
+   "writer": "evolve-harness",
+   "model": null
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

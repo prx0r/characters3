@@ -1,0 +1,67 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "muse",
+ "name": "muse",
+ "note": "AI character graph — same schema as stage comics, author_type ai. Derived fields labeled; gaps named.",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "build_ai_graphs (derived from pack + ledger)",
+ "identity": {
+  "deal": null,
+  "premise": null,
+  "archetype": null,
+  "philosophy": null,
+  "dramatic_core": null,
+  "misinterpretation_rule": null,
+  "expression": null,
+  "modulator_range": null,
+  "threads": null,
+  "profile": null
+ },
+ "engine": {
+  "delivery_archetype": null,
+  "archetype_def": null,
+  "archetype_delivery": null,
+  "mary_coords": null,
+  "voice_provider": null,
+  "voice_clone_id": null,
+  "measured_acoustics": null
+ },
+ "bio": {
+  "type": "fictional (planned)",
+  "origin": "MCP client persona"
+ },
+ "sets": [],
+ "set_queue": {
+  "note": "0 ledger bits; 0 human trials so far",
+  "blocked_on": "human votes (judge.py / duels)"
+ },
+ "timing_profile": null,
+ "gtvh_profile": null,
+ "lore_sources": null,
+ "theory_links": {
+  "internal": [],
+  "note": "character-specific links after first measured set"
+ },
+ "known_bits": [],
+ "essay_seeds": [],
+ "provenance": {
+  "character_pack": "freaks/muse/MISSING",
+  "delivery": "MISSING",
+  "canon": "none",
+  "ledger": "theory/ledger.py rank join (content hash)",
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines (fingerprints ≤7 words)",
+   "missing = null, never assumed",
+   "derived fields labeled derived; authored prose only where quoted from character spec",
+   "human verdicts dispose; gate scores propose"
+  ],
+  "missing": [
+   "character.json (no pack yet — spec not built)",
+   "delivery.json",
+   "canon block"
+  ]
+ }
+}

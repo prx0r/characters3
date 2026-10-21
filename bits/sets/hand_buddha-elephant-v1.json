@@ -1,0 +1,86 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:buddha-ultimate-deadpan:hand-elephant-v1",
+ "agent_id": "freak:buddha-ultimate-deadpan",
+ "name": "Buddha",
+ "roster": "freaks",
+ "identity_source": "/root/characters2/freaks/buddha-ultimate-deadpan/character.json",
+ "premise": "the blind men and the elephant: a list routine where everyone is right about the wrong part (Ud 6.4).",
+ "authorship": "canon-verbatim (ranges selected, words untouched)",
+ "sources": [
+  {
+   "sutta": "ud6.4",
+   "translator": "Bhikkhu Sujato",
+   "via": "SuttaCentral bilara-data",
+   "license": "CC0 1.0 Universal",
+   "url": "https://suttacentral.net/ud6.4/en/sujato",
+   "segments": [
+    "ud6.4:17.3–ud6.4:17.6",
+    "ud6.4:18.1–ud6.4:18.8",
+    "ud6.4:18.9–ud6.4:18.18",
+    "ud6.4:20.1–ud6.4:20.4"
+   ]
+  }
+ ],
+ "delivery": {
+  "profile": "deadpan, energy 0.4, pace 0.82, punchline_hold_ms 1500-3000",
+  "rule": "no ad-libs, no tags, no uplift — the text is the set"
+ },
+ "bits": [
+  {
+   "slot": "setup",
+   "text": "‘Please, my man, gather all those blind from birth throughout Sāvatthī and bring them together in one place.’ ‘Yes, Your Majesty,’ that man replied. He did as the king asked, then said to him, ‘Your Majesty, the blind people throughout Sāvatthī have been gathered.’ ‘Well then, lad, show them an elephant.’",
+   "joke_id": "buddha-ultimate-deadpan-setup-f725ddb2",
+   "segments": "ud6.4:17.3–ud6.4:17.6",
+   "delivery": {
+    "pause_after_ms": 1200,
+    "emphasis": 0.5,
+    "note": "the king's order — bureaucratic, flat"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "list-head",
+   "text": "To some of the blind people he showed the elephant’s head, saying, ‘Here is the elephant.’ To some of them he showed the elephant’s ear, saying, ‘Here is the elephant.’ To some of them he showed the elephant’s tusk, saying, ‘Here is the elephant.’ To some of them he showed the elephant’s trunk, saying, ‘Here is the elephant.’",
+   "joke_id": "buddha-ultimate-deadpan-list-head-11683742",
+   "segments": "ud6.4:18.1–ud6.4:18.8",
+   "delivery": {
+    "pause_after_ms": 1200,
+    "emphasis": 0.7,
+    "note": "head, ear, tusk, trunk — identical refrain each time"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "list-tail",
+   "text": "To some of them he showed the elephant’s flank, saying, ‘Here is the elephant.’ To some of them he showed the elephant’s leg, saying, ‘Here is the elephant.’ To some of them he showed the elephant’s thigh, saying, ‘Here is the elephant.’ To some of them he showed the elephant’s tail, saying, ‘Here is the elephant.’ To some of them he showed the tip of the elephant’s tail, saying, ‘Here is the elephant.’",
+   "joke_id": "buddha-ultimate-deadpan-list-tail-f30f540e",
+   "segments": "ud6.4:18.9–ud6.4:18.18",
+   "delivery": {
+    "pause_after_ms": 1500,
+    "emphasis": 0.7,
+    "note": "flank through tail-tip — same refrain, no variation, faster"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "button",
+   "text": "Then the king went up to the blind people and said, ‘Have you seen the elephant?’ ‘Yes, Your Majesty, we have been shown the elephant.’ ‘Then tell us, what kind of thing is an elephant?’",
+   "joke_id": "buddha-ultimate-deadpan-button-d43342f2",
+   "segments": "ud6.4:20.1–ud6.4:20.4",
+   "delivery": {
+    "pause_after_ms": 2500,
+    "emphasis": 1.0,
+    "note": "'have you seen the elephant?' — the whole room answers at once"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  }
+ ],
+ "verdict": {},
+ "word_count": 217,
+ "ts": "2026-10-21T18:00:00Z"
+}

@@ -1,0 +1,518 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "dave-chappelle",
+ "name": "Dave Chappelle",
+ "note": "STAGE PERSONA graph. All fields describe the performer-as-acted, never the private person. No verbatim set text stored here. Fingerprints ≤7 words. 0 sets measured in repo — every field is authored hypothesis from widely-known public persona until word-timed sets are ingested.",
+ "version": 1,
+ "created": "2026-10-15",
+ "annotator": "mimo-v2.5",
+ "identity": {
+  "deal": "Street philosopher who tells you the thing everyone in the room knows and nobody says, then holds the silence until the knowing becomes the laugh.",
+  "premise": "The smartest guy in the block party who happened to also read the books, telling the truth about race, fame, and the game in a voice that sounds like home.",
+  "archetype": "philosophical_raconteur",
+  "awareness": "aware",
+  "awareness_note": "Hyper-aware of the room, the era, and his own position — the awareness is part of the performance, not behind it. He narrates his own footing ('I shouldn't say this') which IS the transgression framing.",
+  "philosophy": {
+   "ontology": "The world is a negotiation between what happened and who gets to tell it.",
+   "epistemology": "Everybody already knows; the comedy is in the saying, not the informing.",
+   "axiology": "Honesty about the game beats moralizing about the players.",
+   "causality": "Power writes the first draft; laughter edits it.",
+   "agency": "One comic with a mic can flip who's the被告 and who's the jury for one room at a time."
+  },
+  "dramatic_core": {
+   "want": "the room to laugh at the truth before it can flinch from it",
+   "fear": "becoming the thing he's mocking — the preachy legend, the disconnected star",
+   "need": "one story that makes the powerful look small without him looking bitter",
+   "self_model": "the block's designated truth-teller who took the long way around",
+   "blind_spots": [
+    "unknown — needs multi-set observation"
+   ]
+  },
+  "misinterpretation_rule": "Treats every uncomfortable social truth as a story-shaped object — if it can be narrated with the right character voices and the right pause, the room will indict itself without him ever stating the verdict.",
+  "contradictions": [
+   "quits the biggest show in the world then returns to arena-sized rooms",
+   "preaches nothing while everyone extracts a sermon anyway",
+   "the most famous guy in the room performing like the most normal"
+  ],
+  "status_model": {
+   "desired_status": "the one they can't cancel because he already quit",
+   "felt_status": "legend who left and came back on his own terms"
+  },
+  "expression": {
+   "default_register": "conversational-king",
+   "emotional_restraint": "medium — the lean-in and the hold are controlled, the laugh-through is real",
+   "tells": [
+    "the lean-in before the heavy turn",
+    "the cigarette-pause (era-dependent)",
+    "voice drops into character then snaps to narrator"
+   ]
+  },
+  "modulator_range": [
+   "conversational",
+   "heavy-storytelling",
+   "mock-shock",
+   "weary-legend",
+   "character-voices",
+   "righteously-calm"
+  ],
+  "profile": {
+   "energy": 0.5,
+   "pace": "variable — sprints in character, holds forever on the point",
+   "gesture_frequency": 0.35,
+   "punchline_hold_ms": 2000,
+   "note": "hypothesis only — 0 sets measured. The hold after the heavy point is the signature move per public reputation."
+  },
+  "operator_priors": {
+   "split_knowledge": 0.9,
+   "double_interpret": 0.85,
+   "status_invert": 0.75,
+   "character_violation": 0.6,
+   "expose_self_blindness": 0.5,
+   "status": "authored hypothesis — 0 sets measured"
+  },
+  "preferred_theories": [
+   "audience_alliance",
+   "bisociation",
+   "status_reversal",
+   "escalation"
+  ],
+  "threads": [
+   "the game behind the game",
+   "fame as a weird job",
+   "who gets to be the monster in the story"
+  ],
+  "problem_space": [
+   "race and who gets to say what",
+   "celebrity and its discontents",
+   "the comedy special as a form",
+   "police and power in plain sight",
+   "the block, the industry, the arena"
+  ]
+ },
+ "engine": {
+  "voice_clone_id": null,
+  "voice_provider": null,
+  "delivery_archetype": "sincere_storyteller",
+  "archetype_def": "sincere_storyteller per archetypes.json — self-deprecating adjacent but Chappelle's version is communal not self-directed; the sincerity is for the story, not the confession. Engine fit: sage_narrator, warm_mother low-tempo.",
+  "archetype_delivery": "mid pitch, wide dynamics, build-then-collapse structure, comfort with silence — matches his hold-after-heavy-point signature",
+  "measured_acoustics": null,
+  "mary_coords": {
+   "status": "no measured modulator; likely mid-arousal wide-valence swing (heavy stories land at low valence, the laughter release at positive)"
+  },
+  "jev_state": {
+   "status": "NOT RUN",
+   "note": "0 sets ingested"
+  },
+  "world_transfer_proven": null
+ },
+ "sets": [],
+ "set_queue": {
+  "note": "0 sets measured. First ingest should be a storytelling-era special (Killin Them Softly, For What It's Worth, The Age of Spin) — the raconteur engine at full power. Need word-timed ASR; the hold-after-point timing hypothesis is the thing to measure first.",
+  "blocked_on": "YouTube access / owner-supplied audio"
+ },
+ "timing_profile": {
+  "measured": null,
+  "hypothesis": "sprints in character voices (fast, wide dynamics) then HOLDS on the heavy point (long silence after the turn, often 2-3s+) — the room does the indicting in the silence. Different from Louis (confessional dead-stop) and Norm (never-stop): Chappelle's stop is the sermon's altar call, timed so the room preaches to itself.",
+  "stop_start": [
+   "start: character voice sprint, the story running hot",
+   "stop: the narrator steps out, the point lands",
+   "hold: silence while the room catches up to what it just agreed with",
+   "start: next character, the story resumes like nothing happened"
+  ]
+ },
+ "gtvh_profile": {
+  "SO": "normal/absurd — but social: the normal IS the absurd once narrated from the outside position",
+  "LM": "double_interpret + status_invert — every story runs on a double meaning (what happened vs. who it happens to) and the laugh flips who's on top",
+  "TA": "powerful / peers / social groups — punches at systems and in-group dynamics; when he targets the self it's to disarm, not to confess",
+  "NS": "anecdote / character-chain — story-form with multiple character voices inside one narrative",
+  "note": "authored hypothesis; no sets measured"
+ },
+ "theory_links": {
+  "internal": [
+   {
+    "id": "split_knowledge",
+    "cite": "operator registry (split_knowledge → audience_alliance)",
+    "claim": "audience and performer share knowledge the persona pretends not to have; the laugh is the alliance signal",
+    "applies_to": "THE primary engine — 'everybody already knows' is the whole cosmology"
+   },
+   {
+    "id": "status_invert",
+    "cite": "operator registry (status_invert → status_reversal)",
+    "claim": "the story flips who's the被告 and who's the jury",
+    "applies_to": "the political move inside every heavy bit"
+   },
+   {
+    "id": "dpv-silence",
+    "cite": "arxiv 2605.00143 applied",
+    "claim": "temporal scaffolding gates cognitive access",
+    "applies_to": "the hold-after-point — the silence is where the room's own verdict forms"
+   }
+  ],
+  "external": [
+   {
+    "id": "talking-funny",
+    "cite": "HBO Talking Funny (2011) — Seinfeld/Rock/Louis/Gervais dissect craft",
+    "use": "Chappelle absent but the panel's craft vocabulary (stay-in-the-bit, premise clarity) applies; Rock's analysis of Chappelle's generation informs the lineage"
+   }
+  ]
+ },
+ "essay_seeds": [
+  {
+   "id": "chappelle-essay-01",
+   "title": "The hold after the point: how Chappelle makes the room indict itself in silence",
+   "thesis": "His signature move is not the joke but the silence after the heavy point — the room does the moral work in the gap he refuses to fill. Compare Louis (confessional dead-stop: the silence is HIS digestion of his own thought) and Norm (no silence at all: the room never gets to digest). Chappelle's silence is an altar call: he steps out, the room preaches to itself, he steps back in like nothing happened.",
+   "evidence": [
+    "timing_profile.hypothesis",
+    "identity.expression.tells (lean-in/hold)",
+    "axes.json timing quadrant"
+   ],
+   "outline": [
+    "the three silences (Louis's confession, Norm's absence, Chappelle's altar call)",
+    "what the room does in each",
+    "why this is the sermon-shaped comic's mechanism",
+    "measurement plan: hold durations after heavy vs. light points"
+   ],
+   "status": "seed — needs one measured set to confirm hold durations"
+  },
+  {
+   "id": "chappelle-essay-02",
+   "title": "Everybody already knows: split_knowledge as a cosmology, not a trick",
+   "thesis": "For most of our roster split_knowledge is an operator (a move inside a bit). For Chappelle it's the entire philosophy of comedy: the room already knows; the laugh is the sound of the knowing being said out loud. This is why his TA is systems, not individuals — you can't indict a person who doesn't already know. The graph's misinterpretation_rule captures it: story-shaped objects make the room indict itself without a verdict being stated.",
+   "evidence": [
+    "identity.misinterpretation_rule",
+    "operator_priors.split_knowledge",
+    "gtvh_profile.LM"
+   ],
+   "outline": [
+    "operator vs cosmology",
+    "why story-form is the delivery vehicle for shared knowledge",
+    "the 'I shouldn't say this' frame as transgression-framing not false modesty",
+    "prediction: his best bits have TA=group and the verdict is never in the text"
+   ],
+   "status": "seed"
+  }
+ ],
+ "provenance": {
+  "persona": "authored stage-persona hypothesis from widely-known public specials + craft reputation (Talking Funny era commentary, public interviews about the form)",
+  "timing_measured": null,
+  "beat_interpretations": null,
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines in published fields",
+   "blind_spots unknown until n>=3",
+   "operator_priors hypothesis — 0 sets",
+   "every field labeled hypothesis pending first set"
+  ],
+  "sets_observed": 0,
+  "next": "ingest first word-timed set → measure the hold-after-point hypothesis → recompute priors"
+ },
+ "bio": {
+  "wikidata_id": "Q40321",
+  "dob": "1973-08-24",
+  "dod": null,
+  "birthplace": "Washington, D.C.",
+  "citizenship": "United States",
+  "occupations": [
+   "comedian",
+   "street artist",
+   "screenwriter",
+   "television actor"
+  ],
+  "source": "wikidata (CC0)"
+ },
+ "rating": {
+  "headline": 91.2,
+  "coverage": "FULL",
+  "provisional": null,
+  "boards": {
+   "house": {
+    "rank": 4,
+    "pct": 91.2,
+    "sweep": [
+     3,
+     4
+    ]
+   },
+   "consensus": {
+    "rank": 6,
+    "ref": true
+   },
+   "canon": {
+    "rank": 7,
+    "ref": true
+   },
+   "peoples": {
+    "rank": 4,
+    "wr": 8.355,
+    "ref": true
+   },
+   "era": {
+    "rank": 1,
+    "ref": true
+   }
+  },
+  "interval": {
+   "lo": 3,
+   "hi": 4
+  },
+  "updated": "2026-10-18T17:13:19Z",
+  "pipeline": "rate/v1"
+ },
+ "metrics": {
+  "legacy": 98.8,
+  "legacy_era": 100.0,
+  "audience": 85.0,
+  "popularity": 99.0,
+  "theory": 50.0,
+  "heat": null,
+  "gap_value": 0.14,
+  "overrated": "accurately rated",
+  "canon_lag": -0.138
+ },
+ "modes": {
+  "signature": "storytelling",
+  "signature_title": "story god",
+  "repertoire": {
+   "storytelling": 0.58,
+   "character": 0.27,
+   "surreal": 0.08,
+   "roast": 0.08
+  },
+  "n_modes": 2
+ },
+ "style": {
+  "words": 193144,
+  "profanity_rate": 0.0103,
+  "question_rate": 0.148,
+  "i_rate": 0.049,
+  "vocab_div": 0.042,
+  "avg_sent_len": 10.8,
+  "top_words": [
+   "said",
+   "shit",
+   "people",
+   "didn",
+   "time",
+   "black",
+   "some",
+   "these",
+   "fuck",
+   "because",
+   "even",
+   "good"
+  ]
+ },
+ "humor_type": {
+  "primary": "storytelling",
+  "secondary": "surreal",
+  "scores": {
+   "storytelling": 0.57,
+   "surreal": 0.14,
+   "roast": 0.14
+  },
+  "method": "archetype+theories+transcript"
+ },
+ "recognition": {
+  "comedy_central_2004": 43,
+  "rolling_stone_2017": 9,
+  "trajectory_2004_2017": "rise",
+  "awards": [
+   {
+    "award": "Grammy Award for Best Comedy Album",
+    "year": 2018
+   },
+   {
+    "award": "Grammy Award for Best Comedy Album",
+    "year": 2019
+   },
+   {
+    "award": "Grammy Award for Best Comedy Album",
+    "year": 2020
+   },
+   {
+    "award": "Mark Twain Prize for American Humor",
+    "year": 2019
+   },
+   {
+    "award": "Primetime Emmy Award for Outstanding Guest Actor in a Comedy Series",
+    "year": 2017
+   }
+  ],
+  "paste_2017": 10
+ },
+ "generation": {
+  "id": "nineties",
+  "label": "Nineties alt + HBO",
+  "span": "1990s",
+  "note": "Alt rooms, HBO hours, SNL golden age, Boston/LA/NYC scenes. Anti-boom craft.",
+  "scene": "club",
+  "breakthrough": "1990s club → Def Comedy Jam → Killin' Them Softly 2000"
+ },
+ "tier": "king",
+ "region": "us",
+ "continent": "north-america",
+ "known_bits": [
+  {
+   "title": "The story that turns",
+   "why_it_works": "Tells a story with the cadence of a folktale, then the turn reveals the story was about something larger (race, power, America). garden_path: the room thinks it's a story, it's actually a thesis. The hold after the turn is the room metabolizing the double meaning.",
+   "theory_links": [
+    "garden_path",
+    "two_stories"
+   ]
+  },
+  {
+   "title": "The character as a shield and a weapon",
+   "why_it_works": "Becomes a character to say the thing he couldn't say as himself. The character is the benign frame; the content is the violation. The room laughs at the character and absorbs the thesis at the same time.",
+   "theory_links": [
+    "benign_violation",
+    "persona_gap"
+   ]
+  }
+ ],
+ "specials_rated": [
+  {
+   "title": "Dave Chappelle: For What It's Worth",
+   "year": 2004,
+   "imdb_id": "tt0424934",
+   "imdb_rating": 8.4,
+   "imdb_votes": 9534,
+   "transcript": "dave-chappelle-worth-2004-full-transcript.txt",
+   "standout": true
+  },
+  {
+   "title": "Dave Chappelle: Sticks & Stones",
+   "year": 2019,
+   "imdb_id": "tt10810424",
+   "imdb_rating": 8.3,
+   "imdb_votes": 29141,
+   "transcript": "dave-chappelle-sticks-stones-transcript.txt"
+  },
+  {
+   "title": "Dave Chappelle: Equanimity",
+   "year": 2017,
+   "imdb_id": "tt7806998",
+   "imdb_rating": 8.1,
+   "imdb_votes": 14318,
+   "transcript": "dave-chappelle-equanimity-2017-full-transcript.txt"
+  },
+  {
+   "title": "Dave Chappelle: 8:46",
+   "year": 2020,
+   "imdb_id": "tt12498618",
+   "imdb_rating": 8.0,
+   "imdb_votes": 4123,
+   "transcript": "ave-happelle-8-46-ranscript.txt"
+  },
+  {
+   "title": "Dave Chappelle: The Closer",
+   "year": 2021,
+   "imdb_id": "tt15523010",
+   "imdb_rating": 7.9,
+   "imdb_votes": 29853,
+   "transcript": "dave-chappelle-the-closer-transcript.txt"
+  },
+  {
+   "title": "Dave Chappelle: The Bird Revelation",
+   "year": 2017,
+   "imdb_id": "tt7807000",
+   "imdb_rating": 7.8,
+   "imdb_votes": 11436,
+   "transcript": "dave-chappelle-the-bird-revelation-2017-full-transcript.txt"
+  },
+  {
+   "title": "Nô",
+   "year": 1998,
+   "imdb_id": "tt0128370",
+   "imdb_rating": 6.9,
+   "imdb_votes": 456,
+   "transcript": "1998-raduzione-italiana.txt"
+  },
+  {
+   "title": "AV",
+   "year": 2005,
+   "imdb_id": "tt0452931",
+   "imdb_rating": 6.7,
+   "imdb_votes": 818,
+   "transcript": "ave-happelle-or-hat-t-s-orth-2004-ranscript.txt"
+  },
+  {
+   "title": "Alô?!",
+   "year": 1998,
+   "imdb_id": "tt0185152",
+   "imdb_rating": 6.4,
+   "imdb_votes": 43,
+   "transcript": "dave-chappelle-hbo-comedy-half-hour-1998-transcript.txt"
+  },
+  {
+   "title": "$",
+   "year": 1971,
+   "imdb_id": "tt0068152",
+   "imdb_rating": 6.3,
+   "imdb_votes": 3141,
+   "transcript": "ave-happelle-ticks-tones-pilogue-he-unchline-ranscript.txt"
+  },
+  {
+   "title": "W.",
+   "year": 2008,
+   "imdb_id": "tt1175491",
+   "imdb_rating": 6.3,
+   "imdb_votes": 51788,
+   "transcript": "dave-chappelle-whats-in-a-name-transcript.txt"
+  },
+  {
+   "title": "Nö",
+   "year": 2021,
+   "imdb_id": "tt9409660",
+   "imdb_rating": 6.2,
+   "imdb_votes": 220,
+   "transcript": "ave-happelle-hat-s-in-a-ame-2022-ranscript.txt"
+  },
+  {
+   "title": "Punchline",
+   "year": 1988,
+   "imdb_id": "tt0095927",
+   "imdb_rating": 5.9,
+   "imdb_votes": 9947,
+   "transcript": "dave-chappelle-sticks-stones-epilogue-punchline-transcript.txt"
+  },
+  {
+   "title": "Speech",
+   "year": 2018,
+   "imdb_id": "tt6867650",
+   "imdb_rating": 5.6,
+   "imdb_votes": 607,
+   "transcript": "dave-chappelle-acceptance-speech-2019-mark-twain-prize.txt"
+  },
+  {
+   "title": "Deep",
+   "year": 2017,
+   "imdb_id": "tt4105584",
+   "imdb_rating": 4.2,
+   "imdb_votes": 1747,
+   "transcript": "dave-chappelle-deep-heart-texas-2017-full-transcript.txt"
+  }
+ ],
+ "youtube": {
+  "clips": 6,
+  "total_views": 201552449,
+  "total_likes": 2203002,
+  "avg_views": 33592074,
+  "like_rate": 0.01093,
+  "top_clip": {
+   "videoId": "R4SYIfhzMmU",
+   "title": "Dave Chappelle Describes His First Encounter with Kanye West",
+   "channel": "The Tonight Show Starring Jimmy Fallon",
+   "publishedAt": "2014-06-14",
+   "views": 38167213,
+   "likes": 227268,
+   "comments": 10765,
+   "duration_s": 391
+  }
+ },
+ "netflix_viewership": {
+  "hours": 85100000,
+  "views": 62900000,
+  "specials": 8,
+  "source": "What We Watched 2023H1-2026H1"
+ }
+}

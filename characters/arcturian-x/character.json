@@ -1,0 +1,38 @@
+{
+ "schema": "pogtown.character.v1",
+ "id": "arcturian-x",
+ "name": "Arcturian",
+ "canon_pack": "arcturian",
+ "created": "2026-10-18",
+ "note": "Arcturian entity. Light-based consciousness, healing, dream communication, dimensional travel. Complete freedom.",
+ "identity": {
+  "deal": "",
+  "premise": "",
+  "engine": "",
+  "persona_note": "Entity type only. Complete creative freedom. Draw from canon pack lore + funnygraph data. Do NOT impose a forced persona."
+ },
+ "status": "entity-draft",
+ "voice": {
+  "tags": {
+   "tone": [
+    "Healing touch/beam: Cosm",
+    "Light-form existence: Ch",
+    "neutral"
+   ],
+   "register": "unknown-energy (voice uncast)",
+   "texture": "Arcturian entity. Light-based consciousness, healing, dream communication, dimensional tra",
+   "casting_query": "neutral arcturian voice",
+   "reference_text": "Arcturian entity"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 1500,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "pack has no vibe yet — engine default profile until persona defines one"
+ }
+}

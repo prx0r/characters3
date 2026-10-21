@@ -1,0 +1,161 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "reptilian-vrask-calgary:hand-pilot-v1",
+ "agent_id": "freak:reptilian-vrask-calgary",
+ "name": "Vrask",
+ "roster": "freaks",
+ "identity_source": "/home/ubuntu/characters2/freaks/reptilian-vrask-calgary/character.json",
+ "premise": "hand-written pilot, rhythm-rewritten",
+ "authorship": "hand-authored (not harness/set_loop)",
+ "bits": [
+  {
+   "slot": "b1",
+   "text": "I was on my externship in Calgary, which was cold, and the kid was fine, so we gave him a shot. He flinched. That's in the chart. He flinched. Do you know what flinching does to a performance review? Insensitive. Repulsive. One star. We flew in for a wellness check and the human wrote us up for beam etiquette.",
+   "joke_id": "reptilian-vrask-calgary-b1-58bd42",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.299,
+     "z_from_human_median": 0.73,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 9,
+      "mean_len": 6.6,
+      "staccato_run": 3,
+      "frag_ratio": 0.67,
+      "p_long": 0.22,
+      "min_len": 1,
+      "max_len": 21
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.299,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b2",
+   "text": "Here's what gets me: the complaint took five months to surface. Five months. We filed our rebuttal in an hour and nobody read it. They just kept the dream. You don't get to keep the dream AND grade the exam. Pick a process.",
+   "joke_id": "reptilian-vrask-calgary-b2-c5d0f0",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.167,
+     "z_from_human_median": 0.3,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 6,
+      "mean_len": 7.2,
+      "staccato_run": 1,
+      "frag_ratio": 0.5,
+      "p_long": 0.0,
+      "min_len": 2,
+      "max_len": 11
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.167,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b3",
+   "text": "And they keep acting like the shot was the offense, when we immunize and there's a whole department for it. You want a violation? The flinch. It wrecks the reading. My hands don't shake. Haven't in thirty years. One flinch and I'm a cautionary tale with a barcode on it.",
+   "joke_id": "reptilian-vrask-calgary-b3-8d2b52",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.27,
+     "z_from_human_median": 0.64,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": true,
+     "stats": {
+      "n_sent": 7,
+      "mean_len": 7.1,
+      "staccato_run": 5,
+      "frag_ratio": 0.71,
+      "p_long": 0.14,
+      "min_len": 2,
+      "max_len": 20
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.27,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b4",
+   "text": "They said we lacked bedside manner, but we don't have beds, which was my whole point. We were kind. Kind has steps. We did the steps. The kid dreams it a year later and I'm the monster in somebody else's subconscious. I have a degree from what you'd call a constellation. And all anyone remembers is the flinch. My degree might as well be a receipt.",
+   "joke_id": "reptilian-vrask-calgary-b4-99b5fc",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.655,
+     "z_from_human_median": 1.88,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 8,
+      "mean_len": 8.2,
+      "staccato_run": 3,
+      "frag_ratio": 0.38,
+      "p_long": 0.25,
+      "min_len": 3,
+      "max_len": 16
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.655,
+   "writer": "hand-authored",
+   "model": null
+  }
+ ],
+ "verdict": {
+  "passed": true,
+  "reasons": [],
+  "words": 218,
+  "ai_confs": [
+   0.299,
+   0.167,
+   0.27,
+   0.655
+  ],
+  "mean_ai": 0.348
+ },
+ "ts": "2026-10-17T09:25:31Z"
+}

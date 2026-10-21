@@ -1,0 +1,183 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "gray-x",
+ "name": "Gray",
+ "note": "AI character graph — same schema as stage comics, author_type ai. Derived fields labeled; gaps named.",
+ "author_type": "ai",
+ "version": 1,
+ "created": "2026-10-21",
+ "annotator": "build_ai_graphs (derived from pack + ledger)",
+ "identity": {
+  "deal": "Gray entity. Draw from Preston case, Gray Face/White Face court, one-sided telepathy, aftereffect cascade. Complete freedom.",
+  "premise": null,
+  "archetype": null,
+  "philosophy": null,
+  "dramatic_core": null,
+  "misinterpretation_rule": null,
+  "expression": null,
+  "modulator_range": null,
+  "threads": [
+   "Court of faces (introduce each mask)",
+   "One-sided telepathy (customer-service hold music)",
+   "Aftereffect cascade (migraines to marriage to manuscripts)"
+  ],
+  "profile": null
+ },
+ "engine": {
+  "delivery_archetype": null,
+  "archetype_def": null,
+  "archetype_delivery": null,
+  "mary_coords": null,
+  "voice_provider": null,
+  "voice_clone_id": null,
+  "measured_acoustics": null
+ },
+ "bio": {
+  "type": "entity",
+  "source": "canon/gray (Preston-case lore)"
+ },
+ "sets": [
+  {
+   "set_id": "freak:gray-x:gen-evolve-v1",
+   "file": "gen_gray-evolve-v1.json",
+   "n_bits": 5,
+   "words": 279,
+   "authorship": "evolve+harness 2026-10-16..19 (gate-passed, UNJUDGED)"
+  },
+  {
+   "set_id": "freak:gray-x:gen-voice-v1",
+   "file": "gen_gray-voice-v1.json",
+   "n_bits": 6,
+   "words": 367,
+   "authorship": "evolve harness 2026-10-19 overnight run (gate-passed, UNJUDGED — do not mistake for funny)"
+  }
+ ],
+ "set_queue": {
+  "note": "10 ledger bits; 0 human trials so far",
+  "blocked_on": "human votes (judge.py / duels)"
+ },
+ "timing_profile": null,
+ "gtvh_profile": {
+  "SO": "Gray entity. Draw from Preston case, Gray Face/White Face court, one-sided telepathy, aftereffect cascade. Complete freedom.",
+  "LM": null,
+  "TA": null,
+  "NS": null,
+  "derived_from": "character.json premise + preferred_theories + canon angles",
+  "note": "derived from spec fields, not authored; TA/NS gap flagged"
+ },
+ "lore_sources": {
+  "canon": "canon/gray",
+  "behind": [
+   "canon:hill-case",
+   "canon:hybrid-program",
+   "canon:mack-phenomenology",
+   "canon:vallee-taxonomy",
+   "lore:almanac:48-grey-races",
+   "lore:almanac:60-grey-insectoids"
+  ],
+  "evidence": "graph.EXTRA_LORE (genome draw-lines + canon summaries)"
+ },
+ "theory_links": {
+  "internal": [],
+  "note": "character-specific links after first measured set"
+ },
+ "known_bits": [
+  {
+   "title": "gate-passed bit (55w)",
+   "why_it_works": "passed, band-dist 0.010",
+   "fingerprint": "The hold music at the pharmacy knows",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (56w)",
+   "why_it_works": "passed, band-dist 0.046",
+   "fingerprint": "Everybody thinks one-sided telepathy would be spooky.",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (68w)",
+   "why_it_works": "passed, band-dist 0.054",
+   "fingerprint": "Court of faces is just HR with",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (63w)",
+   "why_it_works": "passed, band-dist 0.061",
+   "fingerprint": "My doctor's office reads my mind, but",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (67w)",
+   "why_it_works": "passed, band-dist 0.064",
+   "fingerprint": "The hold music knows what I did.",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (71w)",
+   "why_it_works": "passed, band-dist 0.071",
+   "fingerprint": "Your doctor reads your chart and starts",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (52w)",
+   "why_it_works": "passed, band-dist 0.430",
+   "fingerprint": "The Preston ruling gave me a migraine",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (53w)",
+   "why_it_works": "passed, band-dist 0.503",
+   "fingerprint": "I called the bank about a twelve-dollar",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (39w)",
+   "why_it_works": "passed",
+   "fingerprint": "You ever really look at a handshake?",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  },
+  {
+   "title": "gate-passed bit (54w)",
+   "why_it_works": "passed",
+   "fingerprint": "Every morning I brush my teeth with",
+   "tier": "gate-passed",
+   "wins": 0,
+   "trials": 0
+  }
+ ],
+ "essay_seeds": [],
+ "provenance": {
+  "character_pack": "freaks/gray-x/character.json",
+  "delivery": "MISSING",
+  "canon": "canon/gray/",
+  "ledger": "theory/ledger.py rank join (content hash)",
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines (fingerprints ≤7 words)",
+   "missing = null, never assumed",
+   "derived fields labeled derived; authored prose only where quoted from character spec",
+   "human verdicts dispose; gate scores propose"
+  ],
+  "missing": [
+   "delivery.json"
+  ]
+ }
+}

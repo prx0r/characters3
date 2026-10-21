@@ -1,0 +1,111 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:reptilian-ralph-middle-management:20261017-083528",
+ "agent_id": "freak:reptilian-ralph-middle-management",
+ "name": "Reptilian Ralph, Middle Management",
+ "roster": "freaks",
+ "identity_source": "/home/ubuntu/characters2/freaks/reptilian-ralph-middle-management/character.json",
+ "premise": "Burnt-out reptilian elite doing a compliance tour among the humans he supposedly rules",
+ "seed": 11,
+ "max_attempts": 5,
+ "bits": [
+  {
+   "slot": "opener",
+   "skill": "normand_live",
+   "text": "I run bloodline meetings every quarter. My cousin Vrex runs a Wendy's in Tucson and thinks he's king of something. The human suit itches in places you don't have. I am a cold-blooded organism pretending to be your regional director of synergy, and you people are trying to kill me with weather.",
+   "gate": {
+    "text": "I run bloodline meetings every quarter. My ancestors conquered civilizations. Now I approve expense reports. My cousin Vrex runs a Wendy's in Tucson and thinks he's king of something. The human suit itches in places you don't have. I filed four HR complaints about the thermostat. They keep it at sixty-eight. Sixty-eight. I am a cold-blooded organism pretending to be your regional director of synergy, and you people are trying to kill me with weather.",
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.041,
+     "z_from_human_median": -0.1,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "passed": true
+   },
+   "ai_conf": 0.041,
+   "writer": "llm",
+   "model": "mimo-v2.6-flash",
+   "sculpted": true,
+   "attempts_used": 1
+  },
+  {
+   "slot": "middle",
+   "skill": "seinfeld_noticing",
+   "text": "My bloodline has run this planet for eleven thousand years and the last four generations have been in middle management. I fell asleep in a conference room once and Karen from payroll called it a wellness incident and now I'm nominated for an award I don't want for a condition I can't disclose.",
+   "gate": {
+    "text": "My bloodline has run this planet for eleven thousand years and the last four generations have been in middle management. My grandfather swallowed a Scottish laird whole. I sent a calendar invite to a synergy workshop and nobody responded. My father could hold a nap for six days under a heated stone. I fell asleep in a conference room once and Karen from payroll called it a wellness incident and now I'm nominated for an award I don't want for a condition I can't disclose.",
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.036,
+     "z_from_human_median": -0.12,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "passed": true
+   },
+   "ai_conf": 0.036,
+   "writer": "llm",
+   "model": "mimo-v2.6-flash",
+   "sculpted": true,
+   "attempts_used": 1
+  },
+  {
+   "slot": "closer",
+   "skill": "seinfeld",
+   "text": "They gave me the wellness award. Then my suit slipped at the eyelid, someone saw the vertical pupil, and said, Congratulations on your promotion. You just keep sliding out of the skin you were issued and nobody files a complaint until quarterly.",
+   "gate": {
+    "text": "They gave me the wellness award. I held it under the desk heater and it finally felt like a warm rock. Then my suit slipped at the eyelid, someone saw the vertical pupil, and said, Congratulations on your promotion. I didn't correct them. That's management now. You just keep sliding out of the skin you were issued and nobody files a complaint until quarterly.",
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.571,
+     "z_from_human_median": 1.61,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "passed": true
+   },
+   "ai_conf": 0.571,
+   "writer": "llm",
+   "model": "mimo-v2.6-flash",
+   "sculpted": true,
+   "attempts_used": 1
+  }
+ ],
+ "verdict": {
+  "passed": true,
+  "reasons": [],
+  "words": 147,
+  "ai_confs": [
+   0.041,
+   0.036,
+   0.571
+  ],
+  "mean_ai": 0.216,
+  "coherent_all": true,
+  "human_all": true,
+  "length_ok": true
+ },
+ "trace": [
+  "=== freak:reptilian-ralph-middle-management (Reptilian Ralph, Middle Management) start \u2014 taboo='eyes slit vertically on camera whenever he gets ex' foundation=care max_attempts=5",
+  "[freak:reptilian-ralph-middle-management a0] writer=llm skill=normand_live angle=the_defamiliarize flip=None \u2192 coherent=True ai=0.041 z=-0.10 pass=True reward=1.95",
+  "  WINNER at attempt 0: ai=0.041 sculpted=True",
+  "=== freak:reptilian-ralph-middle-management done \u2014 wins=1 attempts=1",
+  "=== freak:reptilian-ralph-middle-management (Reptilian Ralph, Middle Management) start \u2014 taboo='eyes slit vertically on camera whenever he gets ex' foundation=care max_attempts=5",
+  "[freak:reptilian-ralph-middle-management a0] writer=llm skill=seinfeld_noticing angle=the_defamiliarize flip=None \u2192 coherent=True ai=0.036 z=-0.12 pass=True reward=1.94",
+  "  WINNER at attempt 0: ai=0.036 sculpted=True",
+  "=== freak:reptilian-ralph-middle-management done \u2014 wins=1 attempts=1",
+  "=== freak:reptilian-ralph-middle-management (Reptilian Ralph, Middle Management) start \u2014 taboo='eyes slit vertically on camera whenever he gets ex' foundation=care max_attempts=5",
+  "[freak:reptilian-ralph-middle-management a0] writer=llm skill=seinfeld angle=the_defamiliarize flip=None \u2192 coherent=True ai=0.571 z=+1.61 pass=True reward=1.195",
+  "  WINNER at attempt 0: ai=0.571 sculpted=True",
+  "=== freak:reptilian-ralph-middle-management done \u2014 wins=1 attempts=1"
+ ],
+ "ts": "2026-10-17T08:35:56Z"
+}

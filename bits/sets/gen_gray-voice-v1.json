@@ -1,0 +1,62 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:gray-x:gen-voice-v1",
+ "agent_id": "freak:gray-x",
+ "name": "Gray",
+ "roster": "freaks",
+ "identity_source": "theory/generated/evolve_final.json + theory/genomes/freak_gray-x.json",
+ "premise": "gray-x in its own voice: hold-music telepathy (genome winners + evolve winner, verbatim)",
+ "authorship": "evolve harness 2026-10-19 overnight run (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "evolve 2026-10-19, 9h, 342 winners",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "b1",
+   "text": "Court of faces is just HR with lighting. Gray Face handles your complaint, White Face does the appeal, and both of them are thinking about lunch. I got a settlement offer from a guy whose eyes never blinked once. He slid the paper across the table like he was passing a note in fourth grade. I signed it. What am I going to do, argue with a mask?",
+   "joke_id": "gray-x-b1-13a8973d",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b2",
+   "text": "I called the bank about a twelve-dollar fee and I swear I could hear the rep thinking, but it's one-sided, so all I get is his half. It was just hold music with his opinions layered over it. This guy's balance is a rounding error. The fee was legitimate. That's what killed me.",
+   "joke_id": "gray-x-b2-f044b113",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b3",
+   "text": "The hold music knows what I did. It's one-sided telepathy, they're broadcasting, I'm just sitting here holding my Social Security number like a bingo card. They play that flute loop until you confess. I called about a forty dollar charge and by the third chorus I'd admitted things my wife still doesn't know. The rep picked up and I just said sorry before she could even ask.",
+   "joke_id": "gray-x-b3-43ece553",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b4",
+   "text": "Everybody thinks one-sided telepathy would be spooky. It's not, it's customer service. I hear my neighbor's whole inner monologue and it's just hold music and grocery lists. Yesterday he was thinking \"did I get enough Rotel\" for forty-five minutes. That's it. That's the mind-reading. You don't learn anyone's secrets, you just learn they're low on Rotel.",
+   "joke_id": "gray-x-b4-a72eda00",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b5",
+   "text": "The hold music at the pharmacy knows what I did. It's not a tune, it's a interrogation technique — three notes, then silence, like it's waiting for me to confess. And the worst part is I can feel the thoughts coming through one way, all of them about my cholesterol, and none of them mine.",
+   "joke_id": "gray-x-b5-c857c117",
+   "writer": "evolve-harness",
+   "model": null
+  },
+  {
+   "slot": "b6",
+   "text": "Court of faces is just HR with lighting. Gray Face handles your complaint, White Face does the appeal, and both of them are thinking about lunch. I got a settlement offer from a guy whose eyes never blinked once. He slid the paper across the table like he was passing a note in fourth grade. I signed it. What am I going to do, argue with a mask?",
+   "joke_id": "gray-x-b6-13a8973d",
+   "writer": "evolve-harness",
+   "model": null
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

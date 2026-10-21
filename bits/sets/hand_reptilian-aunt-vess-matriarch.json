@@ -1,0 +1,161 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "reptilian-aunt-vess-matriarch:hand-pilot-v1",
+ "agent_id": "freak:reptilian-aunt-vess-matriarch",
+ "name": "Vess",
+ "roster": "freaks",
+ "identity_source": "/home/ubuntu/characters2/freaks/reptilian-aunt-vess-matriarch/character.json",
+ "premise": "hand-written pilot, rhythm-rewritten",
+ "authorship": "hand-authored (not harness/set_loop)",
+ "bits": [
+  {
+   "slot": "b1",
+   "text": "I keep a family scrapbook, though people say family tree and ours is a wreath. Very festive, no branches. My niece married for love. Love. That's an unpaid internship in the bloodline, so I sent her a card that said congratulations on your draft.",
+   "joke_id": "reptilian-aunt-vess-matriarch-b1-ee1f83",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.473,
+     "z_from_human_median": 1.29,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 5,
+      "mean_len": 8.8,
+      "staccato_run": 3,
+      "frag_ratio": 0.6,
+      "p_long": 0.4,
+      "min_len": 1,
+      "max_len": 19
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.473,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b2",
+   "text": "I watch your stories during the day, the ones where someone loses a company and they act like it's a war. Honey, we ran a war. You know what we had? Meetings. So many meetings. The conquest took four years, and three and a half were scheduling.",
+   "joke_id": "reptilian-aunt-vess-matriarch-b2-f582d4",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.094,
+     "z_from_human_median": 0.07,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": true,
+     "stats": {
+      "n_sent": 6,
+      "mean_len": 7.8,
+      "staccato_run": 4,
+      "frag_ratio": 0.67,
+      "p_long": 0.17,
+      "min_len": 1,
+      "max_len": 21
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.094,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b3",
+   "text": "I fell asleep during my own eulogy rehearsal and woke up at the good part. Napped through the takeover and woke up in charge of the thermostat. That's the bloodline. We conquer, then we rest. Aggressively.",
+   "joke_id": "reptilian-aunt-vess-matriarch-b3-166773",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.139,
+     "z_from_human_median": 0.21,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 5,
+      "mean_len": 7.2,
+      "staccato_run": 3,
+      "frag_ratio": 0.6,
+      "p_long": 0.2,
+      "min_len": 1,
+      "max_len": 15
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.139,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b4",
+   "text": "I unsubscribed from the bloodline newsletter three times and they keep adding me back. My great-grandlings never call because they're all in middle management now, and one of them failed the compliance quiz. I keep the email. Not to shame him. To scrapbook. Legacy is just gossip with timestamps.",
+   "joke_id": "reptilian-aunt-vess-matriarch-b4-b25d01",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.02,
+     "z_from_human_median": -0.17,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 6,
+      "mean_len": 8.2,
+      "staccato_run": 4,
+      "frag_ratio": 0.5,
+      "p_long": 0.17,
+      "min_len": 2,
+      "max_len": 19
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.02,
+   "writer": "hand-authored",
+   "model": null
+  }
+ ],
+ "verdict": {
+  "passed": true,
+  "reasons": [],
+  "words": 176,
+  "ai_confs": [
+   0.473,
+   0.094,
+   0.139,
+   0.02
+  ],
+  "mean_ai": 0.181
+ },
+ "ts": "2026-10-17T09:25:26Z"
+}

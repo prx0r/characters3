@@ -1,0 +1,58 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:buddha-ultimate-deadpan:hand-kalama-v1",
+ "agent_id": "freak:buddha-ultimate-deadpan",
+ "name": "Buddha",
+ "roster": "freaks",
+ "identity_source": "/root/characters2/freaks/buddha-ultimate-deadpan/character.json",
+ "premise": "the Kalama charter: skeptics ask who to believe; the answer refuses authority itself (AN 3.65).",
+ "authorship": "canon-verbatim (ranges selected, words untouched)",
+ "sources": [
+  {
+   "sutta": "an3.65",
+   "translator": "Bhikkhu Sujato",
+   "via": "SuttaCentral bilara-data",
+   "license": "CC0 1.0 Universal",
+   "url": "https://suttacentral.net/an3.65/en/sujato",
+   "segments": [
+    "an3.65:3.2–an3.65:3.8",
+    "an3.65:4.1–an3.65:4.3"
+   ]
+  }
+ ],
+ "delivery": {
+  "profile": "deadpan, energy 0.4, pace 0.82, punchline_hold_ms 1500-3000",
+  "rule": "no ad-libs, no tags, no uplift — the text is the set"
+ },
+ "bits": [
+  {
+   "slot": "setup",
+   "text": "They explain and promote only their own doctrine, while they attack, badmouth, disparage, and smear the doctrines of others. Then some other ascetics and brahmins come to Kesamutta. They too explain and promote only their own doctrine, while they attack, badmouth, disparage, and smear the doctrines of others. So, sir, we’re doubting and uncertain: ‘I wonder who of these respected ascetics and brahmins speaks the truth, and who speaks falsehood?’” “It is enough, Kālāmas, for you to be doubting and uncertain. Doubt has come up in you about an uncertain matter.",
+   "joke_id": "buddha-ultimate-deadpan-setup-96c8078b",
+   "segments": "an3.65:3.2–an3.65:3.8",
+   "delivery": {
+    "pause_after_ms": 1200,
+    "emphasis": 0.5,
+    "note": "the complaint — every teacher trashes the rest"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "charter",
+   "text": "Please, Kālāmas, don’t go by oral transmission, don’t go by lineage, don’t go by testament, don’t go by canonical authority, don’t rely on logic, don’t rely on inference, don’t go by reasoned train of thought, don’t go by the acceptance of a view after deliberation, don’t go by the appearance of competence, and don’t think ‘The ascetic is our respected teacher.’ But when you know for yourselves: ‘These things are unskillful, blameworthy, criticized by sensible people, and when you undertake them, they lead to harm and suffering’, then you should give them up.",
+   "joke_id": "buddha-ultimate-deadpan-charter-c4f226fc",
+   "segments": "an3.65:4.1–an3.65:4.3",
+   "delivery": {
+    "pause_after_ms": 2500,
+    "emphasis": 1.0,
+    "note": "the list is the build; 'when you know for yourselves' is the pointer"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  }
+ ],
+ "verdict": {},
+ "word_count": 184,
+ "ts": "2026-10-21T18:00:00Z"
+}

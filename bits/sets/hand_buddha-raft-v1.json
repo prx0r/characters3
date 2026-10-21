@@ -1,0 +1,72 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:buddha-ultimate-deadpan:hand-raft-v1",
+ "agent_id": "freak:buddha-ultimate-deadpan",
+ "name": "Buddha",
+ "roster": "freaks",
+ "identity_source": "/root/characters2/freaks/buddha-ultimate-deadpan/character.json",
+ "premise": "the raft: build it carefully, then leave it (MN 22). Anti-hoarding closer.",
+ "authorship": "canon-verbatim (ranges selected, words untouched)",
+ "sources": [
+  {
+   "sutta": "mn22",
+   "translator": "Bhikkhu Sujato",
+   "via": "SuttaCentral bilara-data",
+   "license": "CC0 1.0 Universal",
+   "url": "https://suttacentral.net/mn22/en/sujato",
+   "segments": [
+    "mn22:13.1–mn22:13.1",
+    "mn22:13.11–mn22:13.15",
+    "mn22:13.25–mn22:14.1"
+   ]
+  }
+ ],
+ "delivery": {
+  "profile": "deadpan, energy 0.4, pace 0.82, punchline_hold_ms 1500-3000",
+  "rule": "no ad-libs, no tags, no uplift — the text is the set"
+ },
+ "bits": [
+  {
+   "slot": "thesis",
+   "text": "Mendicants, I will teach you a simile of the teaching as a raft: for crossing over, not for holding on.",
+   "joke_id": "buddha-ultimate-deadpan-thesis-46066870",
+   "segments": "mn22:13.1–mn22:13.1",
+   "delivery": {
+    "pause_after_ms": 1200,
+    "emphasis": 0.6,
+    "note": "say it plain, it sounds like a riddle already"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "build",
+   "text": "‘Why don’t I gather grass, sticks, branches, and leaves and make a raft? Riding on the raft, and paddling with my hands and feet, I can safely reach the far shore.’ And so they’d do exactly that. And when they’d crossed over to the far shore, they’d think, ‘This raft has been very helpful to me. Riding on the raft, and paddling with my hands and feet, I have safely crossed over to the far shore.",
+   "joke_id": "buddha-ultimate-deadpan-build-42e176a9",
+   "segments": "mn22:13.11–mn22:13.15",
+   "delivery": {
+    "pause_after_ms": 1200,
+    "emphasis": 0.5,
+    "note": "diligent inventory voice — grass, sticks, branches, leaves"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "punch-pointer",
+   "text": "That’s what that person should do with the raft. In the same way, I have taught a simile of the teaching as a raft: for crossing over, not for holding on. By understanding the simile of the raft, you will even give up the teachings, let alone what is not the teachings.",
+   "joke_id": "buddha-ultimate-deadpan-punch-pointer-a9c32aa0",
+   "segments": "mn22:13.25–mn22:14.1",
+   "delivery": {
+    "pause_after_ms": 3000,
+    "emphasis": 1.0,
+    "note": "give up even the teachings — hold the silence after"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  }
+ ],
+ "verdict": {},
+ "word_count": 148,
+ "ts": "2026-10-21T18:00:00Z"
+}

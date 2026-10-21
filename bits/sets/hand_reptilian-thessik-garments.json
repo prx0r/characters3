@@ -1,0 +1,126 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "reptilian-thessik-garments:hand-pilot-v1",
+ "agent_id": "freak:reptilian-thessik-garments",
+ "name": "Thessik",
+ "roster": "freaks",
+ "identity_source": "/home/ubuntu/characters2/freaks/reptilian-thessik-garments/character.json",
+ "premise": "hand-written pilot, rhythm-rewritten",
+ "authorship": "hand-authored (not harness/set_loop)",
+ "bits": [
+  {
+   "slot": "b1",
+   "text": "I work returns for human suits, which means every week somebody comes in saying it slips at the eyelids, and every week I say yes, your face does that. We didn't design the bone structure. We designed the veil. You brought the skull.",
+   "joke_id": "reptilian-thessik-garments-b1-51f376",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.032,
+     "z_from_human_median": -0.13,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 4,
+      "mean_len": 10.8,
+      "staccato_run": 3,
+      "frag_ratio": 0.5,
+      "p_long": 0.25,
+      "min_len": 4,
+      "max_len": 29
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.032,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b2",
+   "text": "I can read your whole week by where the seam sits after a lie, because a deadline lie rides up at the collar and a mother lie opens at the elbow. One guy came in fully collapsed. I said, what did you do? He said, I said I was fine. The suit believed him. That's the problem. The suit is honest. Faces are drafts.",
+   "joke_id": "reptilian-thessik-garments-b2-65ef80",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.033,
+     "z_from_human_median": -0.13,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 8,
+      "mean_len": 8.0,
+      "staccato_run": 7,
+      "frag_ratio": 0.5,
+      "p_long": 0.12,
+      "min_len": 3,
+      "max_len": 31
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.033,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b3",
+   "text": "My suit fits perfect and the neck still itches, which you will not repeat. A tailor's neck is a confidential document. You come in with a complaint and I hear your whole life. You think you're the first eyelid? Pal, I've heard confessions that would unravel a bloodline, and every one of them started with it's probably nothing.",
+   "joke_id": "reptilian-thessik-garments-b3-5d9db8",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.018,
+     "z_from_human_median": -0.18,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 5,
+      "mean_len": 11.6,
+      "staccato_run": 1,
+      "frag_ratio": 0.0,
+      "p_long": 0.2,
+      "min_len": 6,
+      "max_len": 19
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.018,
+   "writer": "hand-authored",
+   "model": null
+  }
+ ],
+ "verdict": {
+  "passed": true,
+  "reasons": [],
+  "words": 165,
+  "ai_confs": [
+   0.032,
+   0.033,
+   0.018
+  ],
+  "mean_ai": 0.028
+ },
+ "ts": "2026-10-17T09:25:26Z"
+}

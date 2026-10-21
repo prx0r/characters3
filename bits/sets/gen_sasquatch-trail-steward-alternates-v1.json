@@ -1,0 +1,28 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:sasquatch-trail-steward:gen-alternates-v1",
+ "agent_id": "freak:sasquatch-trail-steward",
+ "name": "freak:sasquatch-trail-steward",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "Every season I hand out a permit that lets a human walk on dirt. They pay me, they thank me, and nine times out of ten they leave a Clif bar wrapper at the trailhead. I'm just the bouncer.",
+   "joke_id": "sasquatch-trail-steward-alt1-522445c4",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Every July somebody hauls a folding chair, a propane stove, "
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

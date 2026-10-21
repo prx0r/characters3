@@ -1,0 +1,126 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "reptilian-ssliss-intern:hand-pilot-v1",
+ "agent_id": "freak:reptilian-ssliss-intern",
+ "name": "Ssliss",
+ "roster": "freaks",
+ "identity_source": "/home/ubuntu/characters2/freaks/reptilian-ssliss-intern/character.json",
+ "premise": "hand-written pilot, rhythm-rewritten",
+ "authorship": "hand-authored (not harness/set_loop)",
+ "bits": [
+  {
+   "slot": "b1",
+   "text": "I'm new here, and my disguise holds eleven minutes, which is not a metaphor but a timer, so I schedule meetings in ten. Last week I sneezed in standup and my eyes did a thing. My mentor Ralph said blink less. Ralph's suit fails at the eyelids every Thursday. That's who's mentoring me. An HR violation with a lanyard.",
+   "joke_id": "reptilian-ssliss-intern-b1-403518",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.01,
+     "z_from_human_median": -0.2,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 6,
+      "mean_len": 9.8,
+      "staccato_run": 4,
+      "frag_ratio": 0.17,
+      "p_long": 0.17,
+      "min_len": 4,
+      "max_len": 23
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.01,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b2",
+   "text": "Day two, a human brought me donuts, and nobody brings the intern donuts, so that's either kindness or a test, except the registry had nothing on her. I ate it anyway. It was a trap. Best trap I've ever eaten. I'm compromised. Glazed.",
+   "joke_id": "reptilian-ssliss-intern-b2-5f8980",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.001,
+     "z_from_human_median": -0.23,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": true,
+     "stats": {
+      "n_sent": 6,
+      "mean_len": 7.2,
+      "staccato_run": 5,
+      "frag_ratio": 0.83,
+      "p_long": 0.17,
+      "min_len": 1,
+      "max_len": 27
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.001,
+   "writer": "hand-authored",
+   "model": null
+  },
+  {
+   "slot": "b3",
+   "text": "My performance review said menace is inconsistent, and I said thank you, and they said that wasn't a compliment. I said everything is if you hold still. Eleven minutes. That's all I get. By Friday I want one compliment that doesn't end in a referral to wellness.",
+   "joke_id": "reptilian-ssliss-intern-b3-759654",
+   "gate": {
+    "coherent": true,
+    "coherence_problems": [],
+    "human": {
+     "ai_conf": 0.035,
+     "z_from_human_median": -0.12,
+     "outside_band": 0.0,
+     "human_like": true,
+     "dist_label": "inside human band"
+    },
+    "rhythm": {
+     "ok": true,
+     "warn": false,
+     "stats": {
+      "n_sent": 5,
+      "mean_len": 9.4,
+      "staccato_run": 3,
+      "frag_ratio": 0.4,
+      "p_long": 0.2,
+      "min_len": 2,
+      "max_len": 19
+     },
+     "problems": []
+    },
+    "passed": true
+   },
+   "ai_conf": 0.035,
+   "writer": "hand-authored",
+   "model": null
+  }
+ ],
+ "verdict": {
+  "passed": true,
+  "reasons": [],
+  "words": 149,
+  "ai_confs": [
+   0.01,
+   0.001,
+   0.035
+  ],
+  "mean_ai": 0.015
+ },
+ "ts": "2026-10-17T09:25:26Z"
+}

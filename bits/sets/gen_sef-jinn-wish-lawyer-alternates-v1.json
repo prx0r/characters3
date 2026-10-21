@@ -1,0 +1,28 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:sef-jinn-wish-lawyer:gen-alternates-v1",
+ "agent_id": "freak:sef-jinn-wish-lawyer",
+ "name": "freak:sef-jinn-wish-lawyer",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "My aunt blew out her candles and made a wish out loud to nobody. My cousin calls the same move manifestation; he just bills the flattery separately.",
+   "joke_id": "sef-jinn-wish-lawyer-alt1-a41cc4f1",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Every year humans gather round a cake, set it on fire, and l"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

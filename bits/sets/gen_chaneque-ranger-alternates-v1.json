@@ -1,0 +1,36 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:chaneque-ranger:gen-alternates-v1",
+ "agent_id": "freak:chaneque-ranger",
+ "name": "freak:chaneque-ranger",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "A compass is a little metal circle that points north. Six days Ramiro was gone and that compass never once mentioned his name. I'm four feet tall and I found the kid by listening.",
+   "joke_id": "chaneque-ranger-alt1-e870e348",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Every morning the search party tapes another photo of Ramiro"
+  },
+  {
+   "slot": "alt2",
+   "text": "The search party walks into my forest in fifty-dollar boots and comes out in stitches. Ramiro was six days gone, ten miles off any trail, and when I found him he was healthier than the men who'd been looking for him. The boy had my milk in his stomach and no scratches at all. They can't figure out which one of us was lost.",
+   "joke_id": "chaneque-ranger-alt2-3c28ba4c",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Every morning the search party tapes another photo of Ramiro"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

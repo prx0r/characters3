@@ -1,0 +1,38 @@
+{
+ "schema": "pogtown.character.v1",
+ "id": "mantis",
+ "name": "Mantis",
+ "canon_pack": "insectoid",
+ "created": "2026-10-18",
+ "note": "Praying mantis entity. Draw from abduction hierarchy, calm authority, compound eyes, telepathic dominance. Complete freedom.",
+ "identity": {
+  "deal": "",
+  "premise": "",
+  "engine": "",
+  "persona_note": "Entity type only. Complete creative freedom. Draw from canon pack lore + funnygraph data. Do NOT impose a forced persona."
+ },
+ "status": "entity-draft",
+ "voice": {
+  "tags": {
+   "tone": [
+    "Authority projection: Pr",
+    "Hierarchical command: Th",
+    "neutral"
+   ],
+   "register": "unknown-energy (voice uncast)",
+   "texture": "Praying mantis entity. Draw from abduction hierarchy, calm authority, compound eyes, telep",
+   "casting_query": "neutral mantis voice",
+   "reference_text": "Praying mantis entity"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 1500,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "pack has no vibe yet — engine default profile until persona defines one"
+ }
+}

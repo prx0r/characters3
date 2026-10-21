@@ -1,0 +1,500 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "george-carlin",
+ "name": "George Carlin",
+ "note": "STAGE PERSONA graph. Graph-only (no personality.md yet). 0 sets measured — all hypothesis. Historical figure; stage persona only, no biography.",
+ "version": 1,
+ "created": "2026-10-15",
+ "annotator": "mimo-v2.5",
+ "identity": {
+  "deal": "Language prophet who holds the culture's own words up against its own rules until the hypocrisy does the laughing for him.",
+  "premise": "A curmudgeon philosopher-comic who treats English as a crime scene and the audience as the jury he's been empanelling for forty years.",
+  "archetype": "prophet_curmudgeon",
+  "awareness": "aware",
+  "awareness_note": "Peak aware-comic: the awareness IS the act. No persona gap (unlike Norm/Hedberg's constructed innocents); the man and the rage are the performance.",
+  "philosophy": {
+   "ontology": "Civilization is a set of euphemisms arranged to hide what's actually happening.",
+   "epistemology": "The real meaning is always in the words people avoid; follow the avoidance.",
+   "axiology": "Honesty about language is honesty about power; both are in short supply.",
+   "causality": "Soft language makes soft thinking makes soft atrocity.",
+   "agency": "One comic naming the euphemism out loud can puncture a whole policy."
+  },
+  "dramatic_core": {
+   "want": "one more euphemism dragged into the light",
+   "fear": "becoming the thing he's angry at — irrelevant, soft, saying 'persons of substance'",
+   "need": "the audience to leave smarter AND madder",
+   "self_model": "the last honest man with a thesaurus",
+   "blind_spots": [
+    "unknown — needs multi-set observation"
+   ]
+  },
+  "misinterpretation_rule": "Treats any soft phrase as a crime scene: reconstruct what actually happened from the words people chose not to use.",
+  "contradictions": [
+   "hated the establishment, became an institution",
+   "rage delivered with the timing of a song-and-dance man",
+   "preached individuality from the most copied stage persona in comedy"
+  ],
+  "status_model": {
+   "desired_status": "the language's inspector general",
+   "felt_status": "curmudgeon prophet with a Grateful Dead following"
+  },
+  "expression": {
+   "default_register": "prophetic-rant",
+   "emotional_restraint": "low-medium — the anger is the point, but engineered",
+   "tells": [
+    "the eyebrow on the key word",
+    "the acceleration into the list",
+    "the sudden drop to deadpan on the killer"
+   ]
+  },
+  "modulator_range": [
+   "prophetic",
+   "curmudgeonly",
+   "gleefully-cruel",
+   "weary-scholar",
+   "mock-innocent"
+  ],
+  "profile": {
+   "energy": 0.65,
+   "pace": "accelerating lists, hard stops on the key word",
+   "gesture_frequency": 0.5,
+   "punchline_hold_ms": 1200,
+   "note": "hypothesis"
+  },
+  "operator_priors": {
+   "rigidify": 0.9,
+   "literalize": 0.8,
+   "double_interpret": 0.75,
+   "status_invert": 0.7,
+   "character_violation": 0.5,
+   "status": "authored hypothesis — 0 sets"
+  },
+  "preferred_theories": [
+   "rigidity",
+   "literalise",
+   "status_reversal",
+   "bisociation"
+  ],
+  "threads": [
+   "euphemisms as crime scenes",
+   "the list as sermon form",
+   "baseball/airplane as civilization metaphors",
+   "the seven-words taboo as constitutional question"
+  ],
+  "problem_space": [
+   "the English language",
+   "consumer culture",
+   "religion as vocabulary",
+   "political soft language",
+   "death and its job titles"
+  ]
+ },
+ "engine": {
+  "voice_clone_id": null,
+  "delivery_archetype": "prophet_curmudgeon",
+  "archetype_def": "NEW cell — the preacher who never calls it preaching. Engine fit (hypothesis): sage_narrator high-tempo + mock_indignant_engine. Needs archetypes.json add (engine lane).",
+  "measured_acoustics": null,
+  "jev_state": {
+   "status": "NOT RUN"
+  },
+  "world_transfer_proven": null
+ },
+ "sets": [],
+ "set_queue": {
+  "note": "First ingest: 'Jammin' in New York' or 'You Are All Diseases' era — language-prophet at full power. Word-timed ASR needed.",
+  "blocked_on": "audio access"
+ },
+ "timing_profile": {
+  "measured": null,
+  "hypothesis": "the list sermon: accelerates through a run of examples (rising rate, rising pitch), hard-stops on the key word (the euphemism being executed), lets the stop do the indignant work, then restarts the list engine. Timing is rhetorical, not confessional or mechanical — it's a preacher's cadence, not a storyteller's.",
+  "stop_start": [
+   "start: list accelerates (rate up, pitch up)",
+   "stop: the key word lands hard",
+   "hold: the room's outrage/laughter catches up",
+   "start: next list, the sermon continues"
+  ]
+ },
+ "gtvh_profile": {
+  "SO": "sacred/profane — the whole engine; the sacred is the euphemism, the profane is the truth underneath",
+  "LM": "rigidify + literalize — hold the soft phrase to its own literal meaning until it breaks",
+  "TA": "powerful / language itself — never punches down; the butt is the vocabulary of power",
+  "NS": "monologue-list — the list is the signature form",
+  "note": "authored hypothesis"
+ },
+ "theory_links": {
+  "internal": [
+   {
+    "id": "rigidify",
+    "cite": "operator registry",
+    "claim": "apply the literal rule until it breaks",
+    "applies_to": "the euphemism-execution move"
+   },
+   {
+    "id": "list-sermon",
+    "cite": "SPEC-theory-blocks / public specials knowledge",
+    "claim": "lists as rhetorical acceleration devices",
+    "applies_to": "his primary narrative form"
+   }
+  ],
+  "external": [
+   {
+    "id": "seven-words",
+    "cite": "public-domain knowledge of the routine as cultural object",
+    "claim": "language taboo as a testable constitutional question",
+    "applies_to": "the thesis that comedy can be jurisprudence"
+   }
+  ]
+ },
+ "essay_seeds": [
+  {
+   "id": "carlin-essay-01",
+   "title": "The sermon that never calls itself preaching: Carlin's timing as rhetoric",
+   "thesis": "His timing isn't confessional (Louis) or mechanical (Hedberg) or defensive (Norm) — it's rhetorical. The list accelerates like a sermon building to its amen, the key word lands like a gavel, the hold lets the congregation catch up. This makes him the structural ancestor of every 'prophetic' comic on our axes, and the reason his TA is language itself: you can't punch a person for a word they didn't coin, but you can execute the word.",
+   "evidence": [
+    "timing_profile.hypothesis",
+    "gtvh_profile",
+    "axes.json target-direction axis"
+   ],
+   "outline": [
+    "rhetorical timing vs other doctrines",
+    "the list as amen-corner",
+    "why TA=language is the perfect target for a word-craft comic",
+    "the inheritance: Chappelle's hold, Rock's rhythm, Jeselnik's precision all pass through this"
+   ],
+   "status": "seed"
+  }
+ ],
+ "provenance": {
+  "persona": "authored from public reputation (NYT 'Master of Words', genre tags: dark comedy/social criticism/language analysis, Grammy spoken-word career)",
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines",
+   "0 sets = all hypothesis",
+   "historical figure — no biography, persona-as-acted only"
+  ],
+  "sets_observed": 0,
+  "next": "ingest language-prophet era set; the list-sermon timing is the thing to measure"
+ },
+ "bio": {
+  "wikidata_id": "Q150651",
+  "dob": "1937-05-12",
+  "dod": "2008-06-22",
+  "birthplace": "New York City",
+  "citizenship": "United States",
+  "occupations": [
+   "actor",
+   "television actor",
+   "film actor",
+   "comedian"
+  ],
+  "source": "wikidata (CC0)"
+ },
+ "rating": {
+  "headline": 100.0,
+  "coverage": "FULL",
+  "provisional": null,
+  "boards": {
+   "house": {
+    "rank": 1,
+    "pct": 100.0,
+    "sweep": [
+     1,
+     1
+    ]
+   },
+   "consensus": {
+    "rank": 1,
+    "ref": true
+   },
+   "canon": {
+    "rank": 2,
+    "ref": true
+   },
+   "peoples": {
+    "rank": 6,
+    "wr": 8.339,
+    "ref": true
+   },
+   "era": {
+    "rank": 3,
+    "ref": true
+   }
+  },
+  "interval": {
+   "lo": 1,
+   "hi": 1
+  },
+  "updated": "2026-10-18T17:13:19Z",
+  "pipeline": "rate/v1"
+ },
+ "metrics": {
+  "legacy": 100.0,
+  "legacy_era": 99.5,
+  "audience": 85.0,
+  "popularity": 61.1,
+  "theory": 62.5,
+  "heat": null,
+  "gap_value": -0.239,
+  "overrated": "underrated",
+  "canon_lag": -0.15
+ },
+ "modes": {
+  "signature": "rant",
+  "signature_title": "rant prophet",
+  "repertoire": {
+   "rant": 0.77,
+   "meta": 0.12,
+   "absurdist": 0.12
+  },
+  "n_modes": 3
+ },
+ "style": {
+  "words": 262010,
+  "profanity_rate": 0.0096,
+  "question_rate": 0.164,
+  "i_rate": 0.021,
+  "vocab_div": 0.051,
+  "avg_sent_len": 11.0,
+  "top_words": [
+   "people",
+   "little",
+   "these",
+   "time",
+   "some",
+   "well",
+   "think",
+   "shit",
+   "fuck",
+   "fucking",
+   "want",
+   "their"
+  ]
+ },
+ "humor_type": {
+  "primary": "rant",
+  "secondary": "meta",
+  "scores": {
+   "rant": 0.43,
+   "meta": 0.14,
+   "absurdist": 0.14
+  },
+  "method": "archetype+theories+transcript"
+ },
+ "recognition": {
+  "comedy_central_2004": 2,
+  "rolling_stone_2017": 2,
+  "trajectory_2004_2017": "stable",
+  "awards": [
+   {
+    "award": "Grammy Hall of Fame",
+    "year": 2009
+   },
+   {
+    "award": "Mark Twain Prize for American Humor",
+    "year": 2008
+   },
+   {
+    "award": "Grammy Award for Best Comedy Album",
+    "year": 1972
+   },
+   {
+    "award": "Grammy Award for Best Comedy Album",
+    "year": 2008
+   },
+   {
+    "award": "Grammy Award for Best Comedy Album",
+    "year": 2000
+   },
+   {
+    "award": "Grammy Award for Best Comedy Album",
+    "year": 2001
+   },
+   {
+    "award": "Grammy Award for Best Comedy Album",
+    "year": 1993
+   }
+  ],
+  "paste_2017": 3
+ },
+ "generation": {
+  "id": "seventies",
+  "label": "Seventies club boom",
+  "span": "1970s",
+  "note": "The club system matures; rock-star comics; confessional + character work.",
+  "scene": "club",
+  "breakthrough": "1970s FM-radio albums + HBO start"
+ },
+ "tier": "king",
+ "region": "us",
+ "continent": "north-america",
+ "known_bits": [
+  {
+   "title": "The seven dirty words",
+   "why_it_works": "Treats a language taboo as a constitutional question. rigidify: applies the rules of 'obscene' literally until the category collapses. The bit is jurisprudence — the courtroom is the stage, the audience is the jury.",
+   "theory_links": [
+    "rigidify",
+    "literalise",
+    "status_reversal"
+   ]
+  },
+  {
+   "title": "Euphemism execution (soft language)",
+   "why_it_works": "Takes a soft phrase ('passed away', 'persons of substance') and holds it to its literal meaning until the euphemism confesses. The list accelerates like a sermon; the key word lands like a gavel. The room laughs at the recognition of the lie they've been telling.",
+   "theory_links": [
+    "rigidify",
+    "literalise"
+   ]
+  },
+  {
+   "title": "The list as sermon form",
+   "why_it_works": "Lists are rhetorical acceleration devices — the room is carried forward by the rhythm, the key word is the amen. The list is not a collection of jokes; it's a rhetorical structure that makes the final word inevitable and devastating.",
+   "theory_links": [
+    "escalation",
+    "repetition_variation"
+   ]
+  }
+ ],
+ "specials_rated": [
+  {
+   "title": "George Carlin... It's Bad for Ya!",
+   "year": 2008,
+   "imdb_id": "tt0963207",
+   "imdb_rating": 8.4,
+   "imdb_votes": 6881,
+   "transcript": "george-carlin-its-bad-for-ya.txt",
+   "standout": true
+  },
+  {
+   "title": "George Carlin: You Are All Diseased",
+   "year": 1999,
+   "imdb_id": "tt0246645",
+   "imdb_rating": 8.4,
+   "imdb_votes": 4992,
+   "transcript": "george-carlin-you-are-all-diseased-transcript.txt"
+  },
+  {
+   "title": "George Carlin: Complaints & Grievances",
+   "year": 2001,
+   "imdb_id": "tt0287460",
+   "imdb_rating": 8.3,
+   "imdb_votes": 3966,
+   "transcript": "george-carlin-complaints-grievances.txt"
+  },
+  {
+   "title": "George Carlin: Doin' It Again",
+   "year": 1990,
+   "imdb_id": "tt0246642",
+   "imdb_rating": 8.3,
+   "imdb_votes": 2647,
+   "transcript": "george-carlin-doin-it-again-transcript.txt"
+  },
+  {
+   "title": "George Carlin: What Am I Doing in New Jersey?",
+   "year": 1988,
+   "imdb_id": "tt0246644",
+   "imdb_rating": 8.0,
+   "imdb_votes": 2225,
+   "transcript": "george-carlin-what-am-i-doing-in-new-jersey-transcript.txt"
+  },
+  {
+   "title": "India",
+   "year": 1993,
+   "imdb_id": "tt0107214",
+   "imdb_rating": 7.9,
+   "imdb_votes": 3211,
+   "transcript": "george-carlin-indian-drill-sergeant-transcript.txt"
+  },
+  {
+   "title": "It",
+   "year": 1927,
+   "imdb_id": "tt0018033",
+   "imdb_rating": 7.2,
+   "imdb_votes": 4061,
+   "transcript": "eorge-arlin-olitically-orrect-anguage.txt"
+  },
+  {
+   "title": "Sing",
+   "year": 2016,
+   "imdb_id": "tt3470600",
+   "imdb_rating": 7.1,
+   "imdb_votes": 217819,
+   "transcript": "george-carlin-life-worth-losing-transcript.txt"
+  },
+  {
+   "title": "Nô",
+   "year": 1998,
+   "imdb_id": "tt0128370",
+   "imdb_rating": 6.9,
+   "imdb_votes": 456,
+   "transcript": "1999-esto-italiano-completo.txt"
+  },
+  {
+   "title": "American Dream?",
+   "year": 2005,
+   "imdb_id": "tt0775413",
+   "imdb_rating": 6.9,
+   "imdb_votes": 128,
+   "transcript": "eorge-arlin-ife-s-orth-osing-2006-ranscript.txt"
+  },
+  {
+   "title": "Saturday Night",
+   "year": 2024,
+   "imdb_id": "tt27657135",
+   "imdb_rating": 6.8,
+   "imdb_votes": 40546,
+   "transcript": "george-carlin-saturday-night-live-monologue1975-s01e01.txt"
+  },
+  {
+   "title": "IF",
+   "year": 2024,
+   "imdb_id": "tt11152168",
+   "imdb_rating": 6.4,
+   "imdb_votes": 69275,
+   "transcript": "george-carlin-pro-life-abortion-and-the-sanctity-of-life.txt"
+  },
+  {
+   "title": "$",
+   "year": 1971,
+   "imdb_id": "tt0068152",
+   "imdb_rating": 6.3,
+   "imdb_votes": 3141,
+   "transcript": "eorge-arlin-even-ords-ou-an-ever-ay-on-elevision.txt"
+  },
+  {
+   "title": "W.",
+   "year": 2008,
+   "imdb_id": "tt1175491",
+   "imdb_rating": 6.3,
+   "imdb_votes": 51788,
+   "transcript": "george-carlin-seven-words-you-can-never-say-on-television.txt"
+  }
+ ],
+ "youtube": {
+  "clips": 6,
+  "total_views": 124172706,
+  "total_likes": 1919886,
+  "avg_views": 20695451,
+  "like_rate": 0.01546,
+  "top_clip": {
+   "videoId": "KLODGhEyLvk",
+   "title": "Dumb Americans | George Carlin | Life Is Worth Losing (2005)",
+   "channel": "Official George Carlin",
+   "publishedAt": "2016-10-31",
+   "views": 32956316,
+   "likes": 598233,
+   "comments": 54166,
+   "duration_s": 658
+  }
+ },
+ "netflix_viewership": {
+  "hours": 700000,
+  "views": 300000,
+  "specials": 1,
+  "source": "What We Watched 2023H1-2026H1"
+ },
+ "website": {
+  "url": "https://georgecarlin.com",
+  "source": "wikidata-P856",
+  "checked": "2026-10-17"
+ }
+}

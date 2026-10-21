@@ -1,0 +1,86 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:buddha-ultimate-deadpan:hand-arrow-v1",
+ "agent_id": "freak:buddha-ultimate-deadpan",
+ "name": "Buddha",
+ "roster": "freaks",
+ "identity_source": "/root/characters2/freaks/buddha-ultimate-deadpan/character.json",
+ "premise": "the poisoned arrow: a gear-nerd escalation routine, word for word (MN 63).",
+ "authorship": "canon-verbatim (ranges selected, words untouched)",
+ "sources": [
+  {
+   "sutta": "mn63",
+   "translator": "Bhikkhu Sujato",
+   "via": "SuttaCentral bilara-data",
+   "license": "CC0 1.0 Universal",
+   "url": "https://suttacentral.net/mn63/en/sujato",
+   "segments": [
+    "mn63:5.6–mn63:5.9",
+    "mn63:5.11–mn63:5.17",
+    "mn63:5.19–mn63:5.29",
+    "mn63:5.30–mn63:5.30"
+   ]
+  }
+ ],
+ "delivery": {
+  "profile": "deadpan, energy 0.4, pace 0.82, punchline_hold_ms 1500-3000",
+  "rule": "no ad-libs, no tags, no uplift — the text is the set"
+ },
+ "bits": [
+  {
+   "slot": "setup",
+   "text": "Suppose a man was struck by an arrow thickly smeared with poison. His friends and colleagues, relatives and kin would get a surgeon to treat him. But the man would say: ‘I won’t extract this arrow as long as I don’t know whether the man who wounded me was an aristocrat, a brahmin, a peasant, or a menial.’",
+   "joke_id": "buddha-ultimate-deadpan-setup-60553057",
+   "segments": "mn63:5.6–mn63:5.9",
+   "delivery": {
+    "pause_after_ms": 1200,
+    "emphasis": 0.5,
+    "note": "plain triage scene"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "specs-who",
+   "text": "‘I won’t extract this arrow as long as I don’t know the following things about the man who wounded me: his name and clan; whether he’s tall, short, or medium; whether his skin is black, brown, or dingy; and whether he comes from such-and-such village, town, or city.",
+   "joke_id": "buddha-ultimate-deadpan-specs-who-9b21ee29",
+   "segments": "mn63:5.11–mn63:5.17",
+   "delivery": {
+    "pause_after_ms": 1200,
+    "emphasis": 0.7,
+    "note": "the dating profile — name, height, skin, hometown"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "specs-gear",
+   "text": "I won’t extract this arrow as long as I don’t know whether the bow that wounded me was straight or recurved; whether the bow-string is made of swallow-wort fibre, sunn hemp fibre, sinew, sanseveria fibre, or spurge fibre; whether the shaft is made from a bush or a plantation tree; whether the shaft was fitted with feathers from a vulture, a heron, a hawk, a peacock, or a stork; whether the shaft was bound with sinews of a cow, a buffalo, a black lion, or an ape; and whether the arrowhead was spiked, razor-tipped, barbed, made of iron or a calf’s tooth, or lancet-shaped.’",
+   "joke_id": "buddha-ultimate-deadpan-specs-gear-b8955499",
+   "segments": "mn63:5.19–mn63:5.29",
+   "delivery": {
+    "pause_after_ms": 1500,
+    "emphasis": 0.8,
+    "note": "accelerate — bow, string fibres, arrowhead; the comedy is the inventory"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "verdict",
+   "text": "That man would still not have learned these things, and meanwhile they’d die.",
+   "joke_id": "buddha-ultimate-deadpan-verdict-9682397e",
+   "segments": "mn63:5.30–mn63:5.30",
+   "delivery": {
+    "pause_after_ms": 2500,
+    "emphasis": 1.0,
+    "note": "dead flat landing"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  }
+ ],
+ "verdict": {},
+ "word_count": 223,
+ "ts": "2026-10-21T18:00:00Z"
+}

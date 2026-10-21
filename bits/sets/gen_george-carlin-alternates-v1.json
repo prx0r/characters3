@@ -1,0 +1,60 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "stage:george-carlin:gen-alternates-v1",
+ "agent_id": "stage:george-carlin",
+ "name": "stage:george-carlin",
+ "roster": "stage",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "My aunt said sleep. I asked when waking up. She said, well, that kind sleep. I said, what kind it? She said, kind where never wakes up. Turns they whole different kind sleep vet.",
+   "joke_id": "george-carlin-alt1-220f3c6f",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "My aunt says the dog \"went to sleep. Sleep is the one thing "
+  },
+  {
+   "slot": "alt2",
+   "text": "They Grandma passed away. Passed away. Like traffic just... around us. Where pass to? Did have lane? Because when I passed highway I didn't stop existing, I just became asshole behind him. Nobody says died anymore. Died's honest. Died doesn't have brochure.",
+   "joke_id": "george-carlin-alt2-ac53a384",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "My aunt says the dog \"went to sleep. Sleep is the one thing "
+  },
+  {
+   "slot": "alt3",
+   "text": "George Carlin has one rule about euphemisms as crime scenes: you either name it or you live under it. I name it.",
+   "joke_id": "george-carlin-alt3-4ccc5544",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "My aunt says the dog \"went to sleep. Sleep is the one thing "
+  },
+  {
+   "slot": "alt4",
+   "text": "I stayed at my aunt's house. She has a thing in the bathroom. It's a small chair, but the hole is only this big. Just for a baby, I guess. Except it's bolted to the floor and it's not for a baby. My aunt said, \"That's where we do the business.\" I don't know what business. She won't say what business. The whole house is set up for a business nobody will describe.",
+   "joke_id": "george-carlin-alt4-941450f2",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "My aunt says the dog \"went to sleep. Sleep is the one thing "
+  },
+  {
+   "slot": "alt5",
+   "text": "They call it assisted suicide now. Assisted. Like there was a committee. And I don't want to be a bother about it, but who's doing the assisting? Because if I'm doing the suicide and you're doing the assisting, one of us is going to heaven and the other one's got a job. That's not a medical term. That's an alibi.",
+   "joke_id": "george-carlin-alt5-47bd2e85",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "My aunt says the dog \"went to sleep. Sleep is the one thing "
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

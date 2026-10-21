@@ -1,0 +1,119 @@
+{
+ "schema": "freaktown.feedback.v1",
+ "performance_id": "reptilian-ralph-middle-management-freak_reptilian-ralph-middle-management_20261017-083528-v1",
+ "character_id": "reptilian-ralph-middle-management",
+ "set_id": "freak_reptilian-ralph-middle-management_20261017-083528",
+ "revision": 1,
+ "duration_ms": 58800,
+ "source": {
+  "audio": null,
+  "delivery": null,
+  "model_version": null,
+  "evaluation_mode": "rehearsal",
+  "provenance": {
+   "set_path": "theory/generated/sets/latest_freak_reptilian-ralph-middle-management.json",
+   "words": 147,
+   "mean_gate_ai_conf": 0.216,
+   "set_passed_gate": true,
+   "note": "gate.ai_conf is AI-detection, not p_laugh"
+  }
+ },
+ "audience": {
+  "simulated": null,
+  "human": {
+   "reviewers": null,
+   "laugh_taps": null,
+   "skip_events": null,
+   "overall_rating": null
+  }
+ },
+ "jokes": [
+  {
+   "joke_id": "reptilian-ralph-middle-management-opener-cf1fc818",
+   "beat_id": "b1",
+   "slot": "opener",
+   "line": "I run bloodline meetings every quarter. My cousin Vrex runs a Wendy's in Tucson and thinks he's king of something. The human suit itches in places you don't have. I am a cold-blooded organism pretending to be your regional director of synergy, and you people are trying to kill me with weather.",
+   "semantic": {
+    "mechanisms": [
+     "generalization"
+    ],
+    "expectation": null,
+    "reveal": null,
+    "confidence": 0.036,
+    "paper_score": 0.036
+   },
+   "gate": {
+    "ai_conf": 0.041,
+    "coherent": true,
+    "human_like": true
+   },
+   "synthetic": null,
+   "human": null,
+   "decision": {
+    "action": "hold",
+    "reason": "no human review yet",
+    "confidence": "none"
+   }
+  },
+  {
+   "joke_id": "reptilian-ralph-middle-management-middle-bad01b11",
+   "beat_id": "b2",
+   "slot": "middle",
+   "line": "My bloodline has run this planet for eleven thousand years and the last four generations have been in middle management. I fell asleep in a conference room once and Karen from payroll called it a wellness incident and now I'm nominated for an award I don't want for a condition I can't disclose.",
+   "semantic": {
+    "mechanisms": [
+     "unclassified"
+    ],
+    "expectation": null,
+    "reveal": null,
+    "confidence": 0.044,
+    "paper_score": 0.044
+   },
+   "gate": {
+    "ai_conf": 0.036,
+    "coherent": true,
+    "human_like": true
+   },
+   "synthetic": null,
+   "human": null,
+   "decision": {
+    "action": "hold",
+    "reason": "no human review yet",
+    "confidence": "none"
+   }
+  },
+  {
+   "joke_id": "reptilian-ralph-middle-management-closer-79ad9204",
+   "beat_id": "b3",
+   "slot": "closer",
+   "line": "They gave me the wellness award. Then my suit slipped at the eyelid, someone saw the vertical pupil, and said, Congratulations on your promotion. You just keep sliding out of the skin you were issued and nobody files a complaint until quarterly.",
+   "semantic": {
+    "mechanisms": [
+     "generalization"
+    ],
+    "expectation": null,
+    "reveal": null,
+    "confidence": 0.035,
+    "paper_score": 0.035
+   },
+   "gate": {
+    "ai_conf": 0.571,
+    "coherent": true,
+    "human_like": true
+   },
+   "synthetic": null,
+   "human": null,
+   "decision": {
+    "action": "hold",
+    "reason": "no human review yet",
+    "confidence": "none"
+   }
+  }
+ ],
+ "next_experiment": {
+  "strategy": "keep_winners_rewrite_weak",
+  "candidate_variants": 3,
+  "require_human_review": true
+ },
+ "ts": "2026-10-17T08:48:21Z"
+}

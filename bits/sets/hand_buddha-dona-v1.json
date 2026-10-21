@@ -1,0 +1,72 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:buddha-ultimate-deadpan:hand-dona-v1",
+ "agent_id": "freak:buddha-ultimate-deadpan",
+ "name": "Buddha",
+ "roster": "freaks",
+ "identity_source": "/root/characters2/freaks/buddha-ultimate-deadpan/character.json",
+ "premise": "icon storytelling: AN 4.36 Dona Sutta, word for word. The punch points instead of twisting.",
+ "authorship": "canon-verbatim (ranges selected, words untouched)",
+ "sources": [
+  {
+   "sutta": "an4.36",
+   "translator": "Bhikkhu Sujato",
+   "via": "SuttaCentral bilara-data",
+   "license": "CC0 1.0 Universal",
+   "url": "https://suttacentral.net/an4.36/en/sujato",
+   "segments": [
+    "an4.36:1.3–an4.36:1.6",
+    "an4.36:2.1–an4.36:3.9",
+    "an4.36:4.3–an4.36:4.5"
+   ]
+  }
+ ],
+ "delivery": {
+  "profile": "deadpan, energy 0.4, pace 0.82, punchline_hold_ms 1500-3000",
+  "rule": "no ad-libs, no tags, no uplift — the text is the set"
+ },
+ "bits": [
+  {
+   "slot": "setup",
+   "text": "Doṇa saw that the Buddha’s footprints had thousand-spoked wheels, with rims and hubs, complete in every detail. It occurred to him, “Oh lord, how incredible, how amazing! Surely these couldn’t be the footprints of a human being?”",
+   "joke_id": "buddha-ultimate-deadpan-setup-6234343f",
+   "segments": "an4.36:1.3–an4.36:1.6",
+   "delivery": {
+    "pause_after_ms": 1500,
+    "emphasis": 0.5,
+    "note": "flat awe, report it"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "interrogation",
+   "text": "“Sir, might you be a god?” “I will not be a god, brahmin.” “Might you be a centaur?” “I will not be a centaur.” “Might you be a spirit?” “I will not be a spirit.” “Might you be a human?” “I will not be a human.” “When asked whether you might be a god, centaur, spirit, or human, you answer that you will not be any of these. So what then might you be?”",
+   "joke_id": "buddha-ultimate-deadpan-interrogation-90e10e26",
+   "segments": "an4.36:2.1–an4.36:3.9",
+   "delivery": {
+    "pause_after_ms": 2000,
+    "emphasis": 0.7,
+    "note": "metronomic, no variation — the flatness IS the build"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  },
+  {
+   "slot": "punch-pointer",
+   "text": "Suppose there was a blue water lily, or a pink or white lotus. Though it sprouted and grew in the water, it would rise up above the water and stand with no water clinging to it. In the same way, though I was born and grew up in the world, I live having mastered the world, unsullied by the world. Remember me, brahmin, as a Buddha.",
+   "joke_id": "buddha-ultimate-deadpan-punch-pointer-445e131e",
+   "segments": "an4.36:4.3–an4.36:4.5",
+   "delivery": {
+    "pause_after_ms": 3000,
+    "emphasis": 1.0,
+    "note": "slowest pace, land 'unsullied', hold"
+   },
+   "writer": "canon-verbatim",
+   "model": null
+  }
+ ],
+ "verdict": {},
+ "word_count": 177,
+ "ts": "2026-10-21T18:00:00Z"
+}

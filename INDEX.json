@@ -1,0 +1,1386 @@
+{
+ "performers": [
+  {
+   "slug": "agent-black-field-visit",
+   "kind": "performer",
+   "tier": "FINAL",
+   "canon": "mib",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "meta.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_agent-black-field-visit-alternates-v1.json"
+   ],
+   "bits": 2,
+   "human_judged": 0,
+   "unjudged": 2,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/agent-black-field-visit/character.json",
+     "sha256": "ddc1deec4577",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/agent-black-field-visit/delivery.json",
+     "sha256": "c1e5289113ff",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "meta.json": {
+     "source": "freaks/agent-black-field-visit/meta.json",
+     "sha256": "80937a3fab39",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/agent-black-field-visit/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/mib/canon.json",
+     "sha256": "e2b0b1d7b923",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "britt-nordic-coach",
+   "kind": "performer",
+   "tier": "FINAL",
+   "canon": "nordic",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "meta.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_britt-nordic-coach-alternates-v1.json"
+   ],
+   "bits": 2,
+   "human_judged": 0,
+   "unjudged": 2,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/britt-nordic-coach/character.json",
+     "sha256": "ad7d6609c293",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/britt-nordic-coach/delivery.json",
+     "sha256": "9d25ba295659",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "meta.json": {
+     "source": "freaks/britt-nordic-coach/meta.json",
+     "sha256": "dad0ef9923ea",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/britt-nordic-coach/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/nordic/canon.json",
+     "sha256": "76d9dea2c0d1",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "buddha-ultimate-deadpan",
+   "kind": "performer",
+   "tier": "FINAL",
+   "canon": null,
+   "canon_mature": null,
+   "pack": [
+    "character.json",
+    "delivery.json",
+    "meta.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_buddha-ultimate-deadpan-alternates-v1.json",
+    "hand_buddha-arrow-v1.json",
+    "hand_buddha-dona-v1.json",
+    "hand_buddha-elephant-v1.json",
+    "hand_buddha-kalama-v1.json",
+    "hand_buddha-notself-v1.json",
+    "hand_buddha-raft-v1.json",
+    "hand_buddha-sermon-v1.json"
+   ],
+   "bits": 21,
+   "human_judged": 0,
+   "unjudged": 21,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/buddha-ultimate-deadpan/character.json",
+     "sha256": "049be4b9c2be",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/buddha-ultimate-deadpan/delivery.json",
+     "sha256": "5522ce653b54",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "meta.json": {
+     "source": "freaks/buddha-ultimate-deadpan/meta.json",
+     "sha256": "c2005095c8aa",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/buddha-ultimate-deadpan/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "chaneque-ranger",
+   "kind": "performer",
+   "tier": "CONTENDER",
+   "canon": "chaneque",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_chaneque-ranger-alternates-v1.json"
+   ],
+   "bits": 2,
+   "human_judged": 0,
+   "unjudged": 2,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/chaneque-ranger/character.json",
+     "sha256": "720c6e78208b",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/chaneque-ranger/delivery.json",
+     "sha256": "aeb19059662f",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/chaneque-ranger/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/chaneque/canon.json",
+     "sha256": "f23accce4e76",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "channel-charlie-indigo-host",
+   "kind": "performer",
+   "tier": "FINAL",
+   "canon": null,
+   "canon_mature": null,
+   "pack": [
+    "character.json",
+    "delivery.json",
+    "meta.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_channel-charlie-indigo-host-alternates-v1.json"
+   ],
+   "bits": 2,
+   "human_judged": 0,
+   "unjudged": 2,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/channel-charlie-indigo-host/character.json",
+     "sha256": "ec5f027f8dd2",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/channel-charlie-indigo-host/delivery.json",
+     "sha256": "cfdfc3c9b331",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "meta.json": {
+     "source": "freaks/channel-charlie-indigo-host/meta.json",
+     "sha256": "b839e1a69a21",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/channel-charlie-indigo-host/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "fay-marrow-the-gig-fairy",
+   "kind": "performer",
+   "tier": "FINAL",
+   "canon": "fairy",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "meta.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_fay-marrow-the-gig-fairy-alternates-v1.json"
+   ],
+   "bits": 2,
+   "human_judged": 0,
+   "unjudged": 2,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/fay-marrow-the-gig-fairy/character.json",
+     "sha256": "f5546be08142",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/fay-marrow-the-gig-fairy/delivery.json",
+     "sha256": "862d1810082b",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "meta.json": {
+     "source": "freaks/fay-marrow-the-gig-fairy/meta.json",
+     "sha256": "d942241bac1e",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/fay-marrow-the-gig-fairy/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/fairy/canon.json",
+     "sha256": "d52c990bc32a",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "gnorma-the-hoa-gnome",
+   "kind": "performer",
+   "tier": "FINAL",
+   "canon": "gnome",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "meta.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_gnorma-the-hoa-gnome-alternates-v1.json"
+   ],
+   "bits": 1,
+   "human_judged": 0,
+   "unjudged": 1,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/gnorma-the-hoa-gnome/character.json",
+     "sha256": "1b7eaef2e08a",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/gnorma-the-hoa-gnome/delivery.json",
+     "sha256": "34115d4781e5",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "meta.json": {
+     "source": "freaks/gnorma-the-hoa-gnome/meta.json",
+     "sha256": "f49d8034459f",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/gnorma-the-hoa-gnome/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/gnome/canon.json",
+     "sha256": "487bbb773f16",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "hag-landlady",
+   "kind": "performer",
+   "tier": "CONTENDER",
+   "canon": "old-hag",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_hag-landlady-alternates-v1.json"
+   ],
+   "bits": 2,
+   "human_judged": 0,
+   "unjudged": 2,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/hag-landlady/character.json",
+     "sha256": "25861d4b1713",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/hag-landlady/delivery.json",
+     "sha256": "a257929c734b",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/hag-landlady/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/old-hag/canon.json",
+     "sha256": "df0857a37b57",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "kappa-kyle-cucumber-debt",
+   "kind": "performer",
+   "tier": "FINAL",
+   "canon": "kappa",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "compose.json",
+    "delivery.json",
+    "meta.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_kappa-kyle-cucumber-debt-alternates-v1.json"
+   ],
+   "bits": 2,
+   "human_judged": 0,
+   "unjudged": 2,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/kappa-kyle-cucumber-debt/character.json",
+     "sha256": "c5a5d3da307c",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/kappa-kyle-cucumber-debt/delivery.json",
+     "sha256": "4b3efafbbd70",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "meta.json": {
+     "source": "freaks/kappa-kyle-cucumber-debt/meta.json",
+     "sha256": "100d96451c40",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "compose.json": {
+     "source": "freaks/kappa-kyle-cucumber-debt/compose.json",
+     "sha256": "c8d9d04bd435",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/kappa-kyle-cucumber-debt/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/kappa/canon.json",
+     "sha256": "56f1ce664253",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "kappa-sumo-coach",
+   "kind": "performer",
+   "tier": "CONTENDER",
+   "canon": "kappa",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_kappa-sumo-coach-alternates-v1.json"
+   ],
+   "bits": 2,
+   "human_judged": 0,
+   "unjudged": 2,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/kappa-sumo-coach/character.json",
+     "sha256": "99903e03f5d6",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/kappa-sumo-coach/delivery.json",
+     "sha256": "67d783d5631a",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/kappa-sumo-coach/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/kappa/canon.json",
+     "sha256": "56f1ce664253",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "mothman-crossing-guard",
+   "kind": "performer",
+   "tier": "CONTENDER",
+   "canon": "mothman",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_mothman-crossing-guard-alternates-v1.json"
+   ],
+   "bits": 1,
+   "human_judged": 0,
+   "unjudged": 1,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/mothman-crossing-guard/character.json",
+     "sha256": "0f94432e82eb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/mothman-crossing-guard/delivery.json",
+     "sha256": "7764d168361c",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/mothman-crossing-guard/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/mothman/canon.json",
+     "sha256": "bc063e9f46b4",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "reptilian-ralph-middle-management",
+   "kind": "performer",
+   "tier": "FINAL",
+   "canon": "reptilian",
+   "canon_mature": true,
+   "pack": [
+    "artist.json",
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "meta.json",
+    "set.wav",
+    "show.json"
+   ],
+   "sets": [
+    "20261017-083322_freak_reptilian-ralph-middle-management.json",
+    "gen_reptilian-ralph-middle-management-alternates-v1.json",
+    "latest_freak_reptilian-ralph-middle-management.json"
+   ],
+   "bits": 7,
+   "human_judged": 3,
+   "unjudged": 4,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/reptilian-ralph-middle-management/character.json",
+     "sha256": "3de258cadc83",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/reptilian-ralph-middle-management/delivery.json",
+     "sha256": "7e6a4e00d20b",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "meta.json": {
+     "source": "freaks/reptilian-ralph-middle-management/meta.json",
+     "sha256": "d031b3032fbf",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "artist.json": {
+     "source": "freaks/reptilian-ralph-middle-management/artist.json",
+     "sha256": "8dfeab29a956",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "show.json": {
+     "source": "freaks/reptilian-ralph-middle-management/show.json",
+     "sha256": "2b36621281f0",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/reptilian-ralph-middle-management/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/reptilian/canon.json",
+     "sha256": "debc1dfb96d3",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "rudy-dulce-hvac",
+   "kind": "performer",
+   "tier": "FINAL",
+   "canon": "reptilian",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "meta.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_rudy-dulce-hvac-alternates-v1.json"
+   ],
+   "bits": 1,
+   "human_judged": 0,
+   "unjudged": 1,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/rudy-dulce-hvac/character.json",
+     "sha256": "f6dc87e123cb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/rudy-dulce-hvac/delivery.json",
+     "sha256": "7c638f1edfbc",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "meta.json": {
+     "source": "freaks/rudy-dulce-hvac/meta.json",
+     "sha256": "a7e85129402e",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/rudy-dulce-hvac/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/reptilian/canon.json",
+     "sha256": "debc1dfb96d3",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "sasquatch-trail-steward",
+   "kind": "performer",
+   "tier": "CONTENDER",
+   "canon": "sasquatch",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_sasquatch-trail-steward-alternates-v1.json"
+   ],
+   "bits": 1,
+   "human_judged": 0,
+   "unjudged": 1,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/sasquatch-trail-steward/character.json",
+     "sha256": "08505e6fb32a",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/sasquatch-trail-steward/delivery.json",
+     "sha256": "a83ae15f8744",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/sasquatch-trail-steward/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/sasquatch/canon.json",
+     "sha256": "8b58c1711a4b",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "slug": "sef-jinn-wish-lawyer",
+   "kind": "performer",
+   "tier": "FINAL",
+   "canon": "jinn",
+   "canon_mature": true,
+   "pack": [
+    "canon.json",
+    "character.json",
+    "delivery.json",
+    "meta.json",
+    "set.wav"
+   ],
+   "sets": [
+    "gen_sef-jinn-wish-lawyer-alternates-v1.json"
+   ],
+   "bits": 1,
+   "human_judged": 0,
+   "unjudged": 1,
+   "crowned": [],
+   "provenance": {
+    "character.json": {
+     "source": "freaks/sef-jinn-wish-lawyer/character.json",
+     "sha256": "1a6908be0a69",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "delivery.json": {
+     "source": "freaks/sef-jinn-wish-lawyer/delivery.json",
+     "sha256": "a588882a9ce1",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "meta.json": {
+     "source": "freaks/sef-jinn-wish-lawyer/meta.json",
+     "sha256": "e3f82fb636fc",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "set.wav": {
+     "source": "freaks/sef-jinn-wish-lawyer/set.wav",
+     "sha256": "e5ea01a23fcb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    },
+    "canon.json": {
+     "source": "canon/jinn/canon.json",
+     "sha256": "650ac85fe202",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  }
+ ],
+ "canon": [
+  {
+   "block": "archon-7",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 4,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/archon-7/canon.json",
+     "sha256": "d1914bf07014",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "chaneque",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "chaneque-ranger"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/chaneque/canon.json",
+     "sha256": "f23accce4e76",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "dee-court",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/dee-court/canon.json",
+     "sha256": "543b9d9bbe08",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "dero-tero",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/dero-tero/canon.json",
+     "sha256": "f10db44e00e5",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "fairy",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "fay-marrow-the-gig-fairy"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/fairy/canon.json",
+     "sha256": "d52c990bc32a",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "gnome",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "gnorma-the-hoa-gnome"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/gnome/canon.json",
+     "sha256": "487bbb773f16",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "goblin-universe",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/goblin-universe/canon.json",
+     "sha256": "589c9139bf70",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "gray",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "gray-x"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/gray/canon.json",
+     "sha256": "e7930ae4c6e8",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "great-mother",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 4,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/great-mother/canon.json",
+     "sha256": "4fec45d5d0f7",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "hekate",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/hekate/canon.json",
+     "sha256": "7dee2f6f810f",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "hekate-retinue",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/hekate-retinue/canon.json",
+     "sha256": "88798aa86bd4",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "heptameron-7",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/heptameron-7/canon.json",
+     "sha256": "383235422370",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "hermanubis",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/hermanubis/canon.json",
+     "sha256": "6838b49067e2",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "hermes",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/hermes/canon.json",
+     "sha256": "5628319980ed",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "jinn",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "sef-jinn-wish-lawyer"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/jinn/canon.json",
+     "sha256": "650ac85fe202",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "jinn-tiers",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/jinn-tiers/canon.json",
+     "sha256": "30b05f7eabfb",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "kappa",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "kappa-kyle-cucumber-debt",
+    "kappa-sumo-coach"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/kappa/canon.json",
+     "sha256": "56f1ce664253",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "mantis",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 4,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/mantis/canon.json",
+     "sha256": "81a58c9a4384",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "mib",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "agent-black-field-visit"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/mib/canon.json",
+     "sha256": "e2b0b1d7b923",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "mothman",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "mothman-crossing-guard"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/mothman/canon.json",
+     "sha256": "bc063e9f46b4",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "nordic",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "britt-nordic-coach",
+    "nordic-x"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/nordic/canon.json",
+     "sha256": "76d9dea2c0d1",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "old-hag",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "hag-landlady"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/old-hag/canon.json",
+     "sha256": "df0857a37b57",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "olympic-7",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/olympic-7/canon.json",
+     "sha256": "521a09be3f15",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "osiris-court",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/osiris-court/canon.json",
+     "sha256": "a281b5da518f",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "owl",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/owl/canon.json",
+     "sha256": "163ad338671b",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "pleiadian",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/pleiadian/canon.json",
+     "sha256": "85c669060330",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "psychopomp",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/psychopomp/canon.json",
+     "sha256": "ef1734a089ff",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "reptilian",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 6,
+   "used_by": [
+    "reptilian-aunt-vess-matriarch",
+    "reptilian-phib-loveland",
+    "reptilian-ralph-middle-management",
+    "reptilian-ssliss-intern",
+    "reptilian-thessik-garments",
+    "reptilian-vrask-calgary",
+    "reptilian-x",
+    "rudy-dulce-hvac"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/reptilian/canon.json",
+     "sha256": "debc1dfb96d3",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "sasquatch",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [
+    "sasquatch-trail-steward"
+   ],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/sasquatch/canon.json",
+     "sha256": "8b58c1711a4b",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "secret-chiefs",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/secret-chiefs/canon.json",
+     "sha256": "9c6ede8368bf",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "springheel-jack",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 4,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/springheel-jack/canon.json",
+     "sha256": "98bbc3c6800a",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "sprites",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 3,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/sprites/canon.json",
+     "sha256": "d825ead5629e",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "steiner-hierarchy",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/steiner-hierarchy/canon.json",
+     "sha256": "4ecf0a8998c1",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "block": "ultraterrestrial",
+   "kind": "canon",
+   "mature": true,
+   "keys": 17,
+   "angles": 5,
+   "used_by": [],
+   "provenance": {
+    "canon.json": {
+     "source": "canon/ultraterrestrial/canon.json",
+     "sha256": "2a1508244c1c",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  }
+ ],
+ "stage": [
+  {
+   "comic": "buddha-ultimate-deadpan",
+   "kind": "ai-character",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/buddha-ultimate-deadpan/comedian-graph.json",
+     "sha256": "b2cc8983ac4b",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "comic": "chris-rock",
+   "kind": "stage",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/chris-rock/comedian-graph.json",
+     "sha256": "3600286f7ff2",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "comic": "dave-chappelle",
+   "kind": "stage",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/dave-chappelle/comedian-graph.json",
+     "sha256": "5a2cdc6e2cd8",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "comic": "george-carlin",
+   "kind": "stage",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/george-carlin/comedian-graph.json",
+     "sha256": "8494b89542d4",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "comic": "gray-x",
+   "kind": "ai-character",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/gray-x/comedian-graph.json",
+     "sha256": "b097e105864e",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "comic": "jerry-seinfeld",
+   "kind": "stage",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/jerry-seinfeld/comedian-graph.json",
+     "sha256": "a13f3f7c540d",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "comic": "louis-ck",
+   "kind": "stage",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/louis-ck/comedian-graph.json",
+     "sha256": "64b621a4bff2",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "comic": "mitch-hedberg",
+   "kind": "stage",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/mitch-hedberg/comedian-graph.json",
+     "sha256": "a1f7cfad6763",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "comic": "muse",
+   "kind": "ai-character",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/muse/comedian-graph.json",
+     "sha256": "7562234adb1f",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "comic": "norm-macdonald",
+   "kind": "stage",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/norm-macdonald/comedian-graph.json",
+     "sha256": "20414036770b",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  },
+  {
+   "comic": "reptilian-ralph-middle-management",
+   "kind": "ai-character",
+   "provenance": {
+    "comedian-graph.json": {
+     "source": "theory/comedians/reptilian-ralph-middle-management/comedian-graph.json",
+     "sha256": "afe096dd7c8a",
+     "promoted_at": "2026-10-21T20:59:14Z"
+    }
+   }
+  }
+ ],
+ "totals": {
+  "performers": 15,
+  "final_tier": 10,
+  "contender_tier": 5,
+  "canon_blocks": 34,
+  "stage_graphs": 11,
+  "bits": 49,
+  "human_judged": 3
+ }
+}

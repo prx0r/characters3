@@ -1,0 +1,44 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "stage:jerry-seinfeld:gen-alternates-v1",
+ "agent_id": "stage:jerry-seinfeld",
+ "name": "stage:jerry-seinfeld",
+ "roster": "stage",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "You get on the plane, \"How are you?\" Good, how are you? Fine. Then you sit down, a flight attendant walks by, \"How are you doing today?\" Good. Same answer, same delivery. It's the only question we ask with no intention of ever receiving information. You could say \"how are you\" forty times on a flight and never learn one single fact about anybody.",
+   "joke_id": "jerry-seinfeld-alt1-c3423dd1",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "The \"how are you\" greeting has no exit condition. We built o"
+  },
+  {
+   "slot": "alt2",
+   "text": "Everybody's fine. That's the whole deal. \"How are you?\" \"Good, you?\" \"Good.\" Three moves, no information exchanged. It's a recursion with a base case, and the base case is \"",
+   "joke_id": "jerry-seinfeld-alt2-c1eef008",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "The \"how are you\" greeting has no exit condition. We built o"
+  },
+  {
+   "slot": "alt3",
+   "text": "The greeting is a recursion. Somebody says \"how are you,\" you say \"good, how are you,\" they say \"good.\" Nothing was communicated. We just ran the same query twice to confirm the server is still up. Then we both walk away satisfied, like two computers that pinged each other for no reason and called it a friendship.",
+   "joke_id": "jerry-seinfeld-alt3-675bdbc3",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "The \"how are you\" greeting has no exit condition. We built o"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

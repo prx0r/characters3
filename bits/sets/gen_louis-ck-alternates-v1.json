@@ -1,0 +1,36 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "stage:louis-ck:gen-alternates-v1",
+ "agent_id": "stage:louis-ck",
+ "name": "stage:louis-ck",
+ "roster": "stage",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "My daughter asked me what a rolodex was and I didn't know how to explain it without sounding like I was describing a religion. It's a spinning wheel with people's names on it, and you turn it to the right letter, and if someone is dead you just leave them there. She said that's morbid. I said no, that's every contact list I've ever had.",
+   "joke_id": "louis-ck-alt1-c9a472c8",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "I was at the park and a woman pointed at my daughter and sai"
+  },
+  {
+   "slot": "alt2",
+   "text": "My daughter asked what Saturday I couldn't remember, because glowing rectangle told leave house. It said four hundred feet, turn right\" I turned right. I have lived that street fourteen years. I felt relief. That's map, that's leash with battery I hold handle I don't have know where I am.",
+   "joke_id": "louis-ck-alt2-32d2dd2b",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "I was at the park and a woman pointed at my daughter and sai"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

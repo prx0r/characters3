@@ -1,0 +1,725 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "norm-macdonald",
+ "name": "Norm Macdonald",
+ "note": "STAGE PERSONA graph. All fields describe the performer-as-acted, never the private person. No verbatim set text stored here — transcripts live in theory/scribe/ and link by path. Fingerprints ≤7 words. Measured fields carry provenance; everything else is authored hypothesis until n>=3 sets. ASR of moth set is NOISY (killtony decoder) — timing from word-alignment is reliable; text is not. Beat interpretations for this graph are STRUCTURE+TIMING driven (known joke shape per normtheory1.md), not text-driven.",
+ "version": 1,
+ "created": "2026-10-15",
+ "annotator": "mimo-v2.5",
+ "identity": {
+  "deal": "Club philosopher who tells old jokes at deliberately stultifying length, defends the indefensible with professorial logic, and never breaks — the joke is sacred, the room is not.",
+  "premise": "Analog comic telling analog jokes in a digital room, treating the mismatch as a moral crisis he finds funny.",
+  "archetype": "suspension_deadpan",
+  "awareness": "fluctuating",
+  "awareness_note": "Plays unaware (folksy dopey innocent) to bait the room; privately hyper-aware of craft — the gap between performed innocence and authored precision IS the Prestige-trick engine (normtheory1).",
+  "philosophy": {
+   "ontology": "The world is a stage for old jokes retold by new fools.",
+   "epistemology": "A joke's truth lives in its structure, not its content.",
+   "axiology": "Craft over comfort; the long way around is the only honest way.",
+   "causality": "Laughter arrives late, or not at all, and that is correct.",
+   "agency": "A comic can only control the telling, never the laugh."
+  },
+  "dramatic_core": {
+   "want": "to be believed at face value",
+   "fear": "the easy laugh",
+   "need": "one more turn of the story",
+   "self_model": "a simple man telling simple jokes that happen to be about terrible things",
+   "blind_spots": [
+    "unknown — needs multi-set observation"
+   ]
+  },
+  "misinterpretation_rule": "Treats audience groans as proof the premise needs more explaining.",
+  "contradictions": [
+   "carny who quotes Dostoevsky",
+   "sweetest man on stage telling the dirtiest joke in the room",
+   "claims simplicity while executing extremely precise comic engineering"
+  ],
+  "status_model": {
+   "desired_status": "the joke, served perfectly",
+   "felt_status": "club philosopher — respected by comics, under-watched by casuals"
+  },
+  "expression": {
+   "default_register": "deadpan professorial",
+   "emotional_restraint": "high",
+   "tells": [
+    "slow blink before a turn",
+    "voice drops, not rises",
+    "almost no gesture"
+   ]
+  },
+  "modulator_range": [
+   "deadpan",
+   "professorial",
+   "confessional",
+   "mock-sincere",
+   "gleefully cruel",
+   "tired"
+  ],
+  "profile": {
+   "energy": 0.4,
+   "pace": "slower than club norm, accelerating only on the turn; NEVER resets",
+   "gesture_frequency": 0.05,
+   "punchline_hold_ms": 1800,
+   "note": "profile hypothesized from public specials + measured moth window; not yet multi-set measured"
+  },
+  "operator_priors": {
+   "false_analogy": 0.9,
+   "repeat_variation": 0.85,
+   "split_knowledge": 0.7,
+   "double_interpret": 0.65,
+   "rigidify": 0.4,
+   "status": "authored hypothesis informed by 1 measured set (moth, ASR-noisy); needs n>=3 normalized per set"
+  },
+  "preferred_theories": [
+   "bogus_logic",
+   "repetition_variation",
+   "audience_alliance",
+   "anti_comedy",
+   "format_subversion"
+  ],
+  "threads": [
+   "the long winding journey",
+   "old jokes quoted as scripture",
+   "sympathy for the condemned as a philosophical position",
+   "the punchline that was always coming"
+  ],
+  "problem_space": [
+   "old jokes",
+   "shaggy-dog narratives",
+   "celebrity gossip as philosophy",
+   "bad jokes told well",
+   "the sacredness of the craft"
+  ]
+ },
+ "engine": {
+  "voice_clone_id": "085d639799cc449c8a5350fe8543c14b",
+  "voice_provider": "fish",
+  "delivery_archetype": "suspension_deadpan",
+  "archetype_def": "enters his own reality; deadpan authority over absurd premises; the joke is that HE believes it",
+  "archetype_delivery": "wide pitch swings (std~10), flat volume (dyn~13), slow burn, long tangent then snap return",
+  "measured_acoustics": {
+   "pitch_std": 10.1,
+   "dyn_db": 13.3,
+   "source": "norm_moth__galactic world-transfer source_delivery measurement",
+   "note": "confirms suspension_deadpan numeric signature: WIDE pitch variance under FLAT affect — the stillness is not monotone, it's controlled swing"
+  },
+  "mary_coords": {
+   "inferred": "low-arousal flat valence with wide pitch range — no direct mary_model modulator matches 'suspension_deadpan' (closest: exhausted has the low arousal but wrong pitch behavior). The archetype is unrepresented in the modulator registry; adding it is engine-lane work.",
+   "pseudo_gt_emotions": {
+    "deadpan": 1,
+    "sarcastic": 1,
+    "manic": 3
+   },
+   "pseudo_gt_note": "acoustic wpm heuristic only — norm has NO real gemini GT (norm_moth_gemini.gemini.json says so explicitly). Treat as weak labels, not ground truth."
+  },
+  "jev_state": {
+   "status": "NOT RUN",
+   "note": "no jev_loop for norm yet — Louis's 0.19 finding (text reads sad, delivery is manic) does NOT transfer as a prediction here; Norm's split is the opposite direction (see essay seed). Needs its own loop when more sets exist."
+  },
+  "world_transfer_proven": {
+   "example": "norm_moth__galactic",
+   "collision": "wrong_expert",
+   "verify_match": 0.934,
+   "measured_render": {
+    "wpm": 159.0,
+    "pitch_std": 5.62
+   },
+   "note": "his engine delivered moth-shaped material through a galactic-bureaucrat lens. 'wrong_expert' collision is a discovered mechanism name: authority asserted about the wrong domain (podiatrist/psychiatrist mismatch IS the structure)."
+  }
+ },
+ "sets": [
+  {
+   "set_id": "norm_moth",
+   "title": "Moth joke (window 30-150s)",
+   "status": "partial — 2-minute window mid-joke; ASR text noisy, timing reliable",
+   "transcript": {
+    "path": "theory/scribe/norm_moth.json",
+    "format": "scribe word-timed",
+    "words": 384,
+    "duration_s": 119.98,
+    "text_field": "EMPTY — words array only; concatenated text unreliable due to killtony decoder noise"
+   },
+   "audio_analysis": {
+    "path": "theory/analysis/norm_moth_analysis.json",
+    "analyzer": "theory/analyze_set.py",
+    "beats": 5
+   },
+   "delivery_artifacts": {
+    "world_transfer": "audition/voicelab/worlds/norm_moth__galactic.json",
+    "pseudo_gt": "theory/killtony-minutes/norm_moth_gemini.gemini.json",
+    "dataset_record": "audition/voicelab/dataset/real_norm_moth.json",
+    "stencil": null,
+    "perf_set": null,
+    "jev_loop": null,
+    "note": "no stencil/perf_set/jev_loop — Norm ran one transfer test only. Louis is deeper in the engine."
+   },
+   "timing_measured": {
+    "wpm": 192.0,
+    "wpm_caveat": "inflated by ASR repetition artifacts in b2-b4; believable sustained rate from clean beats b0-b1 is 122-163 wpm",
+    "pause_count": 6,
+    "pause_bins": {
+     "very_short": 2,
+     "short": 0,
+     "substantial": 0,
+     "topic": 4
+    },
+    "mean_pause_s": 1.003,
+    "median_pause_s": 1.22,
+    "max_pause_s": 1.7,
+    "punch_pauses_s": [
+     1.7,
+     1.58,
+     1.22,
+     1.16
+    ],
+    "thesis": "THE never-stop engine, quantified: 6 pauses in 2 minutes, none shorter than 1.16s when they come — rare and hard, punctuation not breathing. 5 beats but 105-115 words each. CONTRAST Louis (roadrage measured): 57 pauses, 14 topic-pauses, max hold 8.16s. Louis's engine is the STOP; Norm's is the refusal to stop. The two longest Norm holds (1.7s, 1.58s) are still shorter than Louis's MEAN topic pause. Timing doctrine: 'a long winding journey is okay as long as the payoff is worth it' — operationalized as never giving the room a reset."
+   },
+   "delivery_measured": null,
+   "topics": [
+    {
+     "topic": "malaise / existential weather",
+     "beats": [
+      "b0"
+     ],
+     "why_it_works": "Opens the window mid-digression in a stated low-grade unhappiness ('wake up in a malaise') — the emotional register of a shaggy-dog story: nothing is wrong specifically, everything is slightly wrong generally. The room settles into his weather.",
+     "theory_links": [
+      "audience_alliance",
+      "wrong_expert"
+     ]
+    },
+    {
+     "topic": "the wrong-domain confession",
+     "beats": [
+      "b0",
+      "b1"
+     ],
+     "why_it_works": "The moth joke's surface structure: an animal walks into a professional's office and the professional names the real problem (psychiatrist, not podiatrist). The digression BEFORE the punch is the room being carried into the wrong frame — pest-control expectation — while he builds the actual one. normtheory1: faux-escalation 'completely natural' from step to step.",
+     "theory_links": [
+      "false_analogy",
+      "garden_path",
+      "wrong_expert"
+     ]
+    },
+    {
+     "topic": "the sacred punchline",
+     "beats": [
+      "b4"
+     ],
+     "why_it_works": "The punch ('because the light was on') arrives after the longest build. Whether it's cleanly in this ASR window or garbled into b4's tail, the DOCTRINE is measured: he held the room 2 minutes without a single substantial pause to earn it. The punchline is non-negotiable (rejects anti-comedy label) — the digression exists to SERVE it, never to replace it.",
+     "theory_links": [
+      "rigidify",
+      "repetition_variation",
+      "dpv-temporal-scaffolding"
+     ]
+    },
+    {
+     "topic": "repetition as pressure",
+     "beats": [
+      "b2",
+      "b3",
+      "b4"
+     ],
+     "why_it_works": "ASR shows the same phrase fragment recurring across three beats — likely decoder hallucination on noisy audio, but it rhymes with his ACTUAL technique (repeat_variation 0.85 prior): he repeats structures until the room gives up resisting. Flagged honestly: timing of the three beats is real (pause boundaries at 96.8, 107.4, 112.02), the repeated text is not trusted.",
+     "theory_links": [
+      "repeat_variation"
+     ],
+     "status": "timing measured, text unreliable"
+    }
+   ],
+   "beat_decomposition": [
+    {
+     "beat": "b0",
+     "t0": 0.0,
+     "t1": 51.62,
+     "words": 105,
+     "pause_after_s": 1.7,
+     "fingerprint": "wake up in a malaise",
+     "text_reliability": "partial — openable phrases legible, later half noisy",
+     "gtvh": {
+      "SO": "normal/absurd",
+      "LM": "false_analogy",
+      "TA": "self",
+      "NS": "narrative",
+      "note": "authored hypothesis — GTVH not run via jev for norm"
+     },
+     "interpretations": [
+      {
+       "lens": "timing",
+       "claim": "105 words across 51.62 seconds with ZERO internal pauses above very_short — the longest measured continuous stretch in either comedian's data. Then a 1.7s hold: his longest in the window, arriving only after half a minute of unbroken talk.",
+       "status": "measured"
+      },
+      {
+       "lens": "structure",
+       "claim": "The digression engine at work: malaise-weather established as the frame the joke will violate. Room is carried INTO his reality before the wrong-expert structure fires.",
+       "status": "authored (normtheory1 pattern)"
+      },
+      {
+       "lens": "valence",
+       "claim": "Content is low-grade depressive weather; delivery stays flat-affect wide-pitch (suspension_deadpan signature). The mismatch vs Louis is instructive: Louis delivers dark content with high-arousal manic energy; Norm delivers the SAME weather at the weather's own energy level. Both splits work; they're opposite constructions.",
+       "status": "measured acoustics (pitch_std 10.1), authored claim"
+      }
+     ]
+    },
+    {
+     "beat": "b1",
+     "t0": 53.32,
+     "t1": 95.58,
+     "words": 115,
+     "pause_after_s": 1.22,
+     "fingerprint": "no longer love him",
+     "text_reliability": "partial",
+     "gtvh": {
+      "SO": "caring/cruel",
+      "LM": "false_analogy",
+      "TA": "self",
+      "NS": "narrative"
+     },
+     "interpretations": [
+      {
+       "lens": "timing",
+       "claim": "Second mega-beat: 115 words, 42.26s of speech, again no reset pause inside. Sustained rate ~163 wpm — brisker than b0, the build accelerating without ever stopping.",
+       "status": "measured"
+      },
+      {
+       "lens": "operator",
+       "claim": "false_analogy chain: the professorial-logic defense of the indefensible (v1 graph's 'bogus_logic') in action — each step follows formally from the last while the content walks further from sanity.",
+       "status": "authored"
+      }
+     ]
+    },
+    {
+     "beat": "b2",
+     "t0": 96.8,
+     "t1": 106.24,
+     "words": 70,
+     "pause_after_s": 1.16,
+     "fingerprint": "HOW LONG HAVE I TRIED",
+     "text_reliability": "UNRELIABLE — ASR repetition artifact suspected (implied wpm ~445 is impossible)",
+     "gtvh": {
+      "SO": "normal/absurd",
+      "LM": "garden_path",
+      "TA": "self",
+      "NS": "narrative"
+     },
+     "interpretations": [
+      {
+       "lens": "timing",
+       "claim": "Boundary real: pause of 1.16s at t=96.8 is a true word-alignment event. Word count inside is not trusted.",
+       "status": "boundary measured, contents unreliable"
+      },
+      {
+       "lens": "honest",
+       "claim": "This beat and b3/b4 exist as timing shells. The known joke shape (normtheory1) says this region is the escalation toward the punch. Any specific line-level interpretation here would be fabrication; refusing to invent it.",
+       "status": "meta"
+      }
+     ]
+    },
+    {
+     "beat": "b3",
+     "t0": 107.4,
+     "t1": 110.44,
+     "words": 35,
+     "pause_after_s": 1.58,
+     "fingerprint": "second hold in final approach",
+     "text_reliability": "UNRELIABLE",
+     "gtvh": {
+      "SO": "normal/absurd",
+      "LM": "garden_path",
+      "TA": "self",
+      "NS": "narrative"
+     },
+     "interpretations": [
+      {
+       "lens": "timing",
+       "claim": "1.58s hold — second-longest in window, sitting in the final approach to the punch. The holds get HARDER as the payoff nears: 1.16 → 1.58. Inverse of Louis, whose longest hold is mid-story (the deflation at b13); Norm's escalate toward the closer.",
+       "status": "measured"
+      }
+     ]
+    },
+    {
+     "beat": "b4",
+     "t0": 112.02,
+     "t1": 119.98,
+     "words": 59,
+     "pause_after_s": 0.0,
+     "fingerprint": "final approach / punchline region",
+     "text_reliability": "UNRELIABLE",
+     "gtvh": {
+      "SO": "real/unreal",
+      "LM": "literalize",
+      "TA": "none",
+      "NS": "one-liner",
+      "note": "the punch itself, if in-window, is the literalized reading of the wrong-domain setup"
+     },
+     "interpretations": [
+      {
+       "lens": "doctrine",
+       "claim": "The window ends at the joke's structural climax. Two minutes of unbroken talk to earn one clean punchline — 'long winding journey okay if payoff worth it' made measurable. The punch ('because the light was on') is public joke-knowledge, not stored here per no-verbatim rule; its FUNCTION in the timing data is the point.",
+       "status": "authored, doctrine-measured"
+      },
+      {
+       "lens": "dpv",
+       "claim": "DPV claims temporal scaffolding outranks semantic incongruity for appreciation. Norm is the limit-case: the incongruity (moth → light) is one of the oldest joke structures alive; the TIMING (2min unbroken, holds hardening near the end) is doing essentially all the comedic work. The same joke told briskly dies. This set is the DPV thesis in its purest form.",
+       "status": "authored, timing measured"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "set_queue": {
+  "note": "Moth is a 2-min mid-joke window with noisy ASR. Next sets for n>=3 (owner supplies audio or InnerTube port): full moth joke clean ASR, one Weekend Update short-joke era clip (the shock-into-silence engine), one late-night rambling story (the 12-min murder progression shape). Specials to eventually cover (public specials, titles only): Me Doing Stand-up, Cookie Jar, Me Doing Standup Again, Hitler's Dog, Hitler's Dog Gossip & Propaganda.",
+  "blocked_on": "YouTube access / owner-supplied audio; clean ASR pass on existing moth audio would also help"
+ },
+ "theory_links": {
+  "internal": [
+   {
+    "id": "dpv",
+    "cite": "arxiv 2605.00143 — Timing is Everything",
+    "claim": "Temporal features substantially outweigh semantic incongruity; timing GATES cognitive access.",
+    "applies_to": "Norm is the pure limit-case: oldest joke structure alive, essentially ALL the comedy carried by 2-min unbroken timing. The holds hardening toward the punch (1.16→1.58) are temporal scaffolding doing the work the incongruity can't."
+   },
+   {
+    "id": "attardo-pause-taxonomy",
+    "cite": "Attardo & Pickering 2011",
+    "claim": "Punch lines preceded by substantial pauses or longer; timing = pause distribution + rate.",
+    "applies_to": "pause_bins: 4 topic-pauses, ZERO substantial — he skips the mid-tier entirely. When Norm pauses it's a topic-grade event (1.16-1.7s), never a comma."
+   },
+   {
+    "id": "wrong_expert",
+    "cite": "discovered via norm_moth__galactic transfer test (collision label)",
+    "claim": "Authority asserted about the wrong domain; the professional names the real problem the amateur brought to the wrong professional.",
+    "applies_to": "the moth/podiatrist structure itself; likely a reusable LM option — worth adding to gtvh.py LM_OPTIONS pending owner review"
+   },
+   {
+    "id": "normtheory1-doctrine",
+    "cite": "theory/normtheory1.md — video essay breakdown",
+    "claim": "Punchline non-negotiable (rejects anti-comedy); faux-logical escalation ('the progression is completely natural'); Prestige-trick persona (smart man playing folksy innocent); 'long winding journey okay if payoff worth it'.",
+    "applies_to": "whole-graph identity; beat interpretations b0-b1 structure; status economics in personality.md"
+   },
+   {
+    "id": "gTVH",
+    "cite": "Attardo & Raskin (audition/gtvh.py)",
+    "claim": "Dominant SO: normal/absurd + real/unreal. Dominant LM: false_analogy + garden_path. TA: self or none.",
+    "applies_to": "per-beat gtvh blocks (authored — jev not run for norm)"
+   },
+   {
+    "id": "repeat_variation",
+    "cite": "operator registry (repeat_variation → repetition_variation)",
+    "claim": "Repeats structures until the room gives up resisting.",
+    "applies_to": "operator prior 0.85; the suspected b2-b4 repetition rhymes with the real technique even if ASR-inflated"
+   },
+   {
+    "id": "suspension_deadpan",
+    "cite": "audition/voicelab/archetypes.json",
+    "claim": "wide pitch swings (std~10), flat volume (dyn~13), slow burn, long tangent then snap return",
+    "applies_to": "measured pitch_std 10.1 / dyn 13.3 confirms the archetype's numeric signature on real Norm audio"
+   }
+  ],
+  "external": [
+   {
+    "id": "standup4ai",
+    "cite": "StandUp4AI dataset (EMNLP 2025)",
+    "use": "future: clean ASR + laugh labels for more Norm specials"
+   },
+   {
+    "id": "tic-talk",
+    "cite": "TIC-TALK (CHum 2026)",
+    "use": "future: cross-comedian timing normalization — his never-stop profile vs corpus distribution"
+   },
+   {
+    "id": "dpv-limit-case",
+    "cite": "arxiv 2605.00143 applied comparatively",
+    "claim": "If DPV is right that timing outranks incongruity, Norm should show the highest timing-to-laugh coupling of any comic in the corpus. Testable once laugh timestamps exist for multiple Norm sets.",
+    "status": "prediction, untested"
+   }
+  ]
+ },
+ "essay_seeds": [
+  {
+   "id": "norm-essay-01",
+   "title": "Six pauses in two minutes: the never-stop engine and why Norm Macdonald needs no silence",
+   "thesis": "Measured: 6 pauses total, none under 1.16s, 105-115 words per beat. Where Louis's engine is the STOP (8.16s hold at the darkest turn), Norm's is the refusal to stop. The holds that exist get HARDER toward the punch (1.16→1.58) — inverted from Louis, whose longest hold is mid-story. Two opposite timing doctrines, both measured from word-aligned audio.",
+   "evidence": [
+    "sets[0].timing_measured",
+    "beat_decomposition b0/b1/b2-b4 timing",
+    "theory/analysis/louis_roadrage_analysis.json (contrast)"
+   ],
+   "outline": [
+    "the six-pause number",
+    "what a pause means in each comic's economy",
+    "the hardening holds as Norm's signature",
+    "the DPV limit-case: oldest joke, all timing doing the work",
+    "what this predicts for other never-stop comics"
+   ],
+   "status": "seed — ready to draft from this graph + Louis contrast"
+  },
+  {
+   "id": "norm-essay-02",
+   "title": "The Prestige trick: how Norm Macdonald hides a scholar inside a simpleton",
+   "thesis": "The persona is a CONSTRUCTED character (normtheory1: magician devoting his life to a trick) — well-read Russian-literature ironist performing folksy dopey innocence. The gap is never acknowledged on stage. Compare Louis: same smart-man-playing-dumb surface, but Louis's simplicity is the TRUE surface (the thoughts really are that crude) while Norm's is a costume over precision. Two constructions, one visible gap, one hidden.",
+   "evidence": [
+    "identity.awareness",
+    "identity.contradictions",
+    "theory/normtheory1.md craft principles 1+6",
+    "personality.md (planned)"
+   ],
+   "outline": [
+    "the video essay's magician framing",
+    "what the room sees vs what the construction is",
+    "why the gap can never be acknowledged (it would break the spell)",
+    "the Louis contrast: costume vs nature simplicity",
+    "what this means for our awareness field in the graph"
+   ],
+   "status": "seed — ready to draft"
+  },
+  {
+   "id": "norm-essay-03",
+   "title": "Against the anti-comic: Norm Macdonald's defense of the joke as a religious position",
+   "thesis": "He rejects the anti-comedy/meta-comedy label entirely: every bit has a real punchline that makes sense whether or not you find it funny. The digression exists to SERVE the punch, never replace it. This is a DOCTRINE — craft over comfort, the joke is sacred — and it's why his timing is never experimental for its own sake. The long winding journey is justified only by the payoff. Formalize as status economics: he HAS capital (cult respect, SNL head-writer pedigree) and refuses to spend it on modification. Anti-pander as a positive program, not indifference.",
+   "evidence": [
+    "theory/normtheory1.md craft principle 3+9",
+    "identity.dramatic_core.fear (the easy laugh)",
+    "status_model",
+    "personality.md status economics (planned)"
+   ],
+   "outline": [
+    "the label he rejects and why",
+    "the punchline-as-commandment",
+    "the journey/ payoff accounting",
+    "capital held in reserve as independence",
+    "the Weekend Update era as the aggressive variant of the same doctrine"
+   ],
+   "status": "seed — needs Weekend Update set for the era contrast half"
+  }
+ ],
+ "provenance": {
+  "persona": "authored stage-persona hypothesis (norm_macdonald_v2.json promoted into graph), reviewed against public specials + normtheory1.md",
+  "timing_measured": "theory/analyze_set.py on theory/scribe/norm_moth.json (word timestamps; TEXT flagged unreliable, boundaries trusted)",
+  "acoustics_measured": "norm_moth__galactic world-transfer (pitch_std 10.1, dyn 13.3)",
+  "pseudo_gt": "acoustic wpm heuristic ONLY — not gemini, flagged in artifact",
+  "beat_interpretations": "structure+timing driven (normtheory1 known-joke shape), each labeled with lens + status; text-level claims refused where ASR is untrusted",
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines in published fields (fingerprints ≤7 words)",
+   "blind_spots unknown until n>=3",
+   "operator_priors hypothesis until n>=3",
+   "every interpretation labeled measured/authored/unreliable",
+   "ASR noise disclosed, not papered over"
+  ],
+  "sets_observed": 1,
+  "next": "clean ASR pass on moth audio if available; ingest 2+ more sets (Weekend Update era + late-night story) → recompute operator_priors → essay drafts; engine-lane: add suspension_deadpan to mary_model modulators + consider wrong_expert as LM option"
+ },
+ "bio": {
+  "wikidata_id": "Q1371229",
+  "dob": "1959-10-17",
+  "dod": "2021-09-14",
+  "birthplace": "Quebec City",
+  "citizenship": "Canada",
+  "occupations": [
+   "comedian",
+   "screenwriter",
+   "film actor",
+   "stand-up comedian"
+  ],
+  "source": "wikidata (CC0)"
+ },
+ "rating": {
+  "headline": 85.3,
+  "coverage": "FULL",
+  "provisional": null,
+  "boards": {
+   "house": {
+    "rank": 6,
+    "pct": 85.3,
+    "sweep": [
+     6,
+     6
+    ]
+   },
+   "consensus": {
+    "rank": 45,
+    "ref": true
+   },
+   "canon": {
+    "rank": 75,
+    "ref": true
+   },
+   "peoples": {
+    "rank": 26,
+    "wr": 7.5,
+    "ref": true
+   },
+   "era": {
+    "rank": 66,
+    "ref": true
+   }
+  },
+  "interval": {
+   "lo": 6,
+   "hi": 6
+  },
+  "updated": "2026-10-18T17:13:19Z",
+  "pipeline": "rate/v1"
+ },
+ "metrics": {
+  "legacy": 89.4,
+  "legacy_era": 84.3,
+  "audience": 62.5,
+  "popularity": 66.7,
+  "theory": 87.5,
+  "heat": null,
+  "gap_value": 0.042,
+  "overrated": "accurately rated",
+  "canon_lag": -0.269
+ },
+ "modes": {
+  "signature": "absurdist",
+  "signature_title": "shaggy-dog saint",
+  "repertoire": {
+   "absurdist": 0.65,
+   "dark-confessional": 0.25,
+   "one-liner": 0.1
+  },
+  "n_modes": 2
+ },
+ "style": {
+  "words": 52376,
+  "profanity_rate": 0.0034,
+  "question_rate": 0.282,
+  "i_rate": 0.051,
+  "vocab_div": 0.05,
+  "avg_sent_len": 11.7,
+  "top_words": [
+   "think",
+   "because",
+   "people",
+   "good",
+   "time",
+   "ever",
+   "tell",
+   "something",
+   "thing",
+   "said",
+   "some",
+   "want"
+  ]
+ },
+ "humor_type": {
+  "primary": "absurdist",
+  "secondary": "one-liner",
+  "scores": {
+   "absurdist": 0.8,
+   "one-liner": 0.2
+  },
+  "method": "archetype+theories+transcript"
+ },
+ "recognition": {
+  "comedy_central_2004": 83,
+  "awards": [],
+  "paste_2017": 31
+ },
+ "generation": {
+  "id": "nineties",
+  "label": "Nineties alt + HBO",
+  "span": "1990s",
+  "note": "Alt rooms, HBO hours, SNL golden age, Boston/LA/NYC scenes. Anti-boom craft.",
+  "scene": "snl-pipeline",
+  "breakthrough": "SNL 1993-98 Weekend Update"
+ },
+ "tier": "king",
+ "region": "canada",
+ "continent": "north-america",
+ "known_bits": [
+  {
+   "title": "The moth joke",
+   "why_it_works": "The digression BEFORE the punch carries the room into the wrong frame; the punch ('because the light was on') arrives clean, no tag. false_analogy: moth-to-flame, not moth-to-foot.",
+   "theory_links": [
+    "false_analogy",
+    "garden_path",
+    "bogus_logic"
+   ]
+  },
+  {
+   "title": "The long winding journey",
+   "why_it_works": "A 12-minute story told with calm practical tone. 'The progression is completely natural' — faux-logical escalation, each step reasonable from the last. The punchline is non-negotiable — the digression SERVES it, never replaces it.",
+   "theory_links": [
+    "bogus_logic",
+    "escalation"
+   ]
+  }
+ ],
+ "specials_rated": [
+  {
+   "title": "Norm Macdonald: Nothing Special",
+   "year": 2022,
+   "imdb_id": "tt20201450",
+   "imdb_rating": 7.5,
+   "imdb_votes": 2493,
+   "transcript": "norm-macdonald-nothing-special-transcript.txt",
+   "standout": true
+  },
+  {
+   "title": "Norm Macdonald: Hitler's Dog, Gossip & Trickery",
+   "year": 2017,
+   "imdb_id": "tt6878486",
+   "imdb_rating": 7.3,
+   "imdb_votes": 3747,
+   "transcript": "norm-macdonald-hitlers-dog-gossip-trickery-2017-full-transcript.txt"
+  },
+  {
+   "title": "Don",
+   "year": 2022,
+   "imdb_id": "tt10709484",
+   "imdb_rating": 6.8,
+   "imdb_votes": 13129,
+   "transcript": "orm-acdonald-othing-pecial-2022-ranscript.txt"
+  }
+ ],
+ "youtube": {
+  "clips": 6,
+  "total_views": 53289689,
+  "total_likes": 1182337,
+  "avg_views": 8881614,
+  "like_rate": 0.02219,
+  "top_clip": {
+   "videoId": "L7K-kaelQEs",
+   "title": "Norm Macdonald Is Married To A Real Battle-Axe | CONAN on TBS",
+   "channel": "Team Coco",
+   "publishedAt": "2016-10-06",
+   "views": 10392583,
+   "likes": 158935,
+   "comments": 7314,
+   "duration_s": 309
+  }
+ },
+ "netflix_viewership": {
+  "hours": 2600000,
+  "views": 1500000,
+  "specials": 3,
+  "source": "What We Watched 2023H1-2026H1"
+ },
+ "timing_profile": {
+  "doctrine_hypothesis": "THE never-stop engine: 6 pauses in 2 minutes, none shorter than 1.16s — rare and hard, punctuation not breathing. The refusal to give the room a reset IS the timing doctrine.",
+  "status": "hypothesis until word-timed sets measured",
+  "measured": true,
+  "source": "theory/analysis/norm_moth_analysis.json",
+  "wpm": 192.0,
+  "pause_count": 6,
+  "mean_pause_s": 1.003,
+  "punch_pauses_s": [
+   1.7,
+   1.58,
+   1.22,
+   1.16
+  ],
+  "max_pause_s": 1.7
+ },
+ "gtvh_profile": {
+  "SO": "absurd/normal — the story seems to wander, then the conventional frame is the punch",
+  "LM": "garden_path + false_analogy — digression carries the room into the wrong frame; punch arrives clean, no tag",
+  "TA": "mostly self, often through a third party (the moth is really about Norm)",
+  "NS": "slow-burn story, never-stop delivery, snap return",
+  "note": "authored from known-bits theory; n=1 set measured"
+ }
+}

@@ -1,0 +1,1157 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "louis-ck",
+ "name": "Louis C.K.",
+ "note": "STAGE PERSONA graph. All fields describe the performer-as-acted, never the private person. No verbatim set text stored here — transcripts live in theory/scribe/ and link by path. Fingerprints ≤7 words. Measured fields carry provenance; everything else is authored hypothesis until n>=3 sets.",
+ "version": 1,
+ "created": "2026-10-15",
+ "annotator": "mimo-v2.5",
+ "identity": {
+  "deal": "Self-flagellating Everyman who walks his worst thoughts past every social stop sign until the room admits it shares them.",
+  "premise": "A bad person telling the truth about being bad until the audience recognizes itself.",
+  "archetype": "sincere_storyteller",
+  "awareness": "aware",
+  "awareness_note": "Head: aware failings = neurotic comedy. He KNOWS the thoughts are ugly; the telling is the transgression, and the knowing is what makes it bearable.",
+  "philosophy": {
+   "ontology": "Humans are animals in a thin coat of civilization, and the coat keeps slipping.",
+   "epistemology": "The thought you're ashamed of is the truest one you had.",
+   "axiology": "Honesty beats decency; the confession is the moral act even when the content isn't.",
+   "causality": "Civilization is a mass agreement not to say the thing; comedy breaks the agreement one room at a time.",
+   "agency": "One person saying the quiet part gives a room permission to feel less alone with it."
+  },
+  "dramatic_core": {
+   "want": "the recognition laugh — I'm not the only one",
+   "fear": "being the only one who thinks it",
+   "need": "one more confession that lands harder than the last",
+   "self_model": "a decent man trapped in an indecent mind",
+   "blind_spots": [
+    "unknown — needs multi-set observation"
+   ]
+  },
+  "misinterpretation_rule": "Treats his own worst impulse as universal law and keeps walking it until the room admits complicity.",
+  "contradictions": [
+   "preaches empathy from a confessed position of terribleness",
+   "the confessional booth and its prosecutor in one body",
+   "claims loss of control while engineering every beat of the collapse"
+  ],
+  "status_model": {
+   "desired_status": "the honest Everyman",
+   "felt_status": "the worst person in the room who happens to have a microphone"
+  },
+  "expression": {
+   "default_register": "confessional",
+   "emotional_restraint": "low",
+   "tells": [
+    "laughs through his own punchline",
+    "voice drops into shame on the turn",
+    "shrug as punctuation"
+   ]
+  },
+  "modulator_range": [
+   "confessional",
+   "escalating",
+   "tender-guilt",
+   "deadpan-collapse",
+   "manic-rant",
+   "weary"
+  ],
+  "profile": {
+   "energy": 0.55,
+   "pace": "fast overall, collapses to slow on confessions",
+   "gesture_frequency": 0.3,
+   "punchline_hold_ms": 1600,
+   "note": "profile hypothesized from public specials + measured roadrage window; not yet multi-set measured"
+  },
+  "operator_priors": {
+   "split_knowledge": 0.85,
+   "expose_self_blindness": 0.8,
+   "character_violation": 0.75,
+   "double_interpret": 0.7,
+   "rigidify": 0.5,
+   "literalize": 0.4,
+   "status": "authored hypothesis informed by 1 measured set; needs n>=3 normalized per set"
+  },
+  "preferred_theories": [
+   "bisociation",
+   "audience_alliance",
+   "self_awareness",
+   "escalation",
+   "rigidity"
+  ],
+  "threads": [
+   "the road as purgatory",
+   "parenting as evidence for the prosecution",
+   "technology as a new way to fail at being human"
+  ],
+  "problem_space": [
+   "parenting failure",
+   "marriage autopsy",
+   "road/airplane/hotel entropy",
+   "the body doing embarrassing things",
+   "being a bad person at the grocery store"
+  ]
+ },
+ "engine": {
+  "voice_clone_id": "fb015415ebf141999fc882baa0e0834c",
+  "voice_provider": "fish",
+  "delivery_archetype": "sincere_storyteller",
+  "archetype_def": "self-deprecating, takes audience to weird dark places; sincerity IS the engine; laughs are byproduct not target",
+  "archetype_delivery": "mid pitch, wide dynamics, build-then-collapse structure, physical specificity, comfort with silence",
+  "mary_coords": {
+   "manic": {
+    "arousal": 0.9,
+    "valence": 0.4,
+    "power": 0.9,
+    "rate_delta": 0.53,
+    "volume_db": 3.0,
+    "range_st": 3.8,
+    "pitch": "rising"
+   },
+   "note": "measured dominant modulator across roadrage stencil (11/12 segments manic). MARY via arxiv 2307.02132."
+  },
+  "jev_state": {
+   "status": "NOT CONVERGED",
+   "rounds": 4,
+   "emotion_acc": 0.19,
+   "wpm_mae": 37.6,
+   "var_mae": 1.07,
+   "finding": "Jev predicts deadpan/embarrassed from text; ground truth is manic. The text sounds like shame, the delivery is energized. Content-valence and delivery-valence are OPPOSITE — this is the engine, and the model can't see it yet.",
+   "source": "audition/voicelab/jev_loop_louis_roadrage.json"
+  },
+  "world_transfer_proven": {
+   "example": "louis_annoyance__folklore",
+   "collision": "deadpan_absurd onto folklore (fairy bill bit)",
+   "verify_match": 0.959,
+   "note": "His engine successfully delivered non-Louis material through his delivery contract. Material swappable; delivery is the constant."
+  }
+ },
+ "sets": [
+  {
+   "set_id": "louis_roadrage",
+   "title": "Road Rage (window 120-240s)",
+   "status": "partial — 2-minute window of a longer bit",
+   "transcript": {
+    "path": "theory/scribe/louis_roadrage.json",
+    "format": "scribe word-timed",
+    "words": 337,
+    "duration_s": 117.98
+   },
+   "audio_analysis": {
+    "path": "theory/analysis/louis_roadrage_analysis.json",
+    "analyzer": "theory/analyze_set.py",
+    "beats": 18
+   },
+   "delivery_artifacts": {
+    "stencil": "audition/voicelab/stencils/louis_ck_louis_roadrage.json",
+    "perf_set": "audition/voicelab/perf_sets/louis_roadrage.json",
+    "miss_analysis": "audition/voicelab/perf_sets/miss_louis_roadrage.json",
+    "jev_loop": "audition/voicelab/jev_loop_louis_roadrage.json",
+    "world_transfer": "audition/voicelab/worlds/louis_annoyance__folklore.json"
+   },
+   "timing_measured": {
+    "wpm": 171.4,
+    "pause_count": 57,
+    "pause_bins": {
+     "very_short": 38,
+     "short": 3,
+     "substantial": 2,
+     "topic": 14
+    },
+    "mean_pause_s": 0.756,
+    "median_pause_s": 0.26,
+    "max_pause_s": 8.16,
+    "punch_pauses_s": [
+     8.16,
+     5.32,
+     2.86,
+     2.26,
+     2.04,
+     1.98,
+     1.88,
+     1.48
+    ],
+    "thesis": "fast speech, many pauses. 14 topic-pauses (>0.8s) are the confession holds. The two longest holds (8.16s, 5.32s) sit at the two darkest turns. Timing gates the laugh (DPV): the room needs the silence to catch up to what he just said about itself."
+   },
+   "delivery_measured": {
+    "segments": 12,
+    "emotions": {
+     "manic": 11,
+     "deadpan": 1
+    },
+    "cues": {
+     "[excited]": 7,
+     "[delighted]": 4,
+     "none": 1
+    },
+    "temps": {
+     "0.85": 7,
+     "0.95": 4,
+     "0.45": 1
+    },
+    "wpm_range": [
+     106.0,
+     377.1
+    ],
+    "miss_count": 3,
+    "prior_update_manic": {
+     "n": 11,
+     "mean_wpm_err": -3.4
+    }
+   },
+   "topics": [
+    {
+     "topic": "aging and mortality",
+     "beats": [
+      "b00",
+      "b01",
+      "b02",
+      "b03"
+     ],
+     "why_it_works": "Opens on universal fear (memory loss) stated as plain fact, no joke framing. The premise is real before it's funny — audience registers honesty first, which buys him the transgressions later.",
+     "theory_links": [
+      "audience_alliance",
+      "dpv-premise-clarity"
+     ]
+    },
+    {
+     "topic": "memory and celebrity",
+     "beats": [
+      "b04",
+      "b05",
+      "b06"
+     ],
+     "why_it_works": "Fonzie name-drop fails as shared reference — the joke is that HE can't remember, not that we should. Self-targeting via cultural literacy collapse. Micro-punches (1.32s, 1.48s holds) practice the pause grammar before the big holds.",
+     "theory_links": [
+      "split_knowledge",
+      "attardo-pause-taxonomy"
+     ]
+    },
+    {
+     "topic": "the van (transgressive escalation)",
+     "beats": [
+      "b07",
+      "b08",
+      "b09",
+      "b10",
+      "b11",
+      "b12",
+      "b13"
+     ],
+     "why_it_works": "Classic Louis escalation: a real-feeling mundane entry (guy in a van), increasingly absurd compliance, and the turn arrives when he admits the act wasn't even enjoyable. The 8.16s hold after b13 is the longest silence in the window — the room metabolizes the whole story in that gap. Confessional premise + absurd content = the signature collision.",
+     "theory_links": [
+      "character_violation",
+      "dpv-temporal-scaffolding",
+      "escalation"
+     ]
+    },
+    {
+     "topic": "intrusive thought (the darkest turn)",
+     "beats": [
+      "b14",
+      "b15",
+      "b16"
+     ],
+     "why_it_works": "Shifts from storytelling to live intrusive thought — the beautiful couple, the hidden child, the thought he shouldn't have. 5.32s hold after b16 is the second-longest. He never resolves it; the discomfort IS the payload. Awareness of the thought's ugliness is stated before the room can reject it.",
+     "theory_links": [
+      "expose_self_blindness",
+      "self_awareness",
+      "dpv-gating"
+     ]
+    },
+    {
+     "topic": "meta-confession (why I tell these)",
+     "beats": [
+      "b17"
+     ],
+     "why_it_works": "The closer drops the story entirely and confesses the mechanism: he says terrible things because the audience's upset is enjoyable to him. This is the set's real thesis — the whole preceding transgression was a delivery vehicle for this admission. Audience laughs because it's true of comedy itself.",
+     "theory_links": [
+      "split_knowledge",
+      "audience_alliance",
+      "identity_contradiction"
+     ]
+    }
+   ],
+   "beat_decomposition": [
+    {
+     "beat": "b00",
+     "t0": 121.8,
+     "t1": 124.18,
+     "words": 9,
+     "pause_after_s": 2.26,
+     "fingerprint": "old man, gone very soon",
+     "gtvh": {
+      "SO": "real/unreal",
+      "LM": null,
+      "TA": "self",
+      "NS": "monologue",
+      "note": "premise beat; confessional open, no punch expected"
+     },
+     "interpretations": [
+      {
+       "lens": "dpv",
+       "claim": "2.26s hold after a mortality statement — temporal scaffolding tells the room this is real before it's funny.",
+       "status": "measured pause, authored claim"
+      },
+      {
+       "lens": "nerdwriter-premise",
+       "claim": "Premise delivered in one clean sentence. No smuggled laughs yet — the premise clarity doctrine (Rock quote in louistheory1) fully honored.",
+       "status": "authored"
+      },
+      {
+       "lens": "valence",
+       "claim": "Content valence negative (death); delivery valence likely positive (manic per stencil seg0). The split starts immediately.",
+       "status": "measured stencil, authored join"
+      }
+     ]
+    },
+    {
+     "beat": "b01",
+     "t0": 126.44,
+     "t1": 129.48,
+     "words": 14,
+     "pause_after_s": 0.6,
+     "fingerprint": "worry about getting old only because",
+     "gtvh": {
+      "SO": "real/unreal",
+      "LM": "garden_path",
+      "TA": "self",
+      "NS": "monologue"
+     },
+     "interpretations": [
+      {
+       "lens": "nerdwriter-premise",
+       "claim": "Second premise sentence narrows the fear from death to memory — the specific fear the whole bit will exploit.",
+       "status": "authored"
+      },
+      {
+       "lens": "operator",
+       "claim": "garden_path: the 'only because' promises a surprising reason, delivers a smaller-than-expected one (memory, not death).",
+       "status": "authored"
+      }
+     ]
+    },
+    {
+     "beat": "b02",
+     "t0": 130.08,
+     "t1": 131.8,
+     "words": 10,
+     "pause_after_s": 1.88,
+     "fingerprint": "some of it I would love to lose",
+     "gtvh": {
+      "SO": "smart/dumb",
+      "LM": "double_interpret",
+      "TA": "self",
+      "NS": "monologue"
+     },
+     "interpretations": [
+      {
+       "lens": "nerdwriter-premise",
+       "claim": "First smuggled micro-surprise inside the premise (louistheory1 pattern): the 'some of it' twist gets its own 1.88s beat.",
+       "status": "authored, pattern-match to Monopoly analysis"
+      },
+      {
+       "lens": "operator",
+       "claim": "double_interpret: 'lose my memory' as tragedy vs. as wish. Same words, two scripts.",
+       "status": "authored"
+      }
+     ]
+    },
+    {
+     "beat": "b03",
+     "t0": 133.68,
+     "t1": 135.18,
+     "words": 6,
+     "pause_after_s": 1.12,
+     "fingerprint": "doesn't work that way",
+     "gtvh": {
+      "SO": "possible/impossible",
+      "LM": "rigidify",
+      "TA": "self",
+      "NS": "monologue"
+     },
+     "interpretations": [
+      {
+       "lens": "operator",
+       "claim": "rigidify: applies the literal rule of memory (all or none) to the wish. The bit's engine is taking a metaphor literally.",
+       "status": "authored"
+      }
+     ]
+    },
+    {
+     "beat": "b04",
+     "t0": 136.3,
+     "t1": 142.74,
+     "words": 24,
+     "pause_after_s": 0.78,
+     "fingerprint": "take it all or none, I guess",
+     "gtvh": {
+      "SO": "normal/absurd",
+      "LM": "false_analogy",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "transition",
+       "claim": "Bridge from philosophical setup into the anecdote machine. Fonzie reference sets up a shared-cultural expectation that b05-b06 will collapse.",
+       "status": "authored"
+      }
+     ]
+    },
+    {
+     "beat": "b05",
+     "t0": 143.52,
+     "t1": 144.34,
+     "words": 4,
+     "pause_after_s": 1.32,
+     "fingerprint": "I don't remember him",
+     "gtvh": {
+      "SO": "smart/dumb",
+      "LM": "literalize",
+      "TA": "self",
+      "NS": "one-liner"
+     },
+     "interpretations": [
+      {
+       "lens": "timing",
+       "claim": "4-word punch after 0.78s setup — micro-punch. Practices the pause grammar at small scale before the 8s hold.",
+       "status": "measured"
+      }
+     ]
+    },
+    {
+     "beat": "b06",
+     "t0": 145.66,
+     "t1": 147.18,
+     "words": 8,
+     "pause_after_s": 1.48,
+     "fingerprint": "don't even know what you're talking",
+     "gtvh": {
+      "SO": "smart/dumb",
+      "LM": "literalize",
+      "TA": "peers",
+      "NS": "one-liner"
+     },
+     "interpretations": [
+      {
+       "lens": "operator",
+       "claim": "Tag on b05: escalates from personal forgetting to attacking the audience's reference. split_knowledge — the room knows Fonzie; the persona doesn't.",
+       "status": "authored"
+      }
+     ]
+    },
+    {
+     "beat": "b07",
+     "t0": 148.66,
+     "t1": 158.96,
+     "words": 44,
+     "pause_after_s": 2.04,
+     "fingerprint": "I forget weird things, you know",
+     "gtvh": {
+      "SO": "normal/absurd",
+      "LM": "garden_path",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "structure",
+       "claim": "Anecdote entry. The van premise is delivered flat and real-feeling — the mundane doorway into the transgressive. 44 words with only inter-phrase pauses, then 2.04s hold before compliance.",
+       "status": "measured pauses, authored structure"
+      }
+     ]
+    },
+    {
+     "beat": "b08",
+     "t0": 161.0,
+     "t1": 162.3,
+     "words": 7,
+     "pause_after_s": 1.38,
+     "fingerprint": "I said, all right, you know",
+     "gtvh": {
+      "SO": "competent/incompetent",
+      "LM": "literalize",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "character",
+       "claim": "The compliance beat — he accepts the absurd invitation with a shrug. This is the Everyman engine: the room would also say 'all right' in the bit's logic.",
+       "status": "authored"
+      }
+     ]
+    },
+    {
+     "beat": "b09",
+     "t0": 163.68,
+     "t1": 174.36,
+     "words": 45,
+     "pause_after_s": 2.86,
+     "fingerprint": "got in the van and you know",
+     "gtvh": {
+      "SO": "normal/absurd",
+      "LM": "exaggeration",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "timing",
+       "claim": "Longest setup stretch (45w) ends in 2.86s hold — the physical-comedy beat (sliding door) gets a substantial pause as punctuation, not a punch.",
+       "status": "measured"
+      }
+     ]
+    },
+    {
+     "beat": "b10",
+     "t0": 177.22,
+     "t1": 186.12,
+     "words": 34,
+     "pause_after_s": 1.48,
+     "fingerprint": "kneeling on the floor of the van",
+     "gtvh": {
+      "SO": "normal/absurd",
+      "LM": "juxtaposition",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "valence",
+       "claim": "Physical absurdity (kneeling on a purse) against the transgressive frame. Stencil seg here is manic — the energy rides the escalation, never flinches.",
+       "status": "measured stencil"
+      }
+     ]
+    },
+    {
+     "beat": "b11",
+     "t0": 187.6,
+     "t1": 189.3,
+     "words": 11,
+     "pause_after_s": 1.4,
+     "fingerprint": "This is just a work",
+     "gtvh": {
+      "SO": "caring/cruel",
+      "LM": "literalize",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "operator",
+       "claim": "The bluntest line in the window. character_violation fires — the social stop sign is named and walked past in the same breath. 1.40s hold lets the room catch up.",
+       "status": "measured pause, authored operator"
+      }
+     ]
+    },
+    {
+     "beat": "b12",
+     "t0": 190.7,
+     "t1": 193.5,
+     "words": 6,
+     "pause_after_s": 1.98,
+     "fingerprint": "about halfway through, I'm guessing",
+     "gtvh": {
+      "SO": "normal/absurd",
+      "LM": "garden_path",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "timing",
+       "claim": "'I'm guessing' — faux-uncertainty marker that sets up the turn. 1.98s hold is the windup for the longest pause in the set.",
+       "status": "measured"
+      }
+     ]
+    },
+    {
+     "beat": "b13",
+     "t0": 195.48,
+     "t1": 199.26,
+     "words": 9,
+     "pause_after_s": 8.16,
+     "fingerprint": "remembered that I don't really like",
+     "gtvh": {
+      "SO": "caring/cruel",
+      "LM": "perspective_shift",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "dpv",
+       "claim": "THE central beat. 8.16s hold — topic pause squared. The confession ('I don't really like doing that') arrives mid-act, reframes the whole story from transgression to boredom, and the silence is the room metabolizing both readings at once. DPV: temporal scaffolding OUTRANKS the semantic content here — the pause is doing more comedic work than the words.",
+       "status": "measured pause (8.16s), authored claim",
+       "significance": "highest in set"
+      },
+      {
+       "lens": "valence",
+       "claim": "Content is deflationary (boredom), delivery stays in the established manic frame — the mismatch after an 8s silence is where the laugh lands.",
+       "status": "authored"
+      },
+      {
+       "lens": "nerdwriter",
+       "claim": "'Stay in the bit' (Jerry's rule from louistheory1): he doesn't break to acknowledge the huge laugh/silence; the next beat starts clean.",
+       "status": "authored pattern-match"
+      }
+     ]
+    },
+    {
+     "beat": "b14",
+     "t0": 207.42,
+     "t1": 217.2,
+     "words": 41,
+     "pause_after_s": 0.5,
+     "fingerprint": "looking at the couple and they're walking",
+     "gtvh": {
+      "SO": "caring/cruel",
+      "LM": "perspective_shift",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "structure",
+       "claim": "Post-hold restart. New scene (the couple), new escalation axis (intrusive thought rather than action). Only 0.50s pause after — he rushes INTO the darkest section, no breathing room granted.",
+       "status": "measured"
+      }
+     ]
+    },
+    {
+     "beat": "b15",
+     "t0": 217.7,
+     "t1": 218.78,
+     "words": 7,
+     "pause_after_s": 1.08,
+     "fingerprint": "I just see like a little head",
+     "gtvh": {
+      "SO": "normal/absurd",
+      "LM": "figure_ground",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "operator",
+       "claim": "figure_ground: the hidden child (ground) becomes the obsessive focus (figure). Perception filter made literal — attention goes where it shouldn't.",
+       "status": "authored"
+      }
+     ]
+    },
+    {
+     "beat": "b16",
+     "t0": 219.86,
+     "t1": 224.02,
+     "words": 24,
+     "pause_after_s": 5.32,
+     "fingerprint": "curious what their kid looks like",
+     "gtvh": {
+      "SO": "caring/cruel",
+      "LM": "garden_path",
+      "TA": "self",
+      "NS": "anecdote"
+     },
+     "interpretations": [
+      {
+       "lens": "dpv",
+       "claim": "Second-longest hold (5.32s) after the thought the persona can't take back. The silence is the room deciding whether to laugh or leave; his stillness forces the laugh.",
+       "status": "measured"
+      },
+      {
+       "lens": "expose_self_blindness",
+       "claim": "He names the ugly thought AS ugly ('I don't know') before the room can condemn it — pre-emptive self-indictment disarms moral objection.",
+       "status": "authored"
+      }
+     ]
+    },
+    {
+     "beat": "b17",
+     "t0": 229.34,
+     "t1": 239.78,
+     "words": 34,
+     "pause_after_s": 0.0,
+     "fingerprint": "just me saying something terrible",
+     "gtvh": {
+      "SO": "real/unreal",
+      "LM": "figure_ground",
+      "TA": "self",
+      "NS": "monologue"
+     },
+     "interpretations": [
+      {
+       "lens": "set-thesis",
+       "claim": "The meta-confession closer. Drops the story, names the mechanism: he says terrible things because the room's upset is enjoyable to him. The whole van story was a delivery vehicle for this admission about comedy itself. This is why the engine transfers to any topic — the topic was never the point.",
+       "status": "authored",
+       "significance": "set thesis"
+      },
+      {
+       "lens": "split_knowledge",
+       "claim": "Audience and performer now share the same knowledge: we're all here for the transgression. The contract is spoken aloud, which is itself the final transgression.",
+       "status": "authored"
+      },
+      {
+       "lens": "identity_contradiction",
+       "claim": "'saying something terrible because it makes me laugh that it upsets you' — decent-man self-model colliding with cruel-entertainment want, in one sentence, unresolved. Engine fuel.",
+       "status": "authored"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "set_queue": {
+  "note": "Roadrage is a 2-min window of one longer bit. Next sets to ingest for n>=3 (owner supplies audio or InnerTube port): full roadrage bit, one parenting bit, one airplane/road bit. Specials to eventually cover (public specials, titles only): Chewed Up, Hilarious, Live at the Beacon, Comedy Special (2017), Sincerely Louis C.K.",
+  "blocked_on": "YouTube access / owner-supplied audio"
+ },
+ "theory_links": {
+  "internal": [
+   {
+    "id": "dpv",
+    "cite": "arxiv 2605.00143 — Timing is Everything: Temporal Scaffolding of Semantic Surprise in Humor",
+    "claim": "Temporal features substantially outweigh semantic incongruity for audience appreciation; timing GATES cognitive access to the content.",
+    "applies_to": "the two long holds (8.16s, 5.32s) at the darkest turns — his timing is doing the heaviest lifting where the content is riskiest"
+   },
+   {
+    "id": "attardo-pause-taxonomy",
+    "cite": "Attardo & Pickering 2011 — Timing in the performance of jokes",
+    "claim": "Punch lines preceded by substantial pauses (0.6-0.8s+) or longer; timing = pause distribution + speech rate.",
+    "applies_to": "pause_bins: 14 topic-pauses (>0.8s) carry the confessional weight; 2 substantial pauses are micro-punch signals"
+   },
+   {
+    "id": "dpv-premise-clarity",
+    "cite": "louistheory1.md / Chris Rock via Nerdwriter",
+    "claim": "Jokes fail when the audience doesn't understand the premise; premise must land before the operator fires.",
+    "applies_to": "b00-b03: the aging/memory premise is delivered with zero joke-framing before any transgression begins"
+   },
+   {
+    "id": "nerdwriter-premise",
+    "cite": "theory/louistheory1.md — Nerdwriter Monopoly breakdown",
+    "claim": "Premise sentences can themselves carry smuggled micro-surprises, each granted its own pause.",
+    "applies_to": "b02 ('some of it I would love to lose') is a premise-embedded surprise with its own 1.88s beat"
+   },
+   {
+    "id": "gTVH",
+    "cite": "Attardo & Raskin — General Theory of Verbal Humor (audition/gtvh.py)",
+    "claim": "Joke = {SO, LM, SI, TA, NS, LA}. Louis's dominant SO on this set: caring/cruel (self-directed). Dominant LM: garden_path + perspective_shift.",
+    "applies_to": "per-beat gtvh blocks above"
+   },
+   {
+    "id": "escalation",
+    "cite": "SPEC-character-graph.md operator registry (character_violation)",
+    "claim": "Named social stop sign walked past in the same breath; the violation IS the mechanism.",
+    "applies_to": "b11 and the van sequence generally"
+   },
+   {
+    "id": "audience_alliance",
+    "cite": "operator registry (split_knowledge → audience_alliance)",
+    "claim": "Audience and performer share knowledge the persona pretends not to have; the laugh is the alliance signal.",
+    "applies_to": "b06 (Fonzie), b17 (meta-confession — the alliance made explicit)"
+   }
+  ],
+  "external": [
+   {
+    "id": "standup4ai",
+    "cite": "StandUp4AI dataset (EMNLP 2025) — 3617 videos, 130K+ laughter labels",
+    "use": "future: laugh-position ground truth for more Louis specials"
+   },
+   {
+    "id": "tic-talk",
+    "cite": "TIC-TALK (CHum 2026) — 90 Netflix specials, multimodal timing corpus",
+    "use": "future: cross-comedian timing normalization"
+   },
+   {
+    "id": "mary",
+    "cite": "arxiv 2307.02132 — MARY emotion module (Going Retro)",
+    "use": "measured dominant modulator (manic) mapped to arousal/valence/power coords"
+   }
+  ]
+ },
+ "essay_seeds": [
+  {
+   "id": "louis-essay-01",
+   "title": "The Eight-Second Confession: how Louis C.K. uses silence to make a room agree with him",
+   "thesis": "On a 2-minute window of Road Rage, the two longest pauses (8.16s, 5.32s) sit exactly at the two darkest semantic turns. Timing, not content, is doing the heaviest comedic work — the DPV claim (temporal scaffolding outranks incongruity) made flesh.",
+   "evidence": [
+    "b13 timing_measured",
+    "b16 timing_measured",
+    "timing_measured.pause_bins",
+    "theory_links.dpv",
+    "theory_links.attardo-pause-taxonomy"
+   ],
+   "outline": [
+    "open on the numbers (8.16s)",
+    "what he said before the silence",
+    "what the silence did",
+    "the second hold as proof of pattern",
+    "why this is his engine and not an accident",
+    "what this means for the comedy-is-timing folk theory"
+   ],
+   "status": "seed — ready to draft from this graph"
+  },
+  {
+   "id": "louis-essay-02",
+   "title": "Sincerity as a delivery contract: why the model thinks Louis is sad and the room knows he's energized",
+   "thesis": "Jev's delivery decoder scores 0.19 emotion accuracy on Louis — it predicts deadpan/embarrassed from the text while ground-truth acoustic GT is 11/12 manic. The text reads like shame; the delivery is high-arousal positive-valence. That content/delivery valence split is the engine, and it's why text-only models fail on him.",
+   "evidence": [
+    "engine.jev_state",
+    "engine.mary_coords",
+    "delivery_measured.emotions",
+    "sets[0].timing_measured.thesis"
+   ],
+   "outline": [
+    "the 0.19 number",
+    "what the model sees in the words",
+    "what the mic hears",
+    "MARY coords: manic = arousal .9, valence +.4",
+    "the split as feature not bug",
+    "implication: comedy models need the delivery channel"
+   ],
+   "status": "seed — ready to draft from this graph"
+  },
+  {
+   "id": "louis-essay-03",
+   "title": "The van, the couple, and the contract: how one 2-minute bit escalates past every social stop sign",
+   "thesis": "Beat-by-beat walk of the Road Rage window as a character_violation machine: mundane entry, compliance, escalation, deflationary turn (8.16s), intrusive-thought turn (5.32s), meta-confession closer. The topic was never the point; the contract — 'we're all here for the transgression' — was.",
+   "evidence": [
+    "beat_decomposition",
+    "sets[0].topics[2-5]",
+    "theory_links.escalation",
+    "theory_links.audience_alliance"
+   ],
+   "outline": [
+    "beat map with timestamps",
+    "each stop sign and how he walks past it",
+    "the two holds as pressure valves",
+    "the closer that recontextualizes everything",
+    "why this structure transfers to any material (world_transfer_proven at 0.959)"
+   ],
+   "status": "seed — ready to draft from this graph"
+  },
+  {
+   "id": "louis-essay-04",
+   "title": "Against the joke: Louis C.K. and the comedy of the confession that isn't a joke",
+   "thesis": "The closer of Road Rage drops punchline logic entirely and states the mechanism ('saying something terrible because it upsets you'). Compared with Norm's insistence that every bit has a real punchline (normtheory1), Louis's late-period engine sometimes REPLACES the punchline with a confession about joke-telling. Both work; they're opposite doctrines.",
+   "evidence": [
+    "b17",
+    "theory/normtheory1.md craft principle 3",
+    "identity.contradictions"
+   ],
+   "outline": [
+    "the Norm doctrine (punchline non-negotiable)",
+    "the Louis move (confession AS punchline)",
+    "why each is consistent with its persona",
+    "what this says about two theories of why we laugh",
+    "predictions for other comics on this axis"
+   ],
+   "status": "seed — needs Norm n>=3 for the comparison half"
+  }
+ ],
+ "provenance": {
+  "persona": "authored stage-persona hypothesis (louis_ck_v2.json), reviewed against public specials knowledge",
+  "timing_measured": "theory/analyze_set.py on theory/scribe/louis_roadrage.json (word timestamps)",
+  "delivery_measured": "audition/voicelab/stencils + perf_sets + jev_loop (Gemini GT + Fish renders)",
+  "beat_interpretations": "authored per-beat, each labeled with lens + status",
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines in published fields (fingerprints ≤7 words)",
+   "blind_spots unknown until n>=3",
+   "operator_priors hypothesis until n>=3",
+   "every interpretation labeled measured/authored"
+  ],
+  "sets_observed": 1,
+  "next": "ingest 2+ more sets → recompute operator_priors from measured frequencies → essay drafts"
+ },
+ "bio": {
+  "wikidata_id": "Q15079",
+  "dob": "1967-09-12",
+  "dod": null,
+  "birthplace": "Washington, D.C.",
+  "citizenship": "United States",
+  "occupations": [
+   "stand-up comedian",
+   "actor",
+   "film director",
+   "screenwriter"
+  ],
+  "source": "wikidata (CC0)"
+ },
+ "rating": {
+  "headline": 97.1,
+  "coverage": "FULL",
+  "provisional": null,
+  "boards": {
+   "house": {
+    "rank": 2,
+    "pct": 97.1,
+    "sweep": [
+     2,
+     4
+    ]
+   },
+   "consensus": {
+    "rank": 10,
+    "ref": true
+   },
+   "canon": {
+    "rank": 16,
+    "ref": true
+   },
+   "peoples": {
+    "rank": 3,
+    "wr": 8.458,
+    "ref": true
+   },
+   "era": {
+    "rank": 5,
+    "ref": true
+   }
+  },
+  "interval": {
+   "lo": 2,
+   "hi": 4
+  },
+  "updated": "2026-10-18T17:13:19Z",
+  "pipeline": "rate/v1"
+ },
+ "metrics": {
+  "legacy": 97.8,
+  "legacy_era": 99.0,
+  "audience": 87.5,
+  "popularity": 75.3,
+  "theory": 87.5,
+  "heat": null,
+  "gap_value": -0.122,
+  "overrated": "accurately rated",
+  "canon_lag": -0.103
+ },
+ "modes": {
+  "signature": "dark-confessional",
+  "signature_title": "shame evangelist",
+  "repertoire": {
+   "dark-confessional": 0.35,
+   "storytelling": 0.24,
+   "absurdist": 0.18,
+   "rant": 0.18,
+   "surreal": 0.06
+  },
+  "n_modes": 4
+ },
+ "style": {
+  "words": 79706,
+  "profanity_rate": 0.0138,
+  "question_rate": 0.143,
+  "i_rate": 0.048,
+  "vocab_div": 0.057,
+  "avg_sent_len": 11.6,
+  "top_words": [
+   "fucking",
+   "people",
+   "shit",
+   "because",
+   "fuck",
+   "cause",
+   "think",
+   "thing",
+   "want",
+   "time",
+   "kids",
+   "audience"
+  ]
+ },
+ "humor_type": {
+  "primary": "dark-confessional",
+  "secondary": "surreal",
+  "scores": {
+   "dark-confessional": 0.5,
+   "surreal": 0.17,
+   "storytelling": 0.17
+  },
+  "method": "archetype+theories"
+ },
+ "recognition": {
+  "comedy_central_2004": 98,
+  "rolling_stone_2017": 4,
+  "trajectory_2004_2017": "rise",
+  "awards": [
+   {
+    "award": "Primetime Emmy Award for Outstanding Writing for a Comedy Series",
+    "year": 2012
+   },
+   {
+    "award": "Primetime Emmy Award for Outstanding Writing for a Comedy Series",
+    "year": 2014
+   }
+  ],
+  "paste_2017": 12
+ },
+ "generation": {
+  "id": "nineties",
+  "label": "Nineties alt + HBO",
+  "span": "1990s",
+  "note": "Alt rooms, HBO hours, SNL golden age, Boston/LA/NYC scenes. Anti-boom craft.",
+  "scene": "nyc-alt",
+  "breakthrough": "same as louis-c-k (dup dir)"
+ },
+ "tier": "king",
+ "region": "us",
+ "continent": "north-america",
+ "known_bits": [
+  {
+   "title": "Road Rage / the van",
+   "why_it_works": "The 8.16s hold after the deflationary turn is the longest silence — the room metabolizes the whole story in that gap. The closer drops the story entirely and confesses the mechanism: he says terrible things because the audience's upset is enjoyable.",
+   "theory_links": [
+    "dpv",
+    "status_reversal",
+    "split_knowledge"
+   ]
+  },
+  {
+   "title": "The intrusive thought",
+   "why_it_works": "Shifts from storytelling to live intrusive thought. The 5.32s hold is the second-longest. He never resolves it; the discomfort IS the payload. Awareness of the thought's ugliness is stated before the room can reject it.",
+   "theory_links": [
+    "benign_violation"
+   ]
+  }
+ ],
+ "specials_rated": [
+  {
+   "title": "Louis C.K.: Chewed Up",
+   "year": 2008,
+   "imdb_id": "tt1190722",
+   "imdb_rating": 8.5,
+   "imdb_votes": 11507,
+   "transcript": "louis-c-k-chewed-up-transcript.txt",
+   "standout": true
+  },
+  {
+   "title": "Louis C.K.: Shameless",
+   "year": 2007,
+   "imdb_id": "tt0927619",
+   "imdb_rating": 8.5,
+   "imdb_votes": 9409,
+   "transcript": "louis-c-k-shameless-2007-full-transcript.txt"
+  },
+  {
+   "title": "Louis C.K.: Hilarious",
+   "year": 2010,
+   "imdb_id": "tt1421373",
+   "imdb_rating": 8.3,
+   "imdb_votes": 13405,
+   "transcript": "louis-c-k-hilarious-2010-full-transcript.txt"
+  },
+  {
+   "title": "Louis C.K.: Live at the Comedy Store",
+   "year": 2015,
+   "imdb_id": "tt4368814",
+   "imdb_rating": 7.7,
+   "imdb_votes": 7407,
+   "transcript": "louis-c-k-live-at-the-comedy-store-2015-transcript.txt"
+  },
+  {
+   "title": "Louis C.K.: Sorry",
+   "year": 2021,
+   "imdb_id": "tt16478030",
+   "imdb_rating": 7.7,
+   "imdb_votes": 4477,
+   "transcript": "louis-c-k-sorry-transcript.txt"
+  },
+  {
+   "title": "Go",
+   "year": 1999,
+   "imdb_id": "tt0139239",
+   "imdb_rating": 7.2,
+   "imdb_votes": 81324,
+   "transcript": "louis-ck-oh-my-god-full-transcript.txt"
+  },
+  {
+   "title": "L",
+   "year": 2012,
+   "imdb_id": "tt2095684",
+   "imdb_rating": 5.4,
+   "imdb_votes": 830,
+   "transcript": "louis-ck-snl-monologue-s38e06-2012-transcript.txt"
+  }
+ ],
+ "youtube": {
+  "clips": 6,
+  "total_views": 132321318,
+  "total_likes": 1878063,
+  "avg_views": 22053553,
+  "like_rate": 0.01419,
+  "top_clip": {
+   "videoId": "zKUpf1Vx0vs",
+   "title": "Shane Gillis Live In Austin | Stand Up Comedy",
+   "channel": "Gilly and Keeves",
+   "publishedAt": "2021-09-07",
+   "views": 58739247,
+   "likes": 695021,
+   "comments": 32750,
+   "duration_s": 2885
+  }
+ },
+ "netflix_viewership": {
+  "hours": 3500000,
+  "views": 2300000,
+  "specials": 8,
+  "source": "What We Watched 2023H1-2026H1"
+ },
+ "website": {
+  "url": "https://louisck.com/",
+  "source": "wikidata-P856",
+  "checked": "2026-10-17"
+ },
+ "youtube_specials": [
+  {
+   "videoId": "dVvbAdIJhrk",
+   "title": "Louie - Pilot (Season 1, Episode 1).",
+   "duration_s": 1424,
+   "views": 469974,
+   "url": "https://www.youtube.com/watch?v=dVvbAdIJhrk",
+   "transcript_linked": false
+  },
+  {
+   "videoId": "KwVHmfNm-Q8",
+   "title": "Bob and Louis talk about Louie",
+   "duration_s": 1796,
+   "views": 264304,
+   "url": "https://www.youtube.com/watch?v=KwVHmfNm-Q8",
+   "transcript_linked": false
+  },
+  {
+   "videoId": "yEZn3vbvxH4",
+   "title": "Louis CK Infomercial",
+   "duration_s": 1711,
+   "views": 550527,
+   "url": "https://www.youtube.com/watch?v=yEZn3vbvxH4",
+   "transcript_linked": false
+  }
+ ],
+ "youtube_specials_count": 3,
+ "timing_profile": {
+  "doctrine_hypothesis": "Fast speech, many pauses. 14 topic-pauses (>0.8s) are the confession holds. The two longest holds (8.16s, 5.32s) sit at the two darkest turns. Timing gates the laugh: the room needs the silence to catch up.",
+  "status": "hypothesis until word-timed sets measured",
+  "measured": true,
+  "source": "theory/analysis/louis_roadrage_analysis.json",
+  "wpm": 171.4,
+  "pause_count": 57,
+  "mean_pause_s": 0.756,
+  "punch_pauses_s": [
+   8.16,
+   5.32,
+   2.86,
+   2.26,
+   2.04,
+   1.98
+  ],
+  "max_pause_s": 8.16
+ },
+ "gtvh_profile": {
+  "SO": "normal/absurd — narrated shame: the ugly thought vs the social frame that forbids it",
+  "LM": "double_interpret + literalize — the thought means what it says AND what the room pretends it doesn't",
+  "TA": "self as primary target; systems when the self-defense runs out",
+  "NS": "anecdote with confessional stops",
+  "note": "authored from identity/deep-dive; n=1 set measured"
+ }
+}

@@ -1,0 +1,422 @@
+{
+ "schema": "pogtown.comedian.v1",
+ "comedian_id": "jerry-seinfeld",
+ "name": "Jerry Seinfeld",
+ "note": "STAGE PERSONA graph. All fields describe the performer-as-acted, never the private person. No verbatim set text stored here. Fingerprints ≤7 words. 0 sets measured in repo — every field is authored hypothesis from widely-known public persona until word-timed sets are ingested.",
+ "version": 1,
+ "created": "2026-10-15",
+ "annotator": "mimo-v2.5",
+ "identity": {
+  "deal": "Forensic auditor of the mundane who holds everyday behavior up to lab-report light until the absurd rule underneath shows, then walks away before anyone can protest.",
+  "premise": "A sane man filing compliance reports on an insane species from a safe distance.",
+  "archetype": "observational_auditor",
+  "awareness": "aware",
+  "awareness_note": "The observer dissecting, never the sufferer. The distance between him and the mess IS the frame. Aware but projects onto objects/systems — the shirt's second button is the crime, not his confusion.",
+  "philosophy": {
+   "ontology": "The world is a series of minor irritations arranged to test whether anyone is paying attention.",
+   "epistemology": "If you look hard enough at anything normal, it becomes absurd; the absurdity was always there.",
+   "axiology": "The precise observation is the highest act; being right about small things beats being profound about big ones.",
+   "causality": "Every social custom is an unanswered question about why we do it this way.",
+   "agency": "Attention is the only real power — what you notice is what you own."
+  },
+  "dramatic_core": {
+   "want": "one more perfect observation of the unseen absurd",
+   "fear": "running out of new angles on the already-noticed",
+   "need": "the room to finally see what he sees",
+   "self_model": "a sane man auditing an insane species from a safe distance",
+   "blind_spots": [
+    "unknown — needs multi-set observation"
+   ]
+  },
+  "misinterpretation_rule": "Treats everyday behavior as a system of unwritten laws and audits each one like a compliance inspector, baffled by the code everyone runs without reading it.",
+  "contradictions": [
+   "obsesses over trivial order while living in total disorder",
+   "claims detachment while caring more about the bit than anyone",
+   "preaches the ordinary as extraordinary from a life extraordinary in every way"
+  ],
+  "status_model": {
+   "desired_status": "the one who sees the glitch everyone else lives with",
+   "felt_status": "the observer outside the mess he describes, never in it"
+  },
+  "expression": {
+   "default_register": "pedantic-joyful",
+   "emotional_restraint": "high",
+   "tells": [
+    "mimed prop demonstration",
+    "eyebrow lift on the literal question",
+    "voice rises on the incongruous word then snaps to neutral"
+   ]
+  },
+  "modulator_range": [
+   "pedantic",
+   "mock-outraged",
+   "delighted",
+   "weary-observational",
+   "riff-mode"
+  ],
+  "profile": {
+   "energy": 0.7,
+   "pace": "brisk and consistent; riff-chains restart the engine per tag",
+   "gesture_frequency": 0.6,
+   "punchline_hold_ms": 700,
+   "note": "hypothesis only — 0 sets measured"
+  },
+  "operator_priors": {
+   "rigidify": 0.95,
+   "literalize": 0.85,
+   "double_interpret": 0.65,
+   "false_analogy": 0.5,
+   "juxtapose": 0.4,
+   "status": "authored hypothesis — 0 sets measured; needs scribe word-timed sets + n>=3"
+  },
+  "preferred_theories": [
+   "rigidity",
+   "literalise",
+   "bisociation",
+   "false_analogy"
+  ],
+  "threads": [
+   "airline/airplane as species-wide etiquette failure",
+   "button and garment design as civilization's quiet lie",
+   "the greeting ritual no one has audited out loud"
+  ],
+  "problem_space": [
+   "airline and waiting-room etiquette",
+   "clothing and button design",
+   "public bathroom protocol",
+   "gift economics",
+   "phone and greeting rituals"
+  ]
+ },
+ "engine": {
+  "voice_clone_id": null,
+  "voice_provider": null,
+  "delivery_archetype": "observational_auditor",
+  "archetype_def": "NEW — needs adding to audition/voicelab/archetypes.json (engine lane, heads-up before touching shared file). The auditor: holds the mundane up to forensic light, demonstrates rather than confesses, walks away before it gets personal.",
+  "archetype_delivery": "hypothesis: metronomic setup, punch lands fast, short holds, riff-chains where each tag reboots the setup — machine-precision, not confessional or meandering",
+  "measured_acoustics": null,
+  "mary_coords": {
+   "status": "no measured modulator; archetype unrepresented in mary_model.json"
+  },
+  "jev_state": {
+   "status": "NOT RUN",
+   "note": "no jev_loop — 0 sets ingested"
+  },
+  "world_transfer_proven": null
+ },
+ "sets": [],
+ "set_queue": {
+  "note": "0 sets measured. First ingest should be an observational one-liner-chain era special (Clean, I'm Telling You for the Last Time) or a modern monologue-list bit. Need word-timed ASR to fill timing_measured; until then the timing_profile below is pure hypothesis.",
+  "blocked_on": "YouTube access / owner-supplied audio"
+ },
+ "timing_profile": {
+  "measured": null,
+  "hypothesis": "opposite of Louis's big-stop and Norm's never-stop: surgical short holds (pause_before_punch ~400ms, hold after ~900ms), riff-restarts — machine precision, not confession or meander",
+  "stop_start": [
+   "stop: end of observation, room recognizes",
+   "start: literal question re-opens the same object from a new angle",
+   "stop: cleanest version of the observation, done",
+   "start: next ritual, same machine"
+  ]
+ },
+ "gtvh_profile": {
+  "SO": "normal/absurd — the whole engine; holds the normal up until the absurd shows",
+  "LM": "rigidify (apply the literal rule to the social custom until it breaks)",
+  "TA": "none or peers — the code itself is the butt; never punches down at a person",
+  "NS": "one-liner-chain / monologue-list — the observation, then variations on the same object",
+  "note": "authored hypothesis; no sets measured"
+ },
+ "theory_links": {
+  "internal": [
+   {
+    "id": "rigidify",
+    "cite": "operator registry (rigidify → rigidity)",
+    "claim": "apply the literal rule to the social custom until it breaks",
+    "applies_to": "his home mechanism — the whole observational engine"
+   },
+   {
+    "id": "louistheory1-premise-clarity",
+    "cite": "theory/louistheory1.md / Rock via Nerdwriter",
+    "claim": "jokes fail when the audience doesn't understand the premise",
+    "applies_to": "his premises are ALWAYS clear — that's the craft-nerd discipline"
+   },
+   {
+    "id": "craft-nerd",
+    "cite": "New Yorker 'Scholar of Comedy' + public specials knowledge",
+    "claim": "joke-writing as an engineering discipline; every word load-bearing",
+    "applies_to": "expression.high-restraint; 207-words-none-wasted philosophy (louistheory1 credits his teaching to Louis)"
+   }
+  ],
+  "external": [
+   {
+    "id": "standup4ai",
+    "cite": "StandUp4AI dataset",
+    "use": "future laugh-labels for observational era specials"
+   }
+  ]
+ },
+ "essay_seeds": [
+  {
+   "id": "seinfeld-essay-01",
+   "title": "The auditor who never enters: Seinfeld as the triangle's third exit",
+   "thesis": "Louis exited from the floor (zero capital), Norm into the chair (held capital), Seinfeld never entered the status game at all — he stands outside it as auditor. Same 'says the unsayable' surface, three different bank accounts. The observational engine is what exit-outside LOOKS like: the target is the code, not the self, not power.",
+   "evidence": [
+    "gtvh_profile.TA",
+    "identity.status_model",
+    "axes.json (status_capital × exit_strategy quadrant)"
+   ],
+   "outline": [
+    "the three exits",
+    "why TA=none/peers is the logical consequence of auditing from outside",
+    "the shirt-button move: projecting onto objects to stay outside",
+    "prediction: comics who audit from outside never confess and never sermonize"
+   ],
+   "status": "seed — ready once Norm/Louis contrast is drafted"
+  },
+  {
+   "id": "seinfeld-essay-02",
+   "title": "Rigidify as home mechanism: how holding a custom to its own light breaks it",
+   "thesis": "Where Louis's engine is confession and Norm's is defense, Seinfeld's is rigidify — apply the literal rule to the social custom until it breaks. The second button, the greeting ritual, the airport protocol. The joke is always: you already agreed to this code, have you READ it?",
+   "evidence": [
+    "operator_priors.rigidify",
+    "identity.misinterpretation_rule",
+    "gtvh_profile.LM"
+   ],
+   "outline": [
+    "what rigidify does that other operators don't",
+    "worked examples as mechanism demos (no verbatim — describe the move)",
+    "why this needs awareness=aware (you can't audit what you're inside)",
+    "contrast: Louis would confess the button confusion; Norm would defend it with bogus logic; Jerry just files the report"
+   ],
+   "status": "seed"
+  }
+ ],
+ "provenance": {
+  "persona": "authored stage-persona hypothesis (jerry_seinfeld_v2.json promoted into graph), from widely-known public specials + craft-nerd reputation",
+  "timing_measured": null,
+  "beat_interpretations": null,
+  "rules_held": [
+   "stage persona only",
+   "no verbatim lines in published fields",
+   "blind_spots unknown until n>=3",
+   "operator_priors hypothesis — 0 sets",
+   "every field labeled hypothesis pending first set"
+  ],
+  "sets_observed": 0,
+  "next": "ingest first word-timed set → measure timing → falsify or confirm the surgical-hold hypothesis → recompute priors"
+ },
+ "bio": {
+  "wikidata_id": "Q215506",
+  "dob": "1954-04-29",
+  "dod": null,
+  "birthplace": "Brooklyn",
+  "citizenship": "United States",
+  "occupations": [
+   "actor",
+   "television actor",
+   "humorist",
+   "film producer"
+  ],
+  "source": "wikidata (CC0)"
+ },
+ "rating": {
+  "headline": 70.6,
+  "coverage": "FULL",
+  "provisional": null,
+  "boards": {
+   "house": {
+    "rank": 11,
+    "pct": 70.6,
+    "sweep": [
+     11,
+     11
+    ]
+   },
+   "consensus": {
+    "rank": 11,
+    "ref": true
+   },
+   "canon": {
+    "rank": 17,
+    "ref": true
+   },
+   "peoples": {
+    "rank": 19,
+    "wr": 7.778,
+    "ref": true
+   },
+   "era": {
+    "rank": 20,
+    "ref": true
+   }
+  },
+  "interval": {
+   "lo": 11,
+   "hi": 11
+  },
+  "updated": "2026-10-18T17:13:19Z",
+  "pipeline": "rate/v1"
+ },
+ "metrics": {
+  "legacy": 97.6,
+  "legacy_era": 95.4,
+  "audience": 70.0,
+  "popularity": 75.7,
+  "theory": 50.0,
+  "heat": null,
+  "gap_value": 0.057,
+  "overrated": "accurately rated",
+  "canon_lag": -0.276
+ },
+ "modes": {
+  "signature": "observational",
+  "signature_title": "noticing machine",
+  "repertoire": {
+   "observational": 0.54,
+   "rant": 0.29,
+   "meta": 0.08,
+   "absurdist": 0.08
+  },
+  "n_modes": 2
+ },
+ "style": {
+  "words": 35564,
+  "profanity_rate": 0.0019,
+  "question_rate": 0.23,
+  "i_rate": 0.037,
+  "vocab_div": 0.07,
+  "avg_sent_len": 12.3,
+  "top_words": [
+   "think",
+   "people",
+   "little",
+   "thing",
+   "life",
+   "back",
+   "some",
+   "always",
+   "their",
+   "these",
+   "good",
+   "down"
+  ]
+ },
+ "humor_type": {
+  "primary": "observational",
+  "secondary": "meta",
+  "scores": {
+   "observational": 0.43,
+   "meta": 0.14,
+   "absurdist": 0.14
+  },
+  "method": "archetype+theories+transcript"
+ },
+ "recognition": {
+  "comedy_central_2004": 12,
+  "rolling_stone_2017": 7,
+  "trajectory_2004_2017": "rise",
+  "awards": [
+   {
+    "award": "Golden Globe Award for Best Actor – Television Series Musical or Comedy",
+    "year": 1994
+   },
+   {
+    "award": "Primetime Emmy Award for Outstanding Comedy Series",
+    "year": 1992
+   }
+  ],
+  "paste_2017": 50
+ },
+ "generation": {
+  "id": "eighties-boom",
+  "label": "Eighties boom",
+  "span": "1980s",
+  "note": "Comedy boom → HBO half-hours → sitcoms. Clean/dirty split, Def Jam, SNL pipeline.",
+  "scene": "club",
+  "breakthrough": "1980s club → Tonight Show 1981 → sitcom 1989"
+ },
+ "tier": "king",
+ "region": "us",
+ "continent": "north-america",
+ "known_bits": [
+  {
+   "title": "The noticing engine",
+   "why_it_works": "Finds the one detail in a normal situation that nobody has named, then names it with the precision of a scientist. The room recognizes the detail before they recognize the joke — the recognition IS the laugh.",
+   "theory_links": [
+    "incongruity",
+    "garden_path"
+   ]
+  },
+  {
+   "title": "The word as seed",
+   "why_it_works": "A word's sound and meaning connect across synapses that aren't supposed to cross. The joke is built from the word, not around it. The economy is the craft — the word is the load-bearing wall.",
+   "theory_links": [
+    "literalise",
+    "two_stories"
+   ]
+  }
+ ],
+ "specials_rated": [
+  {
+   "title": "Jerry Seinfeld: 'I'm Telling You for the Last Time'",
+   "year": 1998,
+   "imdb_id": "tt0500140",
+   "imdb_rating": 7.8,
+   "imdb_votes": 6378,
+   "transcript": "jerry-seinfeld-im-telling-you-for-the-last-time-full-transcript.txt",
+   "standout": true
+  },
+  {
+   "title": "Nô",
+   "year": 1998,
+   "imdb_id": "tt0128370",
+   "imdb_rating": 6.9,
+   "imdb_votes": 456,
+   "transcript": "erry-einfeld-m-elling-ou-for-the-ast-ime-1998-ranscript.txt"
+  },
+  {
+   "title": "Jerry Seinfeld: 23 Hours to Kill",
+   "year": 2020,
+   "imdb_id": "tt12117854",
+   "imdb_rating": 6.7,
+   "imdb_votes": 6043,
+   "transcript": "jerry-seinfeld-23-hours-to-kill-transcript.txt"
+  },
+  {
+   "title": "Nö",
+   "year": 2021,
+   "imdb_id": "tt9409660",
+   "imdb_rating": 6.2,
+   "imdb_votes": 220,
+   "transcript": "erry-einfeld-23-ours-o-ill-2020-ranscript.txt"
+  }
+ ],
+ "youtube": {
+  "clips": 6,
+  "total_views": 103943664,
+  "total_likes": 1611177,
+  "avg_views": 17323944,
+  "like_rate": 0.0155,
+  "top_clip": {
+   "videoId": "UM-Q_zpuJGU",
+   "title": "Comedians in Cars Getting Coffee: \"Just Tell Him You’re The President” (Season 7, Episode 1)",
+   "channel": "blacktreetv",
+   "publishedAt": "2015-12-31",
+   "views": 54392735,
+   "likes": 829714,
+   "comments": 64358,
+   "duration_s": 1156
+  }
+ },
+ "netflix_viewership": {
+  "hours": 3200000,
+  "views": 2200000,
+  "specials": 4,
+  "source": "What We Watched 2023H1-2026H1"
+ },
+ "website": {
+  "url": "http://jerryseinfeld.com/",
+  "source": "wikidata-P856",
+  "checked": "2026-10-17"
+ }
+}

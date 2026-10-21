@@ -1,0 +1,36 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:agent-black-field-visit:gen-alternates-v1",
+ "agent_id": "freak:agent-black-field-visit",
+ "name": "freak:agent-black-field-visit",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "We do the suits and shades at midnight. Midday you'd just look like two guys in suits and shades. Witnesses open the door, see the weather, and start talking. Last week a man in Ohio told me everything about the sky over his barn before I asked a single thing. Then he looked at my badge and asked who we were with. \" He nodded like that explained the slippers he was wearing. That's what unsettled me.",
+   "joke_id": "agent-black-field-visit-alt1-6a0ea937",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Bender had a bureau, now he's got roses. Every field visit e"
+  },
+  {
+   "slot": "alt2",
+   "text": "Mrs. My badge says yes, my employer says NDA, so I wrote down Euphorbia, the only word I understood. Reality is airspace, the rest is a cover story about gardening.",
+   "joke_id": "agent-black-field-visit-alt2-61ceb6c8",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Bender had a bureau, now he's got roses. Every field visit e"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

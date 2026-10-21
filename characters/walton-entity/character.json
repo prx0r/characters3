@@ -1,0 +1,38 @@
+{
+ "schema": "pogtown.character.v1",
+ "id": "walton-entity",
+ "name": "Walton Entity",
+ "canon_pack": "walton-case",
+ "created": "2026-10-18",
+ "note": "Entity from the Walton abduction. Energy blast, the stare, human intermediary, 5-day duration. Complete freedom.",
+ "identity": {
+  "deal": "",
+  "premise": "",
+  "engine": "",
+  "persona_note": "Entity type only. Complete creative freedom. Draw from canon pack lore + funnygraph data. Do NOT impose a forced persona."
+ },
+ "status": "entity-draft",
+ "voice": {
+  "tags": {
+   "tone": [
+    "Energy blast: The 'I jum",
+    "Physical confrontation o",
+    "neutral"
+   ],
+   "register": "unknown-energy (voice uncast)",
+   "texture": "Entity from the Walton abduction. Energy blast, the stare, human intermediary, 5-day durat",
+   "casting_query": "neutral walton entity voice",
+   "reference_text": "Entity from the Walton abduction"
+  }
+ },
+ "delivery": {
+  "style": null,
+  "archetype": null,
+  "overrides": {
+   "punchline_hold_ms": 1500,
+   "post_punch_ms": 1000,
+   "temperature": 0.5
+  },
+  "provisional": "pack has no vibe yet — engine default profile until persona defines one"
+ }
+}

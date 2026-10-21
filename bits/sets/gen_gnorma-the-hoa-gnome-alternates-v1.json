@@ -1,0 +1,28 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:gnorma-the-hoa-gnome:gen-alternates-v1",
+ "agent_id": "freak:gnorma-the-hoa-gnome",
+ "name": "freak:gnorma-the-hoa-gnome",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "I patrol the same three lawns every night. Same gnomes, same violations — Miller's birdbath is two inches over the property line again. I'm a bureaucrat with a red hat I've worn four hundred years without washing. I wrote him up anyway, but softer.",
+   "joke_id": "gnorma-the-hoa-gnome-alt1-9781bf53",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "Mrs. Her birdbath hangs two inches over the property line. S"
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}

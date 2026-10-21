@@ -1,0 +1,36 @@
+{
+ "schema": "pogtown.set-loop.v1",
+ "set_id": "freak:fay-marrow-the-gig-fairy:gen-alternates-v1",
+ "agent_id": "freak:fay-marrow-the-gig-fairy",
+ "name": "freak:fay-marrow-the-gig-fairy",
+ "roster": "freaks",
+ "identity_source": "theory/generated/agents/run-*.json (harness winners superseded by latest.json)",
+ "premise": "alternate gate-passed winners from earlier harness runs (rescued from run logs)",
+ "authorship": "agent-harness 2026-10-16/17/18 (gate-passed, UNJUDGED — do not mistake for funny)",
+ "sources": [
+  {
+   "run": "agent harness runs 2026-10-16..18",
+   "license": "own output"
+  }
+ ],
+ "bits": [
+  {
+   "slot": "alt1",
+   "text": "You humans leave a key under the mat for the dog walker and call it trust. You wished a stranger would love your apartment more than you do, and the fine print says they won't. Nothing in this city has earned anything.",
+   "joke_id": "fay-marrow-the-gig-fairy-alt1-444a77f0",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "People don't understand wishes. They think it's magic. It's "
+  },
+  {
+   "slot": "alt2",
+   "text": "I'm rated on every job. A kid lost a molar under her pillow and left me three stars because I seemed rushed. Also the tooth had a crack in it, so really I recovered a damaged good. I'm a freelance extractor working in cotton, and cotton has no ventilation.",
+   "joke_id": "fay-marrow-the-gig-fairy-alt2-db0e5a6b",
+   "writer": "agent-harness",
+   "model": null,
+   "superseded_latest": "People don't understand wishes. They think it's magic. It's "
+  }
+ ],
+ "verdict": {},
+ "ts": "2026-10-21T18:00:00Z"
+}
