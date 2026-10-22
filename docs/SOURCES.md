@@ -35,3 +35,19 @@ before status = verified. (Jataka/KJV/Legge = the queue agreed 2026-10-21.)
 | Josh Billings (Gutenberg #36556) | misspelled-aphorism humor | PD-US | queued — verified |
 | Twain (Advice to Youth etc.) / Swift / Rabelais (Urquhart) / Ring Lardner / Dunne (Mr. Dooley) / Chaucer comic tales | satirical-advice + bartender-prophet + medieval lanes | all pre-1930 | queued — standard PD, triage at fetch |
 | Marcus/Epictetus/Seneca (Long/Carter/Gummere) | stoic packs | all pre-1930 | pending |
+
+### Philosophers (lane: verbatim maxims + confessions)
+| source | character idea | PD | status |
+|---|---|---|---|
+| **Bergson, Laughter (Eng 1914) + Creative Evolution** | THE meta one: the theorist of the comic who insists you are being *mechanical* — quotes our own graph's sources back at us | PD since 2010 (1914+95) | queued — top pick |
+| **Ecclesiastes/Qoheleth (KJV — CACHED ALREADY)** | the preacher who tried everything (servants, concubines, money) and concluded it's all vanity — deadpan nihilist with a time-to-laugh exception | KJV PD | **build next — zero fetch** |
+| **Dostoevsky: Underground (Garnett-era tr. — verify date)** | the spiteful monologue | verify | queued (row above) |
+| **Nietzsche, Zarathustra (Common 1909)** | prophet-parody | PD-US | queued |
+| **Seneca, Moral Letters (Gummere 1917-25)** | epistle-as-essay one-liners | PD | queued |
+| **Epicurus (Letter to Menoeceus via Diogenes Laertius)** | garden hedonist miscast as fitness influencer | PD (Laertius) | queued |
+| **Heraclitus fragments (Bywater 1911)** | the MEAN aphorist ('the Ephesians should all hang themselves') — harsh-tone ore | PD | queued |
+| **Kant** (Prolegomena tr. Mahaffy 1883 + systematizer lore) | rigidify personified: categorizes the heckle | PD | queued |
+| **Schopenhauer, Studies in Pessimism (1890)** | misanthrope maxims | PD | queued |
+| **Montaigne Essays (PD Eng.)** | confessional self-roast ancestor (self-inspection essays) | PD | queued |
+| **Plato: Apology + Symposium (Jowett)** | Socrates answering; Alcibiades' Symposium speech = a love-roast OF Socrates | PD | queued |
+| **La Rochefoucauld Maxims (17th c. Eng. trans.)** | cynical maxims (already noted) | PD | queued |
