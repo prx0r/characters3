@@ -115,3 +115,38 @@ def test_mutants_have_identity_and_profile():
     for p in packs:
         assert (p / "identity.json").is_file(), f"{p.name} no identity"
         assert (ROOT / "theory/profiles" / f"{p.name}.json").is_file()
+
+
+SHELF = {"wrath": "buddha-angry", "greed": "buddha-greedy",
+         "impatient": "buddha-impatient", "boastful": "buddha-boastful",
+         "doom": "buddha-doom", "passive": "buddha-passive"}
+
+
+def test_buddha_mutant_shelf():
+    """Every arch:buddha violation exists as a pack: doctrine intact,
+    delivery mutated per spec, sayings are tone/topic views of base."""
+    base = json.loads((ROOT / "characters/buddha-ultimate-deadpan"
+                       / "character.json").read_text())
+    base_texts = {json.loads(l)["text"] for l in
+                  (ROOT / "characters/buddha-ultimate-deadpan/sayings.jsonl")
+                  .read_text().splitlines()}
+    arch = json.loads((ARCH / "buddha.json").read_text())
+    viol = {v["id"]: v for v in arch["violations_that_work"]}
+    assert set(SHELF) <= set(viol)
+    for vid, slug in SHELF.items():
+        c = json.loads((ROOT / "characters" / slug / "character.json").read_text())
+        v = viol[vid]
+        assert c["philosophy"] == base["philosophy"], f"{slug}: doctrine broke"
+        view = ROOT / "characters" / slug / "sayings.jsonl"
+        if v.get("saying_selector"):
+            ents = [json.loads(l) for l in view.read_text().splitlines()]
+            assert ents, f"{slug}: empty saying view"
+            assert all(e["text"] in base_texts for e in ents), slug
+        if v.get("delivery_mutate"):
+            dm = v["delivery_mutate"]
+            if dm.get("vibe"):
+                assert c["vibe"] == dm["vibe"], slug
+            for k, val in (dm.get("overrides") or {}).items():
+                assert c["delivery"]["overrides"][k] == val, (slug, k)
+        assert (ROOT / "characters" / slug / "identity.json").is_file()
+        assert (ROOT / "theory/profiles" / f"{slug}.json").is_file()

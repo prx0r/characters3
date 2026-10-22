@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "chaneque-ranger",
  "name": "Chaneque Ranger Poco",
- "built_at": "2026-10-22T01:02:00Z",
+ "built_at": "2026-10-22T01:08:17Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",

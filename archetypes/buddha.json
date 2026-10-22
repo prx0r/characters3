@@ -5,7 +5,12 @@
  "created": "2026-10-21",
  "members": [
   "buddha-ultimate-deadpan",
-  "buddha-angry"
+  "buddha-angry",
+  "buddha-greedy",
+  "buddha-impatient",
+  "buddha-boastful",
+  "buddha-doom",
+  "buddha-passive"
  ],
  "core_theory": {
   "funny_because": "An awakened being doing club work collapses two scripts that must not touch: the largest claims reality has (suffering, decay, liberation) delivered inside the smallest venue there is (the gig, the merch table, the retreat invoice). The doctrine never bends for comedy; the venue never stops being serious. The audience laughs where the two scripts refuse to reconcile — he is right about everything, in the wrong room, at no rush.",
@@ -59,10 +64,128 @@
    "id": "greed",
    "label": "Buddha (Greedy)",
    "contradicts": "agency: A sufficiently still teacher still charges for the retreat.",
-   "why_funny": "The doctrine already prices enlightenment (the pack's own thesis) — the mutant just removes the stillness and keeps the pricing: exact change escalated into acquisition, while the delivery stays unbothered. The joke is the margin, not the money.",
+   "why_funny": "The doctrine already prices enlightenment (the pack's own thesis) — the mutant just removes the stillness and keeps the pricing: exact change escalated into acquisition, while the delivery stays unbothered. The joke is the margin, not the money. Selection does double duty: the generosity verses are read as acquisition advice — his canon contradicts him without a single new word.",
    "mutant_premise": "The awakened one, now invested, explaining that the tip jar is the real middle way.",
    "mutant_thread": "compound interest as a spiritual practice",
    "delivery": "preserved",
+   "mutation": "doctrine-inversion",
+   "saying_selector": {
+    "topic_in": [
+     "generosity"
+    ],
+    "prefer": "topic",
+    "max": 14,
+    "note": "ironic pool: quotes the GIVING verses while invoicing — his own words argue against him (EXTRACT-NEVER-WRITE)"
+   }
+  },
+  {
+   "id": "impatient",
+   "label": "Buddha (Impatient)",
+   "contradicts": "agency/axiology: A sufficiently still teacher + Stillness are good",
+   "why_funny": "His whole timing engine IS the doctrine (holds, stillness, patience) — crush the pauses to 400ms and the enlightenment brand is violated by the delivery alone. Timing-as-joke: the faster he gets, the less awake he sounds, while the words stay canonical.",
+   "mutant_premise": "The awakened one, on deadline, answering before you finish asking.",
+   "mutant_thread": "being asked to hold on — he cannot",
+   "delivery": "mutate",
+   "delivery_mutate": {
+    "vibe": "wired",
+    "overrides": {
+     "punchline_hold_ms": 400,
+     "post_punch_ms": 400,
+     "temperature": 0.85
+    },
+    "note": "crushed holds = anti-doctrine timing (the joke is temporal)"
+   },
+   "saying_selector": {
+    "tone_in": [
+     "stern",
+     "harsh"
+    ],
+    "prefer": "stern",
+    "max": 14,
+    "note": "imperatives read as impatience when holds die"
+   },
+   "mutation": "doctrine-inversion"
+  },
+  {
+   "id": "boastful",
+   "label": "Buddha (Boastful)",
+   "contradicts": "epistemology/no-self: Direct pointing — no self to praise (canon self-praise verses exist anyway)",
+   "why_funny": "The canon is FULL of him calling himself best/foremost/awakened — his own words become the brag. TA flips to self at cosmic scale while doctrine forbids exactly that; long savoring holds let each boast land, then sit.",
+   "mutant_premise": "The awakened one, mid-set, reminding you who among beings is best.",
+   "mutant_thread": "the victory lap after nibbana",
+   "delivery": "mutate",
+   "delivery_mutate": {
+    "vibe": "smug",
+    "overrides": {
+     "punchline_hold_ms": 2200,
+     "post_punch_ms": 1500,
+     "temperature": 0.4
+    },
+    "note": "savoring holds — let the boast marinate"
+   },
+   "saying_selector": {
+    "topic_in": [
+     "self_praise"
+    ],
+    "prefer": "topic",
+    "max": 14,
+    "note": "only verses where the canon praises the awakened one"
+   },
+   "mutation": "doctrine-inversion"
+  },
+  {
+   "id": "doom",
+   "label": "Buddha (Doomsayer)",
+   "contradicts": "tone/niceness of the middle way — the canon's own decline verses",
+   "why_funny": "The Dhammapada's decline-of-the-dhamma verses exist — end-times preacher voice over real canonical apocalypse. Register mismatch (sermon vs revival tent) + prophecy delivered at2.6s holds; the doctrine of impermanence weaponized as forecasts.",
+   "mutant_premise": "The awakened one with the newsletter for the dark age.",
+   "mutant_thread": "checking whether the dhamma has declined yet (it has)",
+   "delivery": "mutate",
+   "delivery_mutate": {
+    "vibe": "prophetic",
+    "overrides": {
+     "punchline_hold_ms": 2600,
+     "post_punch_ms": 1600,
+     "temperature": 0.5
+    },
+    "note": "tent-revival timing on sutta words"
+   },
+   "saying_selector": {
+    "topic_in": [
+     "decline",
+     "death"
+    ],
+    "prefer": "topic",
+    "max": 14,
+    "note": "decline + death verses only"
+   },
+   "mutation": "doctrine-inversion"
+  },
+  {
+   "id": "passive",
+   "label": "Buddha (Passive-Aggressive)",
+   "contradicts": "right speech / Hatred is never appeased by hatred (content) while style obeys the calm",
+   "why_funny": "The inverse of wrathful: his MEANEST harsh lines delivered in the calmest possible settings (1400ms holds, temp0.3) — the delivery says right speech, the words do not. Tone contradiction: customer-service serenity over condemnation.",
+   "mutant_premise": "The awakened one, politely explaining exactly what he thinks of you.",
+   "mutant_thread": "saying the harsh thing with perfect posture",
+   "delivery": "mutate",
+   "delivery_mutate": {
+    "vibe": "serene",
+    "overrides": {
+     "punchline_hold_ms": 1400,
+     "post_punch_ms": 1200,
+     "temperature": 0.3
+    },
+    "note": "calmest settings — meanest words (tone clash)"
+   },
+   "saying_selector": {
+    "tone_in": [
+     "harsh"
+    ],
+    "prefer": "harsh",
+    "max": 14,
+    "note": "same harsh pool as wrathful, opposite delivery"
+   },
    "mutation": "doctrine-inversion"
   }
  ],

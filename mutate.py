@@ -101,11 +101,17 @@ def mutate(base_slug: str, violation_id: str, as_slug: str | None = None) -> str
         if base_say.is_file():
             pool = [json.loads(x) for x in base_say.read_text().splitlines()]
             tone_in = sel.get("tone_in", [])
+            topic_in = sel.get("topic_in", [])
             order = sel.get("prefer") if sel.get("prefer") in tone_in else None
             picked = [e for e in pool if e.get("role") == "buddha"
-                      and e.get("tone") in tone_in]
+                      and (not tone_in or e.get("tone") in tone_in)
+                      and (not topic_in
+                           or set(e.get("topics", [])) & set(topic_in))]
             if order:
                 picked.sort(key=lambda e: e.get("tone") != order)
+            elif topic_in and sel.get("prefer") == "topic":
+                picked.sort(key=lambda e: -len(set(e.get("topics", []))
+                                              & set(topic_in)))
             picked = picked[: int(sel.get("max", 12))]
             dest = CHARS / slug
             dest.mkdir(parents=True, exist_ok=True)
@@ -114,7 +120,9 @@ def mutate(base_slug: str, violation_id: str, as_slug: str | None = None) -> str
                     out = dict(e)
                     out["view_of"] = "buddha-ultimate-deadpan/sayings.jsonl"
                     out["view"] = v["id"]
-                    out["selection"] = f"tone in {tone_in} (curation, not generation)"
+                    out["selection"] = (f"tone={tone_in or '-'} "
+                                       f"topic={topic_in or '-'} "
+                                       "(curation, not generation)")
                     f.write(json.dumps(out, ensure_ascii=False) + "\n")
 
     dest = CHARS / slug

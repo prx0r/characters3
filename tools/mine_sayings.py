@@ -35,6 +35,19 @@ GENTLE = re.compile(
     r"patient\w*|mercy|kind\w*)\b", re.I)
 
 
+TOPICS = {
+    "death": r"\b(death|die|dies|decay|perish\w*|grave\w*|corpse|cremation|buried)\b",
+    "decline": r"\b(declin\w*|deteriorat\w*|decadent\w*|dark age|corrupt\w*|weapons?|arms)\b",
+    "generosity": r"\b(give\w*|gift\w*|offering|generous\w*|alms|donate\w*)\b",
+    "self_praise": r"\b(best|foremost|victor\w*|conquer\w*|superior|accomplished|awakened one|the Buddha)\b",
+    "desire": r"\b(desire|sensual\w*|lust|craving|attraction)\b",
+}
+
+
+def topics(text: str) -> list[str]:
+    return [t for t, rx in TOPICS.items() if re.search(rx, text, re.I)]
+
+
 def tone(text: str) -> str:
     if HARSH.search(text):
         return "harsh"
@@ -84,6 +97,7 @@ def mine(sutta_dir: Path) -> list[dict]:
                 "sutta": v,
                 "chapter": ch_of.get(v, ""),
                 "tone": tone(text),
+                "topics": topics(text),
                 "label_source": "lexicon-v1",
                 "license": "CC0 1.0 (Bhikkhu Sujato via SuttaCentral)",
                 "words": len(text.split()),
