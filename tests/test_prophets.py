@@ -81,3 +81,22 @@ def test_jataka_tales_in_buddha():
     assert any("Crocodile" in t["title"] for t in tales)
     assert all("Babbitt" in t["license"] for t in tales)   # honest retelling label
     assert all(t["note"].startswith("past-life") for t in tales)
+
+
+def test_qoheleth_philosopher_pipeline():
+    d = ROOT / "characters/qoheleth"
+    sayings = [json.loads(l) for l in (d / "sayings.jsonl").read_text().splitlines()]
+    assert len(sayings) > 100 and all(s["origin"] == "kjv" for s in sayings)
+    joined = " ".join(s["text"] for s in sayings)
+    assert "vanity" in joined.lower() and "time to laugh" in joined.lower()
+    passages = [json.loads(l) for l in (d / "passages.jsonl").read_text().splitlines()]
+    assert len(passages) >= 8 and min(x["words"] for x in passages) >= 60
+    # hopeful mutant: doctrine intact, wired delivery, view is base subset
+    c = json.loads((ROOT / "characters/qoheleth-hopeful/character.json").read_text())
+    base = json.loads((ROOT / "characters/qoheleth/character.json").read_text())
+    assert c["philosophy"] == base["philosophy"]
+    assert c["vibe"] == "wired" and c["delivery"]["overrides"]["punchline_hold_ms"] == 400
+    view = [json.loads(l) for l in
+            (ROOT / "characters/qoheleth-hopeful/sayings.jsonl").read_text().splitlines()]
+    base_texts = {s["text"] for s in sayings}
+    assert view and all(v["text"] in base_texts for v in view)

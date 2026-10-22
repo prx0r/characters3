@@ -66,7 +66,22 @@ ISAIAH_RANGES = [
 NATHAN_RANGES = [
     ("2 Samuel", 12, 1, 12, 14),   # the parable of the ewe lamb (the long con)
 ]
+QOHELETH_RANGES = [
+    ("Ecclesiastes", 1, 2, 1, 11),    # vanity of vanities opener
+    ("Ecclesiastes", 2, 1, 2, 26),    # I got everything; meaningless; nothing better
+    ("Ecclesiastes", 3, 1, 3, 22),    # a time to laugh (+ to every thing a season)
+    ("Ecclesiastes", 4, 4, 4, 16),    # the lonely — two better than one
+    ("Ecclesiastes", 5, 10, 5, 19),   # silver loathsome — the dream through riches
+    ("Ecclesiastes", 6, 1, 6, 12),    # wealth without enjoyment
+    ("Ecclesiastes", 7, 1, 7, 14),    # house of mourning better than laughter; good name
+    ("Ecclesiastes", 8, 10, 8, 15),   # wicked burials forgotten — injustice
+    ("Ecclesiastes", 9, 2, 9, 12),    # one event to all — time and chance
+    ("Ecclesiastes", 10, 1, 10, 20),  # a little folly / a living dog better than dead lion
+    ("Ecclesiastes", 11, 1, 11, 8),   # cast thy bread upon the waters
+    ("Ecclesiastes", 12, 1, 12, 14),  # keep the creator — the verdict
+]
 CHARACTER_RANGES = {
+    "qoheleth": (QOHELETH_RANGES, "qoheleth", "kjv"),
     "jesus": (JESUS_RANGES, "jesus", "kjv"),
     "jonah": ([JONAH_BOOK], "jonah", "kjv"),
     "elijah": (ELIJAH_RANGES, "elijah", "kjv"),

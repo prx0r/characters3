@@ -1,0 +1,126 @@
+{
+ "schema": "freaktown.archetype.v1",
+ "id": "arch:qoheleth",
+ "name": "The Auditor of Vanity",
+ "created": "2026-10-22",
+ "members": [
+  "qoheleth",
+  "qoheleth-hopeful"
+ ],
+ "core_theory": {
+  "funny_because": "The comic who is PRE-AUDITED meaning: every joke is a line item in a negative review of existence, delivered with a clerk's fatigue and one escape hatch ('a time to laugh'). The comedy engine is Bergson's own — he says it beautifully, and he is the mechanical little wheel of bureaucracy reading it back. Sequencing does the work: vanity claim, then test, then result, with the laugh clause placed like a refund policy.",
+  "doctrine_source": "character.json.philosophy (authored from KJV Ecclesiastes)",
+  "doctrine": {
+   "ontology": "Vanity of vanities; and I have the receipts.",
+   "epistemology": "Nothing new under the sun (I looked).",
+   "axiology": "A time to laugh — the licensed exception."
+  },
+  "status_model": "authority of exhaustion: his rank is seniority in disappointment",
+  "register": "auditor's plain-speech over poetry (KJV cadence)",
+  "delivery_default": {
+   "vibe": "deadpan",
+   "style": "norm_macdonald",
+   "punchline_hold_ms": 1800,
+   "energy": 0.4
+  }
+ },
+ "violations_that_work": [
+  {
+   "id": "hopeful",
+   "label": "Qoheleth (Hopeful)",
+   "contradicts": "ontology: Vanity of vanities (the exception clause taken as policy)",
+   "why_funny": "The whole book keeps exactly one loophole (a time to laugh) and the hopeful mutant moves in: he starts pitching seasons — a time to invest, a time to launch the podcast — the auditor of meaning doing motivational speaking with his own receipts. Same KJV words (season-verse), delivery mutated to wired 400ms: the weary clerk becomes a revivalist of his own exception clause.",
+   "mutant_premise": "The Preacher now running the season-of-laughing masterclass (enrollment is vanity, but enroll).",
+   "mutant_thread": "casting his bread upon the waters like a business plan",
+   "delivery": "mutate",
+   "delivery_mutate": {
+    "vibe": "wired",
+    "overrides": {
+     "punchline_hold_ms": 400,
+     "post_punch_ms": 400,
+     "temperature": 0.85
+    },
+    "note": "revivalist pacing over audit prose"
+   },
+   "saying_selector": {
+    "tone_in": [
+     "stern",
+     "harsh",
+     "neutral"
+    ],
+    "prefer": "stern",
+    "max": 14,
+    "note": "the imperative/doctrine verses at speed"
+   },
+   "mutation": "doctrine-inversion"
+  }
+ ],
+ "mutation_operators": [
+  {
+   "id": "doctrine-inversion",
+   "name": "Doctrinal self-contradiction",
+   "theory_basis": "GTVH SO: the mutant's own script refutes their established script in real time (teacher caught in their own lesson); comedy = self-contradiction, not mockery",
+   "changes": [
+    "premise (authored mutant_premise)",
+    "thread (authored mutant_thread)",
+    "vibe/label"
+   ],
+   "must_not": [
+    "philosophy/doctrine — the base claims STAY so the contradiction is real",
+    "delivery.style, timing overrides — NS preserved: the angry Buddha stays slow"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "status-flip",
+   "name": "Status inversion",
+   "theory_basis": "Attardo KR-TA status_invert: desired vs felt status swap; register and modulators move, the world doesn't",
+   "changes": [
+    "vibe",
+    "modulator_range",
+    "expression/voice tags register"
+   ],
+   "must_not": [
+    "lore facts",
+    "doctrine claims"
+   ],
+   "delivery": "may_change_register"
+  },
+  {
+   "id": "thread-corruption",
+   "name": "Thread invariant swap",
+   "theory_basis": "rigidify (KR-LM) preserved, SI constant replaced: the engine keeps enforcing; what it enforces changes (kappa paid in something other than cucumbers)",
+   "changes": [
+    "one named thread's constant + premise"
+   ],
+   "must_not": [
+    "the rigidify mechanism",
+    "status model"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "lore-injection",
+   "name": "Sourced lore event",
+   "theory_basis": "KR-SI: a canon/lore event (must cite source: canon block, almanac, genome) becomes the premise situation",
+   "changes": [
+    "premise",
+    "thread"
+   ],
+   "must_not": [
+    "doctrine",
+    "unsourced invention — event must exist in a source file"
+   ],
+   "delivery": "preserved"
+  }
+ ],
+ "provenance": {
+  "sources": [
+   "KJV Ecclesiastes via tools/text_sources.py (PD)",
+   "Bergson, Laughter (1914, PD) — cited as the mechanism (see theory docs)"
+  ],
+  "rules": [
+   "engine assembles; KJV words never generated"
+  ]
+ }
+}
