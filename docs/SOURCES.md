@@ -18,7 +18,16 @@ before status = verified. (Jataka/KJV/Legge = the queue agreed 2026-10-21.)
 | Shakespeare fools (any PD ed.) | falstaff/dogberry + iambic-break technique | PD by 400y | queued — selection pass |
 | W.S. Gilbert (PD d1911) | patter-speed technique | PD | queued |
 | Chaucer comic tales (PD) | medieval-standup lane | PD | queued |
-| **Dracula** (Stoker 1897, Gutenberg #345) | gothic character: etiquette-obsessed immortal ('Listen to them, the children of the night') — 100+ years of PD | pre-1923 (ancient-PD) | queued — obvious pick |
+| **In Praise of Folly** (Erasmus 1511) | personified Folly delivers the whole book as an oration — a standup SET in a personification; foundry-perfect | ancient-PD | queued — top pick |
+| **The Importance of Being Earnest** (Wilde 1895) + **Dorian Gray** (1890) | epigram density (Lord Henry speaks ONLY in aphorisms; Bracknell interview = the interrogation bit) | pre-1923 | queued — top pick |
+| **Doctor Faustus** (Marlowe 1604) | damned-scholar speeches; Mephistopheles' riff | ancient-PD | queued |
+| **Don Juan** (Byron 1819-24) + **The Rape of the Lock** (Pope 1712) | mock-epic VERSE: trivial treated as epic = the absurd register engine | ancient-PD | queued |
+| **Notes from Underground** (Dostoevsky; earliest Eng. tr. pre-1923 — VERIFY at fetch) | the spiteful monologue: 'I am a sick man... I am a spiteful man' | verify translation date | queued — verify |
+| **De Quincey, Confessions of an Opium-Eater** (1821) | high-style comic complaint | ancient-PD | queued |
+| **Jekyll & Hyde** (1886), **Carmilla** (1872), **Melmoth** (1820), **The Vampyre** (1819) | gothic companions: confession document / seduction / cursed-salesman monologues | ancient-PD | queued |
+| **Volpone** (Jonson 1606) | grifter con-monologues | ancient-PD | queued |
+| **Lucian, Dialogues/Satirical Sketches** (tr. Fowler 1905) | ancient roast-interviews (conversations with the dead) | pre-1923 | queued |
+| Artemus Ward / Major Downing / Twain Jumping Frog (1865) | vernacular deadpan yankee lecturers | ancient-PD | queued || **Dracula** (Stoker 1897, Gutenberg #345) | gothic character: etiquette-obsessed immortal ('Listen to them, the children of the night') — 100+ years of PD | pre-1923 (ancient-PD) | queued — obvious pick |
 | **Frankenstein** (Shelley 1818) | the monster with literary grievances ('I ought to be thy Adam' — Milton-quoting creature) | ancient-PD | queued — obvious pick |
 | Recent-PD window examples (verify at fetch): Gatsby (1925), Winnie-the-Pooh (1926) | modern-classic characters entered PD 2021-2022 | 1923-1926 -> PD-US | noted || **Devil's Dictionary** (Bierce, Gutenberg #972/#23080) | definition-comedy: absurdist character (WORD, n. = built-in punch) | **PD-USA explicit** | queued — verified |
 | **Enough Rope** (Dorothy Parker, 1926, Gutenberg #68353) | brittle-wit character; verse one-liners | 1926 -> PD-US (verified pub date) | queued — verified |
