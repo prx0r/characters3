@@ -18,4 +18,9 @@ before status = verified. (Jataka/KJV/Legge = the queue agreed 2026-10-21.)
 | Shakespeare fools (any PD ed.) | falstaff/dogberry + iambic-break technique | PD by 400y | queued — selection pass |
 | W.S. Gilbert (PD d1911) | patter-speed technique | PD | queued |
 | Chaucer comic tales (PD) | medieval-standup lane | PD | queued |
+| **Devil's Dictionary** (Bierce, Gutenberg #972/#23080) | definition-comedy: absurdist character (WORD, n. = built-in punch) | **PD-USA explicit** | queued — verified |
+| **Enough Rope** (Dorothy Parker, 1926, Gutenberg #68353) | brittle-wit character; verse one-liners | 1926 -> PD-US (verified pub date) | queued — verified |
+| **Vikram and the Vampire** (Burton 1890, Gutenberg #48511/#2400) | interrogation-frame tales: vampire answers the king with deflections — interview-corpus + character | pre-1923 | queued — verified |
+| Josh Billings (Gutenberg #36556) | misspelled-aphorism humor | PD-US | queued — verified |
+| Twain (Advice to Youth etc.) / Swift / Rabelais (Urquhart) / Ring Lardner / Dunne (Mr. Dooley) / Chaucer comic tales | satirical-advice + bartender-prophet + medieval lanes | all pre-1930 | queued — standard PD, triage at fetch |
 | Marcus/Epictetus/Seneca (Long/Carter/Gummere) | stoic packs | all pre-1930 | pending |
