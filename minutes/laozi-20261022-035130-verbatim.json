@@ -1,0 +1,96 @@
+{
+ "schema": "pogtown.minute.v1",
+ "character": "laozi",
+ "name": "Laozi, the Uncarved Block",
+ "roster": "freaks",
+ "mode": "extractive-verbatim",
+ "source_passages": [
+  "ch56-57"
+ ],
+ "audience": null,
+ "edge_dial": null,
+ "writer_model": null,
+ "archetype": "arch:laozi",
+ "doctrine_preserved": true,
+ "delivery_note": "punch timing = pack delivery (holds/style); comedy is the non-release: the room waits for a resolution the aphorism refuses to give",
+ "bits": [
+  {
+   "slot": "b1",
+   "text": "1. He who knows (the Tao) does not (care to) speak (about it); he who is (ever ready to) speak about it does not know it. He (who knows it) will keep his mouth shut and close the portals (of his nostrils). He will blunt his sharp points and unravel the complications of things; he will attemper his brightness, and bring himself into agreement with the obscurity (of others).",
+   "base_text": "1. He who knows (the Tao) does not (care to) speak (about it); he who is (ever ready to) speak about it does not know it. He (who knows it) will keep his mouth shut and close the portals (of his nostrils). He will blunt his sharp points and unravel the complications of things; he will attemper his brightness, and bring himself into agreement with the obscurity (of others).",
+   "selected_level": "verbatim",
+   "edginess": null,
+   "select_reason": "extract from ch56-57 (text-range)",
+   "ladder": [],
+   "slop_mask": {
+    "passed": true,
+    "note": "canonical text — mask not applicable"
+   }
+  },
+  {
+   "slot": "b2",
+   "text": "This is called 'the Mysterious Agreement.' (Such an one) cannot be treated familiarly or distantly; he is beyond all consideration of profit or injury; of nobility or meanness:--he is the noblest man under heaven. 1. A state may be ruled by (measures of) correction; weapons of war may be used with crafty dexterity; (but) the kingdom is made one's own (only) by freedom from action and purpose.",
+   "base_text": "This is called 'the Mysterious Agreement.' (Such an one) cannot be treated familiarly or distantly; he is beyond all consideration of profit or injury; of nobility or meanness:--he is the noblest man under heaven. 1. A state may be ruled by (measures of) correction; weapons of war may be used with crafty dexterity; (but) the kingdom is made one's own (only) by freedom from action and purpose.",
+   "selected_level": "verbatim",
+   "edginess": null,
+   "select_reason": "extract from ch56-57 (text-range)",
+   "ladder": [],
+   "slop_mask": {
+    "passed": true,
+    "note": "canonical text — mask not applicable"
+   }
+  },
+  {
+   "slot": "b3",
+   "text": "How do I know that it is so? By these facts:--In the kingdom the multiplication of prohibitive enactments increases the poverty of the people; the more implements to add to their profit that the people have, the greater disorder is there in the state and clan; the more acts of crafty dexterity that men possess, the more do strange contrivances appear;",
+   "base_text": "How do I know that it is so? By these facts:--In the kingdom the multiplication of prohibitive enactments increases the poverty of the people; the more implements to add to their profit that the people have, the greater disorder is there in the state and clan; the more acts of crafty dexterity that men possess, the more do strange contrivances appear;",
+   "selected_level": "verbatim",
+   "edginess": null,
+   "select_reason": "extract from ch56-57 (text-range)",
+   "ladder": [],
+   "slop_mask": {
+    "passed": true,
+    "note": "canonical text — mask not applicable"
+   }
+  },
+  {
+   "slot": "b4",
+   "text": "the more display there is of legislation, the more thieves and robbers there are. Therefore a sage has said, 'I will do nothing (of purpose), and the people will be transformed of themselves; I will be fond of keeping still, and the people will of themselves become correct. I will take no trouble about it, and the people will of themselves become rich;",
+   "base_text": "the more display there is of legislation, the more thieves and robbers there are. Therefore a sage has said, 'I will do nothing (of purpose), and the people will be transformed of themselves; I will be fond of keeping still, and the people will of themselves become correct. I will take no trouble about it, and the people will of themselves become rich;",
+   "selected_level": "verbatim",
+   "edginess": null,
+   "select_reason": "extract from ch56-57 (text-range)",
+   "ladder": [],
+   "slop_mask": {
+    "passed": true,
+    "note": "canonical text — mask not applicable"
+   }
+  },
+  {
+   "slot": "b5",
+   "text": "I will manifest no ambition, and the people will of themselves attain to the primitive simplicity.'",
+   "base_text": "I will manifest no ambition, and the people will of themselves attain to the primitive simplicity.'",
+   "selected_level": "verbatim",
+   "edginess": null,
+   "select_reason": "extract from ch56-57 (text-range)",
+   "ladder": [],
+   "slop_mask": {
+    "passed": true,
+    "note": "canonical text — mask not applicable"
+   }
+  }
+ ],
+ "dropped": [],
+ "duration": {
+  "estimate_s": 109.1,
+  "min_s": 60.0,
+  "ok": true,
+  "model": "words/wpm + holds"
+ },
+ "metrics": {
+  "n_bits": 5,
+  "words_total": 276
+ },
+ "ts": "2026-10-22T03:51:30Z",
+ "next": "delivery_engine --seal (sync pack to engine first) -> stage"
+}

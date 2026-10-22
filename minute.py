@@ -216,6 +216,110 @@ def slop_mask(text: str, char: dict) -> dict:
         return {"passed": True, "problems": [f"slop check error: {e}"]}
 
 
+
+
+def _chunk_sentences(text: str, max_w: int = 70) -> list[str]:
+    """Greedy sentence chunks <= max_w words (reads as standup bits)."""
+    import re as _re
+    sents = [x for x in _re.split(r"(?<=[.;:?])\s+", text.strip()) if x]
+    bits, cur = [], []
+    w = 0
+    for sn in sents:
+        n = len(sn.split())
+        if cur and w + n > max_w:
+            bits.append(" ".join(cur))
+            cur, w = [], 0
+        cur.append(sn)
+        w += n
+    if cur:
+        bits.append(" ".join(cur))
+    return [b for b in bits if len(b.split()) >= 8]
+
+
+def extract_minute(a, char: dict) -> int:
+    """VERBATIM minute: the character reads the canon. No LLM, $0.
+    Humor = delivery over doctrine (pack holds/style) — the punch is the
+    room waiting for a resolution the aphorism refuses to give."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    plist = HERE / "characters" / a.slug / "passages.jsonl"
+    if not plist.is_file():
+        raise SystemExit("no passages for this character")
+    passages = [json.loads(l) for l in plist.read_text().splitlines()]
+    by_id = {x.get("range") or x.get("id"): x for x in passages}
+    if a.passage:
+        if a.passage not in by_id:
+            raise SystemExit(f"unknown passage {a.passage} (ids: "
+                             f"{sorted(by_id)[:8]}...)")
+        start = passages.index(by_id[a.passage])
+    else:
+        start = 0
+    chosen, i, est = [], start, 0.0
+    while i < len(passages) and (est < a.min_seconds or not chosen):
+        chosen.append(passages[i])
+        bits_tmp = [{"text": t} for c in chosen
+                    for t in _chunk_sentences(c["text"])]
+        est = estimate_seconds(bits_tmp, char)
+        i += 1
+        if i - start >= 4 and est >= a.min_seconds:
+            break
+    bits = []
+    for c in chosen:
+        for t in _chunk_sentences(c["text"]):
+            bits.append({"slot": f"b{len(bits)+1}", "text": t,
+                         "base_text": t, "selected_level": "verbatim",
+                         "edginess": None, "select_reason":
+                         f"extract from {c.get('range') or c.get('id')} "
+                         f"({c.get('kind','text-range')})",
+                         "ladder": [], "slop_mask": {"passed": True,
+                             "note": "canonical text — mask not applicable"}})
+    est = estimate_seconds(bits, char)
+    duration_ok = est >= a.min_seconds
+    doc = {
+        "schema": "pogtown.minute.v1", "character": a.slug,
+        "name": char.get("name"), "roster": "freaks",
+        "mode": "extractive-verbatim",
+        "source_passages": [c.get("range") or c.get("id") for c in chosen],
+        "audience": None, "edge_dial": None,
+        "writer_model": None,   # no generation — EXTRACT-NEVER-WRITE
+        "archetype": (archetype_for(a.slug) or {}).get("id"),
+        "doctrine_preserved": True,
+        "delivery_note": "punch timing = pack delivery (holds/style); comedy "
+                         "is the non-release: the room waits for a resolution "
+                         "the aphorism refuses to give",
+        "bits": bits, "dropped": [],
+        "duration": {"estimate_s": est, "min_s": a.min_seconds,
+                     "ok": duration_ok, "model": "words/wpm + holds"},
+        "metrics": {"n_bits": len(bits),
+                    "words_total": sum(len(b["text"].split()) for b in bits)},
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "next": "delivery_engine --seal (sync pack to engine first) -> stage",
+    }
+    jp = OUT / f"{a.slug}-{time.strftime('%Y%m%d-%H%M%S')}-verbatim.json"
+    jp.write_text(json.dumps(doc, indent=1, ensure_ascii=False) + "\n")
+    tp = jp.with_suffix("").with_suffix(".txt")
+    tp.write_text("\n\n".join(b["text"] for b in bits) + "\n")
+    print(f"extract minute: {len(bits)} bits, {doc['metrics']['words_total']}w, "
+          f"est {est}s ({'OK' if duration_ok else 'SHORT'}) "
+          f"from {doc['source_passages']}")
+    if a.seal:
+        return _seal(a, tp)
+    return 0
+
+
+def _seal(a, txt_path) -> int:
+    import subprocess as sp
+    if not (ENGINE / "freaks" / a.slug / "character.json").is_file():
+        raise SystemExit(f"--seal: sync pack first "
+                         f"(cp -r characters/{a.slug} {ENGINE}/freaks/)")
+    out = sp.run([sys.executable, "delivery_engine.py", str(txt_path),
+                  "--comedian", a.slug, "--out", f"minute_{a.slug}",
+                  "--seal", f"/tmp/sealed_minute_{a.slug}"],
+                 cwd=ENGINE / "audition", capture_output=True, text=True,
+                 timeout=280)
+    print((out.stdout or out.stderr)[-800:])
+    print("sealed ->", f"/tmp/sealed_minute_{a.slug}")
+    return 0
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("slug")
@@ -228,6 +332,10 @@ def main(argv=None) -> int:
     ap.add_argument("--min-seconds", type=float, default=60.0,
                     help="floor: keep writing/edging until est >= this")
     ap.add_argument("--max-seconds", type=float, default=90.0)
+    ap.add_argument("--extract", action="store_true",
+                    help="verbatim mode: read the canon (no generation, $0)")
+    ap.add_argument("--passage", default=None,
+                    help="extract mode: passage range id, e.g. ch56-57")
     ap.add_argument("--seal", action="store_true",
                     help="render sealed-set via characters engine (pack must "
                          "exist in /root/characters/freaks)")
@@ -238,6 +346,9 @@ def main(argv=None) -> int:
     char = load_pack(a.slug)
     arch = archetype_for(a.slug)
     OUT.mkdir(exist_ok=True)
+
+    if a.extract:
+        return extract_minute(a, char)
 
     system = writer_system(a.slug, char, arch)
     t0 = time.time()
@@ -379,17 +490,7 @@ def main(argv=None) -> int:
           f"| mean edge {doc['metrics']['mean_selected_edge']} "
           f"| levels {doc['metrics']['levels']} | dropped {len(dropped)}")
     if a.seal:
-        if not (ENGINE / "freaks" / a.slug / "character.json").is_file():
-            raise SystemExit(f"--seal: pack not in {ENGINE}/freaks/{a.slug} "
-                             f"(sync first)")
-        import subprocess as sp
-        out = sp.run([sys.executable, "delivery_engine.py", str(tp),
-                      "--comedian", a.slug, "--out", f"minute_{a.slug}",
-                      "--seal", f"/tmp/sealed_minute_{a.slug}"],
-                     cwd=ENGINE / "audition", capture_output=True, text=True,
-                     timeout=280)
-        print(out.stdout[-800:] or out.stderr[-800:])
-        print("sealed ->", f"/tmp/sealed_minute_{a.slug}")
+        return _seal(a, tp)
     return 0
 
 
