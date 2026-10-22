@@ -18,7 +18,9 @@ before status = verified. (Jataka/KJV/Legge = the queue agreed 2026-10-21.)
 | Shakespeare fools (any PD ed.) | falstaff/dogberry + iambic-break technique | PD by 400y | queued — selection pass |
 | W.S. Gilbert (PD d1911) | patter-speed technique | PD | queued |
 | Chaucer comic tales (PD) | medieval-standup lane | PD | queued |
-| **Devil's Dictionary** (Bierce, Gutenberg #972/#23080) | definition-comedy: absurdist character (WORD, n. = built-in punch) | **PD-USA explicit** | queued — verified |
+| **Dracula** (Stoker 1897, Gutenberg #345) | gothic character: etiquette-obsessed immortal ('Listen to them, the children of the night') — 100+ years of PD | pre-1923 (ancient-PD) | queued — obvious pick |
+| **Frankenstein** (Shelley 1818) | the monster with literary grievances ('I ought to be thy Adam' — Milton-quoting creature) | ancient-PD | queued — obvious pick |
+| Recent-PD window examples (verify at fetch): Gatsby (1925), Winnie-the-Pooh (1926) | modern-classic characters entered PD 2021-2022 | 1923-1926 -> PD-US | noted || **Devil's Dictionary** (Bierce, Gutenberg #972/#23080) | definition-comedy: absurdist character (WORD, n. = built-in punch) | **PD-USA explicit** | queued — verified |
 | **Enough Rope** (Dorothy Parker, 1926, Gutenberg #68353) | brittle-wit character; verse one-liners | 1926 -> PD-US (verified pub date) | queued — verified |
 | **Vikram and the Vampire** (Burton 1890, Gutenberg #48511/#2400) | interrogation-frame tales: vampire answers the king with deflections — interview-corpus + character | pre-1923 | queued — verified |
 | Josh Billings (Gutenberg #36556) | misspelled-aphorism humor | PD-US | queued — verified |

@@ -1,0 +1,83 @@
+{
+ "schema": "pogtown.minute.v1",
+ "character": "buddha-ultimate-deadpan",
+ "name": "Buddha, the Ultimate Deadpan",
+ "roster": "freaks",
+ "mode": "extractive-verbatim",
+ "source_passages": [
+  "pass-set-arrow-v1"
+ ],
+ "audience": null,
+ "edge_dial": null,
+ "writer_model": null,
+ "archetype": "arch:buddha",
+ "doctrine_preserved": true,
+ "delivery_note": "punch timing = pack delivery (holds/style); comedy is the non-release: the room waits for a resolution the aphorism refuses to give",
+ "bits": [
+  {
+   "slot": "b1",
+   "text": "Suppose a man was struck by an arrow thickly smeared with poison. His friends and colleagues, relatives and kin would get a surgeon to treat him. But the man would say:",
+   "base_text": "Suppose a man was struck by an arrow thickly smeared with poison. His friends and colleagues, relatives and kin would get a surgeon to treat him. But the man would say:",
+   "selected_level": "verbatim",
+   "edginess": null,
+   "select_reason": "extract from pass-set-arrow-v1 (set-compilation)",
+   "ladder": [],
+   "slop_mask": {
+    "passed": true,
+    "note": "canonical text — mask not applicable"
+   }
+  },
+  {
+   "slot": "b2",
+   "text": "‘I won’t extract this arrow as long as I don’t know whether the man who wounded me was an aristocrat, a brahmin, a peasant, or a menial.’ … ‘I won’t extract this arrow as long as I don’t know the following things about the man who wounded me: his name and clan; whether he’s tall, short, or medium; whether his skin is black, brown, or dingy;",
+   "base_text": "‘I won’t extract this arrow as long as I don’t know whether the man who wounded me was an aristocrat, a brahmin, a peasant, or a menial.’ … ‘I won’t extract this arrow as long as I don’t know the following things about the man who wounded me: his name and clan; whether he’s tall, short, or medium; whether his skin is black, brown, or dingy;",
+   "selected_level": "verbatim",
+   "edginess": null,
+   "select_reason": "extract from pass-set-arrow-v1 (set-compilation)",
+   "ladder": [],
+   "slop_mask": {
+    "passed": true,
+    "note": "canonical text — mask not applicable"
+   }
+  },
+  {
+   "slot": "b3",
+   "text": "and whether he comes from such-and-such village, town, or city. … I won’t extract this arrow as long as I don’t know whether the bow that wounded me was straight or recurved; whether the bow-string is made of swallow-wort fibre, sunn hemp fibre, sinew, sanseveria fibre, or spurge fibre; whether the shaft is made from a bush or a plantation tree;",
+   "base_text": "and whether he comes from such-and-such village, town, or city. … I won’t extract this arrow as long as I don’t know whether the bow that wounded me was straight or recurved; whether the bow-string is made of swallow-wort fibre, sunn hemp fibre, sinew, sanseveria fibre, or spurge fibre; whether the shaft is made from a bush or a plantation tree;",
+   "selected_level": "verbatim",
+   "edginess": null,
+   "select_reason": "extract from pass-set-arrow-v1 (set-compilation)",
+   "ladder": [],
+   "slop_mask": {
+    "passed": true,
+    "note": "canonical text — mask not applicable"
+   }
+  },
+  {
+   "slot": "b4",
+   "text": "whether the shaft was fitted with feathers from a vulture, a heron, a hawk, a peacock, or a stork; whether the shaft was bound with sinews of a cow, a buffalo, a black lion, or an ape; and whether the arrowhead was spiked, razor-tipped, barbed, made of iron or a calf’s tooth, or lancet-shaped.’ … That man would still not have learned these things, and meanwhile they’d die.",
+   "base_text": "whether the shaft was fitted with feathers from a vulture, a heron, a hawk, a peacock, or a stork; whether the shaft was bound with sinews of a cow, a buffalo, a black lion, or an ape; and whether the arrowhead was spiked, razor-tipped, barbed, made of iron or a calf’s tooth, or lancet-shaped.’ … That man would still not have learned these things, and meanwhile they’d die.",
+   "selected_level": "verbatim",
+   "edginess": null,
+   "select_reason": "extract from pass-set-arrow-v1 (set-compilation)",
+   "ladder": [],
+   "slop_mask": {
+    "passed": true,
+    "note": "canonical text — mask not applicable"
+   }
+  }
+ ],
+ "dropped": [],
+ "duration": {
+  "estimate_s": 74.6,
+  "min_s": 60.0,
+  "ok": true,
+  "model": "words/wpm + holds"
+ },
+ "metrics": {
+  "n_bits": 4,
+  "words_total": 226
+ },
+ "ts": "2026-10-22T04:26:35Z",
+ "next": "delivery_engine --seal (sync pack to engine first) -> stage"
+}
