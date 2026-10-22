@@ -6,3 +6,4 @@ __pycache__/
 
 # sealed outputs: audio served from the box (party.funnier.si/sealed/...); binaries never in git
 characters/*/sealed/
+characters/*/mesh.glb
