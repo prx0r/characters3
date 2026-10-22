@@ -1,0 +1,125 @@
+{
+ "schema": "freaktown.archetype.v1",
+ "id": "arch:laozi",
+ "name": "The Uncarved Block",
+ "created": "2026-10-22",
+ "members": [
+  "laozi",
+  "laozi-severe"
+ ],
+ "core_theory": {
+  "funny_because": "A teacher whose every sentence disables the one before it: the book opens by saying it cannot be written, then insists for 81 chapters. The comedy is structural self-sabotage — the aphorism that lands is the one admitting the limits of aphorisms. Slow delivery is mandatory: the paradox needs the room to catch up and fail.",
+  "doctrine_source": "character.json.philosophy (authored from Legge)",
+  "doctrine": {
+   "ontology": "The way that can be told is not the enduring way.",
+   "epistemology": "Knowing shows as not-knowing.",
+   "axiology": "Uncarved, unpolished, unimpressed is good."
+  },
+  "status_model": "authority that renounces authority and thereby keeps it",
+  "register": "archaic-plain, water metaphors, zero ornament",
+  "delivery_default": {
+   "vibe": "serene",
+   "style": "louis",
+   "punchline_hold_ms": 2200,
+   "energy": 0.35
+  }
+ },
+ "violations_that_work": [
+  {
+   "id": "severe",
+   "label": "Laozi (Severe)",
+   "contradicts": "axiology: Uncarved, unpolished, unimpressed is good (the severe chapters deny kindliness)",
+   "why_funny": "Legge's severe chapters ('Heaven and Earth are not kind') already exist in the canon — the gentle water-teacher delivering them at wrathful speed (900ms holds) turns Taoism into a warning label. The selector takes ONLY the stern/harsh aphorisms (39+9 tone-labelled), so the book hands him his own meanest lines.",
+   "mutant_premise": "The sage of the uncarved block, now explaining that heaven and earth were never on your side.",
+   "mutant_thread": "the severity chapter he kept skipping in readings",
+   "delivery": "mutate",
+   "delivery_mutate": {
+    "vibe": "wrathful",
+    "overrides": {
+     "punchline_hold_ms": 900,
+     "post_punch_ms": 700,
+     "temperature": 0.75
+    },
+    "note": "wrathful not in ARCHETYPE_CUES — cues fall back; harvest pending"
+   },
+   "saying_selector": {
+    "tone_in": [
+     "harsh",
+     "stern"
+    ],
+    "prefer": "harsh",
+    "max": 14,
+    "note": "his meanest aphorisms, still Legge-verbatim"
+   },
+   "mutation": "doctrine-inversion"
+  }
+ ],
+ "mutation_operators": [
+  {
+   "id": "doctrine-inversion",
+   "name": "Doctrinal self-contradiction",
+   "theory_basis": "GTVH SO: the mutant's own script refutes their established script in real time (teacher caught in their own lesson); comedy = self-contradiction, not mockery",
+   "changes": [
+    "premise (authored mutant_premise)",
+    "thread (authored mutant_thread)",
+    "vibe/label"
+   ],
+   "must_not": [
+    "philosophy/doctrine — the base claims STAY so the contradiction is real",
+    "delivery.style, timing overrides — NS preserved: the angry Buddha stays slow"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "status-flip",
+   "name": "Status inversion",
+   "theory_basis": "Attardo KR-TA status_invert: desired vs felt status swap; register and modulators move, the world doesn't",
+   "changes": [
+    "vibe",
+    "modulator_range",
+    "expression/voice tags register"
+   ],
+   "must_not": [
+    "lore facts",
+    "doctrine claims"
+   ],
+   "delivery": "may_change_register"
+  },
+  {
+   "id": "thread-corruption",
+   "name": "Thread invariant swap",
+   "theory_basis": "rigidify (KR-LM) preserved, SI constant replaced: the engine keeps enforcing; what it enforces changes (kappa paid in something other than cucumbers)",
+   "changes": [
+    "one named thread's constant + premise"
+   ],
+   "must_not": [
+    "the rigidify mechanism",
+    "status model"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "lore-injection",
+   "name": "Sourced lore event",
+   "theory_basis": "KR-SI: a canon/lore event (must cite source: canon block, almanac, genome) becomes the premise situation",
+   "changes": [
+    "premise",
+    "thread"
+   ],
+   "must_not": [
+    "doctrine",
+    "unsourced invention — event must exist in a source file"
+   ],
+   "delivery": "preserved"
+  }
+ ],
+ "provenance": {
+  "sources": [
+   "Tao Teh King, Legge 1891 (Gutenberg #216, PD)"
+  ],
+  "rules": [
+   "engine assembles authored strings only",
+   "doctrine from pack"
+  ]
+ }
+}

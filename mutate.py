@@ -104,7 +104,10 @@ def mutate(base_slug: str, violation_id: str, as_slug: str | None = None) -> str
             tone_in = sel.get("tone_in", [])
             topic_in = sel.get("topic_in", [])
             order = sel.get("prefer") if sel.get("prefer") in tone_in else None
-            picked = [e for e in pool if e.get("role") == "buddha"
+            base_role = next((e.get("role") for e in pool if e.get("role")),
+                             None)
+            picked = [e for e in pool
+                      if (base_role is None or e.get("role") == base_role)
                       and (not tone_in or e.get("tone") in tone_in)
                       and (not topic_in
                            or set(e.get("topics", [])) & set(topic_in))]

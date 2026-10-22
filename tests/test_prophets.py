@@ -51,3 +51,21 @@ def test_prophet_mutants():
         assert c["delivery"]["overrides"]["punchline_hold_ms"] == hold
         assert (ROOT / "characters" / slug / "identity.json").is_file()
         assert (ROOT / "theory/profiles" / f"{slug}.json").is_file()
+
+
+def test_laozi_tao_pipeline():
+    d = ROOT / "characters/laozi"
+    sayings = [json.loads(l) for l in (d / "sayings.jsonl").read_text().splitlines()]
+    assert len(sayings) > 150 and all(s["origin"] == "tao-legge" for s in sayings)
+    passages = [json.loads(l) for l in (d / "passages.jsonl").read_text().splitlines()]
+    assert len(passages) >= 30 and min(p["words"] for p in passages) >= 60
+    # the severe mutant: doctrine intact + ONLY his meanest aphorisms
+    c = json.loads((ROOT / "characters/laozi-severe/character.json").read_text())
+    base = json.loads((ROOT / "characters/laozi/character.json").read_text())
+    assert c["philosophy"] == base["philosophy"]
+    assert c["vibe"] == "wrathful" and c["delivery"]["overrides"]["punchline_hold_ms"] == 900
+    view = [json.loads(l) for l in
+            (ROOT / "characters/laozi-severe/sayings.jsonl").read_text().splitlines()]
+    assert view and all(v["tone"] in ("harsh", "stern") for v in view)
+    base_texts = {s["text"] for s in sayings}
+    assert all(v["text"] in base_texts for v in view)

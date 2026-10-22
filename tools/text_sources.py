@@ -163,13 +163,106 @@ def extract(bible: dict, ranges: list, role: str, tag: str):
     return sayings, passages
 
 
+
+
+TAO_URL = "https://www.gutenberg.org/cache/epub/216/pg216.txt"
+
+
+def fetch_tao() -> Path:
+    CACHE.mkdir(parents=True, exist_ok=True)
+    p = CACHE / "tao-legge.txt"
+    if p.is_file() and p.stat().st_size > 50_000:
+        return p
+    urllib.request.urlretrieve(TAO_URL, p)
+    return p
+
+
+def extract_tao() -> tuple[list, list]:
+    """Legge 1891 (PD). Chapter markers: 'Ch. 1. 1.' for ch1, then lines
+    starting 'N. 1. ' (chapter N, section 1). Sections inside -> aphorism
+    sayings; contiguous chapter runs -> passages (~170w, floor 60)."""
+    p = CACHE / "tao-legge.txt"
+    if not p.is_file():
+        raise SystemExit("tao cache missing — run --character laozi (auto-fetch)")
+    raw = p.read_text(encoding="utf-8", errors="replace")
+    i = raw.find("Ch. 1. 1.")
+    if i < 0:
+        raise ValueError("chapter markers not found")
+    body = raw[i:].replace("Ch. 1. 1.", "1. 1.", 1)
+    ch_pat = re.compile(r"(?m)^\s*\d{1,2}\.\s+1\.\s+")
+    marks = [m.start() for m in ch_pat.finditer(body)]
+    if len(marks) < 70:
+        raise ValueError(f"only {len(marks)} chapters found (expected ~81)")
+    src_plain = re.sub(r"\s+", " ", body)
+    sayings, passages = [], []
+    run, run_words, run_from = [], 0, 1
+    for ci, mstart in enumerate(marks):
+        mend = marks[ci + 1] if ci + 1 < len(marks) else len(body)
+        ch = body[mstart:mend]
+        ch_no = int(re.match(r"\s*(\d{1,2})\.", ch).group(1))
+        secs = re.split(r"(?m)^\s*\d{1,2}\.\s+", ch)
+        chap_sayings = []
+        for j, sec in enumerate(secs, start=1):
+            t = re.sub(r"\s+", " ", sec).strip()
+            if len(t.split()) < 6:
+                continue
+            if t not in src_plain:
+                raise ValueError(f"NOT VERBATIM tao ch{ch_no}s{j}: {t[:50]}")
+            ref = f"Tao {ch_no}:{j}"
+            sayings.append({
+                "schema": "freaktown.saying.v1",
+                "id": f"tao-{hashlib.sha256(ref.encode()).hexdigest()[:8]}",
+                "text": t, "role": "laozi", "origin": "tao-legge",
+                "book": "Tao Te Ching", "ref": ref,
+                "tone": tone(t), "topics": topics(t),
+                "label_source": "lexicon-v1",
+                "license": "Tao Teh King, James Legge (1891) — public domain",
+                "words": len(t.split())})
+            chap_sayings.append(t)
+        run.extend(chap_sayings)
+        run_words += sum(len(x.split()) for x in chap_sayings)
+        if run_words >= 170:
+            passages.append(_tao_passage(run, run_from, ch_no))
+            run, run_words, run_from = [], 0, ch_no + 1
+    if run and run_words >= 60:
+        passages.append(_tao_passage(run, run_from, marks and
+                      int(re.match(r"\s*(\d{1,2})", body[marks[-1]:]).group(1))))
+    return sayings, passages
+
+
+def _tao_passage(chunks: list, ch_from: int, ch_to: int) -> dict:
+    words = sum(len(x.split()) for x in chunks)
+    return {"schema": "freaktown.passage.v1",
+            "id": f"pass-tao-{ch_from}-{ch_to}", "kind": "text-range",
+            "book": "Tao Te Ching", "range": f"ch{ch_from}-{ch_to}",
+            "text": " ".join(chunks), "words": words,
+            "est_seconds": round(words / 200 * 60 + 1.25, 1),
+            "license": "Legge (1891) — public domain"}
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", action="store_true")
     ap.add_argument("--character", default=None,
-                    choices=[None, *sorted(CHARACTER_RANGES)],
+                    choices=[None, "laozi", *sorted(CHARACTER_RANGES)],
                     help="target character")
     a = ap.parse_args(argv)
+    if a.character == "laozi":
+        fetch_tao()
+        sayings, passages = extract_tao()
+        dest = HERE / "characters" / "laozi"
+        dest.mkdir(parents=True, exist_ok=True)
+        for name, rows in (("sayings.jsonl", sayings),
+                           ("passages.jsonl", passages)):
+            with open(dest / name, "w") as f:
+                for r in rows:
+                    f.write(json.dumps(r, ensure_ascii=False) + "\n")
+        from collections import Counter
+        print(f"laozi: {len(sayings)} sayings "
+              f"(tones {dict(Counter(s['tone'] for s in sayings))}), "
+              f"{len(passages)} passages, "
+              f"{sum(x['words'] for x in passages)} passage words")
+        return 0
     if a.fetch:
         print("cached:", fetch())
         if not a.character:
