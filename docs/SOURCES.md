@@ -14,4 +14,8 @@ before status = verified. (Jataka/KJV/Legge = the queue agreed 2026-10-21.)
 | Desert Fathers (Palladius/Budge 1907) | monk pack, jesus-adjacent | pre-1923 | pending — **avoid Ward 1975 (c)** |
 | Pirkei Avot (Danby 1919) | rabbi pack | pre-1929 | pending |
 | Zen (see ZEN-SOURCE-TRIAGE.md) | zen character | mixed | triage written |
+| Lear Nonsense Books (Gutenberg #13648) | lear character | pre-1923 | **DONE** (99 limericks) |
+| Shakespeare fools (any PD ed.) | falstaff/dogberry + iambic-break technique | PD by 400y | queued — selection pass |
+| W.S. Gilbert (PD d1911) | patter-speed technique | PD | queued |
+| Chaucer comic tales (PD) | medieval-standup lane | PD | queued |
 | Marcus/Epictetus/Seneca (Long/Carter/Gummere) | stoic packs | all pre-1930 | pending |

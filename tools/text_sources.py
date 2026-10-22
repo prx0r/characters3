@@ -290,13 +290,87 @@ def extract_jataka() -> list:
 
 
 
+
+
+def extract_lear() -> tuple[list, list]:
+    """Nonsense Books (Gutenberg #13648, PD): limerick = natural bit
+    (setup lines + line-4 punch + twist close). Blocks of 4-6 full lines."""
+    p = CACHE / "lear-nonsense.txt"
+    if not p.is_file():
+        raise SystemExit("lear cache missing (auto-fetch with --character lear)")
+    raw = p.read_text(encoding="utf-8", errors="replace")
+    src_plain = re.sub(r"\s+", " ", raw)
+    sayings = []
+    for block in re.split(r"\n\s*\n", raw):
+        lines = [l.strip() for l in block.splitlines() if l.strip()
+                 and not l.startswith("[")]
+        if not (4 <= len(lines) <= 6):
+            continue
+        if any(len(l.split()) < 3 for l in lines):
+            continue
+        t = re.sub(r"\s+", " ", " ".join(lines))
+        if not re.match(r"^(There (was|lived)|I (heard|saw|knew)|An? "
+                        r"[A-Z][a-z]+ (of|with|who))", t):
+            continue
+        if t not in src_plain:
+            raise ValueError(f"NOT VERBATIM lear: {t[:50]}")
+        sayings.append({
+            "schema": "freaktown.saying.v1",
+            "id": f"lear-{hashlib.sha256(t.encode()).hexdigest()[:8]}",
+            "text": t, "role": "lear", "origin": "lear-nonsense",
+            "book": "Nonsense Books", "ref": t.split(",")[0][:40],
+            "tone": tone(t), "topics": topics(t),
+            "label_source": "lexicon-v1",
+            "license": "Gutenberg #13648 (Lear, pre-1923) — public domain",
+            "words": len(t.split())})
+    # passages: contiguous runs of ~5 limericks (~5 bits a set)
+    passages = []
+    run, run_w, n = [], 0, 0
+    for s2 in sayings:
+        run.append(s2); run_w += s2["words"]; n += 1
+        if run_w >= 150 or n >= 5:
+            words = sum(x["words"] for x in run)
+            passages.append({
+                "schema": "freaktown.passage.v1",
+                "id": f"pass-lear-{run[0]['id'][5:]}",
+                "kind": "limerick-run", "book": "Nonsense Books",
+                "n_limericks": n, "text": " \u2026 ".join(x["text"] for x in run),
+                "words": words,
+                "est_seconds": round(words / 200 * 60 + 1.25, 1),
+                "license": "Gutenberg #13648 — public domain",
+                "note": "contiguous limericks (\u2026 between = form boundary)"})
+            run, run_w, n = [], 0, 0
+    return sayings, passages
+
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", action="store_true")
     ap.add_argument("--character", default=None,
-                    choices=[None, "laozi", "jataka", *sorted(CHARACTER_RANGES)],
+                    choices=[None, "laozi", "jataka", "lear",
+                            *sorted(CHARACTER_RANGES)],
                     help="target character")
     a = ap.parse_args(argv)
+    if a.character == "lear":
+        from urllib.request import urlretrieve
+        CACHE.mkdir(parents=True, exist_ok=True)
+        lp = CACHE / "lear-nonsense.txt"
+        if not lp.is_file():
+            urlretrieve("https://www.gutenberg.org/cache/epub/13648/pg13648.txt", lp)
+        sayings, passages = extract_lear()
+        dest = HERE / "characters" / "lear"
+        dest.mkdir(parents=True, exist_ok=True)
+        for name, rows in (("sayings.jsonl", sayings),
+                           ("passages.jsonl", passages)):
+            with open(dest / name, "w") as f:
+                for r in rows:
+                    f.write(json.dumps(r, ensure_ascii=False) + "\n")
+        from collections import Counter
+        print(f"lear: {len(sayings)} limericks "
+              f"(tones {dict(Counter(x['tone'] for x in sayings))}), "
+              f"{len(passages)} passages")
+        return 0
     if a.character == "jataka":
         fetch_jataka()
         tales = extract_jataka()

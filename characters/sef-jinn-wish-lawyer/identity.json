@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "sef-jinn-wish-lawyer",
  "name": "Sef Jinn, Wish-Lawyer",
- "built_at": "2026-10-22T02:37:47Z",
+ "built_at": "2026-10-22T04:17:34Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",

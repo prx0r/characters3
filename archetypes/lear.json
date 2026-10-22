@@ -1,0 +1,126 @@
+{
+ "schema": "freaktown.archetype.v1",
+ "id": "arch:lear",
+ "name": "The Nonsenseman",
+ "created": "2026-10-22",
+ "members": [
+  "lear",
+  "lear-urgent"
+ ],
+ "core_theory": {
+  "funny_because": "Deadpan documentary delivery of structural nonsense: the form (limerick) supplies the punch position and the twist, while the performer supplies only total sincerity about total triviality. The comedy is the register mismatch — administrative grief over persons of Minety — and never a wink. Adjacent limericks contradict by pure accumulation (rule of four, five, six): the catalog itself becomes the act. (Historically recursive: Stewart Lee's Pea Green Boat 2001 deconstructed Lear's Owl and the Pussycat — anti-comedy feeding on nonsense.)",
+  "doctrine_source": "character.json.philosophy (authored)",
+  "doctrine": {
+   "ontology": "Sense is a rumor; the nonsense is documented.",
+   "epistemology": "Measure everything (especially the unmeasurable).",
+   "axiology": "Precise grief over trivial things is the highest courtesy."
+  },
+  "status_model": "self-serious chronicler; status from precision, never from wit",
+  "register": "shipping-clerk formal over doggerel",
+  "delivery_default": {
+   "vibe": "serene",
+   "style": "louis",
+   "punchline_hold_ms": 2000,
+   "energy": 0.4
+  }
+ },
+ "violations_that_work": [
+  {
+   "id": "urgent",
+   "label": "Lear (Urgent)",
+   "contradicts": "axiology: precise grief is courtesy (the nonsense delivered as breaking news)",
+   "why_funny": "Same PD limericks, delivery mutated to wire-speed (400ms holds): the nonsenseman now reads the Minety apple crisis like a war correspondent. Register collision inverted — where serene delivery made trivial things mournful, urgent delivery makes nonsense sound like prophecy. Selection unchanged: his words only.",
+   "mutant_premise": "The nonsenseman reading the manifests as if the ship is going down right now.",
+   "mutant_thread": "breaking news from the land of the Tumtum tree",
+   "delivery": "mutate",
+   "delivery_mutate": {
+    "vibe": "wired",
+    "overrides": {
+     "punchline_hold_ms": 400,
+     "post_punch_ms": 400,
+     "temperature": 0.85
+    },
+    "note": "war-correspondent pacing on doggerel — engine carrier stays louis"
+   },
+   "saying_selector": {
+    "tone_in": [
+     "stern",
+     "harsh",
+     "neutral"
+    ],
+    "prefer": "stern",
+    "max": 14,
+    "note": "the sternest nonsense (compunction/fear/lament lines lead)"
+   },
+   "mutation": "doctrine-inversion"
+  }
+ ],
+ "mutation_operators": [
+  {
+   "id": "doctrine-inversion",
+   "name": "Doctrinal self-contradiction",
+   "theory_basis": "GTVH SO: the mutant's own script refutes their established script in real time (teacher caught in their own lesson); comedy = self-contradiction, not mockery",
+   "changes": [
+    "premise (authored mutant_premise)",
+    "thread (authored mutant_thread)",
+    "vibe/label"
+   ],
+   "must_not": [
+    "philosophy/doctrine — the base claims STAY so the contradiction is real",
+    "delivery.style, timing overrides — NS preserved: the angry Buddha stays slow"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "status-flip",
+   "name": "Status inversion",
+   "theory_basis": "Attardo KR-TA status_invert: desired vs felt status swap; register and modulators move, the world doesn't",
+   "changes": [
+    "vibe",
+    "modulator_range",
+    "expression/voice tags register"
+   ],
+   "must_not": [
+    "lore facts",
+    "doctrine claims"
+   ],
+   "delivery": "may_change_register"
+  },
+  {
+   "id": "thread-corruption",
+   "name": "Thread invariant swap",
+   "theory_basis": "rigidify (KR-LM) preserved, SI constant replaced: the engine keeps enforcing; what it enforces changes (kappa paid in something other than cucumbers)",
+   "changes": [
+    "one named thread's constant + premise"
+   ],
+   "must_not": [
+    "the rigidify mechanism",
+    "status model"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "lore-injection",
+   "name": "Sourced lore event",
+   "theory_basis": "KR-SI: a canon/lore event (must cite source: canon block, almanac, genome) becomes the premise situation",
+   "changes": [
+    "premise",
+    "thread"
+   ],
+   "must_not": [
+    "doctrine",
+    "unsourced invention — event must exist in a source file"
+   ],
+   "delivery": "preserved"
+  }
+ ],
+ "provenance": {
+  "sources": [
+   "Gutenberg #13648 Nonsense Books (PD)",
+   "techniques/pull-back-and-reveal.md (Lee-Lear lineage note)"
+  ],
+  "rules": [
+   "engine assembles; Lear words never generated"
+  ]
+ }
+}

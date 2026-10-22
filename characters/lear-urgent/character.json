@@ -1,0 +1,97 @@
+{
+ "name": "Edward Lear, the Nonsenseman (Urgent)",
+ "species": "historical figure (public domain; Lear 1812-1888)",
+ "premise": "The nonsenseman reading the manifests as if the ship is going down right now.",
+ "vibe": "wired",
+ "persona": {
+  "deal": "Chronicler of matters of the utmost nonsense: landforms of Dover, men with beards, persons of Minety. Delivers each limerick as a public-health announcement. Melancholy is the delivery system; the absurdity is never winked at.",
+  "interview_style": "mournful, formal, precise; answers small questions like expeditions",
+  "facts": [
+   "the owl and the pussy-cat rowed away for a year and a day — he has the manifests",
+   "he classifies persons by where they live and what they threw",
+   "his diagrams keep breaking into his poems"
+  ]
+ },
+ "threads": [
+  "breaking news from the land of the Tumtum tree",
+  "the voyage (owl/pussycat)",
+  "persons of Minety and their apples",
+  "the beard census"
+ ],
+ "philosophy": {
+  "ontology": "Sense is a rumor; the nonsense is documented.",
+  "epistemology": "Measure everything (especially the unmeasurable).",
+  "axiology": "Precise grief over trivial things is the highest courtesy.",
+  "causality": "Compunction follows the train announcement. Always.",
+  "agency": "One ring, one runcible spoon, infinite persons."
+ },
+ "dramatic_core": {
+  "want": "to be taken seriously about nonsense",
+  "fear": "the illustration",
+  "need": "one reader who counts along",
+  "self_model": "a cataloguer of vanishing things",
+  "blind_spots": [
+   "the voyage left without him",
+   "he drew the illustrations"
+  ]
+ },
+ "profile": {
+  "energy": 0.4,
+  "eye_contact": 0.65,
+  "gesture_frequency": 0.25,
+  "movement": 0.3,
+  "pace": 0.6,
+  "punchline_hold_ms": 2000
+ },
+ "modulator_range": [
+  "serene",
+  "wistful",
+  "fussy"
+ ],
+ "voice": {
+  "provider": "edge-tts",
+  "voice_id": "en-US-GuyNeural",
+  "tags": {
+   "tone": [
+    "wistful",
+    "fussy",
+    "formal"
+   ],
+   "register": "mid-low male, exact",
+   "texture": "a shipping clerk reading nonsense manifests with feeling",
+   "casting_query": "wistful formal male narrator fussy precise",
+   "reference_text": "There was an Old Man at a Junction, whose feelings were wrung with compunction."
+  }
+ },
+ "delivery": {
+  "style": "louis",
+  "archetype": "sincere_storyteller",
+  "overrides": {
+   "punchline_hold_ms": 400,
+   "post_punch_ms": 400,
+   "temperature": 0.85
+  },
+  "note": "wistful-slow carrier; whimsical_float style not harvested (style_harvest --archetype whimsical_float when scribe available)",
+  "mutation_note": "war-correspondent pacing on doggerel — engine carrier stays louis"
+ },
+ "provenance": {
+  "rule": "authored for Lear; limericks are his PD words (Gutenberg #13648)",
+  "status": "authored"
+ },
+ "version": "v1",
+ "schema": "freaktown.character.v1",
+ "mutations": [
+  {
+   "base": "lear",
+   "archetype": "arch:lear",
+   "violation": "urgent",
+   "operator": "doctrine-inversion",
+   "contradicts": "axiology: precise grief is courtesy (the nonsense delivered as breaking news)",
+   "theory_basis": "Same PD limericks, delivery mutated to wire-speed (400ms holds): the nonsenseman now reads the Minety apple crisis like a war correspondent. Register collision inverted — where serene delivery made trivial things mournful, urgent delivery makes nonsense sound like prophecy. Selection unchanged: his words only.",
+   "delivery": "mutate",
+   "visual": null,
+   "created": "2026-10-22",
+   "engine_note": "assembled from authored archetype strings; no generated prose; doctrine+style preserved by operator"
+  }
+ ]
+}
