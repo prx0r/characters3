@@ -1,25 +1,50 @@
 {
- "schema": "pogtown.mesh.v1",
- "slug": "buddha-ultimate-deadpan",
- "mesh": "buddha.glb",
- "status": "confident",
- "why": "Meshy text-to-3d (smart-topology, a-pose, 12k) + refine + rigging, then PR#10 face:rig baked 8 shapes (jawOpen, eyeBlink L/R, browInnerUp, browDown L/R, mouthSmile L/R). face:check verdict OK: mouth=morph, blink, expressions happy/angry/sad/surprised, head bone. Stage smoke: mouth 0.88 peak, blinks increment.",
- "provenance": {
-  "provider": "meshy",
-  "preview_task": "01a16115-5c31-7186-b757-d9648098d4be",
-  "refine_task": "01a16116-71f6-70bb-90f7-25f897375792",
-  "rig_task": "01a16117-8571-72f9-85e4-9f557902a3a5",
-  "credits": 20,
-  "generated_at": "2026-10-22T00:55:00Z",
-  "served_at": "static/avatars/buddha.glb -> dist/avatars/buddha.glb (stage)",
-  "rig_script": "freaktown packages/stage-runtime/cli/face-rig.ts (PR #10)"
- },
- "face": {
-  "mouth": "morph (jawOpen)",
-  "blink": true,
-  "eyebrows": true,
-  "smile": true,
-  "rigged_by": "freaktown face:rig (proceduralRig, PR #10)",
-  "verified_by": "npm run face:check -- buddha.glb -> verdict OK"
- }
+  "schema": "pogtown.mesh.v1",
+  "slug": "buddha-ultimate-deadpan",
+  "mesh": "buddha.glb",
+  "status": "confident",
+  "why": "Meshy text-to-3d (smart-topology, a-pose, 12k) + refine + rigging, then PR#10 face:rig baked 8 shapes (jawOpen, eyeBlink L/R, browInnerUp, browDown L/R, mouthSmile L/R). face:check verdict OK: mouth=morph, blink, expressions happy/angry/sad/surprised, head bone. Stage smoke: mouth 0.88 peak, blinks increment.",
+  "provenance": {
+    "provider": "meshy",
+    "preview_task": "01a16115-5c31-7186-b757-d9648098d4be",
+    "refine_task": "01a16116-71f6-70bb-90f7-25f897375792",
+    "rig_task": "01a16117-8571-72f9-85e4-9f557902a3a5",
+    "credits": 20,
+    "generated_at": "2026-10-22T00:55:00Z",
+    "served_at": "static/avatars/buddha.glb -> dist/avatars/buddha.glb (stage)",
+    "rig_script": "freaktown packages/stage-runtime/cli/face-rig.ts (PR #10)"
+  },
+  "face": {
+    "mouth": "morph (jawOpen)",
+    "blink": true,
+    "eyebrows": true,
+    "smile": true,
+    "rigged_by": "freaktown face:rig (proceduralRig, PR #10)",
+    "verified_by": "npm run face:check -- buddha.glb -> verdict OK"
+  },
+  "face_rig_shapes": [
+    "jawOpen",
+    "eyeBlinkLeft",
+    "eyeBlinkRight",
+    "browInnerUp",
+    "browDownLeft",
+    "browDownRight",
+    "mouthSmileLeft",
+    "mouthSmileRight",
+    "mouthFrownLeft",
+    "mouthFrownRight",
+    "cheekSquintLeft",
+    "cheekSquintRight",
+    "eyeSquintLeft",
+    "eyeSquintRight",
+    "eyeWideLeft",
+    "eyeWideRight",
+    "noseSneerLeft",
+    "noseSneerRight",
+    "mouthPressLeft",
+    "mouthPressRight",
+    "browOuterUpLeft",
+    "browOuterUpRight"
+  ],
+  "arkit_coverage": "22/52 via extended proceduralRig (expression set complete for FaceChannel Emotions)"
 }
