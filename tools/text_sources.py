@@ -240,13 +240,77 @@ def _tao_passage(chunks: list, ch_from: int, ch_to: int) -> dict:
             "license": "Legge (1891) — public domain"}
 
 
+
+
+SKIP_TALE = {"FOREWORD", "CONTENTS", "PUBLISHER'S NOTE", "PART II", "PART I"}
+
+
+def fetch_jataka() -> Path:
+    CACHE.mkdir(parents=True, exist_ok=True)
+    p = CACHE / "jataka-babbitt.txt"
+    if p.is_file() and p.stat().st_size > 50_000:
+        return p
+    urllib.request.urlretrieve(
+        "https://www.gutenberg.org/cache/epub/62514/pg62514.txt", p)
+    return p
+
+
+def extract_jataka() -> list:
+    """Babbitt 1912 (PD, pre-1923) retellings -> buddha tale PASSAGES
+    (tales are narrative — no single-saying split; retelling labeled)."""
+    p = CACHE / "jataka-babbitt.txt"
+    if not p.is_file():
+        raise SystemExit("jataka cache missing (auto-fetch with --jataka)")
+    raw = p.read_text(encoding="utf-8", errors="replace")
+    lines = raw.splitlines()
+    heads = [(i, l.strip()) for i, l in enumerate(lines)
+             if re.fullmatch(r"[A-Z][A-Z \-'’,.]{6,60}", l or "") ]
+    heads = [(i, h) for i, h in heads if h not in SKIP_TALE
+             and not h.startswith("PART")]
+    src_plain = re.sub(r"\s+", " ", raw)
+    out = []
+    for n, (i, h) in enumerate(heads):
+        j = heads[n + 1][0] if n + 1 < len(heads) else len(lines)
+        tale = re.sub(r"\s+", " ", " ".join(lines[i + 1:j])).strip()
+        if len(tale.split()) < 60:
+            continue
+        if tale[:80] not in src_plain:
+            raise ValueError(f"NOT VERBATIM jataka: {h}")
+        out.append({
+            "schema": "freaktown.passage.v1",
+            "id": f"pass-jataka-{hashlib.sha256(h.encode()).hexdigest()[:8]}",
+            "kind": "jataka-tale", "book": "Jataka Tales (Babbitt 1912)",
+            "title": h.title(), "text": tale,
+            "words": len(tale.split()),
+            "est_seconds": round(len(tale.split()) / 200 * 60 + 1.25, 1),
+            "license": "Babbitt, Jataka Tales (1912) — PD US (pre-1923); "
+                       "RETOLD collection (not Cowell verbatim)",
+            "note": "past-life teaching tale — buddha storytelling lane"})
+    return out
+
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", action="store_true")
     ap.add_argument("--character", default=None,
-                    choices=[None, "laozi", *sorted(CHARACTER_RANGES)],
+                    choices=[None, "laozi", "jataka", *sorted(CHARACTER_RANGES)],
                     help="target character")
     a = ap.parse_args(argv)
+    if a.character == "jataka":
+        fetch_jataka()
+        tales = extract_jataka()
+        dest = HERE / "characters" / "buddha-ultimate-deadpan"
+        existing = [json.loads(l) for l in
+                    (dest / "passages.jsonl").read_text().splitlines()]
+        have = {x["id"] for x in existing}
+        added = [t for t in tales if t["id"] not in have]
+        with open(dest / "passages.jsonl", "a") as f:
+            for t in added:
+                f.write(json.dumps(t, ensure_ascii=False) + "\n")
+        print(f"jataka: {len(tales)} tales, {len(added)} added to buddha "
+              f"(total passages now {len(existing) + len(added)})")
+        return 0
     if a.character == "laozi":
         fetch_tao()
         sayings, passages = extract_tao()

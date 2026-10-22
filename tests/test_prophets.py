@@ -69,3 +69,15 @@ def test_laozi_tao_pipeline():
     assert view and all(v["tone"] in ("harsh", "stern") for v in view)
     base_texts = {s["text"] for s in sayings}
     assert all(v["text"] in base_texts for v in view)
+
+
+def test_jataka_tales_in_buddha():
+    p = [json.loads(l) for l in
+         (ROOT / "characters/buddha-ultimate-deadpan/passages.jsonl")
+         .read_text().splitlines()]
+    tales = [x for x in p if x["kind"] == "jataka-tale"]
+    assert len(tales) >= 15, len(tales)
+    assert min(t["words"] for t in tales) >= 60
+    assert any("Crocodile" in t["title"] for t in tales)
+    assert all("Babbitt" in t["license"] for t in tales)   # honest retelling label
+    assert all(t["note"].startswith("past-life") for t in tales)
