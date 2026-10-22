@@ -1,7 +1,7 @@
 # AGENTS.md — characters3
 
 **This repo is the finalized roster.** Read README.md first (topology +
-layout). Research never happens here — if you're experimenting, you're in
+layout), then **HANDOVER.md** (session state, commands, open queue). Research never happens here — if you're experimenting, you're in
 the wrong repo (characters2). Here you graduate, sync, or maintain.
 
 ## Binding rules
