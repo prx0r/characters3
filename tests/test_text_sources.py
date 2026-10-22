@@ -16,11 +16,11 @@ import text_sources as T
 def _bible():
     return {"matthew": {"name": "Matthew", "chapters": [
         ["v1:1", "v1:2", "v1:3"],
-        ["b5-1 mount", "b5-2 blessed", "b5-3 lilies"]}]}}
+        ["b5-1 mount", "b5-2 blessed", "b5-3 lilies"]]}}
 
 
 def test_range_extraction_is_verbatim():
-    sayings, passages = T.extract(_bible(), [("Matthew", 2, 1, 2, 3)],
+    sayings, passages = T.extract(_bible(), [("Matthew", 1, 1, 1, 3)],
                                   "jesus", "kjv")
     assert [s["text"] for s in sayings] == ["v1:1", "v1:2", "v1:3"]
     assert passages[0]["text"] == "v1:1 v1:2 v1:3"
