@@ -1,14 +1,15 @@
 {
- "episodes": 274,
+ "episodes": 343,
  "lineages": {
   "Therapeutic": 58,
-  "Buddhist": 6,
-  "Realist": 54,
+  "Buddhist": 74,
+  "Realist": 55,
   "Gurdjieffian": 56,
   "Advaita": 40,
   "Socratic": 60
  },
- "user_lines": 763,
- "source": "prx0r/geometricengine (gh name: hxrmxs-uno-engine), uno.txt",
+ "user_lines": 914,
+ "source": "prx0r/geometricengine \u2014 finale.txt (superset; contains all274 of uno.txt +69 new: sutta-adapted + classical episodes)",
+ "notes": "Buddhist74 (asitis_* sutta dialogues incl an3.65 kalama overlap with our sutta mine); classical users: gorgias, diogenesVI (matches diogenes-tub-cynic pack)",
  "imported": "2026-10-21"
 }

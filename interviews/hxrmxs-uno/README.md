@@ -8,9 +8,11 @@ Same owner; no repo license file. Raw source-of-truth kept verbatim
 
 ## What it is
 
-- **274 therapy/pedagogy episodes** across6 lineages:
-  Socratic 60, Therapeutic 58, Gurdjieffian 56, Realist 54, Advaita 40,
-  Buddhist 6
+- **343 therapy/pedagogy episodes** across6 lineages:
+  Socratic 60, Therapeutic 58, Gurdjieffian 56, Buddhist **74**, Realist 55,
+  Advaita 40 — the Buddhist block is sutta-adapted (asitis_*: AN3.65 kalama
+  overlaps our sutta mine; AN4.111 horse-trainer) and the shelf includes
+  classical interlocutors (Gorgias, Diogenes — matches diogenes-tub-cynic)
 - **763 real human lines** (user role): disclosures, pushback, doubt,
   stage directions (`[Fidgets.]`, `[Laughs.]`) — actual interlocutor speech
 - Assistant turns are HXRMXS pedagogy blocks: `lineage/phase/function_id/
