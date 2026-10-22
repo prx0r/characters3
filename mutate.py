@@ -89,6 +89,7 @@ def mutate(base_slug: str, violation_id: str, as_slug: str | None = None) -> str
         "contradicts": v.get("contradicts"),
         "theory_basis": v.get("why_funny", "")[:400],
         "delivery": v.get("delivery", "preserved"),
+        "visual": v.get("visual"),
         "created": time.strftime("%Y-%m-%d"),
         "engine_note": "assembled from authored archetype strings; no "
                        "generated prose; doctrine+style preserved by operator",

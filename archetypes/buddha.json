@@ -58,6 +58,12 @@
     "prefer": "harsh",
     "max": 14,
     "note": "meanest VERBATIM lines only — never writes new words; base keeps neutral/gentle (444-saying canon: harsh64/stern53)"
+   },
+   "visual": {
+    "face": "annoyed",
+    "body": "small gesture",
+    "trigger": "after_punchline",
+    "note": "fist-shake beat — hand-authored inside closed vocab"
    }
   },
   {
@@ -104,7 +110,13 @@
     "max": 14,
     "note": "imperatives read as impatience when holds die"
    },
-   "mutation": "doctrine-inversion"
+   "mutation": "doctrine-inversion",
+   "visual": {
+    "face": "surprised",
+    "body": "look left",
+    "trigger": "after_setup",
+    "note": "reactive flick — can't sit still"
+   }
   },
   {
    "id": "boastful",
@@ -186,7 +198,13 @@
     "max": 14,
     "note": "same harsh pool as wrathful, opposite delivery"
    },
-   "mutation": "doctrine-inversion"
+   "mutation": "doctrine-inversion",
+   "visual": {
+    "face": "neutral",
+    "body": "hold still",
+    "trigger": "after_punchline",
+    "note": "calmest possible body over harshest words — the clash is visual"
+   }
   }
  ],
  "mutation_operators": [

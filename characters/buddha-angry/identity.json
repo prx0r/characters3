@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "buddha-angry",
  "name": "Buddha, the Ultimate Deadpan (Angry)",
- "built_at": "2026-10-22T01:08:17Z",
+ "built_at": "2026-10-22T01:28:55Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",
@@ -91,7 +91,19 @@
    }
   ],
   "violations": [],
-  "mesh": {}
+  "mesh": {},
+  "default_face": "annoyed",
+  "mutant_visual": {
+   "face": "annoyed",
+   "body": "small gesture",
+   "trigger": "after_punchline",
+   "note": "fist-shake beat — hand-authored inside closed vocab",
+   "declared_by": "wrath",
+   "contract": "must stay inside FACE|BODY|TRIGGERS sets"
+  },
+  "face_vocab_extension_wanted": [
+   "wrathful"
+  ]
  },
  "delivery": {
   "style": "norm_macdonald",

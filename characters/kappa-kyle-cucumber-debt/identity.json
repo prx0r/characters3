@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "kappa-kyle-cucumber-debt",
  "name": "Kappa Kyle, the Cucumber-Debt Collector",
- "built_at": "2026-10-22T01:08:17Z",
+ "built_at": "2026-10-22T01:28:55Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",
@@ -95,7 +95,10 @@
    "mesh": "nyilonelycompany-nature-51.glb",
    "status": "plausible",
    "why": "kappa water imp -> nature family"
-  }
+  },
+  "default_face": "deadpan",
+  "mutant_visual": null,
+  "face_vocab_extension_wanted": []
  },
  "delivery": {
   "style": "norm_macdonald",

@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "buddha-passive",
  "name": "Buddha, the Ultimate Deadpan (Passive-Aggressive)",
- "built_at": "2026-10-22T01:08:17Z",
+ "built_at": "2026-10-22T01:28:55Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",
@@ -91,7 +91,17 @@
    }
   ],
   "violations": [],
-  "mesh": {}
+  "mesh": {},
+  "default_face": "neutral",
+  "mutant_visual": {
+   "face": "neutral",
+   "body": "hold still",
+   "trigger": "after_punchline",
+   "note": "calmest possible body over harshest words — the clash is visual",
+   "declared_by": "passive",
+   "contract": "must stay inside FACE|BODY|TRIGGERS sets"
+  },
+  "face_vocab_extension_wanted": []
  },
  "delivery": {
   "style": "norm_macdonald",

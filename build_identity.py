@@ -33,6 +33,13 @@ from pathlib import Path
 DST = Path(__file__).resolve().parent
 
 FACE = {"neutral", "deadpan", "grin", "annoyed", "confused", "surprised"}
+
+# vibe -> stage default face (EDITOR vocab only — freaktown renders these;
+# no 'angry'/'prophetic' exist: closest faces, extension noted not faked)
+VIBE_FACE = {"deadpan": "deadpan", "neutral": "neutral", "serene": "neutral",
+             "wrathful": "annoyed", "wired": "surprised", "smug": "grin",
+             "prophetic": "surprised", "manic": "grin", "anxious": "confused",
+             "smug_under_stern": "annoyed"}
 FACE_EXPORT = {"deadpan", "smug", "smile", "annoyed", "surprised",
                "frown", "disgusted"}   # delivery exporter may emit these;
                                        # stage maps them onto FACE
@@ -134,6 +141,18 @@ def personality_text(char: dict, gid: dict, slug: str,
     return "\n".join(L).strip() + "\n", src
 
 
+
+
+def ident_declared_visual(char: dict) -> dict | None:
+    """Archetype violation 'visual' block, carried via mutations provenance."""
+    for m in (char.get("mutations") or []):
+        v = (m.get("visual") or {})
+        if v:
+            return {**v, "declared_by": m.get("violation"),
+                    "contract": "must stay inside FACE|BODY|TRIGGERS sets"}
+    return None
+
+
 def build(slug: str, pack_dir: Path, src: Path | None) -> dict:
     char = jload(pack_dir / "character.json") or {}
     mesh = jload(pack_dir / "mesh.json") or {}
@@ -162,6 +181,10 @@ def build(slug: str, pack_dir: Path, src: Path | None) -> dict:
             "violations": violations,
             "mesh": {k: mesh.get(k) for k in ("mesh", "status", "why")
                      if k in mesh},
+            "default_face": VIBE_FACE.get(char.get("vibe", ""), "neutral"),
+            "mutant_visual": (ident_declared_visual(char)),
+            "face_vocab_extension_wanted": sorted(
+                {"wrathful", "prophetic"} & {char.get("vibe", "")}),
         },
         "delivery": ({k: d.get(k) for k in ("style", "archetype",
                                             "overrides", "provisional")

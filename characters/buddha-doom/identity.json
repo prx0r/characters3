@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "buddha-doom",
  "name": "Buddha, the Ultimate Deadpan (Doomsayer)",
- "built_at": "2026-10-22T01:08:17Z",
+ "built_at": "2026-10-22T01:28:55Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",
@@ -91,7 +91,12 @@
    }
   ],
   "violations": [],
-  "mesh": {}
+  "mesh": {},
+  "default_face": "surprised",
+  "mutant_visual": null,
+  "face_vocab_extension_wanted": [
+   "prophetic"
+  ]
  },
  "delivery": {
   "style": "norm_macdonald",

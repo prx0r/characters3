@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "anansi-spider",
  "name": "Anansi, Spider",
- "built_at": "2026-10-22T01:08:17Z",
+ "built_at": "2026-10-22T01:28:55Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",
@@ -87,7 +87,10 @@
    "mesh": "quaternius_cc0-spider-1368.glb",
    "status": "confident",
    "why": "anansi IS a spider"
-  }
+  },
+  "default_face": "neutral",
+  "mutant_visual": null,
+  "face_vocab_extension_wanted": []
  },
  "delivery": {
   "style": null,

@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "buddha-impatient",
  "name": "Buddha, the Ultimate Deadpan (Impatient)",
- "built_at": "2026-10-22T01:08:17Z",
+ "built_at": "2026-10-22T01:28:55Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",
@@ -91,7 +91,17 @@
    }
   ],
   "violations": [],
-  "mesh": {}
+  "mesh": {},
+  "default_face": "surprised",
+  "mutant_visual": {
+   "face": "surprised",
+   "body": "look left",
+   "trigger": "after_setup",
+   "note": "reactive flick — can't sit still",
+   "declared_by": "impatient",
+   "contract": "must stay inside FACE|BODY|TRIGGERS sets"
+  },
+  "face_vocab_extension_wanted": []
  },
  "delivery": {
   "style": "norm_macdonald",

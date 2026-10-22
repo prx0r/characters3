@@ -176,6 +176,12 @@
    "contradicts": "agency/axiology: A sufficiently still teacher + Stillness are good",
    "theory_basis": "His whole timing engine IS the doctrine (holds, stillness, patience) — crush the pauses to 400ms and the enlightenment brand is violated by the delivery alone. Timing-as-joke: the faster he gets, the less awake he sounds, while the words stay canonical.",
    "delivery": "mutate",
+   "visual": {
+    "face": "surprised",
+    "body": "look left",
+    "trigger": "after_setup",
+    "note": "reactive flick — can't sit still"
+   },
    "created": "2026-10-22",
    "engine_note": "assembled from authored archetype strings; no generated prose; doctrine+style preserved by operator"
   }

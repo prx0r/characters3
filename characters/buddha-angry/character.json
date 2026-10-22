@@ -176,6 +176,12 @@
    "contradicts": "axiology: Stillness, punchlines and exact change are good (+ canonical: 'Hatred is never appeased by hatred' — hand_literal set)",
    "theory_basis": "His own axiology refutes him mid-lesson: an angry Buddha is the teacher caught inside his own thesis (SO self-contradiction). The anger must be delivered with the SAME serenity the doctrine demands — the contradiction has nowhere to normalize, so every furious sentence lands as evidence against the doctrine rather than as shouting. The mutant ALSO selects his harshest verbatim sayings (Dhammapada ",
    "delivery": "mutate",
+   "visual": {
+    "face": "annoyed",
+    "body": "small gesture",
+    "trigger": "after_punchline",
+    "note": "fist-shake beat — hand-authored inside closed vocab"
+   },
    "created": "2026-10-22",
    "engine_note": "assembled from authored archetype strings; no generated prose; doctrine+style preserved by operator"
   }
