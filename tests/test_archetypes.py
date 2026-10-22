@@ -41,19 +41,32 @@ def test_archetype_schema_and_doctrine():
 
 
 def test_flagship_buddha_angry_contract():
-    """The user's canonical example: angry Buddha keeps doctrine + slowness."""
+    """Angry Buddha: doctrine intact, WRATHFUL delivery, meanest VERBATIM only."""
     base = json.loads((ROOT / "characters/buddha-ultimate-deadpan"
                        / "character.json").read_text())
     ang = json.loads((ROOT / "characters/buddha-angry/character.json").read_text())
     assert ang["philosophy"] == base["philosophy"], "doctrine must survive"
-    assert (ang.get("delivery") or {}).get("style") == \
-           (base.get("delivery") or {}).get("style"), "NS must survive"
-    assert ang["vibe"] == base["vibe"]
+    # delivery mutation (owner spec): wrathful, tighter holds, hotter temp,
+    # but the harvested style stays the carrier
+    assert ang["vibe"] == "wrathful"
+    assert ang["delivery"]["overrides"]["punchline_hold_ms"] == 900
+    assert ang["delivery"]["overrides"]["temperature"] == 0.75
+    assert ang["delivery"]["style"] == base["delivery"]["style"]
     assert ang["premise"] != base["premise"]
     m = ang["mutations"][0]
-    assert m["operator"] == "doctrine-inversion" and m["delivery"] == "preserved"
+    assert m["operator"] == "doctrine-inversion" and m["delivery"] == "mutate"
     assert m["archetype"] == "arch:buddha" and "axiology" in m["contradicts"]
     assert "(Angry)" in ang["name"]
+    # curated sayings view: EXTRACT-NEVER-WRITE — every text exists in base
+    view = [json.loads(l) for l in
+            (ROOT / "characters/buddha-angry/sayings.jsonl").read_text().splitlines()]
+    base_texts = {json.loads(l)["text"] for l in
+                  (ROOT / "characters/buddha-ultimate-deadpan/sayings.jsonl")
+                  .read_text().splitlines()}
+    assert view and all(e["text"] in base_texts for e in view), \
+        "mutant sayings must be base subsets"
+    assert all(e["tone"] in ("harsh", "stern") for e in view)
+    assert len(view) <= 14
 
 
 def test_mutate_on_fixture(tmp_path, monkeypatch):

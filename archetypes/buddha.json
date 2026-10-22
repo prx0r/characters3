@@ -31,11 +31,29 @@
    "id": "wrath",
    "label": "Buddha (Angry)",
    "contradicts": "axiology: Stillness, punchlines and exact change are good (+ canonical: 'Hatred is never appeased by hatred' — hand_literal set)",
-   "why_funny": "His own axiology refutes him mid-lesson: an angry Buddha is the teacher caught inside his own thesis (SO self-contradiction). The anger must be delivered with the SAME serenity the doctrine demands — the contradiction has nowhere to normalize, so every furious sentence lands as evidence against the doctrine rather than as shouting.",
+   "why_funny": "His own axiology refutes him mid-lesson: an angry Buddha is the teacher caught inside his own thesis (SO self-contradiction). The anger must be delivered with the SAME serenity the doctrine demands — the contradiction has nowhere to normalize, so every furious sentence lands as evidence against the doctrine rather than as shouting. The mutant ALSO selects his harshest verbatim sayings (Dhammapada stern/harsh verses) and delivers with tightened holds — the doctrine stays intact, so mean-words + warm-canon is the contradiction the room hears.",
    "mutant_premise": "The awakened one, mid-anger, explaining that he will not be appeased by this.",
    "mutant_thread": "the anger he cannot blame on anyone else (it arose, it passes — he is still furious)",
-   "delivery": "preserved",
-   "mutation": "doctrine-inversion"
+   "delivery": "mutate",
+   "mutation": "doctrine-inversion",
+   "delivery_mutate": {
+    "vibe": "wrathful",
+    "overrides": {
+     "punchline_hold_ms": 900,
+     "post_punch_ms": 700,
+     "temperature": 0.75
+    },
+    "note": "angry-ish delivery: tighter holds, hotter sampling; style stays norm_macdonald as carrier — wrathful not in ARCHETYPE_CUES yet (engine cues fall back; harvest pending)"
+   },
+   "saying_selector": {
+    "tone_in": [
+     "harsh",
+     "stern"
+    ],
+    "prefer": "harsh",
+    "max": 14,
+    "note": "meanest VERBATIM lines only — never writes new words; base keeps neutral/gentle (444-saying canon: harsh64/stern53)"
+   }
   },
   {
    "id": "greed",
@@ -115,7 +133,8 @@
   ],
   "rules": [
    "engine assembles authored strings only",
-   "doctrine quoted, never paraphrased"
+   "doctrine quoted, never paraphrased",
+   "mutants may curate base sayings by tone; text is never generated (EXTRACT-NEVER-WRITE)"
   ]
  },
  "flagship_violation": "wrath"

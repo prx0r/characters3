@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "buddha-angry",
  "name": "Buddha, the Ultimate Deadpan (Angry)",
- "built_at": "2026-10-21T23:19:13Z",
+ "built_at": "2026-10-22T01:02:00Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",
@@ -97,9 +97,9 @@
   "style": "norm_macdonald",
   "archetype": "suspension_deadpan",
   "overrides": {
-   "punchline_hold_ms": 1500,
-   "post_punch_ms": 1000,
-   "temperature": 0.5
+   "punchline_hold_ms": 900,
+   "post_punch_ms": 700,
+   "temperature": 0.75
   }
  },
  "delivery_beats_authored": false,

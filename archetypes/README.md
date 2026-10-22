@@ -42,7 +42,7 @@ true to the archetype so the contradiction has nowhere to hide.
 
 | id | theory | what changes | what MUST NOT |
 |---|---|---|---|
-| `doctrine-inversion` | GTVH SO self-contradiction; the character becomes evidence against their own script | premise + thread + vibe/label (authored per violation) | **philosophy (doctrine stays!), delivery.style/timing — the joke is the contradiction** |
+| `doctrine-inversion` | GTVH SO self-contradiction; the character becomes evidence against their own script | premise + thread + vibe/label; **delivery only if violation declares `delivery_mutate`** (buddha-angry: wrathful vibe + tighter holds + hotter temp, style kept as carrier); **`saying_selector` = curated VIEW of base verbatim sayings by tone (never new words)** | **philosophy (doctrine stays!) + any generated text — EXTRACT-NEVER-WRITE** |
 | `status-flip` | status_invert (KR-TA) | vibe, modulators, register | lore facts, doctrine |
 | `thread-corruption` | rigidify still, invariant swapped (KR-LM) | one named thread's constant | the rigidify engine itself |
 | `lore-injection` | SI addition (KR-SI) from canon/lore | premise/thread w/ sourced lore event | doctrine, TA target |
@@ -58,3 +58,13 @@ true to the archetype so the contradiction has nowhere to hide.
 4. Honesty: doctrine quotes are verbatim from the pack (`doctrine_source`).
 
 `python3 mutate.py buddha-ultimate-deadpan --violation wrath` → `buddha-angry`
+
+
+## Sayings views (curation, not generation)
+
+Base characters own the verbatim canon (`characters/<slug>/sayings.jsonl`;
+buddha: 444 — mine + full Dhammapada, tones via lexicon-v1: harsh64/stern53).
+A mutant with `saying_selector` gets a **view**: subset by tone, base ids
+referenced (`view_of`), texts copied verbatim — asserted in tests that every
+view text exists in base. `buddha-angry` = meanest lines (harsh/stern) +
+wrathful delivery; base keeps all444.

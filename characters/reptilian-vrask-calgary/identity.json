@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "reptilian-vrask-calgary",
  "name": "Vrask, Externship Calgary",
- "built_at": "2026-10-21T23:19:13Z",
+ "built_at": "2026-10-22T01:02:00Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",

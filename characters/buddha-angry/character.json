@@ -56,7 +56,7 @@
   "punchline_hold_ms": 1500
  },
  "species": "human (awakened teacher, historical, public domain)",
- "vibe": "deadpan",
+ "vibe": "wrathful",
  "voice": {
   "provider": "edge-tts",
   "voice_id": "en-US-GuyNeural",
@@ -160,10 +160,11 @@
   "style": "norm_macdonald",
   "archetype": "suspension_deadpan",
   "overrides": {
-   "punchline_hold_ms": 1500,
-   "post_punch_ms": 1000,
-   "temperature": 0.5
-  }
+   "punchline_hold_ms": 900,
+   "post_punch_ms": 700,
+   "temperature": 0.75
+  },
+  "mutation_note": "angry-ish delivery: tighter holds, hotter sampling; style stays norm_macdonald as carrier — wrathful not in ARCHETYPE_CUES yet (engine cues fall back; harvest pending)"
  },
  "schema": "freaktown.character.v1",
  "mutations": [
@@ -173,9 +174,9 @@
    "violation": "wrath",
    "operator": "doctrine-inversion",
    "contradicts": "axiology: Stillness, punchlines and exact change are good (+ canonical: 'Hatred is never appeased by hatred' — hand_literal set)",
-   "theory_basis": "His own axiology refutes him mid-lesson: an angry Buddha is the teacher caught inside his own thesis (SO self-contradiction). The anger must be delivered with the SAME serenity the doctrine demands — the contradiction has nowhere to normalize, so every furious sentence lands as evidence against the doctrine rather than as shouting.",
-   "delivery": "preserved",
-   "created": "2026-10-21",
+   "theory_basis": "His own axiology refutes him mid-lesson: an angry Buddha is the teacher caught inside his own thesis (SO self-contradiction). The anger must be delivered with the SAME serenity the doctrine demands — the contradiction has nowhere to normalize, so every furious sentence lands as evidence against the doctrine rather than as shouting. The mutant ALSO selects his harshest verbatim sayings (Dhammapada ",
+   "delivery": "mutate",
+   "created": "2026-10-22",
    "engine_note": "assembled from authored archetype strings; no generated prose; doctrine+style preserved by operator"
   }
  ]

@@ -71,6 +71,16 @@ def mutate(base_slug: str, violation_id: str, as_slug: str | None = None) -> str
     char["threads"] = threads
     if v.get("mutant_vibe"):
         char["vibe"] = v["mutant_vibe"]
+    if v.get("delivery_mutate"):
+        dm = v["delivery_mutate"]
+        if dm.get("vibe"):
+            char["vibe"] = dm["vibe"]
+        if dm.get("overrides"):
+            char.setdefault("delivery", {})
+            ov = dict(char["delivery"].get("overrides") or {})
+            ov.update(dm["overrides"])
+            char["delivery"]["overrides"] = ov
+            char["delivery"]["mutation_note"] = dm.get("note", "")
     # philosophy/doctrine and delivery.style NEVER touched (theory: the
     # contradiction must be real against intact doctrine; NS preserved)
     char["mutations"] = [{
@@ -83,6 +93,29 @@ def mutate(base_slug: str, violation_id: str, as_slug: str | None = None) -> str
         "engine_note": "assembled from authored archetype strings; no "
                        "generated prose; doctrine+style preserved by operator",
     }]
+
+    # curated sayings VIEW: meanest verbatim lines only (never generated)
+    sel = v.get("saying_selector")
+    if sel:
+        base_say = base_dir / "sayings.jsonl"
+        if base_say.is_file():
+            pool = [json.loads(x) for x in base_say.read_text().splitlines()]
+            tone_in = sel.get("tone_in", [])
+            order = sel.get("prefer") if sel.get("prefer") in tone_in else None
+            picked = [e for e in pool if e.get("role") == "buddha"
+                      and e.get("tone") in tone_in]
+            if order:
+                picked.sort(key=lambda e: e.get("tone") != order)
+            picked = picked[: int(sel.get("max", 12))]
+            dest = CHARS / slug
+            dest.mkdir(parents=True, exist_ok=True)
+            with open(dest / "sayings.jsonl", "w") as f:
+                for e in picked:
+                    out = dict(e)
+                    out["view_of"] = "buddha-ultimate-deadpan/sayings.jsonl"
+                    out["view"] = v["id"]
+                    out["selection"] = f"tone in {tone_in} (curation, not generation)"
+                    f.write(json.dumps(out, ensure_ascii=False) + "\n")
 
     dest = CHARS / slug
     dest.mkdir(parents=True, exist_ok=True)
