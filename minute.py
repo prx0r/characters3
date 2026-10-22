@@ -153,6 +153,41 @@ def split_bits(minute: str) -> list[str]:
     return out
 
 
+
+STYLE_WPM_DEFAULT = 180
+WPM_BY_STYLE = {"norm_macdonald": 200, "louis": 170}   # engine style recipes
+
+
+def _style_wpm(char: dict) -> int:
+    style = (char.get("delivery") or {}).get("style")
+    if style in WPM_BY_STYLE:
+        return WPM_BY_STYLE[style]
+    # ask the engine's harvested style if present (authoritative when local)
+    p = ENGINE / "audition" / "voicelab" / "styles" / f"{style}.json"
+    try:
+        w = json.loads(p.read_text()).get("engine_recipe", {}).get("wpm")
+        if isinstance(w, (int, float)) and 80 <= w <= 320:
+            return int(w)
+    except (OSError, ValueError, AttributeError):
+        pass
+    return STYLE_WPM_DEFAULT
+
+
+def estimate_seconds(bits: list, char: dict) -> float:
+    """Speech time + beat pauses. Calibrated vs delivery_engine renders
+    (177w/3bits buddha = 53.8s actual vs ~57 est)."""
+    words = sum(len(b["text"].split()) for b in bits)
+    if not bits:
+        return 0.0
+    ov = (char.get("delivery") or {}).get("overrides") or {}
+    hold = (ov.get("punchline_hold_ms") or 1500) / 1000.0
+    post = (ov.get("post_punch_ms") or 1000) / 1000.0
+    n = len(bits)
+    speech = words / _style_wpm(char) * 60.0
+    pauses = n * (hold + post) / 2.0          # one build+release per bit
+    inter = max(0, n - 1) * 0.6               # bit transitions
+    return round(speech + pauses + inter, 1)
+
 def edge_bit(bit: str, char: dict, audience: str, dial: float | None) -> dict:
     from jokegate import edge as E
     ladder = E.render_ladder(bit, character=char, prefer="openrouter")
@@ -190,6 +225,9 @@ def main(argv=None) -> int:
     ap.add_argument("--edge", type=float, default=None,
                     help="edge dial 0..1 (select_near) instead of audience select")
     ap.add_argument("--bits", type=int, default=5)
+    ap.add_argument("--min-seconds", type=float, default=60.0,
+                    help="floor: keep writing/edging until est >= this")
+    ap.add_argument("--max-seconds", type=float, default=90.0)
     ap.add_argument("--seal", action="store_true",
                     help="render sealed-set via characters engine (pack must "
                          "exist in /root/characters/freaks)")
@@ -197,8 +235,6 @@ def main(argv=None) -> int:
 
     setup_env()
     wire_chars2()
-    from jokegate import llm   # noqa: F401  (dotenv/key load at import)
-
     char = load_pack(a.slug)
     arch = archetype_for(a.slug)
     OUT.mkdir(exist_ok=True)
@@ -261,6 +297,50 @@ def main(argv=None) -> int:
 
     if not final_bits:
         raise SystemExit("no bits survived the masks")
+
+    # ── 60s floor: top-up rounds (each = fresh writer bits through the
+    #    same ladder+masks) until estimate clears --min-seconds ──
+    est = estimate_seconds(final_bits, char)
+    rounds = 0
+    while est < a.min_seconds and rounds < 3 and len(final_bits) < a.bits + 6:
+        rounds += 1
+        need = int((a.min_seconds - est) / 8) + 2
+        print(f"\n  duration {est}s < {a.min_seconds}s -> top-up round "
+              f"{rounds} (+~{need} bits)")
+        try:
+            more = split_bits(write_base_minute(
+                system, seed_bit=f"continue the set (already "
+                f"{len(final_bits)} bits done) with {need} more bits "
+                f"in your voice"))
+        except SystemExit as e:
+            print(f"  top-up writer failed: {e}")
+            break
+        added = 0
+        for b in more:
+            if added >= need or len(final_bits) >= a.bits + 6:
+                break
+            res = edge_bit(b, char, a.audience, a.edge)
+            sel = res["selected"]
+            if not sel.get("text"):
+                continue
+            m = slop_mask(sel["text"], char)
+            if not m["passed"]:
+                continue
+            final_bits.append({
+                "slot": f"b{len(final_bits) + 1}", "base_text": b,
+                "selected_level": sel.get("pick"),
+                "edginess": sel.get("edginess"), "text": sel["text"],
+                "select_reason": sel.get("reason"),
+                "ladder": [], "slop_mask": m, "topup_round": rounds})
+            added += 1
+        est = estimate_seconds(final_bits, char)
+
+    est = estimate_seconds(final_bits, char)
+    duration_ok = est >= a.min_seconds
+    duration_over = est > a.max_seconds
+    if not duration_ok:
+        print(f"  WARNING: estimated {est}s < {a.min_seconds}s floor after "
+              f"{rounds} top-up(s) — flagged SHORT in the doc")
     doc = {
         "schema": "pogtown.minute.v1",
         "character": a.slug, "name": char.get("name"),
@@ -271,8 +351,15 @@ def main(argv=None) -> int:
         "doctrine_preserved": True,
         "bits": final_bits,
         "dropped": dropped,
+        "duration": {"estimate_s": est,
+                     "min_s": a.min_seconds, "max_s": a.max_seconds,
+                     "ok": duration_ok, "over": duration_over,
+                     "topup_rounds": rounds,
+                     "model": "words/wpm(style) + holds + transitions "
+                              "(calibrated vs delivery_engine renders)"},
         "metrics": {
             "n_bits": len(final_bits),
+            "words_total": sum(len(b["text"].split()) for b in final_bits),
             "mean_selected_edge": round(sum(
                 (b.get("edginess") or 0) for b in final_bits) / len(final_bits), 3),
             "levels": {lv: sum(1 for b in final_bits
@@ -287,7 +374,9 @@ def main(argv=None) -> int:
     txt = "\n\n".join(b["text"] for b in final_bits)
     tp = jp.with_suffix(".txt")
     tp.write_text(txt + "\n")
-    print(f"\nminute: {jp.name} | mean edge {doc['metrics']['mean_selected_edge']} "
+    print(f"\nminute: {jp.name} | est {est}s "
+          f"({'OK' if duration_ok else 'SHORT <' + str(a.min_seconds) + 's'}) "
+          f"| mean edge {doc['metrics']['mean_selected_edge']} "
           f"| levels {doc['metrics']['levels']} | dropped {len(dropped)}")
     if a.seal:
         if not (ENGINE / "freaks" / a.slug / "character.json").is_file():
