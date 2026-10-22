@@ -4,6 +4,9 @@ __pycache__/
 *.pyc
 .cache/
 
+# PD source cache (regenerable: tools/text_sources.py --fetch)
+tools/cache/
+
 # sealed outputs: audio served from the box (party.funnier.si/sealed/...); binaries never in git
 characters/*/sealed/
 characters/*/mesh.glb

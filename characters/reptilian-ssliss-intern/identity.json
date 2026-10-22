@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "reptilian-ssliss-intern",
  "name": "Ssliss, Bloodline Intern",
- "built_at": "2026-10-22T01:28:55Z",
+ "built_at": "2026-10-22T02:14:37Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",

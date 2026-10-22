@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "reptilian-phib-loveland",
  "name": "Phib, Loveland Courier",
- "built_at": "2026-10-22T01:28:55Z",
+ "built_at": "2026-10-22T02:14:37Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",

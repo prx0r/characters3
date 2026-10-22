@@ -1,0 +1,74 @@
+{
+ "schema": "freaktown.archetype.v1",
+ "id": "arch:jesus",
+ "name": "The Counter-Questioner",
+ "created": "2026-10-22",
+ "members": [
+  "jesus",
+  "jesus-temple"
+ ],
+ "core_theory": {
+  "funny_because": "He answers questions with better questions until the asker self-destructs, wraps doctrine in farming equipment, and keeps a whip as a footnote. The comedy runs on delay: every answer arrives one parable later than expected, and the sacred-distance (THE-LINE1.0) lets the room laugh at scripture instead of flinching from it. When range = woes and temple, the SAME teacher who said consider-the-lilies turns the tables over — the canon contains its own contradiction.",
+  "doctrine_source": "character.json.philosophy (authored from sayings)",
+  "doctrine": {
+   "ontology": "The kingdom is already here and nobody noticed.",
+   "epistemology": "Ask until they answer themselves.",
+   "axiology": "Mercy over sacrifice; the letter kills."
+  },
+  "status_model": "teaches without claiming office; status flips on whoever answers",
+  "register": "KJV cadence inside gig rooms — slow, second-person, unhurried",
+  "delivery_default": {
+   "vibe": "deadpan",
+   "style": "norm_macdonald",
+   "punchline_hold_ms": 1800,
+   "energy": 0.45
+  }
+ },
+ "violations_that_work": [
+  {
+   "id": "temple",
+   "label": "Jesus (Temple)",
+   "contradicts": "axiology: Mercy over sacrifice (the whip vs the lilies — both canon)",
+   "why_funny": "The gentlest corpus and the den-of-thieves verse come from the same speaker; wrathful delivery (900ms holds) over the woes ranges makes the contradiction structural, not editorial — Matthew23 verbatim is already the sermon where the teacher loses his temper, so the mutant only needs the speed.",
+   "mutant_premise": "The sower, mid-overturn, explaining that my house was supposed to be a house of prayer.",
+   "mutant_thread": "tables he has overturned before (and will again)",
+   "delivery": "mutate",
+   "delivery_mutate": {
+    "vibe": "wrathful",
+    "overrides": {
+     "punchline_hold_ms": 900,
+     "post_punch_ms": 700,
+     "temperature": 0.75
+    },
+    "note": "wrathful not in ARCHETYPE_CUES yet — cues fall back; harvest pending"
+   },
+   "mutation": "doctrine-inversion"
+  }
+ ],
+ "mutation_operators": [
+  {
+   "id": "doctrine-inversion",
+   "name": "Doctrinal self-contradiction",
+   "theory_basis": "GTVH SO self-contradiction (same as arch:buddha)",
+   "changes": [
+    "premise",
+    "thread",
+    "vibe/label"
+   ],
+   "must_not": [
+    "philosophy",
+    "generated text"
+   ],
+   "delivery": "preserved unless violation.delivery_mutate"
+  }
+ ],
+ "provenance": {
+  "sources": [
+   "KJV via thiagobodruk/bible (PD-US)",
+   "realm-jesus seed (chars2)"
+  ],
+  "rules": [
+   "KJV words never written by engine; pack prose authored separately from sayings"
+  ]
+ }
+}
