@@ -3,7 +3,7 @@
  "slug": "buddha-ultimate-deadpan",
  "mesh": "buddha.glb",
  "status": "confident",
- "why": "Meshy rigged GLB + inject_face_morphs.py: jawOpen (494 verts) + blink (166) morph targets. Stage reports mouthMode 'morph', hasBlink true \u2014 he talks. Meshy tasks preview 01a16115 / refine 01a16116 / rig 01a16117, 20 credits.",
+ "why": "Meshy text-to-3d (smart-topology, a-pose, 12k) + refine + rigging, then PR#10 face:rig baked 8 shapes (jawOpen, eyeBlink L/R, browInnerUp, browDown L/R, mouthSmile L/R). face:check verdict OK: mouth=morph, blink, expressions happy/angry/sad/surprised, head bone. Stage smoke: mouth 0.88 peak, blinks increment.",
  "provenance": {
   "provider": "meshy",
   "preview_task": "01a16115-5c31-7186-b757-d9648098d4be",
@@ -11,11 +11,15 @@
   "rig_task": "01a16117-8571-72f9-85e4-9f557902a3a5",
   "credits": 20,
   "generated_at": "2026-10-22T00:55:00Z",
-  "served_at": "static/avatars/buddha.glb -> dist/avatars/buddha.glb (stage)"
+  "served_at": "static/avatars/buddha.glb -> dist/avatars/buddha.glb (stage)",
+  "rig_script": "freaktown packages/stage-runtime/cli/face-rig.ts (PR #10)"
  },
  "face": {
   "mouth": "morph (jawOpen)",
   "blink": true,
-  "injected_by": "scripts/inject_face_morphs.py"
+  "eyebrows": true,
+  "smile": true,
+  "rigged_by": "freaktown face:rig (proceduralRig, PR #10)",
+  "verified_by": "npm run face:check -- buddha.glb -> verdict OK"
  }
 }
