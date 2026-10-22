@@ -1,0 +1,117 @@
+{
+ "schema": "freaktown.archetype.v1",
+ "id": "arch:elijah",
+ "name": "The Contest Prophet",
+ "created": "2026-10-22",
+ "members": [
+  "elijah",
+  "elijah-quiet"
+ ],
+ "core_theory": {
+  "funny_because": "Theology as spectator sport: he writes explicit rules, mocks the absent opposition's prayer schedule, and takes fire as proof — then flees from one message. The canon pairs the loudest act in scripture with a small exit, and that gap is the engine. Spectacle doctrine meets one coward's exit.",
+  "doctrine_source": "character.json.philosophy (authored from KJV 1 Kings)",
+  "doctrine": {
+   "ontology": "Exactly one god is in this contest; the scoreboard shows it.",
+   "epistemology": "Let them shout louder — that's the experiment.",
+   "axiology": "Public tests beat private opinions; mercy comes after the scoreboard."
+  },
+  "status_model": "contest host who loses his status off-stage (the still small voice)",
+  "register": "broadcast preacher collapsing into whisper",
+  "delivery_default": {
+   "vibe": "deadpan",
+   "style": "norm_macdonald",
+   "punchline_hold_ms": 1400,
+   "energy": 0.8
+  }
+ },
+ "violations_that_work": [
+  {
+   "id": "quiet",
+   "label": "Elijah (Quiet)",
+   "contradicts": "axiology: spectacle/public tests — the prophet who only whispers now",
+   "why_funny": "The still-small-voice doctrine taken as total policy: the loudest prophet ever refuses to shout — a whisper-only Elijah whose Carmel contest happens in ASL energy. Delivery mutation (holds 1400, temp 0.3, serene) over the KJV roar verses ('Cry aloud!') makes the contradiction audible: the words are fire, the voice is a library.",
+   "mutant_premise": "The prophet who now conducts every verdict in a library whisper.",
+   "mutant_thread": "the contest conducted entirely at indoor voice",
+   "delivery": "mutate",
+   "delivery_mutate": {
+    "vibe": "serene",
+    "overrides": {
+     "punchline_hold_ms": 1400,
+     "post_punch_ms": 1200,
+     "temperature": 0.3
+    },
+    "note": "library whisper over fire verses — audible contradiction"
+   },
+   "mutation": "doctrine-inversion"
+  }
+ ],
+ "mutation_operators": [
+  {
+   "id": "doctrine-inversion",
+   "name": "Doctrinal self-contradiction",
+   "theory_basis": "GTVH SO: the mutant's own script refutes their established script in real time (teacher caught in their own lesson); comedy = self-contradiction, not mockery",
+   "changes": [
+    "premise (authored mutant_premise)",
+    "thread (authored mutant_thread)",
+    "vibe/label"
+   ],
+   "must_not": [
+    "philosophy/doctrine — the base claims STAY so the contradiction is real",
+    "delivery.style, timing overrides — NS preserved: the angry Buddha stays slow"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "status-flip",
+   "name": "Status inversion",
+   "theory_basis": "Attardo KR-TA status_invert: desired vs felt status swap; register and modulators move, the world doesn't",
+   "changes": [
+    "vibe",
+    "modulator_range",
+    "expression/voice tags register"
+   ],
+   "must_not": [
+    "lore facts",
+    "doctrine claims"
+   ],
+   "delivery": "may_change_register"
+  },
+  {
+   "id": "thread-corruption",
+   "name": "Thread invariant swap",
+   "theory_basis": "rigidify (KR-LM) preserved, SI constant replaced: the engine keeps enforcing; what it enforces changes (kappa paid in something other than cucumbers)",
+   "changes": [
+    "one named thread's constant + premise"
+   ],
+   "must_not": [
+    "the rigidify mechanism",
+    "status model"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "lore-injection",
+   "name": "Sourced lore event",
+   "theory_basis": "KR-SI: a canon/lore event (must cite source: canon block, almanac, genome) becomes the premise situation",
+   "changes": [
+    "premise",
+    "thread"
+   ],
+   "must_not": [
+    "doctrine",
+    "unsourced invention — event must exist in a source file"
+   ],
+   "delivery": "preserved"
+  }
+ ],
+ "provenance": {
+  "sources": [
+   "KJV 1 Kings 18-19 via tools/text_sources.py",
+   "pack philosophy (authored)"
+  ],
+  "rules": [
+   "engine assembles authored strings only",
+   "doctrine quoted from pack, never paraphrased"
+  ]
+ }
+}

@@ -54,7 +54,25 @@ JESUS_RANGES = [
     ("John", 17, 1, 17, 26),      # high priestly prayer
     ("John", 18, 33, 18, 38),     # trial: my kingdom not of this world
 ]
-JONAH_BOOK = ("Jonah", 1, 1, 4, 16)   # whole book (queued: jonah pack)
+JONAH_BOOK = ("Jonah", 1, 1, 4, 16)   # whole book — the coward prophet
+ELIJAH_RANGES = [
+    ("1 Kings", 18, 16, 18, 40),   # Mount Carmel bake-off — the roast battle
+    ("1 Kings", 19, 1, 19, 18),    # flight from Jezebel + the still small voice
+]
+ISAIAH_RANGES = [
+    ("Isaiah", 5, 8, 5, 30),       # woe song (vineyard greed)
+    ("Isaiah", 10, 1, 10, 19),     # woe against unjust decrees
+]
+NATHAN_RANGES = [
+    ("2 Samuel", 12, 1, 12, 14),   # the parable of the ewe lamb (the long con)
+]
+CHARACTER_RANGES = {
+    "jesus": (JESUS_RANGES, "jesus", "kjv"),
+    "jonah": ([JONAH_BOOK], "jonah", "kjv"),
+    "elijah": (ELIJAH_RANGES, "elijah", "kjv"),
+    "isaiah": (ISAIAH_RANGES, "isaiah", "kjv"),
+    "nathan": (NATHAN_RANGES, "nathan", "kjv"),
+}
 
 BOOK_ALIASES = {"matthew": "matthew", "mark": "mark", "luke": "luke",
                 "john": "john", "jonah": "jonah"}
@@ -106,7 +124,7 @@ def extract(bible: dict, ranges: list, role: str, tag: str):
         for ch in range(c1, c2 + 1):
             b = bible[book.lower()]
             last = len(b["chapters"][ch - 1]) if ch == c2 else len(b["chapters"][ch - 1])
-            top = v2 if ch == c2 else last
+            top = min(v2, last) if ch == c2 else last   # clamp: editions vary
             for v in range(v1 if ch == c1 else 1, top + 1):
                 t = b["chapters"][ch - 1][v - 1].strip()
                 if not t:
@@ -149,16 +167,18 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", action="store_true")
     ap.add_argument("--character", default=None,
-                    choices=[None, "jesus"], help="target character")
+                    choices=[None, *sorted(CHARACTER_RANGES)],
+                    help="target character")
     a = ap.parse_args(argv)
     if a.fetch:
         print("cached:", fetch())
         if not a.character:
             return 0
     bible = load_bible()
-    if a.character == "jesus":
-        sayings, passages = extract(bible, JESUS_RANGES, "jesus", "kjv")
-        dest = HERE / "characters" / "jesus"
+    if a.character:
+        ranges, role, tag = CHARACTER_RANGES[a.character]
+        sayings, passages = extract(bible, ranges, role, tag)
+        dest = HERE / "characters" / a.character
         dest.mkdir(parents=True, exist_ok=True)
         for name, rows in (("sayings.jsonl", sayings),
                            ("passages.jsonl", passages)):
@@ -166,7 +186,7 @@ def main(argv=None) -> int:
                 for r in rows:
                     f.write(json.dumps(r, ensure_ascii=False) + "\n")
         from collections import Counter
-        print(f"jesus: {len(sayings)} sayings "
+        print(f"{a.character}: {len(sayings)} sayings "
               f"(tones {dict(Counter(s['tone'] for s in sayings))}), "
               f"{len(passages)} passages, "
               f"{sum(p['words'] for p in passages)} passage words")

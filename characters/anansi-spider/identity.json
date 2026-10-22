@@ -2,7 +2,7 @@
  "schema": "pogtown.identity.v1",
  "slug": "anansi-spider",
  "name": "Anansi, Spider",
- "built_at": "2026-10-22T02:14:37Z",
+ "built_at": "2026-10-22T02:24:16Z",
  "personality": {
   "file": "personality.txt",
   "model": "qwen-flash-character",

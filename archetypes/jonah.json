@@ -1,0 +1,117 @@
+{
+ "schema": "freaktown.archetype.v1",
+ "id": "arch:jonah",
+ "name": "The Fugitive Prophet",
+ "created": "2026-10-22",
+ "members": [
+  "jonah",
+  "jonah-eager"
+ ],
+ "core_theory": {
+  "funny_because": "A prophet whose doctrine is flight: every joke is him running from obedience that works anyway. The storm wins, the city repents, the plant dies — and each success lands as a personal insult to him. The comedy is inverted achievement: everything going right is his nightmare, delivered in a sulky register that never rises to sermon.",
+  "doctrine_source": "character.json.philosophy (authored from KJV Jonah)",
+  "doctrine": {
+   "ontology": "The word comes whether you show up or not.",
+   "epistemology": "Fleeing IS an answer — it gets the storm.",
+   "axiology": "Mercy applies reluctantly, to everyone including plants."
+  },
+  "status_model": "fugitive from an assignment that keeps succeeding without him",
+  "register": "sulky low register under scripture diction",
+  "delivery_default": {
+   "vibe": "deadpan",
+   "style": "norm_macdonald",
+   "punchline_hold_ms": 1700,
+   "energy": 0.4
+  }
+ },
+ "violations_that_work": [
+  {
+   "id": "zeal",
+   "label": "Jonah (Eager)",
+   "contradicts": "epistemology: Fleeing IS an answer — the coward wants the job now",
+   "why_funny": "Full inversion of the coward doctrine: a prophet who CANNOT WAIT for Nineveh — volunteering for the assignment, excited about the revolt, asking if the storm can go faster. Same KJV words (his book describes the city he now campaigns for), flipped delivery (900ms wired holds) — the fugitive becomes a zealot and the canon contradicts itself without a new sentence.",
+   "mutant_premise": "The prophet who can't wait for Nineveh — packing the night before the storm.",
+   "mutant_thread": "checking hourly whether the city has repented yet (he hopes not, he hopes yes)",
+   "delivery": "mutate",
+   "delivery_mutate": {
+    "vibe": "wired",
+    "overrides": {
+     "punchline_hold_ms": 900,
+     "post_punch_ms": 700,
+     "temperature": 0.85
+    },
+    "note": "eager wiring: crushed holds — the coward's pacing reversed"
+   },
+   "mutation": "doctrine-inversion"
+  }
+ ],
+ "mutation_operators": [
+  {
+   "id": "doctrine-inversion",
+   "name": "Doctrinal self-contradiction",
+   "theory_basis": "GTVH SO: the mutant's own script refutes their established script in real time (teacher caught in their own lesson); comedy = self-contradiction, not mockery",
+   "changes": [
+    "premise (authored mutant_premise)",
+    "thread (authored mutant_thread)",
+    "vibe/label"
+   ],
+   "must_not": [
+    "philosophy/doctrine — the base claims STAY so the contradiction is real",
+    "delivery.style, timing overrides — NS preserved: the angry Buddha stays slow"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "status-flip",
+   "name": "Status inversion",
+   "theory_basis": "Attardo KR-TA status_invert: desired vs felt status swap; register and modulators move, the world doesn't",
+   "changes": [
+    "vibe",
+    "modulator_range",
+    "expression/voice tags register"
+   ],
+   "must_not": [
+    "lore facts",
+    "doctrine claims"
+   ],
+   "delivery": "may_change_register"
+  },
+  {
+   "id": "thread-corruption",
+   "name": "Thread invariant swap",
+   "theory_basis": "rigidify (KR-LM) preserved, SI constant replaced: the engine keeps enforcing; what it enforces changes (kappa paid in something other than cucumbers)",
+   "changes": [
+    "one named thread's constant + premise"
+   ],
+   "must_not": [
+    "the rigidify mechanism",
+    "status model"
+   ],
+   "delivery": "preserved"
+  },
+  {
+   "id": "lore-injection",
+   "name": "Sourced lore event",
+   "theory_basis": "KR-SI: a canon/lore event (must cite source: canon block, almanac, genome) becomes the premise situation",
+   "changes": [
+    "premise",
+    "thread"
+   ],
+   "must_not": [
+    "doctrine",
+    "unsourced invention — event must exist in a source file"
+   ],
+   "delivery": "preserved"
+  }
+ ],
+ "provenance": {
+  "sources": [
+   "KJV Jonah (whole book) via tools/text_sources.py",
+   "pack philosophy (authored)"
+  ],
+  "rules": [
+   "engine assembles authored strings only",
+   "doctrine quoted from pack, never paraphrased"
+  ]
+ }
+}
